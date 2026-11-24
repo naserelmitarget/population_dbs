@@ -1,0 +1,1705 @@
+chr	start	ref	alt	gene	clnsig	stars	dataset	af	gnomad_popmax	matched_group_af	fold_vs_popmax
+22	20709922	TGTC	-	PI4KA	Pathogenic	2	1000g2015aug	0.00179712	8.127e-05		22.113
+11	68357801	G	A	LRP5	Pathogenic	2	alfa	0.9998			
+20	46040615	G	A	SLC12A5	Likely_pathogenic	1	alfa	0.7368	0		
+14	23424041	C	T	MYH7	Pathogenic	2	alfa	0.7364			
+9	6587205	G	A	GLDC	Pathogenic	2	alfa	0.6269	2.319e-05		27033.2
+9	6554703	C	T	GLDC	Pathogenic	2	alfa	0.5546	0.001442		384.605
+17	49991836	G	A	DLX3	Likely_pathogenic	1	alfa	0.5504			
+12	6018901	G	A	VWF	Pathogenic/Likely_pathogenic	2	alfa	0.5051	0.0002359		2141.16
+7	97853143	G	A	ASNS	Pathogenic/Likely_pathogenic	2	alfa	0.4834	0.0001202		4021.63
+2	189006418	G	A	COL3A1	Likely_pathogenic	1	alfa	0.3695			
+19	1037757	G	A	CNN2	Pathogenic	1	alfa	0.3563	0.0008356		426.4
+10	49655102	C	T	CHAT	Pathogenic	2	alfa	0.3482	6.925e-05		5028.16
+1	201083178	C	T	CACNA1S	Pathogenic	1	alfa	0.3244			
+2	135115292	C	T	RAB3GAP1	Pathogenic	2	alfa	0.2757	8.968e-05		3074.26
+3	48862545	G	A	SLC25A20	Pathogenic	2	alfa	0.2667	8.946e-05		2981.22
+6	63984462	G	A	EYS	Pathogenic/Likely_pathogenic	2	alfa	0.2349	6.312e-05		3721.48
+7	100627976	T	C	TFR2	Pathogenic	1	alfa	0.2336	8.994e-07		259729
+13	32357919	G	T	BRCA2	Pathogenic	3	alfa	0.2284			
+7	23256917	T	G	GPNMB	Pathogenic	1	alfa	0.2134	0.0002519		847.162
+19	1037767	G	A	CNN2	Pathogenic	1	alfa	0.2039	0.0003901		522.686
+2	227329785	T	G	MFF	Likely_pathogenic	1	alfa	0.1934			
+7	142750600	A	T	PRSS1	Pathogenic	2	alfa	0.1841	2.382e-05		7728.8
+12	21445467	G	A	PYROXD1	Pathogenic/Likely_pathogenic	2	alfa	0.1777	0.0002502		710.232
+14	77027444	G	A	IRF2BPL	Likely_pathogenic	2	alfa	0.1644	0		
+5	126577145	T	C	ALDH7A1	Pathogenic	2	alfa	0.1414	2.987e-05		4733.85
+14	77027450	G	A	IRF2BPL	Likely_pathogenic	1	alfa	0.132	4.944e-05		2669.9
+10	124403027	G	A	OAT	Pathogenic/Likely_pathogenic	2	alfa	0.1279	0.0006888		185.685
+19	16903624	C	T	CPAMD8	Pathogenic	1	alfa	0.1279	5.396e-06		23702.7
+11	66852601	G	A	PC	Pathogenic/Likely_pathogenic	2	alfa	0.1125	1.159e-05		9706.64
+1	207468716	G	A	CR2	Pathogenic	1	alfa	0.105	2.989e-05		3512.88
+2	174750122	A	G	CHRNA1	Pathogenic	1	alfa	0.1015	8.993e-07		112866
+14	77027426	G	A	IRF2BPL	Pathogenic	1	alfa	0.1013	0		
+8	18075586	C	T	ASAH1	Pathogenic	1	alfa	0.101	1.47e-05		6870.75
+10	48066	C	A	TUBB8	Likely_pathogenic	1	alfa	0.0991	0.001269		78.093
+7	152248171	G	A	KMT2C	Pathogenic	1	alfa	0.0898			
+X	32573529	C	T	DMD	Pathogenic/Likely_pathogenic	2	alfa	0.0816	6.46e-05		1263.16
+7	47894005	G	A	PKD1L1	Likely_pathogenic	1	alfa	0.0803	1.169e-05		6869.12
+1	152303434	G	A	FLG	Pathogenic/Likely_pathogenic	2	alfa	0.0801	0.0007467		107.272
+17	58216737	C	T	MKS1	Pathogenic/Likely_pathogenic	2	alfa	0.0773	2.413e-05		3203.48
+12	6018443	G	A	VWF	Pathogenic	3	alfa	0.0725	0.00062		116.935
+6	26093233	G	A	HFE	Pathogenic/Likely_pathogenic	2	alfa	0.0565	0.0004037		139.955
+8	38146069	G	A	STAR	Pathogenic	2	alfa	0.0526	2.987e-05		1760.96
+16	56886384	C	T	SLC12A3	Pathogenic/Likely_pathogenic	2	alfa	0.0522	0.0002987		174.757
+4	78450321	C	T	FRAS1	Pathogenic	2	alfa	0.0494	1.259e-05		3923.75
+11	47234610	C	T	DDB2	Pathogenic	1	alfa	0.049	2.236e-05		2191.41
+6	42077099	G	A	TAF8	Pathogenic	2	alfa	0.043	0.0001358		316.642
+1	40092174	T	C	PPT1	Likely_pathogenic	1	alfa	0.0407	2.987e-05		1362.57
+7	114629964	C	T	FOXP2	Pathogenic	1	alfa	0.0406			
+X	153743022	T	C	ABCD1	Pathogenic	3	alfa	0.0402			
+2	214769289	G	T	BARD1	Pathogenic	2	alfa	0.0382	0		
+11	36593939	G	T	RAG2	Likely_pathogenic	2	alfa	0.0373			
+14	24240630	T	C	TINF2	Likely_pathogenic	1	alfa	0.0362			
+15	76771894	G	A	SCAPER	Pathogenic	1	alfa	0.0341	1.17e-05		2914.53
+16	67612122	G	T	CTCF	Likely_pathogenic	1	alfa	0.0338			
+16	89513038	G	T	SPG7	Pathogenic/Likely_pathogenic	2	alfa	0.0325	3.011e-05		1079.38
+4	55964301	C	T	CEP135	Pathogenic	1	alfa	0.0312	0.0001534		203.39
+7	117548823	G	T	CFTR	Pathogenic/Likely_pathogenic	2	alfa	0.0308	3.019e-05		1020.21
+10	71791123	G	A	CDH23	Pathogenic	2	alfa	0.0304	0.0001311		231.884
+15	44583813	C	T	SPG11	Pathogenic	2	alfa	0.0299	0.0001763		169.597
+17	3494408	C	A	ASPA	Pathogenic	2	alfa	0.0295	0.001378		21.4078
+17	3449079	G	A	SPATA22	Pathogenic	1	alfa	0.0267	4.484e-05		595.45
+6	32580272	T	C	HLA-DRB1	Likely_pathogenic	1	alfa	0.026	0.0002543		102.241
+17	81511224	G	A	ACTG1	Pathogenic	1	alfa	0.0236			
+1	21573781	T	C	ALPL	Pathogenic/Likely_pathogenic	2	alfa	0.0214	0.001789		11.962
+8	133131869	C	A	TG	Pathogenic	1	alfa	0.0209	7.557e-05		276.565
+5	13841694	G	A	DNAH5	Pathogenic	2	alfa	0.0135	8.129e-06		1660.72
+8	24955679	C	T	NEFL	Likely_pathogenic	1	alfa	0.0135			
+14	76462646	G	A	ESRRB	Pathogenic	1	alfa	0.0135			
+19	13116168	G	A	TRMT1	Likely_pathogenic	1	alfa	0.0135			
+12	13567109	G	T	GRIN2B	Pathogenic	2	alfa	0.0134			
+21	43063074	A	G	CBS	Pathogenic	2	alfa	0.0129	0		
+2	113246802	G	A	PAX8	Pathogenic	1	alfa	0.0126	8.993e-07		14010.9
+11	5227020	A	G	HBB	Pathogenic	2	alfa	0.0125	3.029e-05		412.677
+15	48742065	G	A	CEP152	Pathogenic	1	alfa	0.0122	5.974e-05		204.218
+14	32092090	T	C	ARHGAP5	Pathogenic	1	alfa	0.0113			
+3	129478066	C	T	IFT122	Pathogenic	1	alfa	0.011	2.987e-05		368.262
+3	48567885	G	A	COL7A1	Pathogenic/Likely_pathogenic	2	alfa	0.0108	2.987e-05		361.567
+3	100728759	C	T	TFG	Pathogenic	2	alfa	0.0092	4.051e-05		227.104
+16	70901203	C	A	HYDIN	Likely_pathogenic	1	alfa	0.0092	0		
+5	151851418	C	T	GLRA1	Pathogenic	1	alfa	0.0086			
+16	89792008	G	A	FANCA	Pathogenic	2	alfa	0.0086	2.519e-05		341.405
+19	15187213	G	A	NOTCH3	Pathogenic/Likely_pathogenic	2	alfa	0.0082	0.0001342		61.1028
+17	37731832	T	G	HNF1B	Pathogenic	1	alfa	0.0078	0.0001449		53.8302
+18	46509817	T	G	LOXHD1	Likely_pathogenic	2	alfa	0.0078	0.0001344		58.0357
+18	70197644	G	A	RTTN	Pathogenic/Likely_pathogenic	2	alfa	0.0077	5.043e-05		152.687
+11	2570685	G	A	KCNQ1	Pathogenic	2	alfa	0.0076	2.987e-05		254.436
+2	206152512	T	C	NDUFS1	Likely_pathogenic	1	alfa	0.0075	2.989e-05		250.92
+12	53425466	C	T	AMHR2	Pathogenic/Likely_pathogenic	2	alfa	0.0073	0.0001734		42.0992
+10	73045045	G	A	P4HA1	Likely_pathogenic	1	alfa	0.0072	5.98e-05		120.401
+7	142750600	A	C	PRSS1	Pathogenic	2	alfa	0.0066	7.241e-05		91.1476
+10	117134559	G	T	VAX1	Pathogenic	1	alfa	0.0066	0		
+17	43045729	G	T	BRCA1	Pathogenic	3	alfa	0.0064			
+X	139561835	C	T	F9	Pathogenic	2	alfa	0.0063	3.257e-05		193.43
+1	151344726	A	C	RFX5	Likely_pathogenic	1	alfa	0.0062	0.0001846		33.5861
+X	153971810	A	G	HCFC1	Pathogenic	1	alfa	0.0062			
+11	2776006	C	T	KCNQ1	Pathogenic	2	alfa	0.0057	4.579e-06		1244.81
+20	58898986	G	T	GNAS	Likely_pathogenic	2	alfa	0.0052			
+12	31089147	G	A	DDX11	Pathogenic/Likely_pathogenic	2	alfa	0.0051	3.751e-05		135.964
+10	16890369	A	G	CUBN	Likely_pathogenic	1	alfa	0.0049	0.0001118		43.8283
+17	63483494	C	T	ACE	Pathogenic	2	alfa	0.0049	8.944e-05		54.7853
+13	50945470	T	G	RNASEH2B	Pathogenic/Likely_pathogenic	2	alfa	0.0047	4.498e-06		1044.91
+19	852990	C	T	ELANE	Pathogenic/Likely_pathogenic	2	alfa	0.0047	9.075e-07		5179.06
+19	4110576	G	T	MAP2K2	Pathogenic	3	alfa	0.0045			
+13	47988983	T	C	SUCLA2	Likely_pathogenic	1	alfa	0.0044	2.523e-05		174.396
+3	122022075	C	T	ILDR1	Pathogenic/Likely_pathogenic	1	alfa	0.0043	1.182e-05		363.79
+5	172382035	C	T	SH3PXD2B	Pathogenic	1	alfa	0.0043			
+7	155803625	C	T	SHH	Likely_pathogenic	2	alfa	0.0042	0		
+22	37974144	G	T	SOX10	Pathogenic	1	alfa	0.0042			
+8	31076172	G	A	WRN	Pathogenic/Likely_pathogenic	2	alfa	0.0041	1.802e-06		2275.25
+1	23796234	C	T	GALE	Likely_pathogenic	2	alfa	0.004	0.0003275		12.2137
+13	47954510	G	A	SUCLA2	Pathogenic/Likely_pathogenic	2	alfa	0.0039	6.712e-05		58.1049
+20	63350572	G	A	CHRNA4	Pathogenic	2	alfa	0.0039			
+5	162095551	G	A	GABRG2	Pathogenic/Likely_pathogenic	2	alfa	0.0033	0		
+17	2036928	C	T	DPH1	Likely_pathogenic	1	alfa	0.0033	8.184e-05		40.3226
+20	3228952	C	T	SLC4A11	Likely_pathogenic	1	alfa	0.0033			
+22	50217738	A	C	TUBGCP6	Pathogenic	1	alfa	0.0033	8.994e-07		3669.11
+19	7647372	G	A	STXBP2	Pathogenic	1	alfa	0.0031	0		
+X	108575911	G	T	COL4A5	Likely_pathogenic	1	alfa	0.003	0		
+21	44286049	C	T	AIRE	Likely_pathogenic	1	alfa	0.0028	8.412e-05		33.2858
+17	1507091	T	G	INPP5K	Likely_pathogenic	1	alfa	0.0027	2.609e-05		103.488
+22	50626618	G	A	ARSA	Pathogenic	2	alfa	0.0027	0.0001734		15.5709
+1	5863407	T	C	NPHP4	Likely_pathogenic	1	alfa	0.0026	5.978e-05		43.4928
+X	108580548	C	T	COL4A5	Pathogenic	2	alfa	0.0025			
+11	77142783	C	A	MYO7A	Pathogenic	2	alfa	0.0024	3.511e-05		68.3566
+1	11273836	A	G	UBIAD1	Pathogenic	2	alfa	0.0023	8.993e-07		2557.54
+16	68738308	G	A	CDH1	Pathogenic	3	alfa	0.0023			
+17	2674239	G	A	PAFAH1B1	Pathogenic	1	alfa	0.0023			
+22	50627338	G	A	ARSA	Pathogenic/Likely_pathogenic	2	alfa	0.0023	4.981e-05		46.1755
+X	101398942	T	C	GLA	Pathogenic	2	alfa	0.0023	4.429e-05		51.9305
+X	108620304	G	A	COL4A5	Pathogenic	1	alfa	0.0023			
+2	85551548	C	T	GGCX	Pathogenic	1	alfa	0.0022			
+3	46902542	A	C	PTH1R	Pathogenic	1	alfa	0.0022			
+14	50916718	T	C	PYGL	Pathogenic	1	alfa	0.0022	8.993e-07		2446.35
+16	1449282	G	A	CLCN7	Pathogenic	1	alfa	0.0022	3.039e-05		72.3922
+X	154360233	C	T	FLNA	Pathogenic/Likely_pathogenic	2	alfa	0.0022			
+1	100249769	C	A	DBT	Pathogenic/Likely_pathogenic	2	alfa	0.0021	8.994e-07		2334.89
+1	160042042	G	A	KCNJ10	Pathogenic	1	alfa	0.0021			
+1	179575591	C	A	NPHS2	Pathogenic	1	alfa	0.0021			
+2	46907878	C	A	MCFD2	Pathogenic	1	alfa	0.0021			
+2	190998246	T	C	STAT1	Pathogenic	1	alfa	0.0021			
+2	219568188	G	T	OBSL1	Pathogenic	1	alfa	0.0021	1.799e-06		1167.32
+5	134621002	C	T	SAR1B	Pathogenic	1	alfa	0.0021			
+5	137628306	G	A	KLHL3	Pathogenic/Likely_pathogenic	2	alfa	0.0021	8.993e-07		2335.15
+7	19117111	G	A	TWIST1	Pathogenic	2	alfa	0.0021			
+8	38414889	C	A	FGFR1	Pathogenic	1	alfa	0.0021			
+8	143727432	G	A	SACK1H	Pathogenic/Likely_pathogenic	2	alfa	0.0021	0		
+9	124503089	C	T	NR5A1	Pathogenic	1	alfa	0.0021	0		
+11	2445448	C	T	KCNQ1	Likely_pathogenic	1	alfa	0.0021			
+11	2572053	G	A	KCNQ1	Pathogenic/Likely_pathogenic	2	alfa	0.0021	1.16e-05		181.034
+17	15260681	A	G	PMP22	Pathogenic	1	alfa	0.0021	0		
+17	50186895	C	T	COL1A1	Pathogenic	1	alfa	0.0021			
+17	50188113	C	A	COL1A1	Pathogenic	1	alfa	0.0021			
+19	12884903	G	T	KLF1	Pathogenic	1	alfa	0.0021	8.993e-07		2335.15
+19	42249565	G	A	ERF	Pathogenic	2	alfa	0.0021	0		
+20	445095	G	A	TBC1D20	Pathogenic	1	alfa	0.0021			
+X	53254856	G	A	IQSEC2	Likely_pathogenic	1	alfa	0.0021			
+X	55009242	T	C	ALAS2	Pathogenic	1	alfa	0.0021			
+X	108602962	A	G	COL4A5	Pathogenic/Likely_pathogenic	2	alfa	0.0021	0		
+1	2229113	G	A	SKI	Pathogenic/Likely_pathogenic	2	alfa	0.002			
+1	161307259	G	A	MPZ	Pathogenic/Likely_pathogenic	2	alfa	0.002	1.799e-06		1111.73
+15	61940646	C	G	VPS13C	Likely_pathogenic	1	alfa	0.002	1.8e-06		1111.11
+16	172914	T	C	HBA2	Pathogenic	2	alfa	0.002	2.548e-05		78.4929
+19	38710307	T	C	ACTN4	Pathogenic	1	alfa	0.002			
+2	72887736	G	T	SPR	Pathogenic	1	alfa	0.0019	9.36e-07		2029.91
+9	97854108	C	T	FOXE1	Pathogenic	1	alfa	0.0019	5.401e-06		351.787
+1	1041582	C	T	AGRN	Pathogenic	1	alfa	0.0018	0		
+3	48859097	T	C	SLC25A20	Pathogenic	2	alfa	0.0018			
+11	64805199	C	T	MEN1	Likely_pathogenic	1	alfa	0.0018			
+X	108568638	G	A	COL4A5	Pathogenic	1	alfa	0.0018			
+1	9717608	C	A	PIK3CD	Likely_pathogenic	3	alfa	0.0017			
+2	47470964	G	A	MSH2	Pathogenic	3	alfa	0.0017	0		
+2	214986563	C	T	ABCA12	Pathogenic	1	alfa	0.0017			
+8	11708467	C	T	GATA4	Pathogenic	1	alfa	0.0017			
+11	299372	G	A	IFITM5	Pathogenic	2	alfa	0.0017	0		
+17	50191853	G	A	COL1A1	Pathogenic/Likely_pathogenic	2	alfa	0.0017	0		
+22	39231722	A	G	PDGFB	Pathogenic	1	alfa	0.0017			
+3	33051989	A	C	GLB1	Pathogenic/Likely_pathogenic	2	alfa	0.0016	2.608e-05		61.3497
+4	6277579	C	T	WFS1	Pathogenic/Likely_pathogenic	2	alfa	0.0016	9.827e-05		16.2817
+7	50467222	G	A	DDC	Pathogenic/Likely_pathogenic	2	alfa	0.0016	2.519e-05		63.5173
+12	88079112	G	A	CEP290	Pathogenic	2	alfa	0.0016	3.109e-05		51.4635
+16	2496616	C	A	TBC1D24	Pathogenic	1	alfa	0.0016	0		
+16	88809793	C	A	APRT	Pathogenic	1	alfa	0.0016	6.295e-06		254.17
+20	10672978	A	G	JAG1	Pathogenic	1	alfa	0.0016			
+21	44286092	T	C	AIRE	Pathogenic	1	alfa	0.0016	9.272e-07		1725.63
+X	32454661	C	T	DMD	Pathogenic	2	alfa	0.0016	0		
+X	108575909	G	A	COL4A5	Pathogenic	1	alfa	0.0016	0		
+X	108597396	G	A	COL4A5	Pathogenic/Likely_pathogenic	2	alfa	0.0016			
+4	109741008	C	T	CFI	Pathogenic	1	alfa	0.0015	3.597e-06		417.014
+6	24522765	A	C	ALDH5A1	Pathogenic	2	alfa	0.0015	4.587e-05		32.7011
+6	157203919	G	T	ARID1B	Likely_pathogenic	1	alfa	0.0015			
+10	47629	C	T	TUBB8	Likely_pathogenic	2	alfa	0.0015	3.84e-05		39.0625
+10	70600509	C	T	PRF1	Pathogenic/Likely_pathogenic	2	alfa	0.0015	3.826e-05		39.2054
+11	47441875	G	A	RAPSN	Pathogenic/Likely_pathogenic	2	alfa	0.0015	2.551e-05		58.8005
+13	113116777	T	C	F7	Pathogenic/Likely_pathogenic	2	alfa	0.0015	9.001e-06		166.648
+16	28486427	G	T	CLN3	Pathogenic	2	alfa	0.0015	8.994e-07		1667.78
+17	14069607	T	C	COX10	Pathogenic	1	alfa	0.0015	8.993e-07		1667.96
+18	44951943	A	C	SETBP1	Pathogenic	1	alfa	0.0015			
+19	11105568	A	G	LDLR	Pathogenic	3	alfa	0.0015	3.512e-05		42.7107
+21	37506206	G	T	DYRK1A	Likely_pathogenic	1	alfa	0.0015			
+22	50626709	G	A	ARSA	Pathogenic/Likely_pathogenic	2	alfa	0.0015	3.478e-05		43.1282
+X	108668468	G	A	COL4A5	Likely_pathogenic	1	alfa	0.0015			
+1	9982368	G	A	NMNAT1	Pathogenic	2	alfa	0.0014	8.944e-05		15.653
+3	38550944	C	A	SCN5A	Pathogenic	1	alfa	0.0014			
+3	58081692	T	C	FLNB	Pathogenic	1	alfa	0.0014			
+9	128632286	C	T	SPTAN1	Pathogenic/Likely_pathogenic	2	alfa	0.0014			
+11	108138934	A	G	ACAT1	Pathogenic/Likely_pathogenic	2	alfa	0.0014	6.565e-05		21.3252
+14	102929970	C	A	AMN	Pathogenic	1	alfa	0.0014	0		
+17	8004065	C	T	GUCY2D	Likely_pathogenic	3	alfa	0.0014	5.038e-05		27.7888
+19	34365325	A	C	GPI	Pathogenic	1	alfa	0.0014	3.627e-06		385.994
+19	53889732	A	G	PRKCG	Pathogenic	2	alfa	0.0014			
+1	156130741	G	A	LMNA	Pathogenic/Likely_pathogenic	2	alfa	0.0013	0		
+7	155803204	G	T	SHH	Pathogenic	1	alfa	0.0013	0		
+10	87933148	G	A	PTEN	Pathogenic	3	alfa	0.0013	1.799e-06		722.624
+10	117543514	G	C	EMX2	Pathogenic	1	alfa	0.0013	3.258e-05		39.9018
+13	48303715	G	A	RB1	Pathogenic/Likely_pathogenic	2	alfa	0.0013	0		
+16	67942719	G	A	LCAT	Likely_pathogenic	1	alfa	0.0013	3.828e-05		33.9603
+17	63949408	C	A	SCN4A	Likely_pathogenic	1	alfa	0.0013	0		
+19	1221975	A	G	STK11	Likely_pathogenic	1	alfa	0.0013	3.106e-05		41.8545
+X	153906108	G	A	AVPR2	Pathogenic	1	alfa	0.0013	0		
+2	73927047	A	G	DGUOK	Pathogenic/Likely_pathogenic	2	alfa	0.0012	2.236e-05		53.6673
+2	166054670	C	T	SCN1A	Pathogenic	1	alfa	0.0012			
+3	38575390	C	T	SCN5A	Pathogenic/Likely_pathogenic	2	alfa	0.0012	1.47e-05		81.6327
+5	177238372	G	T	NSD1	Pathogenic	1	alfa	0.0012			
+16	88427807	G	A	ZNF469	Pathogenic	1	alfa	0.0012	9.269e-07		1294.64
+17	56594551	C	T	NOG	Pathogenic	2	alfa	0.0012			
+19	1222984	G	T	STK11	Pathogenic	2	alfa	0.0012	0		
+21	44286053	C	T	AIRE	Pathogenic	2	alfa	0.0012	1.263e-05		95.0119
+X	153725687	G	A	ABCD1	Pathogenic	2	alfa	0.0012			
+1	58576648	G	T	TACSTD2	Pathogenic	1	alfa	0.0011	0		
+1	63411331	G	A	ALG6	Pathogenic/Likely_pathogenic	2	alfa	0.0011	2.992e-05		36.7647
+1	100015300	A	T	SLC35A3	Likely_pathogenic	1	alfa	0.0011	2.564e-05		42.9017
+1	228157901	C	T	GJC2	Pathogenic	1	alfa	0.0011			
+1	228341203	C	T	OBSCN	Pathogenic	1	alfa	0.0011	2.987e-05		36.8262
+2	219218166	T	C	ABCB6	Pathogenic	1	alfa	0.0011			
+6	52056889	C	T	PKHD1	Pathogenic/Likely_pathogenic	2	alfa	0.0011	9.012e-07		1220.59
+7	87472676	C	T	ABCB4	Pathogenic	1	alfa	0.0011	0		
+10	71828091	T	G	PSAP	Pathogenic/Likely_pathogenic	2	alfa	0.0011	8.993e-07		1223.17
+11	66713645	A	G	SPTBN2	Pathogenic	1	alfa	0.0011			
+11	119345516	A	G	MFRP	Pathogenic	1	alfa	0.0011			
+12	49033310	G	A	KMT2D	Likely_pathogenic	1	alfa	0.0011	1.21e-05		90.9091
+12	109784385	C	T	TRPV4	Pathogenic/Likely_pathogenic	2	alfa	0.0011			
+17	5583728	A	G	NLRP1	Pathogenic	1	alfa	0.0011			
+17	47286300	G	A	ITGB3	Likely_pathogenic	3	alfa	0.0011	3.826e-05		28.7507
+17	56594888	A	G	NOG	Pathogenic/Likely_pathogenic	2	alfa	0.0011			
+19	1398995	C	T	GAMT	Likely_pathogenic	3	alfa	0.0011	2.236e-05		49.195
+19	18783126	C	T	COMP	Pathogenic/Likely_pathogenic	2	alfa	0.0011			
+20	40688640	G	A	MAFB	Likely_pathogenic	1	alfa	0.0011			
+20	63472461	C	T	KCNQ2	Pathogenic	2	alfa	0.0011	4.154e-05		26.4805
+21	44889274	A	G	ITGB2	Pathogenic	1	alfa	0.0011	8.995e-07		1222.9
+22	50626682	C	T	ARSA	Pathogenic	2	alfa	0.0011	2.698e-06		407.709
+X	108601867	A	G	COL4A5	Pathogenic	1	alfa	0.0011	0		
+3	43702421	C	T	ABHD5	Pathogenic	1	alfa	0.001	3.478e-05		28.7522
+7	107661807	T	C	SLC26A4	Pathogenic	2	alfa	0.001	3.175e-05		31.4961
+10	71803324	G	A	CDH23	Pathogenic/Likely_pathogenic	2	alfa	0.001	9.453e-05		10.5787
+11	108284316	G	A	ATM	Pathogenic	2	alfa	0.001	1.799e-06		555.864
+13	113118590	T	C	F7	Pathogenic	1	alfa	0.001			
+16	1457265	G	A	CLCN7	Pathogenic	1	alfa	0.001	1.159e-05		86.2813
+17	56594788	G	T	NOG	Pathogenic	1	alfa	0.001			
+X	56565363	C	A	UBQLN2	Pathogenic	2	alfa	0.001			
+6	33438059	-	G	SYNGAP1	Pathogenic	2	allofus	0.25	0.0001414		1768.03
+9	106927209	-	C	ZNF462	Pathogenic/Likely_pathogenic	2	allofus	0.205128	0.003541		57.9294
+11	6391638	-	AGCCCCCC	SMPD1	Pathogenic/Likely_pathogenic	2	allofus	0.0625	9.248e-06		6758.22
+X	54470714	-	G	FGD1	Pathogenic/Likely_pathogenic	2	allofus	0.046809	0.003162		14.8036
+9	35075739	-	G	FANCG	Pathogenic/Likely_pathogenic	2	allofus	0.019701	0.0001131		174.191
+16	3729216	-	C	CREBBP	Likely_pathogenic	1	allofus	0.009915	0		
+19	49861543	GGGGTCAGGGGAGGAGG	-	PNKP	Pathogenic	2	allofus	0.009441	0.0003955		23.871
+19	41880669	G	A	CD79A	Likely_pathogenic	1	allofus	0.006757	3.552e-05		190.231
+14	77027472	-	GC	IRF2BPL	Likely_pathogenic	1	allofus	0.005714	2.549e-05		224.166
+2	232329812	G	C	DIS3L2	Likely_pathogenic	2	allofus	0.004717	0		
+4	3463443	GGGGGCGCGGGGGGG	-	DOK7	Pathogenic/Likely_pathogenic	2	allofus	0.00352	0.0002597		13.5541
+21	46145831	GCCGCCGCCACCGA	-	FTCD	Likely_pathogenic	1	allofus	0.003119	1.7e-05		183.471
+6	145735381	G	-	EPM2A	Pathogenic/Likely_pathogenic	2	allofus	0.002212	5.058e-05		43.7327
+10	101010707	G	-	PDZD7	Pathogenic/Likely_pathogenic	2	allofus	0.001488	1.306e-05		113.936
+16	89146043	G	-	ACSF3	Pathogenic/Likely_pathogenic	2	allofus	0.001467	5.096e-06		287.873
+X	38286319	CC	-	RPGR	Pathogenic	3	allofus	0.001268			
+6	131808055	-	G	ENPP1	Pathogenic/Likely_pathogenic	2	allofus	0.001214	1.449e-05		83.7819
+1	1522796	-	A	ATAD3A	Likely_pathogenic	1	allofus	0.001212	0		
+X	38286213	-	C	RPGR	Pathogenic	1	allofus	0.001144			
+12	121921492	-	AGGAGGAGGAGAA	CFAP251	Likely_pathogenic	1	allofus	0.001059	1.889e-05		56.0614
+1	152304887	C	T	FLG	Pathogenic/Likely_pathogenic	2	colorsdb	0.0662228	5.974e-05		1108.52
+1	152305861	G	A	FLG	Pathogenic/Likely_pathogenic	2	colorsdb	0.0522074	0.0002118		246.494
+1	152307198	C	T	FLG	Pathogenic	1	colorsdb	0.0224247	7.557e-05		296.741
+1	196831893	C	T	CFHR1	Likely_pathogenic	1	colorsdb	0.0164681	0.0001964		83.8498
+1	1522796	-	A	ATAD3A	Likely_pathogenic	1	colorsdb	0.00946041	0		
+11	77179796	-	C	MYO7A	Pathogenic	1	colorsdb	0.00805886			
+1	155235750	GGACTGTCGACAAAGTTACGCACCCAATTGGGTCCTCCTTCGGGGTTCAGGGCAA	-	GBA1	Pathogenic	2	colorsdb	0.00420463			
+11	65554262	-	C	LTBP3	Likely_pathogenic	1	colorsdb	0.00385424			
+1	155235727	C	G	GBA1	Pathogenic/Likely_pathogenic	2	colorsdb	0.00350385	0.0002988		11.7264
+1	155236379	C	T	GBA1	Likely_pathogenic	2	colorsdb	0.00350385	4.473e-05		78.3333
+3	94043038	-	A	ARL13B	Pathogenic/Likely_pathogenic	2	colorsdb	0.00350385	0.0002279		15.3745
+1	155238630	G	A	GBA1	Pathogenic	2	colorsdb	0.00315347	0.0002267		13.9103
+22	37725781	-	C	TRIOBP	Pathogenic	2	colorsdb	0.00280308	9.054e-05		30.9596
+1	155238206	A	C	GBA1	Pathogenic/Likely_pathogenic	2	colorsdb	0.0024527	2.519e-05		97.368
+1	155238215	T	C	GBA1	Pathogenic	2	colorsdb	0.0024527	0.0001856		13.215
+6	32038514	C	T	CYP21A2	Pathogenic/Likely_pathogenic	2	colorsdb	0.0024527	0.0001802		13.611
+6	32039133	GAGACTAC	-	CYP21A2	Pathogenic	2	colorsdb	0.0024527	3.839e-05		63.889
+12	112185241	-	C	HECTD4	Likely_pathogenic	1	colorsdb	0.0024527	0.0001656		14.811
+X	74741098	-	T	NEXMIF	Pathogenic	2	colorsdb	0.00220022			
+1	152307805	G	A	FLG	Pathogenic/Likely_pathogenic	2	colorsdb	0.00210231	4.473e-05		47
+1	155238192	A	G	GBA1	Pathogenic/Likely_pathogenic	2	colorsdb	0.00210231	4.472e-05		47.0105
+1	155238214	A	C	GBA1	Pathogenic/Likely_pathogenic	2	colorsdb	0.00210231	2.236e-05		94.021
+1	152310118	G	A	FLG	Pathogenic	1	colorsdb	0.00175193	1.978e-05		88.5708
+1	155191940	-	G	MUC1	Pathogenic	2	colorsdb	0.00175193			
+1	155238174	C	T	GBA1	Pathogenic	2	colorsdb	0.00175193	0.0001008		17.3803
+6	32039807	T	A	CYP21A2	Pathogenic/Likely_pathogenic	2	colorsdb	0.00175193	2.519e-05		69.5486
+6	32040182	-	T	CYP21A2	Pathogenic/Likely_pathogenic	2	colorsdb	0.00175193	2.988e-05		58.6322
+6	32040535	C	T	CYP21A2	Pathogenic	2	colorsdb	0.00175193	0.000153		11.4505
+12	121814285	-	C	SETD1B	Pathogenic	1	colorsdb	0.00140154			
+X	74422037	-	A	SLC16A2	Pathogenic/Likely_pathogenic	2	colorsdb	0.00110011			
+3	47410831	-	C	PTPN23	Pathogenic/Likely_pathogenic	2	colorsdb	0.00105116	3.433e-05		30.6193
+12	96519066	G	A	CFAP54	Pathogenic	1	colorsdb	0.00105116	5.603e-05		18.7607
+5	149960981	T	C	SLC26A2	Pathogenic	2	finngen	0.006442	0	0	
+1	197101050	TT	-	ASPM	Pathogenic	1	gme	0.534848	1.161e-05	0	46067.9
+13	32338765	AAGA	-	BRCA2	Pathogenic	3	gme	0.471257	2.162e-05	0	21797.3
+7	142750600	A	T	PRSS1	Pathogenic	2	gme	0.450058	2.382e-05	0	18894.1
+15	30904691	AAAA	-	FAN1	Likely_pathogenic	2	gme	0.355197	2.527e-05	0	14056.1
+8	100705591	A	G	PABPC1	Pathogenic	1	gme	0.135585	0.006657	0.001845	20.3673
+7	152248171	G	A	KMT2C	Pathogenic	1	gme	0.125926			
+6	1611585	-	G	FOXC1	Pathogenic	1	gme	0.124011	0.0001109	0	1118.22
+X	153743022	T	C	ABCD1	Pathogenic	3	gme	0.120281			
+19	920078	G	C	KISS1R	Likely_pathogenic	1	gme	0.117994	0	0	
+10	13125494	AA	-	OPTN	Pathogenic/Likely_pathogenic	2	gme	0.073589	8.993e-07	0	81829.2
+14	35099272	AAG	-	PPP2R3C	Pathogenic	1	gme	0.068044	9.406e-05	0	723.411
+5	141527698	CT	-	DIAPH1	Likely_pathogenic	1	gme	0.053807	0.0007983	0.0005798	67.402
+X	67545385	-	GC	AR	Pathogenic	1	gme	0.050107	0.0001677	0	298.79
+X	48902391	AG	-	PQBP1	Pathogenic	2	gme	0.044776	8.624e-05	0	519.202
+X	18644624	A	C	RS1	Likely_pathogenic	1	gme	0.044321	0.0004459	0	99.3967
+5	132862192	AAAC	-	GDF9	Likely_pathogenic	1	gme	0.036782			
+14	54902663	T	G	GCH1	Pathogenic	1	gme	0.033884	0	0	
+12	88083864	ATTT	-	CEP290	Pathogenic/Likely_pathogenic	2	gme	0.032356			
+15	55467044	T	-	DNAAF4	Pathogenic/Likely_pathogenic	2	gme	0.027282	0.001539	0	17.7271
+5	140114325	-	G	PURA	Pathogenic	2	gme	0.021605			
+20	63444697	A	G	KCNQ2	Pathogenic	1	gme	0.019918	0	0	
+16	89279749	-	G	ANKRD11	Pathogenic	2	gme	0.019829	2.941e-05	0	674.226
+10	102399656	CG	-	NFKB2	Likely_pathogenic	1	gme	0.018638	0.0005067	0	36.7831
+20	63408423	A	C	KCNQ2	Likely_pathogenic	1	gme	0.016211			
+1	1046480	-	C	AGRN	Pathogenic/Likely_pathogenic	2	gme	0.015641	0.0001738	0.0001738	89.9942
+17	75516562	T	C	TSEN54	Likely_pathogenic	1	gme	0.015306	0.0001066	0	143.583
+16	56885328	G	T	SLC12A3	Pathogenic	1	gme	0.014933	0	0	
+9	21974776	T	G	CDKN2A	Likely_pathogenic	1	gme	0.014721	2.322e-05	0	633.979
+X	13746827	A	-	OFD1	Pathogenic	2	gme	0.014604	0.0004218	0	34.623
+X	38401310	G	C	OTC	Likely_pathogenic	1	gme	0.013185	0.0001013	0	130.158
+3	49132597	T	G	LAMB2	Likely_pathogenic	1	gme	0.012588	0.0005271	0.0005271	23.8816
+9	94603437	-	C	FBP1	Pathogenic/Likely_pathogenic	2	gme	0.012588	0.0001412	0	89.1501
+19	15243196	-	G	BRD4	Likely_pathogenic	1	gme	0.011787			
+1	119033161	A	C	WARS2	Likely_pathogenic	2	gme	0.011581	8.453e-05	0	137.005
+19	49595856	T	G	PRR12	Pathogenic	1	gme	0.010649			
+5	14487672	C	-	TRIO	Pathogenic/Likely_pathogenic	2	gme	0.010395	0.0006032	0.0002167	17.2331
+X	153743056	G	A	ABCD1	Pathogenic	3	gme	0.010317	3.372e-05	0	305.961
+1	197102562	TTTC	-	ASPM	Pathogenic	2	gme	0.010239	4.641e-05	0	220.621
+12	31089147	G	A	DDX11	Pathogenic/Likely_pathogenic	2	gme	0.01009	3.751e-05	0	268.995
+6	87259765	-	A	ZNF292	Pathogenic/Likely_pathogenic	2	gme	0.010081	0.0001441	0	69.9584
+20	59024206	T	C	TUBB1	Pathogenic/Likely_pathogenic	2	gme	0.01007	3.828e-05	0	263.062
+X	153740638	C	T	ABCD1	Pathogenic	2	gme	0.01	0	0	
+14	28767733	G	-	FOXG1	Pathogenic	2	gme	0.00973	3.296e-05	0	295.206
+X	154930152	-	T	F8	Pathogenic/Likely_pathogenic	2	gme	0.009695	7.181e-06	0	1350.09
+1	40304365	G	-	COL9A2	Pathogenic/Likely_pathogenic	2	gme	0.009615	5.932e-05	0	162.087
+21	45497645	C	-	COL18A1	Pathogenic	2	gme	0.00924	7.843e-05	0	117.812
+9	128250832	-	G	DNM1	Pathogenic	1	gme	0.009132	0.0006219	0.0003064	14.684
+13	20189454	A	C	GJB2	Likely_pathogenic	1	gme	0.009063			
+19	29702972	CCC	-	C19orf12	Pathogenic/Likely_pathogenic	2	gme	0.008665	2.338e-05	0	370.616
+17	80217042	C	A	SGSH	Likely_pathogenic	1	gme	0.007756	2.173e-05	0	356.926
+21	43063074	A	G	CBS	Pathogenic	2	gme	0.007553	0		
+17	7847819	C	-	KDM6B	Likely_pathogenic	1	gme	0.007255	4.61e-05	0	157.375
+1	230995821	A	-	ARV1	Likely_pathogenic	1	gme	0.007049	4.576e-05	0	154.043
+X	41787272	C	T	CASK	Likely_pathogenic	1	gme	0.006882			
+20	63444669	G	A	KCNQ2	Likely_pathogenic	2	gme	0.006667	9.218e-07	0	7232.59
+19	46756844	A	C	FKRP	Likely_pathogenic	1	gme	0.006572			
+9	14812813	TG	-	FREM1	Pathogenic	1	gme	0.00625	2.376e-05	0	263.047
+17	17796045	C	-	RAI1	Pathogenic	1	gme	0.006098	4.056e-05	0	150.345
+2	47414416	C	T	MSH2	Pathogenic	2	gme	0.006079	0	0	
+14	28767932	A	C	FOXG1	Likely_pathogenic	1	gme	0.006048			
+9	6536188	A	C	GLDC	Pathogenic/Likely_pathogenic	2	gme	0.006042	0.0005367	0	11.2577
+9	21974676	A	C	CDKN2A	Likely_pathogenic	2	gme	0.005539			
+14	32092090	T	C	ARHGAP5	Pathogenic	1	gme	0.005539			
+2	219418978	GC	-	DES	Pathogenic	1	gme	0.00528	3.142e-05	0	168.046
+15	28255945	AG	-	HERC2	Pathogenic	1	gme	0.005051	2.331e-05	0	216.688
+12	88118660	G	A	CEP290	Pathogenic/Likely_pathogenic	2	gme	0.005035	0	0	
+3	190120435	G	-	P3H2	Pathogenic	2	gme	0.004884	5.216e-05	0	93.635
+X	67546567	A	G	AR	Likely_pathogenic	1	gme	0.004626	9.583e-05	0	48.273
+11	2776033	G	A	KCNQ1	Pathogenic/Likely_pathogenic	2	gme	0.004606	2.667e-05	0	172.703
+11	551227	-	C	LRRC56	Pathogenic	1	gme	0.004571	0.0002821	0	16.2035
+11	72237703	-	C	INPPL1	Likely_pathogenic	1	gme	0.004545	7.565e-05	0	60.0793
+19	11120221	A	C	LDLR	Likely_pathogenic	3	gme	0.004532	0.0001124	0	40.3203
+6	64590912	G	T	EYS	Pathogenic	2	gme	0.004491			
+7	155803274	C	A	SHH	Pathogenic	1	gme	0.004141			
+2	71555980	C	T	DYSF	Pathogenic	3	gme	0.004086	7.369e-06	0	554.485
+20	62817583	-	C	COL9A3	Pathogenic/Likely_pathogenic	2	gme	0.004065	5.666e-05	0	71.7437
+13	51946291	G	A	ATP7B	Pathogenic/Likely_pathogenic	2	gme	0.004044	0.0001204	0	33.588
+9	136370380	G	A	CARD9	Pathogenic	2	gme	0.004036	8.987e-05	0	44.9093
+12	88077263	C	A	CEP290	Pathogenic/Likely_pathogenic	2	gme	0.004036	0.000225	0.000174	17.9378
+1	94080599	G	T	ABCA4	Pathogenic	2	gme	0.004028	5.636e-05	0	71.4691
+15	44672425	G	A	PATL2	Pathogenic/Likely_pathogenic	2	gme	0.003989	0.000351	0.000351	11.3647
+15	65099555	G	A	UBAP1L	Pathogenic	1	gme	0.00375	0.0001797	0.0001797	20.8681
+11	2847858	-	C	KCNQ1	Pathogenic/Likely_pathogenic	2	gme	0.003597	0.0001353	0	26.5854
+11	124869526	-	C	ROBO3	Pathogenic	2	gme	0.00359	0.0001088	0	32.9963
+16	16155010	C	T	ABCC6	Pathogenic/Likely_pathogenic	2	gme	0.003557	0.0001023	0	34.7703
+11	118436678	-	C	KMT2A	Pathogenic	2	gme	0.003546	4.772e-05	0	74.3085
+12	101729123	T	-	SYCP3	Pathogenic	1	gme	0.003528	0.0002	0	17.64
+7	50537928	C	G	DDC	Likely_pathogenic	2	gme	0.003525	0.0003061	0	11.5158
+X	63706328	C	T	ARHGEF9	Pathogenic/Likely_pathogenic	2	gme	0.003451	0	0	
+X	108575911	G	T	COL4A5	Likely_pathogenic	1	gme	0.003448	0	0	
+9	137199923	G	-	TPRN	Pathogenic	1	gme	0.003356			
+8	30727766	G	A	GSR	Likely_pathogenic	1	gme	0.003247	1.805e-05	0	179.889
+5	179137817	C	A	ADAMTS2	Pathogenic	1	gme	0.003109			
+7	94410429	G	T	COL1A2	Pathogenic	1	gme	0.003102	0	0	
+9	124491171	G	A	NR5A1	Pathogenic	1	gme	0.003058	1.801e-06	0	1697.95
+12	113164173	C	T	DDX54	Likely_pathogenic	1	gme	0.003049	8.731e-05	0	34.9215
+16	2118801	C	T	PKD1	Pathogenic	1	gme	0.003049			
+1	20654660	C	T	DDOST	Pathogenic	1	gme	0.003043	9.211e-07	0	3303.66
+12	49042329	C	A	KMT2D	Pathogenic	1	gme	0.003043	0	0	
+1	156114992	G	A	LMNA	Likely_pathogenic	2	gme	0.00304			
+11	17395172	C	T	ABCC8	Pathogenic/Likely_pathogenic	2	gme	0.00304	5.324e-05	0	57.0999
+13	110183003	G	-	COL4A1	Pathogenic	1	gme	0.003036	1.799e-06	0	1687.6
+20	44625580	C	T	ADA	Pathogenic	3	gme	0.003033	3.376e-05	0	89.84
+20	44625581	G	A	ADA	Pathogenic	3	gme	0.003033	6.075e-05	0	49.9259
+2	227119902	C	T	COL4A4	Likely_pathogenic	1	gme	0.003027			
+12	102852875	C	T	PAH	Pathogenic	3	gme	0.003027	0.0002698	0.0001734	11.2194
+17	37744556	A	C	HNF1B	Likely_pathogenic	1	gme	0.003027			
+12	79807314	G	A	PPP1R12A	Pathogenic/Likely_pathogenic	2	gme	0.003024	0	0	
+1	21561126	C	A	ALPL	Pathogenic/Likely_pathogenic	2	gme	0.003021	2.523e-05	0	119.738
+9	72789236	C	A	TMC1	Pathogenic	1	gme	0.003021	1.159e-05	0	260.656
+X	71224198	G	T	GJB1	Likely_pathogenic	1	gme	0.002768			
+X	38381429	G	A	OTC	Pathogenic	2	gme	0.002757	0	0	
+X	63706260	C	A	ARHGEF9	Pathogenic	1	gme	0.002757			
+X	69957097	G	A	EDA	Pathogenic	2	gme	0.002757	1.189e-06	0	2318.76
+6	1610449	C	T	FOXC1	Likely_pathogenic	1	gme	0.002642	0	0	
+7	4789856	C	T	AP5Z1	Pathogenic	2	gme	0.002601	0	0	
+7	47915588	-	A	PKD1L1	Pathogenic	1	gme	0.002596	0.0001462	0	17.7565
+7	155803187	C	A	SHH	Likely_pathogenic	1	gme	0.002585	0	0	
+15	23645982	C	T	MAGEL2	Pathogenic	1	gme	0.002585	0	0	
+17	17216395	G	-	FLCN	Pathogenic	2	gme	0.002567	2.52e-05	0	101.865
+1	26185140	G	A	CNKSR1	Likely_pathogenic	1	gme	0.002538	0.0001949	0.0001748	13.0221
+1	45327297	G	A	HPDL	Pathogenic	2	gme	0.002535	0.0001746	0.0001746	14.5189
+7	150974846	C	A	KCNH2	Pathogenic	1	gme	0.002533			
+7	2538407	CAAA	-	BRAT1	Pathogenic/Likely_pathogenic	2	gme	0.00253	6.385e-05	0	39.6241
+9	21971183	A	C	CDKN2A	Pathogenic/Likely_pathogenic	2	gme	0.00253	0.0001788	0.0001788	14.1499
+1	160237145	G	A	DCAF8	Likely_pathogenic	1	gme	0.002528	2.65e-05	0	95.3962
+4	169438206	-	T	NEK1	Likely_pathogenic	1	gme	0.002525	2.588e-05	0	97.5657
+12	88111302	G	T	CEP290	Likely_pathogenic	1	gme	0.002523			
+20	34951726	C	A	GSS	Pathogenic/Likely_pathogenic	2	gme	0.00252	2.71e-06	0	929.889
+9	95458142	G	T	PTCH1	Pathogenic	1	gme	0.002518	0	0	
+11	17387991	C	T	KCNJ11	Pathogenic/Likely_pathogenic	2	gme	0.002518	5.04e-05	0	49.9603
+11	102616826	-	T	MMP20	Likely_pathogenic	1	gme	0.002518	5.974e-05	0	42.1493
+19	18075812	G	A	IL12RB1	Pathogenic	1	gme	0.002518	7.559e-05	0	33.3113
+19	1912477	G	A	SCAMP4	Pathogenic/Likely_pathogenic	2	gme	0.002506	0.0001958	0.0001958	12.7988
+11	77179924	C	A	MYO7A	Likely_pathogenic	1	gme	0.002308			
+1	156860970	G	A	NTRK1	Pathogenic	1	gme	0.002265	1.299e-05	0	174.365
+11	72106094	G	A	LRTOMT	Pathogenic/Likely_pathogenic	2	gme	0.002252	0.0001755	0.0001755	12.8319
+22	19723986	C	A	GP1BB	Likely_pathogenic	3	gme	0.0022	0	0	
+9	137236269	G	A	SLC34A3	Likely_pathogenic	1	gme	0.002181	0	0	
+2	72887436	G	T	SPR	Likely_pathogenic	1	gme	0.00213			
+2	240870649	C	T	AGXT	Pathogenic	2	gme	0.002101	5.039e-05	0	41.6948
+X	25012937	G	T	ARX	Likely_pathogenic	1	gme	0.002083			
+X	25013039	G	T	ARX	Pathogenic/Likely_pathogenic	2	gme	0.002078	0	0	
+7	155803450	G	T	SHH	Pathogenic	1	gme	0.002073			
+X	49224822	G	A	CACNA1F	Pathogenic	2	gme	0.002073			
+X	71241344	T	C	ZMYM3	Likely_pathogenic	1	gme	0.002073			
+16	56885364	G	A	SLC12A3	Pathogenic	2	gme	0.00207	3.36e-05	0	61.6071
+12	32896629	C	A	PKP2	Pathogenic	1	gme	0.002064			
+13	110469231	C	T	COL4A2	Pathogenic	1	gme	0.002039	3.353e-05	0	60.8112
+9	136439065	C	A	INPP5E	Likely_pathogenic	2	gme	0.002035			
+17	81934670	C	A	PYCR1	Pathogenic	1	gme	0.002035	0	0	
+2	38075072	G	T	CYP1B1	Pathogenic	3	gme	0.002033	1.267e-05	0	160.458
+1	46189539	C	T	TSPAN1	Pathogenic/Likely_pathogenic	2	gme	0.00203	7.496e-05	0	27.0811
+11	17524465	C	A	USH1C	Pathogenic	1	gme	0.002028			
+7	30969162	C	A	GHRHR	Likely_pathogenic	1	gme	0.002026	0	0	
+19	18080977	G	C	IL12RB1	Pathogenic	2	gme	0.002022			
+19	18599795	A	G	CRLF1	Likely_pathogenic	1	gme	0.002022	0	0	
+1	201359637	G	T	TNNT2	Likely_pathogenic	1	gme	0.002018	0	0	
+2	189072084	C	A	COL5A2	Likely_pathogenic	1	gme	0.002018			
+19	45352235	G	A	ERCC2	Pathogenic/Likely_pathogenic	2	gme	0.002018	5.038e-05	0	40.0556
+16	23544677	G	A	EARS2	Pathogenic/Likely_pathogenic	2	gme	0.002016	0.0001658	0	12.1592
+2	240788112	G	A	KIF1A	Likely_pathogenic	1	gme	0.002014			
+3	48584910	C	T	COL7A1	Pathogenic/Likely_pathogenic	2	gme	0.002014	0.0001734	0.0001734	11.6148
+5	177386492	G	T	SLC34A1	Pathogenic/Likely_pathogenic	2	gme	0.002014	0.0001734	0.0001734	11.6148
+7	66639197	C	T	KCTD7	Likely_pathogenic	1	gme	0.002014	8.993e-07	0	2239.52
+11	4123206	G	A	RRM1	Likely_pathogenic	2	gme	0.002014	1.799e-06	0	1119.51
+12	20875332	-	T	SLCO1B3	Likely_pathogenic	1	gme	0.002014	0.0001513	0	13.3113
+17	80110015	T	G	GAA	Likely_pathogenic	2	gme	0.002014	2.549e-05	0	79.0114
+5	224432	C	T	SDHA	Pathogenic/Likely_pathogenic	2	gme	0.001796	9.36e-05	0	19.188
+4	987131	C	A	IDUA	Pathogenic/Likely_pathogenic	2	gme	0.001701	0	0	
+16	74774653	C	A	FA2H	Pathogenic/Likely_pathogenic	2	gme	0.001669	9.597e-07	0	1739.09
+19	39507145	C	A	DLL3	Likely_pathogenic	1	gme	0.00165			
+14	87992972	C	T	GALC	Likely_pathogenic	1	gme	0.001638	9.298e-07	0	1761.67
+1	8360361	G	A	RERE	Pathogenic/Likely_pathogenic	2	gme	0.001603	0	0	
+6	3224950	C	A	TUBB2B	Likely_pathogenic	2	gme	0.001592			
+1	235494742	G	A	B3GALNT2	Pathogenic	1	gme	0.001591	2.521e-05	0	63.1099
+16	88811887	C	A	APRT	Likely_pathogenic	1	gme	0.001582	3.152e-05	0	50.1904
+6	123547341	T	-	TRDN	Pathogenic/Likely_pathogenic	2	gme	0.001579	0.0001337	0	11.81
+22	19178214	A	G	SLC25A1	Likely_pathogenic	1	gme	0.001567	9.253e-07	0	1693.5
+5	75511321	C	A	CERT1	Pathogenic	1	gme	0.001564			
+16	67936709	A	G	PSMB10	Pathogenic	1	gme	0.001559	0	0	
+15	72686237	G	T	BBS4	Pathogenic/Likely_pathogenic	2	gme	0.001542	0	0	
+21	43058862	C	T	CBS	Pathogenic/Likely_pathogenic	2	gme	0.00154			
+15	71810838	G	A	NR2E3	Pathogenic/Likely_pathogenic	2	gme	0.001532	9.204e-07	0	1664.49
+2	218892847	G	A	WNT10A	Pathogenic	1	gme	0.001529	9.074e-07	0	1685.03
+9	126693150	G	T	LMX1B	Pathogenic	1	gme	0.001529			
+2	218892849	C	T	WNT10A	Pathogenic/Likely_pathogenic	2	gme	0.001527	0	0	
+17	80213816	G	A	SGSH	Pathogenic/Likely_pathogenic	2	gme	0.001526	9.01e-07	0	1693.67
+22	23834152	G	T	SMARCB1	Likely_pathogenic	1	gme	0.00152	0	0	
+4	16033499	T	C	PROM1	Likely_pathogenic	1	gme	0.001518	3.023e-05	0	50.215
+12	47987628	C	A	COL2A1	Pathogenic/Likely_pathogenic	2	gme	0.001518			
+19	12885328	C	T	KLF1	Pathogenic|Affects	1	gme	0.001518			
+3	51986993	C	T	ACY1	Pathogenic	1	gme	0.001517	5.984e-05	0	25.3509
+16	2084445	G	A	TSC2	Pathogenic	1	gme	0.001517	1.47e-05	0	103.197
+20	44625662	C	A	ADA	Likely_pathogenic	1	gme	0.001517	1.839e-06	0	824.905
+1	113908017	C	T	DCLRE1B	Pathogenic	1	gme	0.001515	5.038e-05	0	30.0715
+11	64751331	C	T	PYGM	Pathogenic/Likely_pathogenic	2	gme	0.001515	0.0001391	0	10.8914
+12	88118549	G	A	CEP290	Pathogenic	2	gme	0.001515	2.559e-05	0	59.2028
+16	28486427	G	T	CLN3	Pathogenic	2	gme	0.001515	8.994e-07	0	1684.46
+17	44383640	C	T	ITGA2B	Pathogenic	3	gme	0.001515	2.546e-05	0	59.5051
+10	49750840	T	C	OGDHL	Likely_pathogenic	1	gme	0.001514	0.0001176	0	12.8741
+12	88071922	G	-	CEP290	Pathogenic	1	gme	0.001514			
+1	156876572	G	A	NTRK1	Pathogenic/Likely_pathogenic	2	gme	0.001512	1.165e-05	0	129.785
+2	69419545	A	G	NFU1	Pathogenic	1	gme	0.001512			
+4	127939935	G	A	MFSD8	Pathogenic/Likely_pathogenic	2	gme	0.001512	2.236e-05	0	67.6208
+6	26087486	C	T	HFE	Likely_pathogenic	1	gme	0.001512			
+11	17463523	G	T	ABCC8	Pathogenic/Likely_pathogenic	2	gme	0.001512	9.047e-07	0	1671.27
+12	49296931	C	T	PRPH	Likely_pathogenic	1	gme	0.001512	2.988e-05	0	50.6024
+17	3499005	G	A	ASPA	Pathogenic	2	gme	0.001512	2.987e-05	0	50.6194
+17	3656498	T	C	CTNS	Pathogenic/Likely_pathogenic	2	gme	0.001512	0.000144	0	10.5
+18	9124951	G	A	NDUFV2	Pathogenic/Likely_pathogenic	2	gme	0.001512	2.699e-06	0	560.207
+19	860933	C	A	CFD	Pathogenic	2	gme	0.001512	2.992e-05	0	50.5348
+19	35842481	G	A	NPHS1	Pathogenic/Likely_pathogenic	2	gme	0.001512	2.519e-05	0	60.0238
+1	197093156	G	A	ASPM	Pathogenic	2	gme	0.001511	5.984e-05	0	25.2507
+1	241513680	G	A	FH	Pathogenic	2	gme	0.001511	9.893e-06	0	152.734
+2	19982471	C	T	WDR35	Pathogenic/Likely_pathogenic	2	gme	0.001511	8.095e-06	0	186.658
+3	51986637	TT	-	ACY1	Pathogenic/Likely_pathogenic	2	gme	0.001511	0.0001342	0	11.2593
+3	122284610	C	T	CASR	Pathogenic	2	gme	0.001511	8.993e-07	0	1680.2
+4	15599614	C	T	CC2D2A	Pathogenic/Likely_pathogenic	2	gme	0.001511	3.6e-05	0	41.9722
+4	55359444	G	A	SRD5A3	Pathogenic	2	gme	0.001511			
+6	35505751	C	A	TULP1	Pathogenic/Likely_pathogenic	2	gme	0.001511	1.799e-06	0	839.911
+6	135447022	G	A	AHI1	Pathogenic	2	gme	0.001511	8.999e-05	0	16.7908
+7	147300239	C	T	CNTNAP2	Pathogenic/Likely_pathogenic	2	gme	0.001511	4.473e-05	0	33.7805
+10	49470495	G	T	ERCC6	Likely_pathogenic	1	gme	0.001511			
+10	95844582	G	T	ENTPD1	Pathogenic	1	gme	0.001511			
+11	2570686	G	C	KCNQ1	Likely_pathogenic	1	gme	0.001511	3.874e-05	0	39.0036
+11	36575071	C	G	RAG1	Pathogenic/Likely_pathogenic	2	gme	0.001511	1.799e-06	0	839.911
+12	101761171	G	A	GNPTAB	Pathogenic	2	gme	0.001511	2.519e-05	0	59.9841
+13	23338724	-	T	SACS	Pathogenic	2	gme	0.001511	5.898e-05	0	25.6189
+16	77356001	C	A	ADAMTS18	Pathogenic	1	gme	0.001511	1.47e-05	0	102.789
+16	89934743	G	A	TUBB3	Pathogenic/Likely_pathogenic	2	gme	0.001511			
+19	35547185	C	T	TMEM147	Pathogenic/Likely_pathogenic	2	gme	0.001511	5.038e-05	0	29.9921
+20	44407428	G	A	HNF4A	Likely_pathogenic	3	gme	0.001511			
+20	44626517	G	A	ADA	Pathogenic/Likely_pathogenic	2	gme	0.001511	3.417e-05	0	44.2201
+X	154379487	G	A	EMD	Pathogenic	2	gme	0.001467	0	0	
+X	49230587	G	A	CACNA1F	Pathogenic	1	gme	0.001439	0	0	
+4	105241425	G	T	TET2	Pathogenic	1	gme	0.001425			
+X	49038423	T	C	TFE3	Likely_pathogenic	1	gme	0.001401			
+X	47575169	G	A	SYN1	Pathogenic	2	gme	0.00139	1.2e-06	0	1158.33
+X	38323399	C	A	RPGR	Pathogenic	2	gme	0.001385			
+X	154532797	G	A	G6PD	Pathogenic	2	gme	0.001385	0	0	
+X	31206597	C	A	DMD	Pathogenic	2	gme	0.001378			
+X	53254826	G	A	IQSEC2	Pathogenic	1	gme	0.001378			
+X	118680674	C	T	DOCK11	Likely_pathogenic	1	gme	0.001376	4.817e-05	0	28.5655
+X	154400774	C	T	RPL10	Likely_pathogenic	1	gme	0.001376	1.188e-06	0	1158.25
+21	44286008	T	A	AIRE	Pathogenic	1	gme	0.001304			
+16	88723137	G	A	PIEZO1	Pathogenic	1	gme	0.001297	8.404e-05	0	15.4331
+7	100626801	C	A	TFR2	Likely_pathogenic	1	gme	0.001289	0	0	
+6	24495156	CT	-	ALDH5A1	Pathogenic	1	gme	0.001279	2.904e-06	0	440.427
+5	37226775	-	A	CPLANE1	Pathogenic/Likely_pathogenic	2	gme	0.001276	4.047e-05	0	31.5295
+6	63806318	G	C	EYS	Pathogenic	1	gme	0.001253	5.049e-05	0	24.8168
+11	61955745	G	A	BEST1	Pathogenic	2	gme	0.001164	0	0	
+16	2109877	C	A	PKD1	Pathogenic	1	gme	0.001145			
+15	66703361	G	T	SMAD6	Pathogenic	1	gme	0.001129	2.146e-05	0	52.6095
+15	71811825	C	A	NR2E3	Pathogenic/Likely_pathogenic	2	gme	0.001116	6.858e-05	0	16.273
+9	78262973	C	T	CEP78	Pathogenic/Likely_pathogenic	2	gme	0.001091	5.188e-05	0	21.0293
+6	31949260	G	A	CFB	Likely_pathogenic	1	gme	0.001089	2.068e-05	0	52.6596
+5	140691661	G	T	HARS2	Pathogenic	1	gme	0.001083			
+16	1984444	G	T	GFER	Likely_pathogenic	1	gme	0.001079	3.109e-05	0	34.7057
+12	64759194	A	-	GNS	Likely_pathogenic	1	gme	0.001074			
+1	152304677	G	-	FLG	Likely_pathogenic	1	gme	0.001065	0	0	
+16	74774491	G	A	FA2H	Pathogenic	1	gme	0.001063	1.868e-06	0	569.058
+11	62617322	G	A	B3GAT3	Pathogenic/Likely_pathogenic	2	gme	0.001059	4.637e-05	0	22.838
+14	87992996	C	A	GALC	Likely_pathogenic	1	gme	0.001057	0	0	
+17	1766982	C	-	SERPINF1	Pathogenic/Likely_pathogenic	2	gme	0.001054	2.497e-05	0	42.2107
+3	48595157	C	A	COL7A1	Pathogenic	1	gme	0.001049	1.852e-06	0	566.415
+2	240878718	T	C	AGXT	Likely_pathogenic	2	gme	0.001046	0	0	
+11	17395611	G	A	ABCC8	Pathogenic/Likely_pathogenic	2	gme	0.001044	4.628e-06	0	225.583
+9	136673904	C	A	AGPAT2	Likely_pathogenic	1	gme	0.001036	2.722e-06	0	380.602
+1	1232834	T	C	B3GALT6	Pathogenic	2	gme	0.001034	0	0	
+16	56885363	C	G	SLC12A3	Pathogenic/Likely_pathogenic	2	gme	0.001034	4.472e-05	0	23.1216
+6	49611057	C	T	RHAG	Likely_pathogenic	1	gme	0.001033			
+3	190120548	G	A	P3H2	Pathogenic	1	gme	0.001032	0	0	
+X	53234830	G	A	IQSEC2	Pathogenic	1	gme	0.001032			
+20	1002101	G	A	RSPO4	Likely_pathogenic	1	gme	0.00103	5.299e-05	0	19.4376
+21	44287564	G	T	AIRE	Likely_pathogenic	1	gme	0.001028	0	0	
+1	1232896	C	G	B3GALT6	Pathogenic	1	gme	0.001025	9.114e-07	0	1124.64
+11	2776032	C	A	KCNQ1	Pathogenic/Likely_pathogenic	2	gme	0.00102	3.732e-05	0	27.3312
+3	136261961	C	T	PCCB	Pathogenic/Likely_pathogenic	2	gme	0.001018			
+19	35846043	C	A	NPHS1	Likely_pathogenic	1	gme	0.001018	0	0	
+9	215003	CC	-	DOCK8	Pathogenic/Likely_pathogenic	2	gme	0.001015			
+1	40097125	C	T	PPT1	Pathogenic	1	gme	0.001014			
+12	110636501	G	-	TCTN1	Pathogenic	1	gme	0.001014			
+19	43747682	G	T	SMG9	Likely_pathogenic	1	gme	0.001014			
+19	54191536	C	T	TSEN34	Pathogenic	1	gme	0.001014			
+9	95876069	G	T	ERCC6L2	Pathogenic	1	gme	0.001013	0	0	
+19	1457117	C	T	APC2	Pathogenic	1	gme	0.001013	0	0	
+22	17203564	G	A	ADA2	Pathogenic/Likely_pathogenic	2	gme	0.001013	6.711e-05	0	15.0946
+8	132898234	C	T	TG	Pathogenic	1	gme	0.001012	1.2e-05	0	84.3333
+11	32434910	A	C	WT1	Likely_pathogenic	1	gme	0.001012			
+11	34960433	C	-	PDHX	Pathogenic/Likely_pathogenic	2	gme	0.001012			
+13	48411988	C	T	RB1	Likely_pathogenic	2	gme	0.001012	2.347e-05	0	43.1189
+17	47287148	G	A	ITGB3	Pathogenic	3	gme	0.001012	1.159e-05	0	87.3167
+2	32126997	C	A	SPAST	Likely_pathogenic	1	gme	0.001011			
+10	93687434	G	A	FRA10AC1	Pathogenic	2	gme	0.001011	0.0001005	0	10.0597
+12	88090787	G	A	CEP290	Pathogenic	1	gme	0.001011	0	0	
+7	65974700	C	A	GUSB	Likely_pathogenic	1	gme	0.00101			
+9	133445813	G	A	ADAMTS13	Likely_pathogenic	1	gme	0.00101	3.037e-05	0	33.2565
+14	31066333	AAGT	-	AP4S1	Pathogenic	2	gme	0.00101	1.079e-05	0	93.6052
+16	31061973	G	A	ZNF668	Pathogenic	1	gme	0.00101			
+17	63949408	C	A	SCN4A	Likely_pathogenic	1	gme	0.00101	0	0	
+22	50219173	G	-	TUBGCP6	Likely_pathogenic	1	gme	0.00101	0	0	
+1	100123231	A	G	SASS6	Pathogenic	1	gme	0.001009	0	0	
+7	50476625	C	T	DDC	Pathogenic/Likely_pathogenic	2	gme	0.001009	8.118e-05	0	12.4292
+7	80646846	A	-	CD36	Likely_pathogenic	2	gme	0.001009	2.236e-05	0	45.1252
+10	94246583	C	T	PLCE1	Pathogenic	2	gme	0.001009			
+12	88071860	G	A	CEP290	Pathogenic/Likely_pathogenic	2	gme	0.001009	2.335e-05	0	43.212
+15	89630426	T	C	KIF7	Pathogenic	1	gme	0.001009	9.039e-07	0	1116.27
+16	16154898	C	T	ABCC6	Pathogenic/Likely_pathogenic	2	gme	0.001009	2.526e-05	0	39.9446
+21	36461607	C	T	CLDN14	Pathogenic/Likely_pathogenic	2	gme	0.001009	2.437e-05	0	41.4034
+1	5978374	G	A	NPHP4	Pathogenic	2	gme	0.001008	2.281e-05	0	44.1911
+1	10660483	C	T	CASZ1	Pathogenic	1	gme	0.001008	6.709e-05	0	15.0246
+1	94021339	C	T	ABCA4	Pathogenic/Likely_pathogenic	2	gme	0.001008	8.944e-05	0	11.2701
+1	197090328	G	A	ASPM	Pathogenic/Likely_pathogenic	2	gme	0.001008	4.64e-05	0	21.7241
+1	197117876	C	T	ASPM	Pathogenic	2	gme	0.001008	4.638e-05	0	21.7335
+2	26465020	G	T	OTOF	Pathogenic	1	gme	0.001008	6.375e-05	0	15.8118
+2	230170758	G	A	SP110	Pathogenic/Likely_pathogenic	2	gme	0.001008	5.396e-06	0	186.805
+3	69763878	C	T	MITF	Likely_pathogenic	1	gme	0.001008	1.276e-05	0	78.9969
+4	103158427	G	A	CENPE	Pathogenic	1	gme	0.001008	3.602e-05	0	27.9845
+5	83195936	G	A	XRCC4	Pathogenic	1	gme	0.001008	3.028e-05	0	33.2893
+5	90815669	G	T	ADGRV1	Likely_pathogenic	1	gme	0.001008	0	0	
+5	159320475	AG	-	IL12B	Likely_pathogenic	1	gme	0.001008			
+6	109444205	CT	-	MICAL1	Likely_pathogenic	1	gme	0.001008	8.948e-05	0	11.2651
+7	150951627	A	G	KCNH2	Likely_pathogenic	1	gme	0.001008			
+8	64624475	G	A	CYP7B1	Pathogenic	2	gme	0.001008	3.827e-05	0	26.3392
+9	133352765	CT	-	SURF1	Pathogenic	1	gme	0.001008	0	0	
+10	103101271	T	A	NT5C2	Pathogenic	1	gme	0.001008			
+11	61368609	A	G	TMEM138	Pathogenic/Likely_pathogenic	2	gme	0.001008	3.599e-06	0	280.078
+14	50613343	C	T	ATL1	Pathogenic/Likely_pathogenic	2	gme	0.001008	9.002e-07	0	1119.75
+17	5022272	C	T	KIF1C	Pathogenic	2	gme	0.001008	2.237e-05	0	45.0603
+18	47156193	A	G	IER3IP1	Pathogenic/Likely_pathogenic	2	gme	0.001008	9.376e-07	0	1075.09
+20	763636	G	A	SLC52A3	Pathogenic/Likely_pathogenic	2	gme	0.001008	3.826e-05	0	26.3461
+1	5904716	G	A	NPHP4	Pathogenic	2	gme	0.001007	5.974e-05	0	16.8564
+1	11792307	G	A	MTHFR	Likely_pathogenic	2	gme	0.001007	2.236e-05	0	45.0358
+1	11794765	C	T	MTHFR	Pathogenic/Likely_pathogenic	2	gme	0.001007	2.987e-05	0	33.7128
+1	21564068	C	T	ALPL	Pathogenic/Likely_pathogenic	2	gme	0.001007	1.159e-05	0	86.8852
+1	21577533	C	T	ALPL	Pathogenic/Likely_pathogenic	2	gme	0.001007	1.159e-05	0	86.8852
+1	34785060	G	A	GJB3	Likely_pathogenic	1	gme	0.001007	8.993e-07	0	1119.76
+1	40074147	G	A	PPT1	Likely_pathogenic	1	gme	0.001007			
+1	45342549	G	A	TOE1	Pathogenic/Likely_pathogenic	1	gme	0.001007			
+1	68145972	T	C	WLS	Pathogenic	2	gme	0.001007			
+1	68438248	T	-	RPE65	Pathogenic	3	gme	0.001007	2.523e-05	0	39.9128
+1	99861533	C	G	AGL	Likely_pathogenic	1	gme	0.001007			
+1	109625368	T	-	AMPD2	Pathogenic	1	gme	0.001007	8.993e-07	0	1119.76
+1	109627453	C	A	AMPD2	Pathogenic	1	gme	0.001007	2.236e-05	0	45.0358
+1	109629487	G	A	AMPD2	Pathogenic/Likely_pathogenic	2	gme	0.001007	1.886e-05	0	53.3934
+1	119034197	C	G	WARS2	Pathogenic	1	gme	0.001007	0	0	
+1	197104639	G	A	ASPM	Pathogenic/Likely_pathogenic	2	gme	0.001007	2.991e-05	0	33.6677
+1	204161365	TT	-	REN	Pathogenic	1	gme	0.001007			
+1	207757602	-	AC	CD46	Pathogenic/Likely_pathogenic	2	gme	0.001007			
+1	216072910	G	A	USH2A	Pathogenic	2	gme	0.001007	4.473e-05	0	22.5129
+2	42053250	C	A	PKDCC	Pathogenic	1	gme	0.001007	0	0	
+2	70963289	C	G	ATP6V1B1	Pathogenic/Likely_pathogenic	2	gme	0.001007	4.472e-05	0	22.5179
+2	135115246	C	-	RAB3GAP1	Pathogenic	1	gme	0.001007			
+2	169504520	-	T	BBS5	Pathogenic/Likely_pathogenic	2	gme	0.001007			
+2	178566834	C	T	TTN	Likely_pathogenic	1	gme	0.001007			
+2	201767244	CTC	-	ALS2	Pathogenic	1	gme	0.001007			
+2	218814683	C	T	CYP27A1	Pathogenic	1	gme	0.001007	1.159e-05	0	86.8852
+2	241801858	C	T	GAL3ST2	Likely_pathogenic	1	gme	0.001007	3.478e-05	0	28.9534
+3	46709164	C	T	TMIE	Likely_pathogenic	2	gme	0.001007	3.478e-05	0	28.9534
+3	58197882	A	-	DNASE1L3	Pathogenic	2	gme	0.001007	8.993e-07	0	1119.76
+3	133973770	C	T	SLCO2A1	Likely_pathogenic	2	gme	0.001007	5.619e-05	0	17.9213
+4	662584	G	A	PDE6B	Pathogenic/Likely_pathogenic	2	gme	0.001007	8.118e-05	0	12.4045
+4	186280333	C	T	F11	Likely_pathogenic	2	gme	0.001007	5.797e-05	0	17.3711
+5	13793710	G	A	DNAH5	Pathogenic	2	gme	0.001007	3.826e-05	0	26.3199
+5	90642925	C	T	ADGRV1	Pathogenic/Likely_pathogenic	2	gme	0.001007	1.16e-05	0	86.8103
+6	7585029	AGTA	-	DSP	Pathogenic/Likely_pathogenic	2	gme	0.001007	1.872e-05	0	53.7927
+6	98875673	G	A	FBXL4	Pathogenic/Likely_pathogenic	2	gme	0.001007	5.039e-05	0	19.9841
+6	116628098	G	A	RSPH4A	Pathogenic	1	gme	0.001007	5.396e-06	0	186.62
+6	129177776	C	-	LAMA2	Pathogenic	1	gme	0.001007	2.241e-05	0	44.9353
+6	131877024	G	A	ENPP1	Pathogenic/Likely_pathogenic	2	gme	0.001007	5.974e-05	0	16.8564
+6	135427206	G	A	AHI1	Pathogenic	1	gme	0.001007			
+6	135433081	G	A	AHI1	Pathogenic/Likely_pathogenic	2	gme	0.001007	6.657e-05	0	15.1269
+7	65974626	G	A	GUSB	Pathogenic/Likely_pathogenic	2	gme	0.001007	3.478e-05	0	28.9534
+7	105468355	C	A	PUS7	Pathogenic/Likely_pathogenic	2	gme	0.001007			
+8	37749844	C	-	ERLIN2	Likely_pathogenic	1	gme	0.001007			
+8	60741505	G	T	CHD7	Pathogenic	1	gme	0.001007			
+8	64581575	T	C	BHLHE22	Likely_pathogenic	1	gme	0.001007			
+8	67164468	C	T	CSPP1	Likely_pathogenic	1	gme	0.001007	3.498e-05	0	28.7879
+8	93780603	A	G	TMEM67	Pathogenic/Likely_pathogenic	2	gme	0.001007	4.472e-05	0	22.5179
+8	93804878	G	A	TMEM67	Pathogenic/Likely_pathogenic	2	gme	0.001007	1.881e-05	0	53.5354
+9	2650382	G	T	VLDLR	Pathogenic	1	gme	0.001007			
+9	26925892	G	A	PLAA	Pathogenic	1	gme	0.001007	2.988e-05	0	33.7015
+9	92269937	G	A	IARS1	Pathogenic	1	gme	0.001007	2.319e-05	0	43.4239
+9	98306266	C	T	GABBR2	Pathogenic/Likely_pathogenic	2	gme	0.001007			
+9	99218127	-	T	ALG2	Likely_pathogenic	1	gme	0.001007			
+9	109137529	G	A	FRRS1L	Pathogenic	2	gme	0.001007			
+9	133352077	G	A	SURF1	Pathogenic	2	gme	0.001007	3.845e-05	0	26.1899
+9	133352708	G	A	SURF1	Pathogenic/Likely_pathogenic	2	gme	0.001007	8.965e-05	0	11.2326
+10	71362489	G	A	SLC29A3	Pathogenic/Likely_pathogenic	2	gme	0.001007	3.058e-05	0	32.93
+10	71709206	C	A	CDH23	Likely_pathogenic	2	gme	0.001007			
+10	77822023	G	A	DLG5	Pathogenic	1	gme	0.001007	8.993e-07	0	1119.76
+10	95845411	G	A	ENTPD1	Pathogenic	1	gme	0.001007	2.319e-05	0	43.4239
+10	97600097	A	G	HOGA1	Likely_pathogenic	1	gme	0.001007	1.799e-06	0	559.755
+10	99836275	G	A	ABCC2	Pathogenic	2	gme	0.001007			
+10	102592654	A	G	SUFU	Pathogenic	1	gme	0.001007			
+10	102832578	G	A	CYP17A1	Pathogenic	2	gme	0.001007	1.16e-05	0	86.8103
+11	6618776	C	G	TPP1	Pathogenic/Likely_pathogenic	2	gme	0.001007	8.993e-07	0	1119.76
+11	14891987	G	T	PDE3B	Pathogenic/Likely_pathogenic	2	gme	0.001007	8.949e-05	0	11.2527
+11	17405499	C	T	ABCC8	Likely_pathogenic	1	gme	0.001007	8.993e-07	0	1119.76
+11	71444036	G	A	DHCR7	Pathogenic/Likely_pathogenic	2	gme	0.001007	5.936e-05	0	16.9643
+11	112028603	T	G	DLAT	Likely_pathogenic	2	gme	0.001007			
+11	125101303	C	A	TMEM218	Likely_pathogenic	1	gme	0.001007	9.01e-07	0	1117.65
+12	102855211	G	T	PAH	Pathogenic	3	gme	0.001007	2.236e-05	0	45.0358
+12	109595148	G	A	MVK	Pathogenic/Likely_pathogenic	2	gme	0.001007	4.472e-05	0	22.5179
+12	119857561	T	G	CIT	Pathogenic	1	gme	0.001007			
+13	23331656	C	G	SACS	Pathogenic	2	gme	0.001007			
+13	24912893	G	A	CPAP	Likely_pathogenic	1	gme	0.001007	2.236e-05	0	45.0358
+13	36314259	-	T	SPART	Pathogenic	1	gme	0.001007	2.319e-05	0	43.4239
+14	22778837	C	T	SLC7A7	Pathogenic	2	gme	0.001007	7.652e-05	0	13.16
+14	46855148	A	C	MDGA2	Pathogenic	1	gme	0.001007			
+14	50302917	T	C	L2HGDH	Pathogenic	1	gme	0.001007	2.236e-05	0	45.0358
+14	60979639	T	A	TRMT5	Likely_pathogenic	1	gme	0.001007	8.993e-07	0	1119.76
+14	75041677	-	A	MLH3	Pathogenic	1	gme	0.001007			
+14	75091356	G	A	NEK9	Likely_pathogenic	1	gme	0.001007	5.306e-05	0	18.9785
+14	94382610	T	A	SERPINA1	Likely_pathogenic	1	gme	0.001007			
+14	95131580	C	A	DICER1	Likely_pathogenic	1	gme	0.001007	1.47e-05	0	68.5034
+15	44613430	-	TG	SPG11	Pathogenic	2	gme	0.001007			
+15	44615365	G	T	SPG11	Pathogenic	1	gme	0.001007			
+15	44628785	G	A	SPG11	Pathogenic	2	gme	0.001007	2.878e-05	0	34.9896
+15	48520730	C	T	FBN1	Likely_pathogenic	1	gme	0.001007			
+15	48596343	A	C	FBN1	Pathogenic	1	gme	0.001007			
+15	74202175	-	C	STRA6	Likely_pathogenic	1	gme	0.001007			
+16	31110716	G	C	BCKDK	Pathogenic	1	gme	0.001007	1.159e-05	0	86.8852
+16	56872409	C	T	SLC12A3	Pathogenic	2	gme	0.001007	5.038e-05	0	19.9881
+16	56894564	G	A	SLC12A3	Pathogenic/Likely_pathogenic	2	gme	0.001007	1.16e-05	0	86.8103
+17	747729	G	A	GEMIN4	Pathogenic	1	gme	0.001007			
+17	4899509	G	A	CHRNE	Pathogenic/Likely_pathogenic	2	gme	0.001007	2.995e-05	0	33.6227
+17	7222203	C	T	ACADVL	Likely_pathogenic	3	gme	0.001007	2.698e-05	0	37.3239
+17	35575813	TGT	-	PEX12	Pathogenic/Likely_pathogenic	2	gme	0.001007	1.079e-05	0	93.3272
+17	42538692	G	A	NAGLU	Likely_pathogenic	1	gme	0.001007	1.879e-05	0	53.5923
+17	59061086	C	A	TRIM37	Likely_pathogenic	1	gme	0.001007			
+17	59697725	T	G	PTRH2	Pathogenic	2	gme	0.001007			
+17	75949884	T	-	ACOX1	Pathogenic/Likely_pathogenic	2	gme	0.001007	8.944e-05	0	11.2589
+18	23551693	G	A	NPC1	Likely_pathogenic	1	gme	0.001007			
+18	36146253	C	T	ELP2	Likely_pathogenic	1	gme	0.001007	1.16e-05	0	86.8103
+18	63796311	C	T	SERPINB7	Pathogenic	1	gme	0.001007	5.047e-05	0	19.9524
+18	70134474	T	C	RTTN	Pathogenic	2	gme	0.001007	0	0	
+19	10368060	C	A	TYK2	Pathogenic	1	gme	0.001007	2.519e-05	0	39.9762
+19	11106588	G	A	LDLR	Pathogenic	3	gme	0.001007	5.036e-05	0	19.996
+19	17011595	G	A	CPAMD8	Likely_pathogenic	1	gme	0.001007	8.944e-05	0	11.2589
+19	18066569	G	A	IL12RB1	Pathogenic	2	gme	0.001007	5.039e-05	0	19.9841
+19	38496265	C	T	RYR1	Likely_pathogenic	3	gme	0.001007	5.974e-05	0	16.8564
+19	41358004	A	G	B9D2	Pathogenic	1	gme	0.001007	5.797e-05	0	17.3711
+20	10405314	A	G	MKKS	Likely_pathogenic	1	gme	0.001007			
+20	18554343	C	T	SEC23B	Pathogenic/Likely_pathogenic	2	gme	0.001007	8.944e-05	0	11.2589
+20	48953604	-	C	ARFGEF2	Pathogenic	1	gme	0.001007			
+20	63413492	C	T	KCNQ2	Likely_pathogenic	1	gme	0.001007			
+21	33584744	G	A	DONSON	Pathogenic	1	gme	0.001007	1.648e-05	0	61.1044
+22	40407840	C	T	SGSM3	Pathogenic	1	gme	0.001007	1.89e-05	0	53.2804
+22	41127672	C	A	EP300	Likely_pathogenic	1	gme	0.001007			
+10	47857	C	T	TUBB8	Likely_pathogenic	1	gonl	0.322	2.988e-05	0	10776.4
+2	71511923	T	G	DYSF	Pathogenic	3	gonl	0.255	0.0154	0.0005332	16.5584
+7	142750600	A	C	PRSS1	Pathogenic	2	gonl	0.255	7.241e-05	9.471e-06	3521.61
+1	94080599	G	T	ABCA4	Pathogenic	2	gonl	0.053	5.636e-05	8.993e-07	940.383
+9	95458142	G	T	PTCH1	Pathogenic	1	gonl	0.032	0	0	
+19	41411011	T	G	BCKDHA	Likely_pathogenic	1	gonl	0.02	9.419e-05	2.698e-06	212.337
+X	136207192	T	G	FHL1	Pathogenic	1	gonl	0.015	2.505e-05	0	598.802
+11	47343490	A	C	MYBPC3	Pathogenic	2	gonl	0.011	0.0001557	3.707e-06	70.6487
+10	47319	G	A	TUBB8	Likely_pathogenic	1	gonl	0.009036			
+12	120994312	G	-	HNF1A	Likely_pathogenic	3	gonl	0.006048	2.333e-05	8.11e-06	259.237
+21	45504506	CCCCCCGGCCCCCCAGG	-	SLC19A1	Pathogenic/Likely_pathogenic	2	gonl	0.005882	2.46e-05	2.46e-05	239.106
+2	26465020	G	T	OTOF	Pathogenic	1	gonl	0.005123	6.375e-05	0	80.3608
+10	99727098	G	C	COX15	Pathogenic/Likely_pathogenic	2	gonl	0.00502	0.0004263	0.0004263	11.7757
+20	63472431	G	T	KCNQ2	Pathogenic/Likely_pathogenic	2	gonl	0.004505	0	0	
+12	6018901	G	A	VWF	Pathogenic/Likely_pathogenic	2	gonl	0.004024	0.0002359	1.849e-05	17.0581
+1	97740411	ATGA	-	DPYD	Pathogenic	2	gonl	0.004016	0.0001413	0.0001413	28.4218
+2	142918694	-	T	KYNU	Pathogenic/Likely_pathogenic	2	gonl	0.004016	0.0002061	0.0002061	19.4857
+15	78111266	G	A	CIB2	Pathogenic	2	gonl	0.004016	7.558e-05	5.127e-05	53.1358
+17	58572010	CAGA	-	TEX14	Pathogenic	1	gonl	0.004016	0.0003723	0.0003723	10.787
+22	40914326	T	G	XPNPEP3	Likely_pathogenic	2	gonl	0.004016	5.621e-05	0	71.4464
+2	202377552	T	G	BMPR2	Likely_pathogenic	1	gonl	0.003261			
+12	49039722	A	C	KMT2D	Likely_pathogenic	1	gonl	0.003024	3.856e-05	2.7e-06	78.4232
+2	233768354	A	-	UGT1A	Pathogenic/Likely_pathogenic	2	gonl	0.003012	5.216e-05	5.216e-05	57.7454
+3	15645451	C	T	BTD	Pathogenic/Likely_pathogenic	2	gonl	0.003012	0.0001734	0.0001268	17.3702
+3	120650841	C	T	HGD	Pathogenic/Likely_pathogenic	2	gonl	0.003012	7.196e-05	7.196e-05	41.8566
+9	72789236	C	A	TMC1	Pathogenic	1	gonl	0.003012	1.159e-05	8.993e-07	259.879
+9	95249225	C	-	FANCC	Pathogenic	2	gonl	0.003012	0.0002797	0.0002797	10.7687
+14	94379549	-	G	SERPINA1	Pathogenic	1	gonl	0.003012	0.0002035	0	14.801
+18	59448074	-	A	CCBE1	Pathogenic	2	gonl	0.003012	0.0001052	0.0001052	28.6312
+11	47335082	AG	-	MYBPC3	Pathogenic/Likely_pathogenic	2	gonl	0.002915	9.074e-06	9.074e-06	321.248
+9	137233234	G	A	SLC34A3	Pathogenic/Likely_pathogenic	2	gonl	0.002513	0.0001255	8.51e-05	20.0239
+10	69802694	C	T	COL13A1	Pathogenic	1	gonl	0.002353			
+15	89333327	G	A	POLG	Pathogenic/Likely_pathogenic	2	gonl	0.002242	4.149e-05	4.149e-05	54.0371
+12	109768213	A	T	FAM222A	Likely_pathogenic	1	gonl	0.002062	2.991e-05	1.979e-05	68.9402
+14	74239565	A	-	VSX2	Pathogenic	1	gonl	0.002045			
+1	2406791	-	T	PEX10	Pathogenic	2	gonl	0.002028	0.0001872	0.0001872	10.8333
+4	1004286	C	T	IDUA	Pathogenic	3	gonl	0.002028	2.608e-05	2.608e-05	77.7607
+7	1502949	G	A	INTS1	Likely_pathogenic	2	gonl	0.002028	3.826e-05	5.396e-06	53.0058
+15	45117147	T	C	DUOXA2	Likely_pathogenic	1	gonl	0.002028	0.000143	0.000143	14.1818
+19	40703787	A	-	COQ8B	Pathogenic	2	gonl	0.002028	3.826e-05	2.428e-05	53.0058
+11	6571002	-	CA	DNHD1	Pathogenic/Likely_pathogenic	2	gonl	0.00202	1.905e-05	1.905e-05	106.037
+11	68939658	AG	-	IGHMBP2	Pathogenic/Likely_pathogenic	2	gonl	0.00202	0.0001745	0.0001745	11.5759
+4	112647784	AG	-	LARP7	Pathogenic	1	gonl	0.002016	3.099e-05	1.093e-05	65.0532
+16	56893055	G	T	SLC12A3	Pathogenic/Likely_pathogenic	2	gonl	0.002016	9.001e-07	9.001e-07	2239.75
+9	137199182	C	-	TPRN	Pathogenic	1	gonl	0.002012	4.496e-06	4.496e-06	447.509
+11	77183071	C	T	MYO7A	Pathogenic/Likely_pathogenic	2	gonl	0.002012	2.055e-05	2.78e-06	97.9075
+14	88385821	G	A	SPATA7	Likely_pathogenic	2	gonl	0.002012	0.0001046	0.0001046	19.2352
+16	67942754	G	A	LCAT	Pathogenic	2	gonl	0.002012	8.364e-05	8.364e-05	24.0555
+20	46726312	G	T	SLC2A10	Pathogenic/Likely_pathogenic	2	gonl	0.002012	2.518e-05	2.518e-05	79.9047
+1	23814186	T	C	HMGCL	Likely_pathogenic	2	gonl	0.002008	8.094e-06	8.094e-06	248.085
+1	65616063	A	C	LEPR	Likely_pathogenic	1	gonl	0.002008	4.946e-05	4.946e-05	40.5985
+1	151346200	C	T	RFX5	Pathogenic	1	gonl	0.002008	0	0	
+2	32515687	C	T	BIRC6	Pathogenic	1	gonl	0.002008	0.0001734	2.968e-05	11.5802
+2	151505476	A	G	NEB	Likely_pathogenic	2	gonl	0.002008	8.191e-05	8.191e-05	24.5147
+2	206146957	A	G	NDUFS1	Pathogenic/Likely_pathogenic	2	gonl	0.002008	0.0001673	0.0001673	12.0024
+4	6291369	T	G	WFS1	Pathogenic/Likely_pathogenic	1	gonl	0.002008			
+5	13758881	G	A	DNAH5	Pathogenic	2	gonl	0.002008	7.554e-05	7.554e-05	26.5819
+6	42721911	G	A	PRPH2	Pathogenic/Likely_pathogenic	2	gonl	0.002008	6.708e-05	6.295e-06	29.9344
+6	63864319	A	C	EYS	Pathogenic	2	gonl	0.002008	7.508e-05	7.508e-05	26.7448
+6	87562700	A	C	RARS2	Pathogenic/Likely_pathogenic	2	gonl	0.002008	2.373e-05	2.373e-05	84.6186
+9	133354713	A	G	SURF1	Pathogenic/Likely_pathogenic	2	gonl	0.002008	8.093e-06	8.093e-06	248.116
+10	124400941	C	T	OAT	Pathogenic/Likely_pathogenic	2	gonl	0.002008	4.323e-05	4.323e-05	46.4492
+11	6563918	G	T	DNHD1	Pathogenic	1	gonl	0.002008	5.19e-05	5.19e-05	38.6898
+11	44130043	A	G	EXT2	Pathogenic	2	gonl	0.002008	1.8e-06	1.8e-06	1115.56
+12	102894776	G	T	PAH	Pathogenic	3	gonl	0.002008	0.0001498	4.586e-05	13.4045
+13	32339566	TACT	-	BRCA2	Pathogenic	3	gonl	0.002008	8.12e-06	8.12e-06	247.291
+14	20447958	G	A	OSGEP	Pathogenic	1	gonl	0.002008	4.472e-05	2.608e-05	44.9016
+14	73959223	C	T	ENTPD5	Pathogenic/Likely_pathogenic	2	gonl	0.002008	0.0001133	0.0001133	17.7229
+14	88426556	TT	-	SPATA7	Pathogenic	2	gonl	0.002008	4.472e-05	1.529e-05	44.9016
+15	44657230	AT	-	SPG11	Pathogenic	2	gonl	0.002008	0.0001043	7.374e-05	19.2522
+16	56870699	T	C	SLC12A3	Pathogenic/Likely_pathogenic	2	gonl	0.002008	2.429e-05	2.429e-05	82.6678
+18	23541108	T	C	NPC1	Pathogenic/Likely_pathogenic	2	gonl	0.002008	5.974e-05	1.169e-05	33.6123
+20	10407713	G	A	MKKS	Likely_pathogenic	1	gonl	0.002008	3.48e-05	1.26e-05	57.7011
+22	41209711	G	A	L3MBTL2	Pathogenic	1	gonl	0.002008	0.0001734	1.529e-05	11.5802
+X	154947844	C	T	F8	Pathogenic	1	gonl	0.001342			
+X	13716053	TCTTG	-	TRAPPC2	Pathogenic	2	gonl	0.00134	2.412e-06	2.412e-06	555.556
+X	101354688	G	C	BTK	Pathogenic	1	gonl	0.00134			
+X	108598793	G	A	COL4A5	Pathogenic/Likely_pathogenic	2	gonl	0.00134	5.703e-05	5.703e-05	23.4964
+6	32040871	C	T	CYP21A2	Pathogenic	2	gonl	0.001253	5.711e-05	7.839e-06	21.9401
+9	123373822	CT	-	CRB2	Pathogenic	2	gonl	0.001205	5.203e-05	1.359e-05	23.1597
+16	31488773	G	A	SLC5A2	Likely_pathogenic	2	gonl	0.001149	3.245e-05	3.245e-05	35.4083
+11	62621947	T	A	B3GAT3	Pathogenic/Likely_pathogenic	2	gonl	0.001131	5.399e-05	5.399e-05	20.9483
+16	879572	G	A	LMF1	Pathogenic/Likely_pathogenic	2	gonl	0.001055	5.218e-05	5.218e-05	20.2185
+4	1805643	A	G	FGFR3	Pathogenic/Likely_pathogenic	2	gonl	0.001037	3.83e-05	1.169e-05	27.0757
+11	2570686	G	C	KCNQ1	Likely_pathogenic	1	gonl	0.001031	3.874e-05	8.993e-07	26.6133
+8	144413957	C	A	SLC39A4	Likely_pathogenic	1	gonl	0.001027	9.003e-07	9.003e-07	1140.73
+7	44145632	C	G	GCK	Likely_pathogenic	3	gonl	0.001025	4.661e-05	9e-06	21.991
+19	7466917	G	T	ARHGEF18	Likely_pathogenic	2	gonl	0.001022	1.888e-05	1.079e-05	54.1314
+9	136519566	C	A	NOTCH1	Pathogenic/Likely_pathogenic	1	gonl	0.00102			
+1	16049616	A	G	CLCNKB	Pathogenic	2	gonl	0.001018	1.269e-05	1.269e-05	80.2206
+10	70599055	G	T	PRF1	Pathogenic/Likely_pathogenic	2	gonl	0.001018	3.779e-05	3.779e-05	26.9383
+11	2169760	G	-	TH	Pathogenic	1	gonl	0.001018			
+11	64758446	G	A	PYGM	Pathogenic/Likely_pathogenic	2	gonl	0.001016	2.519e-05	8.093e-06	40.3335
+22	20993967	G	A	LZTR1	Pathogenic/Likely_pathogenic	2	gonl	0.001016	8.961e-05	2.159e-05	11.338
+2	240785063	G	A	KIF1A	Pathogenic/Likely_pathogenic	2	gonl	0.001014			
+11	124891736	CAGGTCCCGAGAGC	-	ROBO4	Likely_pathogenic	1	gonl	0.001014	8.903e-05	8.903e-05	11.3894
+12	120994315	C	-	HNF1A	Pathogenic	3	gonl	0.001014	2.323e-05	5.416e-06	43.6505
+16	88721652	G	C	PIEZO1	Pathogenic/Likely_pathogenic	2	gonl	0.001014	8.394e-05	6.674e-05	12.0801
+17	18148783	G	A	MYO15A	Pathogenic/Likely_pathogenic	2	gonl	0.001014	6.858e-05	1.447e-05	14.7857
+6	35503624	G	T	TULP1	Pathogenic	2	gonl	0.001012	2.569e-05	2.081e-05	39.3928
+8	54621331	-	GC	RP1	Pathogenic	1	gonl	0.001012	6.301e-06	6.301e-06	160.609
+11	47438036	TT	-	RAPSN	Pathogenic	2	gonl	0.001012	3.337e-05	3.337e-05	30.3266
+12	47865175	C	T	VDR	Pathogenic	1	gonl	0.001012	2.237e-05	1.44e-05	45.2392
+22	17209534	C	-	ADA2	Pathogenic	2	gonl	0.001012	4.678e-05	4.678e-05	21.6332
+3	193637283	T	C	OPA1	Pathogenic	1	gonl	0.00101			
+11	71435476	G	A	DHCR7	Pathogenic/Likely_pathogenic	2	gonl	0.00101	3.148e-05	3.148e-05	32.0839
+11	119345902	C	-	MFRP	Pathogenic/Likely_pathogenic	2	gonl	0.00101	8.096e-06	8.096e-06	124.753
+21	42477337	-	T	RSPH1	Pathogenic/Likely_pathogenic	2	gonl	0.00101	3.598e-05	3.598e-05	28.0712
+1	1053978	G	A	AGRN	Likely_pathogenic	1	gonl	0.001008	1.811e-06	1.811e-06	556.599
+1	150509696	C	T	ECM1	Pathogenic	2	gonl	0.001008	4.472e-05	1.619e-05	22.5403
+5	55231634	-	C	CCNO	Pathogenic/Likely_pathogenic	2	gonl	0.001008	3.902e-05	3.256e-05	25.8329
+6	32050322	C	T	TNXB	Likely_pathogenic	2	gonl	0.001008	5.706e-05	1.62e-05	17.6656
+7	66092606	C	A	ASL	Pathogenic/Likely_pathogenic	2	gonl	0.001008	8.993e-07	8.993e-07	1120.87
+10	71511214	T	C	CDH23	Likely_pathogenic	1	gonl	0.001008	1.8e-06	1.8e-06	560
+11	103120982	G	T	DYNC2H1	Pathogenic	2	gonl	0.001008	2.579e-05	9.991e-06	39.0849
+12	110180446	C	T	IFT81	Pathogenic/Likely_pathogenic	2	gonl	0.001008	2.999e-05	2.713e-06	33.6112
+16	28900841	C	A	ATP2A1	Pathogenic	2	gonl	0.001008	1.709e-05	1.709e-05	58.9819
+19	11105448	C	T	LDLR	Pathogenic/Likely_pathogenic	2	gonl	0.001008	1.159e-05	9.892e-06	86.9715
+1	9262261	C	G	H6PD	Pathogenic	2	gonl	0.001006	8.1e-05	8.1e-05	12.4198
+1	74436081	C	T	TNNI3K	Pathogenic/Likely_pathogenic	2	gonl	0.001006	5.496e-06	5.496e-06	183.042
+1	94062692	A	T	ABCA4	Pathogenic/Likely_pathogenic	2	gonl	0.001006	7.194e-06	7.194e-06	139.839
+1	152307419	C	-	FLG	Pathogenic	1	gonl	0.001006	2.24e-05	1.529e-05	44.9107
+1	155295543	A	T	PKLR	Pathogenic/Likely_pathogenic	2	gonl	0.001006	4.497e-05	4.497e-05	22.3705
+1	215782825	G	A	USH2A	Pathogenic	2	gonl	0.001006			
+1	225922270	G	-	PYCR2	Pathogenic/Likely_pathogenic	2	gonl	0.001006			
+2	26475357	A	G	OTOF	Likely_pathogenic	1	gonl	0.001006	1.799e-06	1.799e-06	559.2
+2	85553443	C	T	GGCX	Pathogenic/Likely_pathogenic	2	gonl	0.001006	2.788e-05	2.788e-05	36.0832
+2	201726798	-	G	ALS2	Likely_pathogenic	2	gonl	0.001006	1.872e-05	1.799e-06	53.7393
+3	149129942	T	G	HPS3	Likely_pathogenic	1	gonl	0.001006	1.849e-06	1.849e-06	544.078
+4	5752986	C	-	EVC	Pathogenic	1	gonl	0.001006			
+4	6291341	A	G	WFS1	Pathogenic/Likely_pathogenic	2	gonl	0.001006	5.576e-05	5.576e-05	18.0416
+5	149027760	G	A	SH3TC2	Pathogenic/Likely_pathogenic	2	gonl	0.001006	2.987e-05	2.788e-05	33.6793
+5	168486503	A	G	RARS1	Pathogenic/Likely_pathogenic	2	gonl	0.001006	3.326e-05	3.326e-05	30.2465
+6	31792985	C	T	VARS1	Likely_pathogenic	1	gonl	0.001006	1.887e-05	8.993e-07	53.3121
+6	31860081	C	T	NEU1	Pathogenic	2	gonl	0.001006	8.093e-06	8.093e-06	124.305
+7	65974701	G	A	GUSB	Pathogenic/Likely_pathogenic	2	gonl	0.001006	4.472e-05	2.338e-05	22.4955
+8	6499881	G	A	ANGPT2	Likely_pathogenic	1	gonl	0.001006	2.236e-05	8.094e-06	44.9911
+8	144514363	C	T	RECQL4	Likely_pathogenic	2	gonl	0.001006	1.088e-05	1.088e-05	92.4632
+9	34490209	G	C	DNAI1	Pathogenic	1	gonl	0.001006	7.562e-05	7.562e-05	13.3034
+9	106927114	C	T	ZNF462	Pathogenic	1	gonl	0.001006			
+11	17610769	C	-	OTOG	Pathogenic	2	gonl	0.001006	8.897e-05	8.897e-05	11.3072
+11	121152891	C	A	TECTA	Pathogenic	1	gonl	0.001006	2.089e-05	2.089e-05	48.157
+13	110429953	T	A	COL4A2	Pathogenic	1	gonl	0.001006	1.537e-05	1.537e-05	65.4522
+15	100898147	G	C	ALDH1A3	Likely_pathogenic	2	gonl	0.001006	2.987e-05	2.158e-05	33.6793
+16	3025807	C	T	THOC6	Pathogenic	1	gonl	0.001006	3.597e-06	3.597e-06	279.678
+16	54932751	G	A	IRX5	Pathogenic	1	gonl	0.001006			
+17	10536584	C	-	MYH2	Pathogenic	1	gonl	0.001006	2.237e-05	6.296e-06	44.9709
+17	31358990	G	A	NF1	Pathogenic	2	gonl	0.001006			
+17	42564790	C	T	COASY	Pathogenic/Likely_pathogenic	2	gonl	0.001006	2.955e-05	2.955e-05	34.044
+19	12896039	G	A	GCDH	Pathogenic/Likely_pathogenic	2	gonl	0.001006	2.236e-05	1.259e-05	44.9911
+19	38308791	C	T	YIF1B	Pathogenic	1	gonl	0.001006	5.974e-05	5.576e-05	16.8396
+19	55141185	C	T	TNNT1	Pathogenic/Likely_pathogenic	2	gonl	0.001006	9.896e-06	9.896e-06	101.657
+1	11952621	A	G	PLOD1	Likely_pathogenic	2	gonl	0.001004			
+1	11966985	A	G	PLOD1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.631e-05	2.631e-05	38.1604
+1	40092457	C	-	PPT1	Pathogenic	2	gonl	0.001004	1.439e-05	1.439e-05	69.7707
+1	43437665	C	T	SZT2	Pathogenic	1	gonl	0.001004	1.799e-06	1.799e-06	558.088
+1	45507550	G	T	MMACHC	Pathogenic	2	gonl	0.001004	2.158e-05	2.158e-05	46.5246
+1	46194853	G	A	TSPAN1	Pathogenic	2	gonl	0.001004	4.472e-05	8.993e-06	22.4508
+1	58675561	C	-	MYSM1	Pathogenic	1	gonl	0.001004	1.979e-05	1.979e-05	50.7327
+1	63414137	TAA	-	ALG6	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.257e-05	3.257e-05	30.8259
+1	63648653	G	C	PGM1	Likely_pathogenic	1	gonl	0.001004	4.472e-05	1.799e-06	22.4508
+1	68446825	G	A	RPE65	Pathogenic	3	gonl	0.001004	2.319e-05	1.529e-05	43.2945
+1	94030427	C	T	ABCA4	Pathogenic	3	gonl	0.001004	2.319e-05	2.698e-06	43.2945
+1	94042830	C	T	ABCA4	Pathogenic	2	gonl	0.001004	6.956e-05	2.698e-05	14.4336
+1	94063160	A	C	ABCA4	Likely_pathogenic	1	gonl	0.001004			
+1	97593389	T	C	DPYD	Likely_pathogenic	1	gonl	0.001004	8.993e-07	8.993e-07	1116.42
+1	109625701	AGTGCCCCGTATG	-	AMPD2	Pathogenic	1	gonl	0.001004	3.597e-06	3.597e-06	279.121
+1	117883536	-	C	GDAP2	Pathogenic	1	gonl	0.001004	2.994e-05	4.503e-06	33.5337
+1	119422056	-	C	HSD3B2	Pathogenic	2	gonl	0.001004	1.529e-05	1.529e-05	65.6638
+1	152311129	C	A	FLG	Pathogenic	1	gonl	0.001004	3.478e-05	2.878e-05	28.8672
+1	155237576	A	T	GBA1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.149e-05	3.149e-05	31.8831
+1	165743172	G	A	TMCO1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.987e-05	6.295e-06	33.6123
+1	171636310	G	A	MYOC	Pathogenic	3	gonl	0.001004	1.169e-05	1.169e-05	85.8854
+1	171652047	G	A	MYOC	Pathogenic	1	gonl	0.001004	7.194e-06	7.194e-06	139.561
+1	173833419	G	A	DARS2	Pathogenic/Likely_pathogenic	2	gonl	0.001004	4.857e-05	4.857e-05	20.6712
+1	179917914	C	T	TOR1AIP1	Likely_pathogenic	1	gonl	0.001004	2.878e-05	2.878e-05	34.8853
+1	192810432	G	T	RGS2	Likely_pathogenic	1	gonl	0.001004	8.994e-06	8.994e-06	111.63
+1	197101825	T	A	ASPM	Likely_pathogenic	1	gonl	0.001004	1.16e-05	0	86.5517
+1	209629806	A	G	LAMB3	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.597e-06	3.597e-06	279.121
+1	209632709	G	T	LAMB3	Pathogenic	1	gonl	0.001004			
+1	214652990	G	T	CENPF	Likely_pathogenic	2	gonl	0.001004	5.063e-05	5.063e-05	19.8301
+1	215741387	T	C	USH2A	Pathogenic/Likely_pathogenic	2	gonl	0.001004	5.396e-06	5.396e-06	186.064
+1	235380083	C	T	TBCE	Likely_pathogenic	2	gonl	0.001004	6.296e-06	6.296e-06	159.466
+2	15551492	C	T	NBAS	Likely_pathogenic	1	gonl	0.001004	9.038e-07	9.038e-07	1110.87
+2	25247107	G	A	DNMT3A	Pathogenic	1	gonl	0.001004	3.827e-05	8.094e-06	26.2346
+2	26236891	GATGA	-	HADHA	Pathogenic	2	gonl	0.001004	4.23e-05	4.23e-05	23.7352
+2	27204460	C	T	SLC5A6	Pathogenic	1	gonl	0.001004	1.801e-06	1.801e-06	557.468
+2	42770143	-	A	HAAO	Pathogenic	2	gonl	0.001004	1.446e-05	1.446e-05	69.4329
+2	44286075	G	T	SLC3A1	Likely_pathogenic	1	gonl	0.001004	8.995e-06	8.995e-06	111.618
+2	44313952	G	A	SLC3A1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.159e-05	5.396e-06	86.6264
+2	58161609	-	T	FANCL	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.702e-06	2.702e-06	371.577
+2	71535316	G	C	DYSF	Pathogenic	1	gonl	0.001004	1.799e-06	1.799e-06	558.088
+2	73448991	C	T	ALMS1	Pathogenic	1	gonl	0.001004	2.236e-05	2.698e-06	44.9016
+2	74142330	A	T	BOLA3	Likely_pathogenic	2	gonl	0.001004	7.195e-05	7.195e-05	13.9541
+2	108929208	A	G	RANBP2	Pathogenic	1	gonl	0.001004	8.993e-07	8.993e-07	1116.42
+2	108930217	G	A	RANBP2	Pathogenic/Likely_pathogenic	2	gonl	0.001004	7.652e-05	3.597e-05	13.1208
+2	135135759	G	T	RAB3GAP1	Pathogenic	1	gonl	0.001004	2.987e-05	8.993e-07	33.6123
+2	135789775	G	A	LCT	Pathogenic	1	gonl	0.001004	9.893e-06	9.893e-06	101.486
+2	151494212	AG	-	NEB	Pathogenic	2	gonl	0.001004	3.855e-05	3.247e-05	26.0441
+2	151516533	G	A	NEB	Pathogenic	2	gonl	0.001004	2.971e-05	2.971e-05	33.7933
+2	151562637	G	A	NEB	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.276e-05	4.599e-06	44.1125
+2	171690204	C	T	DYNC1I2	Pathogenic	1	gonl	0.001004	8.05e-05	1.853e-06	12.472
+2	175995647	C	A	LNPK	Pathogenic	1	gonl	0.001004	2.339e-05	2.339e-05	42.9243
+2	178456134	C	T	PJVK	Pathogenic/Likely_pathogenic	2	gonl	0.001004	4.497e-06	4.497e-06	223.26
+2	178591977	C	T	TTN	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.874e-05	2.7e-06	53.5752
+2	178705338	CTTT	-	TTN	Likely_pathogenic	1	gonl	0.001004	3.039e-05	0	33.0372
+2	189571799	T	G	SLC40A1	Pathogenic	1	gonl	0.001004			
+2	215007788	T	C	ABCA12	Likely_pathogenic	1	gonl	0.001004	2.698e-06	2.698e-06	372.128
+2	216428695	-	C	SMARCAL1	Pathogenic	2	gonl	0.001004	5.396e-06	5.396e-06	186.064
+2	218662244	G	C	BCS1L	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.338e-05	2.338e-05	42.9427
+2	218662940	TGGA	-	BCS1L	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.872e-05	7.194e-06	53.6325
+2	218882321	G	A	WNT10A	Likely_pathogenic	1	gonl	0.001004	2.319e-05	1.349e-05	43.2945
+2	218889990	G	A	WNT10A	Pathogenic/Likely_pathogenic	2	gonl	0.001004	8.633e-05	8.633e-05	11.6298
+2	238329226	C	T	TRAF3IP1	Pathogenic	1	gonl	0.001004	3.241e-05	3.684e-06	30.9781
+3	10035172	G	C	FANCD2	Likely_pathogenic	1	gonl	0.001004			
+3	25733983	C	G	NGLY1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.621e-05	1.621e-05	61.9371
+3	45476489	G	A	LARS2	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.519e-05	7.194e-06	39.8571
+3	49911685	G	A	MON1A	Likely_pathogenic	1	gonl	0.001004	4.317e-05	4.317e-05	23.2569
+3	87262203	C	G	POU1F1	Pathogenic	2	gonl	0.001004	1.709e-05	1.709e-05	58.7478
+3	120644419	C	T	HGD	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.987e-05	7.194e-06	33.6123
+3	120647897	G	A	HGD	Pathogenic	1	gonl	0.001004	3.828e-05	0	26.2278
+3	122284359	A	G	CASR	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.987e-05	8.093e-06	33.6123
+3	129437719	C	T	MBD4	Likely_pathogenic	2	gonl	0.001004	2.9e-05	2.9e-05	34.6207
+3	132684751	G	A	NPHP3	Pathogenic	2	gonl	0.001004	2.236e-05	8.094e-06	44.9016
+3	149162861	C	T	CP	Pathogenic	2	gonl	0.001004	2.52e-05	8.998e-06	39.8413
+3	158649039	A	G	GFM1	Likely_pathogenic	1	gonl	0.001004	0	0	
+3	165007910	C	T	SI	Likely_pathogenic	1	gonl	0.001004	8.657e-06	8.657e-06	115.976
+3	165830526	C	T	BCHE	Pathogenic/Likely_pathogenic	2	gonl	0.001004	4.227e-05	4.227e-05	23.7521
+3	184136687	A	G	EIF2B5	Pathogenic/Likely_pathogenic	2	gonl	0.001004	6.924e-05	6.924e-05	14.5003
+3	184141976	C	T	EIF2B5	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.439e-05	1.439e-05	69.7707
+3	187236259	G	A	MASP1	Likely_pathogenic	1	gonl	0.001004	3.478e-05	1.709e-05	28.8672
+3	189971900	G	A	P3H2	Pathogenic/Likely_pathogenic	2	gonl	0.001004	5.915e-05	5.915e-05	16.9738
+4	5745274	-	T	EVC	Pathogenic	2	gonl	0.001004	1.169e-05	1.169e-05	85.8854
+4	5745303	AAG	-	EVC	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.236e-05	1.259e-05	44.9016
+4	15510217	C	T	CC2D2A	Pathogenic	2	gonl	0.001004	6.834e-05	1.62e-05	14.6912
+4	39199490	AG	-	WDR19	Pathogenic	1	gonl	0.001004	8.999e-07	8.999e-07	1115.68
+4	73406719	AT	-	ALB	Pathogenic	2	gonl	0.001004	8.116e-05	4.587e-05	12.3706
+4	78432521	C	T	FRAS1	Pathogenic	1	gonl	0.001004	5.399e-06	5.399e-06	185.96
+4	80266983	TA	-	FGF5	Likely_pathogenic	1	gonl	0.001004	3.744e-05	2.968e-05	26.8162
+4	103719306	G	-	TACR3	Pathogenic	1	gonl	0.001004	8.993e-07	8.993e-07	1116.42
+4	105235896	C	T	TET2	Pathogenic	1	gonl	0.001004	3.597e-06	3.597e-06	279.121
+4	151716935	CT	-	GATB	Pathogenic	1	gonl	0.001004	5.396e-06	5.396e-06	186.064
+4	154586428	C	T	FGA	Pathogenic	1	gonl	0.001004	4.502e-06	4.502e-06	223.012
+4	158680511	C	T	ETFDH	Pathogenic/Likely_pathogenic	2	gonl	0.001004	8.952e-05	2.815e-05	11.2154
+4	183663967	C	T	TRAPPC11	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.519e-05	1.169e-05	39.8571
+4	185400429	T	C	UFSP2	Likely_pathogenic	1	gonl	0.001004	6.711e-05	1.529e-05	14.9605
+5	13708118	C	T	DNAH5	Pathogenic	2	gonl	0.001004	4.472e-05	1.259e-05	22.4508
+5	13840968	G	A	DNAH5	Pathogenic	2	gonl	0.001004	9.361e-05	8.094e-06	10.7253
+5	60898322	T	C	ERCC8	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.699e-06	2.699e-06	371.99
+5	71649189	A	G	MCCC2	Pathogenic/Likely_pathogenic	2	gonl	0.001004	5.576e-05	5.576e-05	18.0057
+5	74696733	T	G	HEXB	Pathogenic	2	gonl	0.001004	7.354e-06	7.354e-06	136.524
+5	90653688	ATAG	-	ADGRV1	Pathogenic	1	gonl	0.001004			
+5	90692659	C	T	ADGRV1	Pathogenic	2	gonl	0.001004	1.167e-05	1.801e-06	86.0326
+5	90720190	-	G	ADGRV1	Pathogenic	1	gonl	0.001004			
+5	95497430	G	A	SKIC3	Pathogenic/Likely_pathogenic	2	gonl	0.001004			
+5	95523201	C	T	SKIC3	Likely_pathogenic	2	gonl	0.001004	5.757e-05	5.757e-05	17.4396
+5	131182300	G	A	LYRM7	Likely_pathogenic	1	gonl	0.001004	3.106e-06	3.106e-06	323.245
+5	132575916	T	-	RAD50	Pathogenic	2	gonl	0.001004	1.263e-05	1.263e-05	79.4933
+5	139026799	A	G	SIL1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	4.407e-05	4.407e-05	22.7819
+6	26091521	T	C	HFE	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.068e-05	2.068e-05	48.5493
+6	33201901	C	G	SLC39A7	Pathogenic	1	gonl	0.001004	1.259e-05	1.259e-05	79.7458
+6	43521033	C	T	POLR1C	Pathogenic	1	gonl	0.001004	2.988e-05	8.096e-06	33.6011
+6	46691090	G	T	TDRD6	Pathogenic	1	gonl	0.001004	1.799e-06	1.799e-06	558.088
+6	49435524	-	GAG	MMUT	Pathogenic	1	gonl	0.001004	4.496e-06	4.496e-06	223.31
+6	49457789	T	A	MMUT	Pathogenic	2	gonl	0.001004	5.668e-05	5.668e-05	17.7135
+6	51775844	G	A	PKHD1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.034e-05	2.472e-05	33.0916
+6	76025193	C	T	IMPG1	Likely_pathogenic	1	gonl	0.001004	1.181e-05	8.342e-06	85.0127
+6	79042866	G	A	PHIP	Pathogenic	2	gonl	0.001004	0	0	
+6	87612252	A	G	ORC3	Likely_pathogenic	1	gonl	0.001004	4.266e-05	4.266e-05	23.5349
+6	112064994	C	-	CCN6	Pathogenic	1	gonl	0.001004	1.079e-05	1.079e-05	93.0491
+6	131623365	C	T	MED23	Pathogenic	1	gonl	0.001004	3.96e-05	3.96e-05	25.3535
+6	137206135	C	A	IFNGR1	Pathogenic	1	gonl	0.001004	1.08e-05	1.08e-05	92.963
+6	152155026	G	A	SYNE1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	0	0	
+7	21690844	C	T	DNAH11	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.44e-05	1.44e-05	69.7222
+7	34062052	G	A	BMPER	Pathogenic	1	gonl	0.001004	1.262e-05	1.262e-05	79.5563
+7	44064889	G	A	PGAM2	Pathogenic	1	gonl	0.001004	4.521e-06	4.521e-06	222.075
+7	66081824	C	T	ASL	Likely_pathogenic	1	gonl	0.001004	2.236e-05	5.396e-06	44.9016
+7	96121952	G	A	SLC25A13	Likely_pathogenic	2	gonl	0.001004	2.987e-05	1.079e-05	33.6123
+7	107710089	T	-	SLC26A4	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.071e-05	2.071e-05	48.479
+7	139962040	C	-	TBXAS1	Pathogenic	1	gonl	0.001004	2.338e-05	2.338e-05	42.9427
+7	141651614	G	A	AGK	Pathogenic	1	gonl	0.001004	7.196e-06	7.196e-06	139.522
+7	142751920	G	C	PRSS1	Likely_pathogenic	1	gonl	0.001004	8.088e-05	1.614e-05	12.4135
+8	1771584	G	A	CLN8	Pathogenic	1	gonl	0.001004			
+8	27788840	A	G	ESCO2	Pathogenic/Likely_pathogenic	2	gonl	0.001004	9.443e-05	9.443e-05	10.6322
+8	31141490	CAAA	-	WRN	Pathogenic	2	gonl	0.001004	4.406e-05	4.406e-05	22.7871
+8	37754059	AAGCT	-	ERLIN2	Likely_pathogenic	1	gonl	0.001004	8.993e-07	8.993e-07	1116.42
+8	47727253	AT	-	SPIDR	Likely_pathogenic	1	gonl	0.001004	9.275e-05	8.004e-05	10.8248
+8	54621505	T	G	RP1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.799e-06	1.799e-06	558.088
+8	54622186	C	-	RP1	Pathogenic/Likely_pathogenic	2	gonl	0.001004			
+8	54627014	AT	-	RP1	Pathogenic	1	gonl	0.001004	1.799e-06	1.799e-06	558.088
+8	73981539	A	C	TMEM70	Likely_pathogenic	1	gonl	0.001004	5.397e-06	5.397e-06	186.029
+8	74363012	A	G	GDAP1	Likely_pathogenic	1	gonl	0.001004	1.849e-06	1.849e-06	542.996
+8	98128475	C	T	POP1	Pathogenic	1	gonl	0.001004	2.519e-05	1.709e-05	39.8571
+8	103328406	C	T	FZD6	Pathogenic	1	gonl	0.001004	5.408e-06	5.408e-06	185.651
+8	132887521	C	T	TG	Pathogenic	1	gonl	0.001004	2.698e-06	2.698e-06	372.128
+8	144516041	G	A	RECQL4	Pathogenic	2	gonl	0.001004	6.298e-06	6.298e-06	159.416
+9	27197530	C	T	TEK	Pathogenic	1	gonl	0.001004	2.698e-06	2.698e-06	372.128
+9	33113783	T	C	B4GALT1	Pathogenic	1	gonl	0.001004	2.968e-05	2.968e-05	33.8275
+9	37425965	C	-	GRHPR	Pathogenic/Likely_pathogenic	2	gonl	0.001004			
+9	37436699	C	T	GRHPR	Pathogenic/Likely_pathogenic	2	gonl	0.001004	5.038e-05	2.518e-05	19.9285
+9	72700528	G	T	TMC1	Pathogenic	1	gonl	0.001004	5.47e-06	5.47e-06	183.547
+9	91298023	C	T	AUH	Pathogenic	1	gonl	0.001004	1.439e-05	1.439e-05	69.7707
+9	96252911	C	G	HSD17B3	Pathogenic	2	gonl	0.001004	8.869e-05	8.869e-05	11.3203
+9	99218145	C	-	ALG2	Pathogenic/Likely_pathogenic	2	gonl	0.001004	6.577e-05	6.577e-05	15.2653
+9	100264841	G	A	INVS	Pathogenic	2	gonl	0.001004	4.472e-05	9e-07	22.4508
+9	108879445	C	T	ELP1	Likely_pathogenic	2	gonl	0.001004	3.836e-05	3.638e-06	26.1731
+9	108892994	G	A	ELP1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	9.01e-07	9.01e-07	1114.32
+9	130458483	G	A	ASS1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.481e-05	3.598e-06	28.8423
+9	131039227	C	A	LAMC3	Pathogenic	2	gonl	0.001004	2.2e-05	5.396e-06	45.6364
+10	366334	CA	-	DIP2C	Pathogenic	1	gonl	0.001004	3.828e-05	8.994e-07	26.2278
+10	43118458	G	T	RET	Pathogenic	2	gonl	0.001004	2.987e-05	1.259e-05	33.6123
+10	49532904	G	A	ERCC6	Pathogenic	2	gonl	0.001004	0	0	
+10	54664256	G	A	PCDH15	Pathogenic	2	gonl	0.001004	8.997e-05	5.406e-06	11.1593
+10	65920450	T	-	CTNNA3	Likely_pathogenic	1	gonl	0.001004	1.799e-06	1.799e-06	558.088
+10	70435353	C	T	NODAL	Likely_pathogenic	2	gonl	0.001004	2.236e-05	1.619e-05	44.9016
+10	78026183	G	A	POLR3A	Pathogenic	2	gonl	0.001004	1.619e-05	1.619e-05	62.0136
+10	87715057	C	T	PAPSS2	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.521e-05	1.08e-05	39.8255
+10	87743567	G	T	PAPSS2	Pathogenic	1	gonl	0.001004	5.396e-06	5.396e-06	186.064
+10	95693456	CA	-	TCTN3	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.502e-05	2.502e-05	40.1279
+10	97598784	T	G	HOGA1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.888e-05	1.888e-05	53.178
+10	98431282	G	A	HPS1	Pathogenic	2	gonl	0.001004	5.797e-05	5.396e-06	17.3193
+10	100993209	A	G	TWNK	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.519e-05	9.892e-06	39.8571
+10	102830790	-	GGAT	CYP17A1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	6.201e-05	6.201e-05	16.1909
+10	104059681	T	-	COL17A1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	6.295e-06	6.295e-06	159.492
+10	119169290	C	T	PRDX3	Pathogenic	1	gonl	0.001004	7.554e-05	7.554e-05	13.291
+10	133362924	T	C	ECHS1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	8.944e-05	3.327e-05	11.2254
+11	17387480	G	T	KCNJ11	Likely_pathogenic	1	gonl	0.001004	8.993e-07	8.993e-07	1116.42
+11	17387686	-	C	KCNJ11	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.519e-05	5.396e-06	39.8571
+11	17407070	C	A	ABCC8	Pathogenic	2	gonl	0.001004	1.799e-06	1.799e-06	558.088
+11	17407417	G	A	ABCC8	Pathogenic/Likely_pathogenic	2	gonl	0.001004	9.892e-06	9.892e-06	101.496
+11	22270368	A	G	ANO5	Pathogenic/Likely_pathogenic	2	gonl	0.001004	4.496e-06	4.496e-06	223.31
+11	36576278	A	G	RAG1	Pathogenic	2	gonl	0.001004	2.987e-05	2.518e-05	33.6123
+11	47447853	G	A	RAPSN	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.521e-05	1.349e-05	39.8255
+11	48123636	C	T	PTPRJ	Pathogenic	1	gonl	0.001004	5.979e-05	3.688e-05	16.7921
+11	61962272	-	G	BEST1	Pathogenic	2	gonl	0.001004	4.496e-06	4.496e-06	223.31
+11	62841791	C	T	RNU2-2	Likely_pathogenic	2	gonl	0.001004	2.413e-05	0	41.608
+11	66526138	CTTTG	-	BBS1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.597e-06	3.597e-06	279.121
+11	68762719	G	A	CPT1A	Likely_pathogenic	1	gonl	0.001004	4.496e-06	4.496e-06	223.31
+11	68915015	C	T	IGHMBP2	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.799e-06	1.799e-06	558.088
+11	77192105	G	A	MYO7A	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.418e-05	3.418e-05	29.3739
+11	78113978	G	A	ALG8	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.526e-05	3.526e-05	28.4742
+11	89178471	A	G	TYR	Likely_pathogenic	1	gonl	0.001004	2.519e-05	0	39.8571
+11	108321299	A	G	ATM	Likely_pathogenic	2	gonl	0.001004	0	0	
+11	108325416	C	T	ATM	Pathogenic/Likely_pathogenic	2	gonl	0.001004	8.095e-06	8.095e-06	124.027
+11	112228626	TGTT	-	PTS	Pathogenic	2	gonl	0.001004	1.168e-05	4.525e-06	85.9589
+11	125899399	T	-	PUS3	Likely_pathogenic	1	gonl	0.001004	4.496e-06	4.496e-06	223.31
+12	868893	TC	-	WNK1	Pathogenic	1	gonl	0.001004	5.416e-06	5.416e-06	185.377
+12	5976111	C	T	VWF	Pathogenic	1	gonl	0.001004	5.038e-05	4.496e-06	19.9285
+12	5985593	A	G	VWF	Likely_pathogenic	1	gonl	0.001004			
+12	6348772	GAA	-	SCNN1A	Pathogenic/Likely_pathogenic	2	gonl	0.001004	6.205e-05	6.205e-05	16.1805
+12	53307698	G	A	AAAS	Pathogenic	2	gonl	0.001004	8.961e-05	1.619e-05	11.2041
+12	56348924	C	T	STAT2	Pathogenic	1	gonl	0.001004	2.239e-05	4.498e-06	44.8414
+12	57626910	-	C	B4GALNT1	Pathogenic	1	gonl	0.001004			
+12	80358686	T	-	OTOGL	Likely_pathogenic	1	gonl	0.001004	4.503e-06	4.503e-06	222.962
+12	88079112	G	A	CEP290	Pathogenic	2	gonl	0.001004	3.109e-05	1.087e-05	32.2933
+12	101780152	C	T	GNPTAB	Likely_pathogenic	2	gonl	0.001004	1.621e-05	1.621e-05	61.9371
+12	102843745	-	G	PAH	Pathogenic	3	gonl	0.001004	1.799e-06	1.799e-06	558.088
+12	102846932	A	G	PAH	Pathogenic	3	gonl	0.001004	8.995e-06	8.995e-06	111.618
+12	109574881	A	C	MVK	Pathogenic	2	gonl	0.001004	1.261e-05	1.261e-05	79.6193
+12	121849726	T	C	HPD	Likely_pathogenic	2	gonl	0.001004	3.328e-05	3.328e-05	30.1683
+13	23320639	T	C	SGCG	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.948e-05	2.948e-05	34.057
+13	36865690	G	A	SMAD9	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.507e-05	3.507e-05	28.6285
+13	76996010	C	T	CLN5	Pathogenic	2	gonl	0.001004	6.708e-05	4.766e-05	14.9672
+14	21324747	A	G	RPGRIP1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	7.652e-05	2.069e-05	13.1208
+14	22773945	G	A	SLC7A7	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.319e-05	1.888e-05	43.2945
+14	22778837	C	T	SLC7A7	Pathogenic	2	gonl	0.001004	7.652e-05	1.799e-06	13.1208
+14	23422312	A	G	MYH7	Likely_pathogenic	1	gonl	0.001004	8.993e-07	8.993e-07	1116.42
+14	24258569	T	A	TGM1	Pathogenic	2	gonl	0.001004	1.978e-05	1.978e-05	50.7583
+14	45159131	C	T	FANCM	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.991e-05	9.006e-07	33.5674
+14	67777729	G	A	ZFYVE26	Pathogenic	2	gonl	0.001004	2.236e-05	1.259e-05	44.9016
+14	67793757	C	A	ZFYVE26	Pathogenic	1	gonl	0.001004	1.799e-06	1.799e-06	558.088
+14	75634909	G	-	FLVCR2	Likely_pathogenic	1	gonl	0.001004	9.059e-07	9.059e-07	1108.29
+14	92004477	G	A	TRIP11	Pathogenic	1	gonl	0.001004	4.472e-05	3.237e-05	22.4508
+14	92005527	-	A	TRIP11	Pathogenic	1	gonl	0.001004	8.997e-07	8.997e-07	1115.93
+15	27845013	C	A	OCA2	Pathogenic	2	gonl	0.001004			
+15	28255945	AG	-	HERC2	Pathogenic	1	gonl	0.001004	2.331e-05	6.316e-06	43.0716
+15	31031046	G	A	TRPM1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	7.824e-05	7.824e-05	12.8323
+15	42388935	G	A	CAPN3	Pathogenic/Likely_pathogenic	2	gonl	0.001004	6.295e-05	6.295e-05	15.9492
+15	42409369	A	-	CAPN3	Pathogenic	3	gonl	0.001004	4.946e-05	4.946e-05	20.2992
+15	44629232	C	A	SPG11	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.698e-06	2.698e-06	372.128
+15	48769067	G	-	CEP152	Pathogenic	1	gonl	0.001004	1.446e-05	1.446e-05	69.4329
+15	71817619	TT	-	NR2E3	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.705e-06	2.705e-06	371.165
+15	80172238	C	T	FAH	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.481e-05	1.173e-05	28.8423
+15	84862656	C	-	ALPK3	Pathogenic	2	gonl	0.001004	2.164e-05	2.164e-05	46.3956
+15	84862894	A	-	ALPK3	Pathogenic/Likely_pathogenic	2	gonl	0.001004	8.994e-06	8.994e-06	111.63
+15	89315360	C	T	FANCI	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.519e-05	1.619e-05	39.8571
+16	28878771	G	T	ATP2A1	Pathogenic	2	gonl	0.001004	9.803e-05	9.803e-05	10.2418
+16	28894244	G	A	ATP2A1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	6.477e-05	6.477e-05	15.501
+16	56502453	C	T	BBS2	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.319e-05	4.496e-06	43.2945
+16	57456534	ATGT	-	COQ9	Pathogenic	1	gonl	0.001004	1.799e-06	1.799e-06	558.088
+16	67169102	G	T	HSF4	Likely_pathogenic	1	gonl	0.001004	1.159e-05	0	86.6264
+16	78108489	T	G	WWOX	Likely_pathogenic	1	gonl	0.001004	1.799e-06	1.799e-06	558.088
+16	78109819	C	T	WWOX	Pathogenic/Likely_pathogenic	2	gonl	0.001004	8.453e-05	8.453e-05	11.8774
+16	84031901	G	A	SLC38A8	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.169e-05	1.169e-05	85.8854
+16	88842807	A	C	GALNS	Pathogenic/Likely_pathogenic	2	gonl	0.001004	9.083e-05	9.083e-05	11.0536
+17	6690936	G	A	SLC13A5	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.176e-05	1.176e-05	85.3741
+17	7223865	G	A	ACADVL	Pathogenic	3	gonl	0.001004	3.417e-05	3.417e-05	29.3825
+17	8229322	A	-	CTC1	Likely_pathogenic	1	gonl	0.001004	8.993e-06	8.993e-06	111.642
+17	18135747	C	T	MYO15A	Pathogenic	2	gonl	0.001004	1.799e-05	1.799e-05	55.8088
+17	27772454	TG	-	NOS2	Likely_pathogenic	1	gonl	0.001004	2.698e-06	2.698e-06	372.128
+17	34989573	C	T	LIG3	Likely_pathogenic	1	gonl	0.001004	6.655e-05	6.655e-05	15.0864
+17	35101347	G	A	RAD51D	Pathogenic	2	gonl	0.001004	6.708e-05	6.295e-06	14.9672
+17	42544027	G	A	NAGLU	Pathogenic	2	gonl	0.001004	2.99e-05	2.611e-05	33.5786
+17	42563043	-	A	COASY	Pathogenic	1	gonl	0.001004	2.519e-05	1.799e-06	39.8571
+17	44255281	C	T	SLC4A1	Likely_pathogenic	1	gonl	0.001004	5.433e-05	1.202e-05	18.4797
+17	44374352	A	G	ITGA2B	Pathogenic	3	gonl	0.001004	3.239e-05	3.239e-05	30.9972
+17	46935122	G	T	GOSR2	Pathogenic	2	gonl	0.001004	7.016e-05	7.016e-05	14.3101
+17	47944636	G	A	PNPO	Pathogenic	2	gonl	0.001004	5.396e-06	5.396e-06	186.064
+17	70132991	C	T	KCNJ16	Likely_pathogenic	1	gonl	0.001004	6.708e-05	8.993e-06	14.9672
+17	80105771	G	A	GAA	Pathogenic/Likely_pathogenic	2	gonl	0.001004	6.708e-05	1.889e-05	14.9672
+18	10677805	G	A	PIEZO2	Pathogenic	1	gonl	0.001004	1.177e-05	2.7e-06	85.3016
+18	46592548	G	A	LOXHD1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.165e-05	2.781e-06	31.722
+18	47868434	G	A	SMAD2	Pathogenic	2	gonl	0.001004	9.005e-07	9.005e-07	1114.94
+18	49282177	T	C	DYM	Pathogenic/Likely_pathogenic	2	gonl	0.001004	8.997e-07	8.997e-07	1115.93
+18	49875685	A	C	MYO5B	Likely_pathogenic	1	gonl	0.001004	8.094e-06	8.094e-06	124.043
+18	62088772	C	T	PIGN	Likely_pathogenic	2	gonl	0.001004	6.677e-05	6.677e-05	15.0367
+19	7375847	-	C	ARHGEF18	Likely_pathogenic	1	gonl	0.001004			
+19	11102662	A	G	LDLR	Pathogenic/Likely_pathogenic	2	gonl	0.001004	1.799e-06	1.799e-06	558.088
+19	11575189	A	-	ACP5	Pathogenic	2	gonl	0.001004	2.068e-05	2.068e-05	48.5493
+19	12661258	A	C	MAN2B1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	9.088e-06	9.088e-06	110.475
+19	13110210	G	A	TRMT1	Likely_pathogenic	1	gonl	0.001004	5.04e-05	0	19.9206
+19	38496283	C	T	RYR1	Pathogenic	3	gonl	0.001004	5.974e-05	2.248e-05	16.8062
+19	40396207	A	T	PRX	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.747e-05	2.431e-05	26.7948
+19	43748008	G	-	SMG9	Pathogenic	1	gonl	0.001004			
+19	44705785	C	-	CEACAM16	Pathogenic	1	gonl	0.001004	3.328e-05	3.328e-05	30.1683
+19	54938095	C	T	NCR1	Pathogenic	1	gonl	0.001004	2.519e-05	4.496e-06	39.8571
+20	427443	A	G	RBCK1	Likely_pathogenic	1	gonl	0.001004	0	0	
+20	2660738	G	A	IDH3B	Pathogenic/Likely_pathogenic	2	gonl	0.001004	4.946e-05	4.946e-05	20.2992
+20	3912539	T	-	PANK2	Pathogenic	1	gonl	0.001004	7.194e-06	7.194e-06	139.561
+20	3916956	GAG	-	PANK2	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.957e-05	3.957e-05	25.3728
+20	10407645	-	TTCA	MKKS	Pathogenic	1	gonl	0.001004	7.195e-06	7.195e-06	139.541
+20	18524634	C	T	SEC23B	Pathogenic	2	gonl	0.001004	8.094e-06	8.094e-06	124.043
+20	18524980	C	T	SEC23B	Pathogenic	2	gonl	0.001004	7.374e-05	7.374e-05	13.6154
+20	36917033	C	T	SAMHD1	Likely_pathogenic	2	gonl	0.001004	2.989e-05	8.997e-06	33.5898
+21	26841072	G	T	ADAMTS1	Likely_pathogenic	1	gonl	0.001004	3.744e-05	1.169e-05	26.8162
+21	43774297	G	A	CSTB	Pathogenic	2	gonl	0.001004	6.115e-05	6.115e-05	16.4186
+22	20987503	G	C	LZTR1	Likely_pathogenic	2	gonl	0.001004	1.16e-05	0	86.5517
+22	20988808	G	-	LZTR1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	3.597e-06	3.597e-06	279.121
+22	20996947	T	C	LZTR1	Pathogenic/Likely_pathogenic	2	gonl	0.001004	7.105e-05	7.105e-05	14.1309
+22	25874415	G	T	MYO18B	Likely_pathogenic	1	gonl	0.001004	3.599e-06	3.599e-06	278.966
+22	31843199	C	T	DEPDC5	Pathogenic	2	gonl	0.001004	3.827e-05	8.994e-07	26.2346
+22	32493170	C	T	FBXO7	Pathogenic/Likely_pathogenic	2	gonl	0.001004	2.519e-05	1.619e-05	39.8571
+22	37096025	A	-	TMPRSS6	Pathogenic	1	gonl	0.001004	1.079e-05	1.079e-05	93.0491
+22	37724876	C	T	TRIOBP	Pathogenic	2	gonl	0.001004	5.798e-05	8.993e-07	17.3163
+22	49909954	G	A	ALG12	Pathogenic/Likely_pathogenic	2	gonl	0.001004	4.637e-05	1.169e-05	21.6519
+17	7224636	G	A	ACADVL	Likely_pathogenic	3	hgdp1kg	0.0027027	0.0002249		12.0173
+21	46145855	GGGGCCGCAGAGCGGGCACCCACCTCCCCCA	-	FTCD	Pathogenic/Likely_pathogenic	2	hgdp1kg	0.00253807	1.156e-06		2195.56
+5	115832599	T	A	ATG12	Likely_pathogenic	1	hostseq	0.0190011	0.001303		14.5826
+17	7224646	AC	-	ACADVL	Likely_pathogenic	3	hostseq	0.00396825			
+17	7893491	C	-	CHD3	Pathogenic	1	hostseq	0.00167785			
+6	38894750	GA	-	DNAH8	Pathogenic	1	hostseq	0.0015742	3.957e-05		39.7827
+13	23335032	A	-	SACS	Pathogenic	2	hostseq	0.00130307	3.779e-05		34.4819
+12	57766131	C	-	CYP27B1	Pathogenic	2	hostseq	0.00119474	3.7e-05		32.2903
+5	146130146	T	A	LARS1	Pathogenic	1	hostseq	0.00108578	2.993e-05		36.2773
+15	34240660	C	-	SLC12A6	Pathogenic	2	hostseq	0.00103138	3.869e-05		26.6575
+16	70862113	A	-	HYDIN	Likely_pathogenic	2	kaviar	0.0874443			
+17	47137288	C	T	CDC27	Pathogenic	1	kaviar	0.0101045	1.163e-05		868.831
+14	94379549	-	G	SERPINA1	Pathogenic	1	kaviar	0.0094514	0.0002035		46.4442
+X	13746827	A	-	OFD1	Pathogenic	2	kaviar	0.0065588	0.0004218		15.5495
+1	196831893	C	T	CFHR1	Likely_pathogenic	1	kaviar	0.0058014	0.0001964		29.5387
+1	230995821	A	-	ARV1	Likely_pathogenic	1	kaviar	0.0045924	4.576e-05		100.358
+17	65558424	T	C	AXIN2	Likely_pathogenic	1	kaviar	0.0041878			
+21	43063074	A	G	CBS	Pathogenic	2	kaviar	0.0036804	0		
+13	77007548	A	-	FBXL3	Pathogenic	1	kaviar	0.0036093	0.0001758		20.5307
+17	5004566	G	-	KIF1C	Pathogenic	1	kaviar	0.0034578			
+7	152177062	-	T	KMT2C	Pathogenic	2	kaviar	0.0029968	6.096e-05		49.1601
+14	73198100	A	C	PSEN1	Pathogenic	1	kaviar	0.0028047			
+7	92517407	T	-	PEX1	Pathogenic/Likely_pathogenic	2	kaviar	0.0027425	0.0001325		20.6981
+12	101729123	T	-	SYCP3	Pathogenic	1	kaviar	0.0026196	0.0002		13.098
+X	32485078	C	-	DMD	Pathogenic	1	kaviar	0.0026126			
+15	23566258	C	-	MKRN3	Pathogenic	1	kaviar	0.0022668	2.987e-05		75.8889
+5	132378415	T	C	SLC22A5	Likely_pathogenic	1	kaviar	0.0020747			
+22	20709922	TGTC	-	PI4KA	Pathogenic	2	kaviar	0.0019987	8.127e-05		24.5933
+7	142750600	A	T	PRSS1	Pathogenic	2	kaviar	0.0018111	2.382e-05		76.0327
+4	88065406	-	A	PKD2	Pathogenic	2	kaviar	0.0016905	9.011e-06		187.604
+7	92517406	-	T	PEX1	Pathogenic/Likely_pathogenic	2	kaviar	0.0016521	3.012e-05		54.8506
+1	26779587	C	-	ARID1A	Pathogenic	1	kaviar	0.0015752			
+17	42218218	G	-	STAT5B	Pathogenic	1	kaviar	0.0014984	1.88e-05		79.7021
+13	23338724	-	T	SACS	Pathogenic	2	kaviar	0.0013831	5.898e-05		23.4503
+2	227293219	GAAA	-	COL4A3	Pathogenic/Likely_pathogenic	2	kaviar	0.0013447	4.496e-06		299.088
+13	51949735	ATG	-	ATP7B	Pathogenic/Likely_pathogenic	2	kaviar	0.0013447	8.993e-07		1495.27
+2	47798717	-	A	MSH6	Pathogenic/Likely_pathogenic	2	kaviar	0.0012679	8.993e-07		1409.87
+2	240868891	C	-	AGXT	Pathogenic	2	kaviar	0.0012679	7.565e-05		16.7601
+13	32333283	-	A	BRCA2	Pathogenic	3	kaviar	0.0012679	5.048e-05		25.1169
+13	32379885	-	A	BRCA2	Pathogenic	3	kaviar	0.0012679	3.83e-05		33.1044
+11	78073100	-	A	NDUFC2	Likely_pathogenic	1	kaviar	0.001191	0.0001186		10.0422
+14	32092090	T	C	ARHGAP5	Pathogenic	1	kaviar	0.0011578			
+7	143350382	-	GGAGCA	CLCN1	Likely_pathogenic	1	kaviar	0.0011526	7.196e-06		160.172
+X	153743022	T	C	ABCD1	Pathogenic	3	kaviar	0.0010758			
+4	128943007	-	T	SCLT1	Pathogenic/Likely_pathogenic	2	kaviar	0.0010373	3.902e-05		26.5838
+17	18121918	C	-	MYO15A	Pathogenic	1	kaviar	0.0010373	8.993e-07		1153.45
+10	48066	C	A	TUBB8	Likely_pathogenic	1	kova	0.026303	0.001269	0.0001219	20.7273
+1	228335300	T	G	OBSCN	Likely_pathogenic	1	kova	0.0060976			
+22	20709922	TGTC	-	PI4KA	Pathogenic	2	kova	0.0033106	8.127e-05	0	40.7358
+1	25800232	T	G	SELENON	Pathogenic/Likely_pathogenic	2	kova	0.0032468	1.741e-06	0	1864.91
+17	75843827	G	A	UNC13D	Pathogenic/Likely_pathogenic	2	kova	0.0026455	0.0002342	9.895e-05	11.2959
+7	142750600	A	C	PRSS1	Pathogenic	2	kova	0.0026288	7.241e-05	0	36.3044
+10	47857	C	T	TUBB8	Likely_pathogenic	1	kova	0.0022087	2.988e-05	0	73.919
+2	71528403	T	C	DYSF	Pathogenic	2	kova	0.0018677	0.0001512	0.0001512	12.3525
+17	42907547	G	A	G6PC1	Pathogenic/Likely_pathogenic	2	kova	0.0014329	0.000126	0.000126	11.3722
+13	32332877	A	T	BRCA2	Pathogenic	3	kova	0.0013208	2.52e-05	2.52e-05	52.4127
+19	34368601	G	A	GPI	Pathogenic	1	kova	0.001182	3.826e-05	0	30.8939
+19	41411011	T	G	BCKDHA	Likely_pathogenic	1	kova	0.0011561	9.419e-05	0	12.2741
+2	71564196	C	T	DYSF	Pathogenic	2	kova	0.0011374	7.557e-05	7.557e-05	15.0509
+1	173911981	A	G	SERPINC1	Likely_pathogenic	3	kova	0.0011329	7.557e-05	7.557e-05	14.9914
+16	75479216	G	A	CHST6	Pathogenic	1	kova	0.0010645	5.04e-05	5.04e-05	21.121
+16	89742841	TGTTT	-	FANCA	Pathogenic	2	kova	0.0010526	2.519e-05	2.519e-05	41.7864
+2	26273736	A	G	HADHB	Pathogenic/Likely_pathogenic	2	kova	0.0010468	7.602e-05	7.602e-05	13.7701
+2	160112090	G	-	ITGB6	Pathogenic	1	kova	0.0010405	2.52e-05	2.52e-05	41.2897
+17	43082452	A	-	BRCA1	Pathogenic	3	mcps	0.30386			
+5	126577145	T	C	ALDH7A1	Pathogenic	2	mcps	0.282934	2.987e-05	0	9472.18
+17	3494408	C	A	ASPA	Pathogenic	2	mcps	0.169374	0.001378	0	122.913
+9	35658023	-	CTCAGCTTCACAGAGTAG	RMRP	Pathogenic/Likely_pathogenic	2	mcps	0.0871029	2.929e-05	2.929e-05	2973.81
+18	46524734	G	A	LOXHD1	Pathogenic/Likely_pathogenic	2	mcps	0.0673625	0.002105	0	32.0012
+22	17209540	-	G	ADA2	Pathogenic	1	mcps	0.0663953	6.709e-05	6.709e-05	989.645
+X	38408967	A	C	OTC	Pathogenic	1	mcps	0.011708			
+19	50268255	G	T	MYH14	Pathogenic	2	mcps	0.00467077	0	0	
+3	38585951	T	C	SCN5A	Pathogenic	1	mcps	0.00397974			
+19	4110576	G	T	MAP2K2	Pathogenic	3	mcps	0.0030644			
+19	11100237	G	T	LDLR	Pathogenic/Likely_pathogenic	2	mcps	0.002822	8.993e-07	0	3138
+15	48411062	T	-	FBN1	Pathogenic	2	mcps	0.00265557			
+17	31229124	T	A	NF1	Likely_pathogenic	1	mcps	0.00257959	0	0	
+13	32337870	C	A	BRCA2	Pathogenic	3	mcps	0.00255427	0.0001734	0	14.7305
+7	117534370	G	A	CFTR	Pathogenic	3	mcps	0.00238423	0	0	
+2	240878021	G	T	AGXT	Pathogenic/Likely_pathogenic	2	mcps	0.00225036			
+9	21971058	C	A	CDKN2A	Pathogenic	2	mcps	0.00223951	8.998e-06	0	248.89
+1	156136093	C	T	LMNA	Pathogenic/Likely_pathogenic	2	mcps	0.00218162	8.993e-07	0	2425.91
+17	31219018	AG	-	NF1	Pathogenic	2	mcps	0.00196816	2.699e-06	0	729.218
+2	166048929	C	A	SCN1A	Pathogenic/Likely_pathogenic	2	mcps	0.00188495			
+15	48495512	A	C	FBN1	Pathogenic/Likely_pathogenic	2	mcps	0.00181259			
+2	47475228	GT	-	MSH2	Pathogenic	2	mcps	0.00176556			
+2	47408532	A	-	MSH2	Pathogenic	3	mcps	0.00169682			
+1	11992659	C	T	MFN2	Pathogenic	2	mcps	0.00162084			
+1	102915630	C	T	COL11A1	Pathogenic	2	mcps	0.00162084	9.004e-07	0	1800.13
+2	47806653	T	C	MSH6	Pathogenic	3	mcps	0.00154124	9.05e-07	0	1703.03
+11	77142783	C	A	MYO7A	Pathogenic	2	mcps	0.00147974	3.511e-05	0	42.1458
+7	150947386	G	-	KCNH2	Pathogenic	2	mcps	0.00147612			
+13	47954510	G	A	SUCLA2	Pathogenic/Likely_pathogenic	2	mcps	0.00143632	6.712e-05	6.712e-05	21.3993
+11	108272531	G	A	ATM	Pathogenic	3	mcps	0.00143271	6.322e-06	0	226.623
+13	32370420	C	T	BRCA2	Pathogenic/Likely_pathogenic	2	mcps	0.00137482	2.519e-05	2.236e-05	54.578
+6	123503899	G	A	TRDN	Pathogenic/Likely_pathogenic	2	mcps	0.00128799	4.9e-05	0	26.2855
+8	133017940	G	A	TG	Pathogenic	2	mcps	0.00126266	3.478e-05	0	36.3042
+21	46411840	C	T	PCNT	Pathogenic/Likely_pathogenic	2	mcps	0.00125904	2.601e-05	2.601e-05	48.406
+22	50627338	G	A	ARSA	Pathogenic/Likely_pathogenic	2	mcps	0.00125904	4.981e-05	0	25.2769
+10	87894030	TATC	-	PTEN	Pathogenic	1	mcps	0.00124819			
+13	32338236	T	A	BRCA2	Pathogenic	3	mcps	0.00124096	0	0	
+3	37025648	A	-	MLH1	Pathogenic	3	mcps	0.0012301			
+19	15192242	G	A	NOTCH3	Pathogenic/Likely_pathogenic	2	mcps	0.00122648	3.874e-05	0	31.6593
+17	43091827	TTTAC	-	BRCA1	Pathogenic	3	mcps	0.00122287	4.496e-06	0	271.991
+11	2847859	C	-	KCNQ1	Pathogenic/Likely_pathogenic	2	mcps	0.00114327	5.013e-05	5.013e-05	22.8061
+19	1223050	-	G	STK11	Pathogenic	1	mcps	0.00111795			
+16	2053444	C	T	TSC2	Pathogenic	2	mcps	0.00109986	0	0	
+10	87931078	T	G	PTEN	Likely_pathogenic	1	mcps	0.00109262			
+2	166048929	C	T	SCN1A	Likely_pathogenic	1	mcps	0.001089	9.049e-07	0	1203.45
+13	32337614	-	C	BRCA2	Pathogenic	3	mcps	0.001089			
+8	93804796	G	A	TMEM67	Pathogenic/Likely_pathogenic	2	mcps	0.00107091	2.26e-05	0	47.3854
+13	32340834	A	-	BRCA2	Pathogenic	3	mcps	0.00107091			
+1	17044882	G	A	SDHB	Pathogenic	2	mcps	0.0010275	1.883e-05	0	54.5672
+11	108138934	A	G	ACAT1	Pathogenic/Likely_pathogenic	2	mcps	0.00102388	6.565e-05	0	15.596
+13	48367575	A	-	RB1	Pathogenic	2	mcps	0.00101664			
+15	23645746	-	G	MAGEL2	Pathogenic	2	mcps	0.00101302	7.974e-05	0	12.704
+3	37025636	G	T	MLH1	Pathogenic/Likely_pathogenic	2	saudi	0.016556	0.0009992	0.0002959	16.5693
+6	56620664	G	A	DST	Pathogenic/Likely_pathogenic	2	saudi	0.013245	0.0006935	0.0006935	19.0988
+6	145735405	A	C	EPM2A	Pathogenic/Likely_pathogenic	2	saudi	0.011589	1.083e-06	0	10700.8
+11	65553905	T	G	LTBP3	Likely_pathogenic	1	saudi	0.011589	0.0007943	0.0002066	14.5902
+5	146340275	C	T	POU4F3	Likely_pathogenic	1	saudi	0.006623			
+2	218880997	T	G	WNT10A	Likely_pathogenic	1	saudi	0.004967			
+3	45419670	A	C	LARS2	Pathogenic/Likely_pathogenic	2	saudi	0.004967			
+5	13844986	C	A	DNAH5	Likely_pathogenic	1	saudi	0.004967	0.0004008	0	12.3927
+16	2091176	T	G	PKD1	Likely_pathogenic	1	saudi	0.004967	1.015e-06	0	4893.6
+17	81911268	A	C	PCYT2	Likely_pathogenic	1	saudi	0.004967			
+1	93993244	T	C	ABCA4	Pathogenic/Likely_pathogenic	2	saudi	0.003311	4.497e-06	0	736.269
+1	197421257	G	A	CRB1	Pathogenic/Likely_pathogenic	2	saudi	0.003311	2.987e-05	0	110.847
+1	228174696	C	T	IBA57	Pathogenic/Likely_pathogenic	2	saudi	0.003311	6.111e-05	0	54.181
+2	26461854	C	T	OTOF	Pathogenic/Likely_pathogenic	2	saudi	0.003311	1.259e-05	0	262.986
+2	48963700	A	T	FSHR	Likely_pathogenic	1	saudi	0.003311	8.993e-07	0	3681.75
+2	219214427	G	A	ABCB6	Likely_pathogenic	1	saudi	0.003311	0.0001734	0.0001734	19.0946
+2	227303867	G	A	COL4A3	Likely_pathogenic	2	saudi	0.003311			
+3	189994238	C	A	P3H2	Likely_pathogenic	1	saudi	0.003311			
+5	176908695	C	T	UIMC1	Likely_pathogenic	1	saudi	0.003311	0.0001742	0.0001742	19.0069
+6	35506101	G	A	TULP1	Pathogenic	2	saudi	0.003311	2.519e-05	0	131.441
+6	146745941	C	T	ADGB	Pathogenic	1	saudi	0.003311	0.0003192	0	10.3728
+7	100127367	G	A	MBLAC1	Likely_pathogenic	1	saudi	0.003311	2.726e-05	0	121.46
+7	150950166	A	C	KCNH2	Likely_pathogenic	1	saudi	0.003311	0.0001315	0	25.1787
+11	17527221	A	C	USH1C	Likely_pathogenic	1	saudi	0.003311	0.0002767	0	11.966
+11	47332582	A	G	MYBPC3	Likely_pathogenic	1	saudi	0.003311			
+11	62634377	T	G	GANAB	Likely_pathogenic	1	saudi	0.003311	2.323e-05	0	142.531
+11	88296207	C	G	CTSC	Pathogenic/Likely_pathogenic	2	saudi	0.003311	9.275e-05	0	35.6981
+12	123699702	A	G	TCTN2	Pathogenic/Likely_pathogenic	2	saudi	0.003311	0.000174	0.000174	19.0287
+17	31095310	A	C	NF1	Pathogenic/Likely_pathogenic	2	saudi	0.003311			
+19	2993574	C	A	TLE6	Likely_pathogenic	1	saudi	0.003311	0.000182	0.000182	18.1923
+19	40608482	A	G	LTBP4	Pathogenic/Likely_pathogenic	2	saudi	0.003311	0.0001737	0.0001737	19.0616
+1	1050462	G	A	AGRN	Likely_pathogenic	2	saudi	0.001656	1.909e-05	0	86.747
+1	40304529	C	T	COL9A2	Likely_pathogenic	1	saudi	0.001656			
+1	42738568	G	A	CLDN19	Likely_pathogenic	1	saudi	0.001656	3.597e-06	0	460.384
+1	62603967	A	G	DOCK7	Likely_pathogenic	1	saudi	0.001656	9.001e-07	0	1839.8
+1	75890730	C	T	MSH4	Pathogenic/Likely_pathogenic	2	saudi	0.001656	9.059e-05	0	18.2802
+1	119740470	C	T	PHGDH	Pathogenic/Likely_pathogenic	2	saudi	0.001656	7.641e-05	0	21.6726
+1	151024658	G	A	PRUNE1	Pathogenic/Likely_pathogenic	2	saudi	0.001656	5.038e-05	0	32.8702
+1	155294533	C	T	PKLR	Likely_pathogenic	1	saudi	0.001656			
+1	171114005	A	G	FMO3	Likely_pathogenic	2	saudi	0.001656			
+1	197104402	G	A	ASPM	Pathogenic	2	saudi	0.001656	2.992e-05	0	55.3476
+1	215675331	A	G	USH2A	Pathogenic/Likely_pathogenic	2	saudi	0.001656	3.597e-06	0	460.384
+1	228335300	T	G	OBSCN	Likely_pathogenic	1	saudi	0.001656			
+2	31529323	C	T	SRD5A2	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.987e-05	0	55.4402
+2	47804941	G	A	MSH6	Pathogenic/Likely_pathogenic	2	saudi	0.001656			
+2	70963289	C	G	ATP6V1B1	Pathogenic/Likely_pathogenic	2	saudi	0.001656	4.472e-05	0	37.0304
+2	72887433	A	G	SPR	Likely_pathogenic	1	saudi	0.001656	8.531e-05	0	19.4116
+2	121530895	G	A	CLASP1	Pathogenic/Likely_pathogenic	2	saudi	0.001656	0.0001254	0	13.2057
+2	127286772	G	A	ERCC3	Pathogenic	2	saudi	0.001656	2.519e-05	0	65.7404
+2	151519759	G	A	NEB	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.326e-05	0	71.1952
+2	151684966	G	A	NEB	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.995e-05	0	55.2922
+2	168935397	C	T	ABCB11	Likely_pathogenic	2	saudi	0.001656	5.975e-05	0	27.7155
+2	178530455	G	C	TTN	Pathogenic	2	saudi	0.001656			
+2	201629229	C	T	TMEM237	Pathogenic/Likely_pathogenic	2	saudi	0.001656	0	0	
+2	218661526	C	T	BCS1L	Likely_pathogenic	2	saudi	0.001656	2.698e-06	0	613.788
+2	219420516	C	T	DES	Pathogenic/Likely_pathogenic	2	saudi	0.001656	1.47e-05	0	112.653
+2	227303913	G	A	COL4A3	Likely_pathogenic	2	saudi	0.001656	3.597e-06	0	460.384
+3	7680268	G	A	GRM7	Pathogenic	1	saudi	0.001656	5.974e-05	0	27.7201
+3	48575673	G	A	COL7A1	Pathogenic	2	saudi	0.001656	3.597e-06	0	460.384
+3	49829760	G	A	TRAIP	Likely_pathogenic	1	saudi	0.001656	8.993e-07	0	1841.43
+3	120646990	C	A	HGD	Pathogenic/Likely_pathogenic	2	saudi	0.001656			
+3	122261678	G	C	CASR	Likely_pathogenic	1	saudi	0.001656			
+3	128906211	C	T	ACAD9	Pathogenic/Likely_pathogenic	2	saudi	0.001656	5.797e-05	0	28.5665
+3	164996736	A	G	SI	Likely_pathogenic	2	saudi	0.001656	5.449e-05	0	30.3909
+3	184142604	G	A	EIF2B5	Likely_pathogenic	1	saudi	0.001656	8.997e-07	0	1840.61
+4	654889	G	A	PDE6B	Pathogenic	2	saudi	0.001656	2.379e-05	0	69.6091
+4	1004299	T	C	IDUA	Pathogenic/Likely_pathogenic	2	saudi	0.001656			
+4	55969062	G	C	CEP135	Likely_pathogenic	1	saudi	0.001656	3.023e-05	0	54.78
+4	57031337	C	T	IGFBP7	Pathogenic/Likely_pathogenic	2	saudi	0.001656	0	0	
+4	78432512	C	T	FRAS1	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.327e-05	0	71.1646
+4	78477830	C	T	FRAS1	Pathogenic	1	saudi	0.001656	5.047e-05	0	32.8116
+4	127949802	A	G	MFSD8	Pathogenic/Likely_pathogenic	2	saudi	0.001656			
+4	129039039	A	G	SCLT1	Pathogenic	2	saudi	0.001656	3.171e-05	0	52.2233
+4	150683718	C	G	LRBA	Likely_pathogenic	1	saudi	0.001656	3.13e-05	0	52.9073
+4	186208973	G	A	CYP4V2	Pathogenic/Likely_pathogenic	2	saudi	0.001656	0.0001259	0	13.1533
+5	13717316	T	C	DNAH5	Likely_pathogenic	2	saudi	0.001656			
+5	37213648	C	T	CPLANE1	Pathogenic	1	saudi	0.001656	2.824e-05	0	58.6402
+5	41143007	C	T	C6	Likely_pathogenic	1	saudi	0.001656			
+5	96432918	C	T	CAST	Likely_pathogenic	1	saudi	0.001656	3.238e-05	0	51.1427
+6	6224839	C	G	F13A1	Likely_pathogenic	2	saudi	0.001656	1.872e-05	0	88.4615
+6	6305437	C	T	F13A1	Likely_pathogenic	1	saudi	0.001656	2.987e-05	0	55.4402
+6	7580487	C	T	DSP	Pathogenic/Likely_pathogenic	2	saudi	0.001656			
+6	42978490	C	A	PEX6	Likely_pathogenic	2	saudi	0.001656	2.987e-05	0	55.4402
+6	49457873	C	T	MMUT	Likely_pathogenic	2	saudi	0.001656	1.47e-05	0	112.653
+6	80106694	A	T	BCKDHB	Pathogenic/Likely_pathogenic	2	saudi	0.001656	3.142e-05	0	52.7053
+7	2559184	G	A	IQCE	Likely_pathogenic	1	saudi	0.001656	0	0	
+7	21635999	G	A	DNAH11	Pathogenic	1	saudi	0.001656	5.975e-05	0	27.7155
+7	66089693	C	T	ASL	Pathogenic	2	saudi	0.001656			
+7	76058047	C	T	MDH2	Pathogenic/Likely_pathogenic	2	saudi	0.001656	0.0001342	0	12.3398
+7	96321940	A	C	SLC25A13	Likely_pathogenic	1	saudi	0.001656			
+7	117509092	C	T	CFTR	Pathogenic	3	saudi	0.001656	9.278e-05	0	17.8487
+7	117509123	G	A	CFTR	Pathogenic	4	saudi	0.001656	8.228e-05	0	20.1264
+7	122092952	C	T	AASS	Pathogenic/Likely_pathogenic	2	saudi	0.001656	0	0	
+7	139134654	G	C	IFT56	Pathogenic/Likely_pathogenic	2	saudi	0.001656			
+7	143324442	C	T	CLCN1	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.987e-05	0	55.4402
+7	143332409	T	C	CLCN1	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.432e-05	0	68.0921
+8	30727766	G	A	GSR	Likely_pathogenic	1	saudi	0.001656	1.805e-05	0	91.7452
+8	54627278	G	A	RP1	Pathogenic	1	saudi	0.001656	2.319e-05	0	71.4101
+8	85465470	G	A	CA2	Pathogenic	2	saudi	0.001656	2.246e-05	0	73.7311
+8	109436447	C	A	PKHD1L1	Likely_pathogenic	1	saudi	0.001656	8.998e-07	0	1840.41
+9	6533117	C	T	GLDC	Pathogenic/Likely_pathogenic	2	saudi	0.001656	3.829e-05	0	43.2489
+9	27056338	T	A	IFT74	Likely_pathogenic	1	saudi	0.001656			
+9	35657804	T	G	RMRP	Pathogenic	1	saudi	0.001656			
+9	97482975	G	A	TDRD7	Likely_pathogenic	1	saudi	0.001656	2.319e-05	0	71.4101
+9	97684965	G	A	XPA	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.991e-05	0	55.3661
+9	100292976	C	T	INVS	Pathogenic	2	saudi	0.001656	2.319e-05	0	71.4101
+9	114406451	G	A	WHRN	Likely_pathogenic	1	saudi	0.001656			
+10	49474074	A	G	ERCC6	Pathogenic/Likely_pathogenic	2	saudi	0.001656			
+10	49664776	G	A	CHAT	Likely_pathogenic	1	saudi	0.001656			
+10	71704929	G	A	CDH23	Pathogenic/Likely_pathogenic	2	saudi	0.001656	7.653e-05	0	21.6386
+10	73821695	A	T	CAMK2G	Likely_pathogenic	1	saudi	0.001656			
+10	89441152	G	A	SLC16A12	Likely_pathogenic	1	saudi	0.001656			
+10	93612810	C	T	PDE6C	Pathogenic/Likely_pathogenic	2	saudi	0.001656	3.744e-05	0	44.2308
+10	104002592	G	T	SLK	Likely_pathogenic	1	saudi	0.001656			
+10	133373241	C	T	ECHS1	Pathogenic/Likely_pathogenic	2	saudi	0.001656	3.013e-05	0	54.9618
+11	6547291	C	T	DNHD1	Likely_pathogenic	1	saudi	0.001656	8.395e-05	0	19.726
+11	14885775	C	T	PDE3B	Pathogenic/Likely_pathogenic	2	saudi	0.001656	0.0001009	0	16.4123
+11	17394412	C	T	ABCC8	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.987e-05	0	55.4402
+11	45910964	T	G	PEX16	Likely_pathogenic	1	saudi	0.001656	1.472e-05	0	112.5
+11	47234872	G	A	DDB2	Pathogenic/Likely_pathogenic	2	saudi	0.001656	1.872e-05	0	88.4615
+11	66523634	C	T	BBS1	Pathogenic	2	saudi	0.001656	4.497e-06	0	368.245
+11	77174825	C	T	MYO7A	Pathogenic	2	saudi	0.001656	9.085e-05	0	18.2278
+11	89178183	G	A	TYR	Pathogenic/Likely_pathogenic	2	saudi	0.001656	0.0001195	0	13.8577
+11	89178719	C	T	TYR	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.698e-06	0	613.788
+11	102954174	A	C	MMP13	Pathogenic/Likely_pathogenic	2	saudi	0.001656	7.646e-05	0	21.6584
+11	103158916	C	T	DYNC2H1	Pathogenic/Likely_pathogenic	2	saudi	0.001656	7.595e-05	0	21.8038
+11	119029288	G	A	SLC37A4	Pathogenic	2	saudi	0.001656	3.479e-05	0	47.5999
+11	124873804	T	C	ROBO3	Likely_pathogenic	1	saudi	0.001656			
+12	6450631	G	A	CD27	Likely_pathogenic	1	saudi	0.001656	1.799e-06	0	920.511
+12	6943850	G	A	C12orf57	Likely_pathogenic	1	saudi	0.001656	0.0001156	0	14.3253
+12	40959141	C	T	CNTN1	Pathogenic	1	saudi	0.001656	5.987e-05	0	27.6599
+12	49951083	C	T	AQP2	Pathogenic	2	saudi	0.001656	8.111e-06	0	204.167
+12	53429479	C	T	AMHR2	Pathogenic	1	saudi	0.001656	6.708e-05	0	24.6869
+12	53431262	G	A	AMHR2	Likely_pathogenic	1	saudi	0.001656	2.236e-05	0	74.0608
+12	106501420	C	T	POLR3B	Likely_pathogenic	2	saudi	0.001656	0.0001123	0	14.7462
+12	130348137	C	T	PIWIL1	Likely_pathogenic	1	saudi	0.001656	3.971e-05	0	41.7023
+13	23332976	G	A	SACS	Pathogenic/Likely_pathogenic	2	saudi	0.001656			
+13	36965713	C	T	ALG5	Pathogenic	1	saudi	0.001656	9.001e-07	0	1839.8
+13	38876371	C	T	FREM2	Pathogenic	1	saudi	0.001656	5.797e-05	0	28.5665
+15	30910718	C	T	FAN1	Pathogenic	1	saudi	0.001656			
+15	42396812	G	A	CAPN3	Likely_pathogenic	1	saudi	0.001656			
+15	64980971	G	A	SPG21	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.519e-05	0	65.7404
+16	1571535	C	T	IFT140	Pathogenic/Likely_pathogenic	2	saudi	0.001656	1.801e-06	0	919.489
+16	2278348	A	G	ABCA3	Likely_pathogenic	1	saudi	0.001656			
+16	16155010	C	T	ABCC6	Pathogenic/Likely_pathogenic	2	saudi	0.001656	0.0001023	0	16.1877
+16	56865482	C	T	SLC12A3	Pathogenic/Likely_pathogenic	2	saudi	0.001656	5.797e-05	0	28.5665
+16	68810224	G	A	CDH1	Pathogenic	3	saudi	0.001656	1.799e-06	0	920.511
+16	88835786	C	T	GALNS	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.319e-05	0	71.4101
+17	3499005	G	A	ASPA	Pathogenic	2	saudi	0.001656	2.987e-05	0	55.4402
+17	4900836	G	A	CHRNE	Pathogenic/Likely_pathogenic	2	saudi	0.001656			
+17	7774826	T	G	DNAH2	Likely_pathogenic	1	saudi	0.001656	0.0001493	0	11.0918
+17	46171849	G	A	KANSL1	Likely_pathogenic	1	saudi	0.001656			
+17	50071380	G	A	ITGA3	Likely_pathogenic	2	saudi	0.001656	3.478e-05	0	47.6136
+17	75828885	G	T	UNC13D	Pathogenic/Likely_pathogenic	2	saudi	0.001656	3.499e-05	0	47.3278
+17	80112003	C	T	GAA	Pathogenic	3	saudi	0.001656			
+17	81935110	C	T	PYCR1	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.988e-05	0	55.4217
+19	12897406	G	C	GCDH	Pathogenic	1	saudi	0.001656			
+19	17365393	G	A	PLVAP	Pathogenic	2	saudi	0.001656	4.637e-05	0	35.7127
+19	33463032	C	G	PEPD	Pathogenic/Likely_pathogenic	2	saudi	0.001656	9.204e-07	0	1799.22
+19	38523927	C	T	RYR1	Pathogenic	2	saudi	0.001656	2.409e-05	0	68.7422
+20	5955247	A	C	MCM8	Likely_pathogenic	1	saudi	0.001656	8.998e-07	0	1840.41
+20	44406132	G	A	HNF4A	Pathogenic	3	saudi	0.001656	2.519e-05	0	65.7404
+21	31217692	G	C	TIAM1	Likely_pathogenic	1	saudi	0.001656			
+21	42375853	G	C	TMPRSS3	Likely_pathogenic	1	saudi	0.001656			
+21	44289803	G	A	AIRE	Pathogenic/Likely_pathogenic	2	saudi	0.001656	6.709e-05	0	24.6833
+21	45990388	G	A	COL6A1	Likely_pathogenic	1	saudi	0.001656			
+22	20992304	C	T	LZTR1	Likely_pathogenic	3	saudi	0.001656	8.961e-05	0	18.4801
+22	20996720	C	G	LZTR1	Pathogenic/Likely_pathogenic	2	saudi	0.001656	2.987e-05	0	55.4402
+22	37974200	T	G	SOX10	Pathogenic	1	saudi	0.001656			
+22	50625683	T	C	ARSA	Pathogenic	2	saudi	0.001656			
+4	3463443	GGGGGCGCGGGGGGG	-	DOK7	Pathogenic/Likely_pathogenic	2	sg10k_npm	0.0157233	0.0002597	9.762e-05	60.5441
+1	1043197	G	C	AGRN	Pathogenic	1	sg10k_npm	0.012939	0.001202	0.001202	10.7646
+17	44258043	CGGCAGCCAGGACCTGGGGGCTGAATG	-	SLC4A1	Pathogenic/Likely_pathogenic	2	sg10k_npm	0.00313615	7.557e-05	7.557e-05	41.4999
+7	142750600	A	C	PRSS1	Pathogenic	2	sg10k_npm	0.00299072	7.241e-05	0	41.3026
+15	45106172	G	A	DUOX2	Pathogenic/Likely_pathogenic	2	sg10k_npm	0.00185224	0.0001739	7.557e-05	10.6512
+1	152305825	-	CTCATTGTCACTGGCCTGA	FLG	Pathogenic	1	sg10k_npm	0.0016415	0.0001185	0.0001185	13.8523
+1	152304041	ATGGGATG	-	FLG	Likely_pathogenic	1	sg10k_npm	0.0012933	0.0001009	0.0001009	12.8176
+2	174750169	-	T	CHRNA1	Likely_pathogenic	1	sg10k_npm	0.00127097	5.042e-05	5.042e-05	25.2077
+9	132897612	T	-	TSC1	Pathogenic	1	sg10k_npm	0.00124502	3.06e-05	0	40.6869
+7	5997425	T	A	PMS2	Likely_pathogenic	2	sg10k_npm	0.0011956	4.072e-05	0	29.3615
+12	96519066	G	A	CFAP54	Pathogenic	1	sg10k_npm	0.00114792	5.603e-05	5.603e-05	20.4876
+2	178684905	C	A	TTN	Likely_pathogenic	1	sg10k_npm	0.0010433	9.043e-07	0	1153.71
+12	6019223	G	A	VWF	Pathogenic	3	sg10k_npm	0.00100561	5.038e-05	5.038e-05	19.9605
+7	117559591	TCT	-	CFTR	Pathogenic	4	svatalog	0.767327	0.01498		51.2234
+9	101427574	C	G	ALDOB	Pathogenic/Likely_pathogenic	2	svatalog	0.420792	0.005299		79.4097
+14	28767732	-	G	FOXG1	Pathogenic	3	svatalog	0.292079	0.0002654		1100.52
+10	68166409	-	C	MYPN	Pathogenic/Likely_pathogenic	2	svatalog	0.252475			
+5	71641018	G	A	MCCC2	Pathogenic/Likely_pathogenic	2	svatalog	0.237624	0.01614		14.7227
+22	37757959	-	C	TRIOBP	Likely_pathogenic	1	svatalog	0.217822			
+16	30725049	-	C	SRCAP	Pathogenic/Likely_pathogenic	2	svatalog	0.212871	0.001448		147.01
+12	121804751	-	C	SETD1B	Pathogenic/Likely_pathogenic	2	svatalog	0.19802	0.001391		142.358
+1	225404655	C	T	LBR	Pathogenic/Likely_pathogenic	2	svatalog	0.193069	2.88e-05		6703.78
+11	20630721	T	G	SLC6A5	Pathogenic	1	svatalog	0.188119	4.496e-06		41841.4
+X	154379754	-	C	EMD	Pathogenic	2	svatalog	0.183168	2.888e-05		6342.38
+2	44942318	-	C	SIX3	Likely_pathogenic	1	svatalog	0.178218	4.513e-06		39489.9
+12	21462006	A	T	PYROXD1	Likely_pathogenic	2	svatalog	0.178218	1.816e-06		98137.7
+X	48902788	-	C	PQBP1	Pathogenic	2	svatalog	0.173267	0		
+2	43846309	C	G	ABCG8	Pathogenic	2	svatalog	0.163366	1.888e-05		8652.86
+7	107672182	C	T	SLC26A4	Pathogenic	3	svatalog	0.163366	0.004861		33.6075
+16	56904410	A	G	SLC12A3	Likely_pathogenic	2	svatalog	0.163366	6.296e-06		25947.6
+1	152307547	G	A	FLG	Pathogenic/Likely_pathogenic	2	svatalog	0.158416	0.007226		21.9231
+5	1294549	-	G	TERT	Pathogenic/Likely_pathogenic	2	svatalog	0.158416	4.535e-06		34931.9
+7	117642566	G	A	CFTR	Pathogenic	4	svatalog	0.158416	0.009232		17.1594
+X	53234266	-	G	IQSEC2	Pathogenic	2	svatalog	0.153465	4.065e-05		3775.28
+4	39465171	T	-	LIAS	Pathogenic	1	svatalog	0.148515	5.396e-06		27523.2
+3	53186636	-	G	PRKCD	Pathogenic	1	svatalog	0.143564	2.988e-05		4804.69
+5	53107109	-	G	MOCS2	Pathogenic	2	svatalog	0.143564	8.961e-05		1602.1
+6	79493636	G	A	LCA5	Pathogenic	2	svatalog	0.143564	0.002258		63.5802
+17	17793401	-	C	RAI1	Pathogenic	1	svatalog	0.143564			
+20	54159108	TTAGACTG	-	CYP24A1	Pathogenic	2	svatalog	0.143564	0.0001498		958.371
+4	78317428	-	C	FRAS1	Pathogenic/Likely_pathogenic	2	svatalog	0.138614	2.698e-05		5137.66
+7	5999183	T	-	PMS2	Pathogenic	1	svatalog	0.138614			
+4	79984831	-	G	ANTXR2	Pathogenic/Likely_pathogenic	2	svatalog	0.133663	0.0003027		441.569
+17	8162342	-	G	VAMP2	Likely_pathogenic	1	svatalog	0.133663	1.887e-05		7083.36
+11	93801950	C	T	MED17	Pathogenic/Likely_pathogenic	2	svatalog	0.128713	6.297e-06		20440.4
+16	30088756	-	C	TBX6	Pathogenic	1	svatalog	0.128713	3.826e-05		3364.17
+22	20994017	C	T	LZTR1	Pathogenic/Likely_pathogenic	2	svatalog	0.128713	3.604e-06		35713.9
+X	48688077	-	C	WAS	Likely_pathogenic	1	svatalog	0.128713			
+2	232329902	-	C	DIS3L2	Pathogenic	1	svatalog	0.123762	1.899e-05		6517.22
+9	93289548	-	G	WNK2	Likely_pathogenic	1	svatalog	0.118812	2.439e-05		4871.34
+10	102067142	-	C	HPS6	Pathogenic/Likely_pathogenic	2	svatalog	0.118812	2.519e-05		4716.63
+21	45491268	-	C	COL18A1	Pathogenic	2	svatalog	0.118812	3.842e-05		3092.45
+1	151612459	-	G	SNX27	Pathogenic	1	svatalog	0.113861	0.0001816		626.988
+2	48688032	-	A	LHCGR	Likely_pathogenic	1	svatalog	0.113861	1.889e-05		6027.58
+X	47619510	-	C	SYN1	Pathogenic	1	svatalog	0.113861			
+1	21885148	-	G	HSPG2	Pathogenic/Likely_pathogenic	2	svatalog	0.108911	0.0001336		815.202
+7	101212844	-	C	PLOD3	Pathogenic/Likely_pathogenic	2	svatalog	0.10396	9.444e-05		1100.8
+22	42214941	-	G	TCF20	Pathogenic	2	svatalog	0.10396	0		
+X	71137791	-	C	MED12	Pathogenic/Likely_pathogenic	2	svatalog	0.10396			
+X	100407506	-	G	PCDH19	Pathogenic	2	svatalog	0.10396	0.0003033		342.763
+10	48066	C	A	TUBB8	Likely_pathogenic	1	swegen	0.3585	0.001269	9.494e-05	282.506
+19	1037767	G	A	CNN2	Pathogenic	1	swegen	0.275	0.0003901	9.795e-05	704.947
+19	1037757	G	A	CNN2	Pathogenic	1	swegen	0.2575	0.0008356	0.0001398	308.162
+7	142750600	A	C	PRSS1	Pathogenic	2	swegen	0.0725	7.241e-05	9.471e-06	1001.24
+7	142751920	G	C	PRSS1	Likely_pathogenic	1	swegen	0.0145	8.088e-05	1.614e-05	179.278
+12	49051161	CA	-	KMT2D	Likely_pathogenic	1	swegen	0.009	0.000802	9.417e-06	11.2219
+14	94379549	-	G	SERPINA1	Pathogenic	1	swegen	0.008	0.0002035	0	39.312
+10	47629	C	T	TUBB8	Likely_pathogenic	2	swegen	0.0065	3.84e-05	1.802e-06	169.271
+7	142751938	G	A	PRSS1	Pathogenic/Likely_pathogenic	2	swegen	0.0045	3.105e-05	1.66e-05	144.928
+7	117548823	G	T	CFTR	Pathogenic/Likely_pathogenic	2	swegen	0.0035	3.019e-05	1.811e-06	115.932
+4	186196075	G	T	CYP4V2	Pathogenic	2	swegen	0.003	9.085e-05	9.085e-05	33.0215
+15	45095524	T	-	DUOX2	Pathogenic/Likely_pathogenic	2	swegen	0.003	5.616e-05	5.396e-05	53.4188
+1	119033161	A	C	WARS2	Likely_pathogenic	2	swegen	0.0025	8.453e-05	8.453e-05	29.5753
+1	197101115	TTTC	-	ASPM	Pathogenic	2	swegen	0.002	0.0001738	2.34e-05	11.5075
+11	65267559	T	C	POLA2	Likely_pathogenic	1	swegen	0.002	0.0001311	3.443e-05	15.2555
+12	108567650	G	C	ISCU	Pathogenic	2	swegen	0.002	0.0001774	7.513e-05	11.274
+15	89210794	G	A	RLBP1	Pathogenic/Likely_pathogenic	2	swegen	0.002	0.0001741	6.194e-05	11.4877
+19	16906955	G	A	CPAMD8	Pathogenic	1	swegen	0.002	0.0001568	7.286e-06	12.7551
+1	40080483	C	T	PPT1	Pathogenic	2	swegen	0.0015	7.735e-05	7.735e-05	19.3924
+2	48723638	C	A	LHCGR	Pathogenic	1	swegen	0.0015	7.916e-05	7.916e-05	18.949
+3	81577972	C	T	GBE1	Pathogenic/Likely_pathogenic	2	swegen	0.0015	3.021e-05	7.209e-06	49.6524
+3	184357800	GGAGA	-	CLCN2	Pathogenic/Likely_pathogenic	2	swegen	0.0015	0.0001127	9.532e-05	13.3097
+4	154744796	T	C	LRAT	Likely_pathogenic	2	swegen	0.0015	1.874e-05	1.169e-05	80.0427
+7	26364636	G	T	SNX10	Pathogenic	1	swegen	0.0015	0.0001312	3.893e-05	11.4329
+8	18083995	G	A	ASAH1	Pathogenic	1	swegen	0.0015	2.611e-05	1.35e-05	57.4493
+8	132871489	G	A	TG	Pathogenic	2	swegen	0.0015	8.183e-05	8.183e-05	18.3307
+8	144436682	C	G	TONSL	Pathogenic/Likely_pathogenic	2	swegen	0.0015	8.004e-05	8.004e-05	18.7406
+11	119025299	C	A	SLC37A4	Pathogenic	2	swegen	0.0015	0.0001341	0.0001341	11.1857
+14	87945632	G	A	GALC	Pathogenic/Likely_pathogenic	2	swegen	0.0015	9.364e-05	1.624e-05	16.0188
+15	39961785	C	T	EIF2AK4	Pathogenic	1	swegen	0.0015	2.523e-05	2.436e-05	59.453
+15	44672158	T	C	PATL2	Pathogenic	1	swegen	0.0015	3.8e-05	3.8e-05	39.4737
+15	90935227	G	T	UNC45A	Pathogenic/Likely_pathogenic	2	swegen	0.0015	5.824e-05	5.824e-05	25.7555
+16	89512995	-	AT	SPG7	Pathogenic/Likely_pathogenic	2	swegen	0.0015	0.0001124	2.79e-05	13.3452
+17	18141127	C	T	MYO15A	Pathogenic/Likely_pathogenic	2	swegen	0.0015	2.987e-05	1.978e-05	50.2176
+17	19663335	C	T	ALDH3A2	Pathogenic/Likely_pathogenic	2	swegen	0.0015	9.364e-05	5.576e-05	16.0188
+17	75758281	C	T	GALK1	Pathogenic/Likely_pathogenic	2	swegen	0.0015	6.712e-05	6.712e-05	22.348
+22	49910466	C	T	ALG12	Pathogenic/Likely_pathogenic	2	swegen	0.0015	0.000134	0.000134	11.194
+1	43427718	C	T	SZT2	Pathogenic	2	swegen	0.001	1.259e-05	1.259e-05	79.4281
+1	94046922	G	T	ABCA4	Pathogenic/Likely_pathogenic	2	swegen	0.001	7.488e-05	1.259e-05	13.3547
+1	94108700	G	A	ABCA4	Pathogenic	2	swegen	0.001	1.529e-05	1.529e-05	65.4022
+1	99902707	C	T	AGL	Pathogenic	2	swegen	0.001	1.875e-05	1.44e-05	53.3333
+1	150513270	C	T	ECM1	Pathogenic/Likely_pathogenic	2	swegen	0.001	9.36e-05	4.317e-05	10.6838
+1	236795712	CG	-	MTR	Pathogenic	1	swegen	0.001	2.698e-06	2.698e-06	370.645
+2	26273650	G	A	HADHB	Pathogenic	1	swegen	0.001	5.622e-05	1.241e-05	17.7873
+2	168995348	C	T	ABCB11	Pathogenic	2	swegen	0.001	9.005e-06	9.005e-06	111.049
+2	214945097	G	A	ABCA12	Likely_pathogenic	2	swegen	0.001	3.482e-05	1.35e-05	28.7191
+2	218890271	G	T	WNT10A	Pathogenic	2	swegen	0.001	1.079e-05	1.079e-05	92.6784
+2	230178241	-	A	SP110	Pathogenic/Likely_pathogenic	2	swegen	0.001	2.073e-05	2.073e-05	48.2393
+3	46997310	C	T	NBEAL2	Pathogenic	1	swegen	0.001			
+3	58123548	-	G	FLNB	Pathogenic/Likely_pathogenic	2	swegen	0.001	1.897e-05	7.208e-06	52.7148
+3	129478014	A	G	IFT122	Likely_pathogenic	1	swegen	0.001	2.699e-06	2.699e-06	370.508
+5	90712415	-	A	ADGRV1	Likely_pathogenic	1	swegen	0.001	2.737e-06	2.737e-06	365.364
+5	95566121	C	T	ARSK	Pathogenic	1	swegen	0.001	2.99e-05	2.339e-05	33.4448
+5	132595629	G	T	RAD50	Pathogenic/Likely_pathogenic	2	swegen	0.001	4.766e-05	4.766e-05	20.982
+5	132861833	G	A	GDF9	Pathogenic	1	swegen	0.001	9.713e-05	9.713e-05	10.2955
+5	157471733	G	A	NIPAL4	Pathogenic	2	swegen	0.001	3.546e-05	2.527e-05	28.2008
+6	98875675	A	G	FBXL4	Likely_pathogenic	2	swegen	0.001	8.993e-06	8.993e-06	111.198
+6	106583327	C	T	RTN4IP1	Likely_pathogenic	1	swegen	0.001	9.373e-05	4.411e-05	10.6689
+6	166948619	G	A	RNASET2	Pathogenic/Likely_pathogenic	2	swegen	0.001	2.901e-05	2.901e-05	34.4709
+8	43197848	C	T	HGSNAT	Pathogenic/Likely_pathogenic	2	swegen	0.001	5.618e-05	4.588e-05	17.7999
+8	142915116	CTT	-	CYP11B2	Pathogenic/Likely_pathogenic	2	swegen	0.001	7.555e-05	7.555e-05	13.2363
+8	144059864	G	A	OPLAH	Likely_pathogenic	1	swegen	0.001	3.508e-05	3.508e-05	28.5063
+9	12694335	C	A	TYRP1	Pathogenic	2	swegen	0.001	3.748e-05	2.608e-05	26.6809
+9	36246472	G	A	GNE	Pathogenic/Likely_pathogenic	2	swegen	0.001	2.236e-05	1.172e-05	44.7227
+10	71511002	G	A	CDH23	Pathogenic	2	swegen	0.001	2.879e-05	2.879e-05	34.7343
+10	124408564	G	C	OAT	Pathogenic/Likely_pathogenic	2	swegen	0.001			
+10	125772724	A	G	MMP21	Likely_pathogenic	1	swegen	0.001	5.619e-05	1.439e-05	17.7968
+10	133366051	C	T	ECHS1	Likely_pathogenic	1	swegen	0.001	2.878e-05	2.878e-05	34.7464
+11	89227933	G	A	TYR	Pathogenic	2	swegen	0.001	6.656e-05	6.656e-05	15.024
+11	113362486	T	G	TTC12	Pathogenic	1	swegen	0.001	0.0001	0.0001	10
+11	119028229	-	C	SLC37A4	Pathogenic/Likely_pathogenic	2	swegen	0.001	5.054e-05	5.054e-05	19.7863
+11	119343849	GT	-	MFRP	Pathogenic	2	swegen	0.001	3.753e-05	3.687e-05	26.6454
+12	48141676	A	G	PFKM	Pathogenic/Likely_pathogenic	2	swegen	0.001	1.899e-05	7.688e-06	52.6593
+12	88114480	A	-	CEP290	Pathogenic/Likely_pathogenic	2	swegen	0.001	1.578e-05	1.578e-05	63.3714
+12	88139153	C	A	CEP290	Pathogenic/Likely_pathogenic	2	swegen	0.001	6.299e-06	6.299e-06	158.755
+13	40805140	G	A	SLC25A15	Pathogenic/Likely_pathogenic	2	swegen	0.001	3.687e-05	3.687e-05	27.1223
+15	40016508	C	T	EIF2AK4	Pathogenic	2	swegen	0.001	5.974e-05	5.576e-05	16.7392
+15	44567436	ACTC	-	SPG11	Pathogenic	2	swegen	0.001	9.365e-05	5.486e-05	10.6781
+15	53711459	-	A	WDR72	Likely_pathogenic	1	swegen	0.001	3.417e-05	3.417e-05	29.2654
+15	79896963	-	CGCTGCTCACCGCTGC	MTHFS	Pathogenic	2	swegen	0.001	3.899e-05	3.899e-05	25.6476
+15	80180189	G	-	FAH	Pathogenic/Likely_pathogenic	2	swegen	0.001	2.338e-05	2.338e-05	42.7716
+16	67165820	C	T	HSF4	Likely_pathogenic	1	swegen	0.001	6.323e-05	2.069e-05	15.8153
+17	3498892	A	T	ASPA	Pathogenic/Likely_pathogenic	2	swegen	0.001	3.803e-05	1.918e-05	26.295
+17	18302694	G	A	TOP3A	Pathogenic/Likely_pathogenic	2	swegen	0.001	6.385e-05	6.385e-05	15.6617
+17	43092478	-	TCTCA	BRCA1	Pathogenic	3	swegen	0.001	9.893e-06	9.893e-06	101.082
+17	65160868	C	T	RGS9	Pathogenic/Likely_pathogenic	2	swegen	0.001	6.708e-05	3.418e-05	14.9076
+17	75751112	G	-	ITGB4	Likely_pathogenic	1	swegen	0.001	3.806e-05	2.518e-05	26.2743
+18	49163735	G	A	DYM	Pathogenic	1	swegen	0.001	3.06e-05	3.06e-05	32.6797
+19	45352226	C	G	ERCC2	Pathogenic/Likely_pathogenic	2	swegen	0.001	3.148e-05	3.148e-05	31.7662
+21	44293141	-	C	AIRE	Pathogenic	2	swegen	0.001	1.822e-05	1.822e-05	54.8847
+22	49910602	C	T	ALG12	Likely_pathogenic	2	swegen	0.001	1.709e-05	1.709e-05	58.5138
+19	1037757	G	A	CNN2	Pathogenic	1	tommo	0.135418	0.0008356	0.0001046	162.061
+19	1037767	G	A	CNN2	Pathogenic	1	tommo	0.134746	0.0003901	0.0002099	345.414
+14	94379549	-	G	SERPINA1	Pathogenic	1	tommo	0.078492	0.0002035	0	385.71
+7	142750600	A	C	PRSS1	Pathogenic	2	tommo	0.043049	7.241e-05	0	594.517
+7	142751920	G	C	PRSS1	Likely_pathogenic	1	tommo	0.016172	8.088e-05	0	199.951
+X	154182566	A	C	OPN1MW	Pathogenic	1	tommo	0.005825			
+7	142751938	G	A	PRSS1	Pathogenic/Likely_pathogenic	2	tommo	0.005387	3.105e-05	0	173.494
+22	18919704	A	G	PRODH	Likely_pathogenic	2	tommo	0.005155	0	0	
+16	21753113	G	T	OTOA	Pathogenic/Likely_pathogenic	2	tommo	0.003849	9.691e-05	9.691e-05	39.7173
+16	3736739	G	T	CREBBP	Likely_pathogenic	1	tommo	0.001867	2.022e-05	0	92.3343
+13	113105879	T	C	F7	Pathogenic	1	tommo	0.001772	0.0001278	0.0001278	13.8654
+21	43063074	A	G	CBS	Pathogenic	2	tommo	0.00162	0		
+1	152310724	G	A	FLG	Pathogenic/Likely_pathogenic	2	tommo	0.001164	9.36e-05	0	12.4359
+1	196690241	T	G	CFH	Likely_pathogenic	1	tommo	0.001027			
+19	1037767	G	A	CNN2	Pathogenic	1	topmed	0.492488	0.0003901		1262.47
+19	1037757	G	A	CNN2	Pathogenic	1	topmed	0.491832	0.0008356		588.597
+19	8906310	C	G	MUC16	Likely_pathogenic	1	topmed	0.314316	2.52e-05		12472.9
+14	77027444	G	A	IRF2BPL	Likely_pathogenic	2	topmed	0.0824194	0		
+14	77027450	G	A	IRF2BPL	Likely_pathogenic	1	topmed	0.0657195	4.944e-05		1329.28
+2	47414420	T	-	MSH2	Likely_pathogenic	3	topmed	0.0563291	5.224e-05		1078.28
+10	48066	C	A	TUBB8	Likely_pathogenic	1	topmed	0.051899	0.001269		40.8976
+14	77027426	G	A	IRF2BPL	Pathogenic	1	topmed	0.0497883	0		
+7	114629964	C	T	FOXP2	Pathogenic	1	topmed	0.0455404			
+6	32580272	T	C	HLA-DRB1	Likely_pathogenic	1	topmed	0.0212593	0.0002543		83.5993
+7	142750600	A	C	PRSS1	Pathogenic	2	topmed	0.0193606	7.241e-05		267.375
+1	151344726	A	C	RFX5	Likely_pathogenic	1	topmed	0.0186913	0.0001846		101.253
+2	61839792	A	T	FAM161A	Pathogenic/Likely_pathogenic	2	topmed	0.0171671	2.519e-05		681.505
+18	57695300	T	A	ATP8B1	Pathogenic	2	topmed	0.0160704	2.522e-05		637.209
+6	31355490	C	T	HLA-B	Pathogenic	1	topmed	0.0146522	1.165e-05		1257.7
+21	43063074	A	G	CBS	Pathogenic	2	topmed	0.0134991	0		
+18	46509817	T	G	LOXHD1	Likely_pathogenic	2	topmed	0.0117363	0.0001344		87.3237
+17	37731832	T	G	HNF1B	Pathogenic	1	topmed	0.00908886	0.0001449		62.7251
+13	102875499	G	T	ERCC5	Likely_pathogenic	1	topmed	0.00877739	5.038e-05		174.224
+11	71441415	A	T	DHCR7	Likely_pathogenic	1	topmed	0.00647453	8.995e-07		7197.92
+19	7555369	T	G	PNPLA6	Likely_pathogenic	1	topmed	0.00569918	2.748e-05		207.394
+2	47414420	TA	-	MSH2	Likely_pathogenic	1	topmed	0.00378067	0.0001045		36.1787
+6	33432683	A	C	SYNGAP1	Pathogenic/Likely_pathogenic	2	topmed	0.00226642	0		
+X	139561710	C	T	F9	Pathogenic	3	topmed	0.0011796	1.188e-06		992.929
+16	16177500	T	-	ABCC6	Pathogenic/Likely_pathogenic	2	ukbb	0.999907	0.007305	0	136.88
+4	15557481	C	T	CC2D2A	Pathogenic	2	ukbb	0.00720942	8.195e-05	7.212e-06	87.9734
+3	158690264	C	T	GFM1	Pathogenic/Likely_pathogenic	2	ukbb	0.00569362	0.0002012	2.339e-05	28.2983
+6	85487491	T	A	NT5E	Likely_pathogenic	1	ukbb	0.00368362	4.496e-06	4.496e-06	819.31
+19	45365053	G	A	ERCC2	Pathogenic/Likely_pathogenic	2	ukbb	0.00359364	0.0001734	4.948e-05	20.7246
+12	21546471	C	T	GYS2	Pathogenic/Likely_pathogenic	2	ukbb	0.00348843	0.0001754	4.305e-05	19.8884
+19	45766866	C	T	SIX5	Pathogenic	1	ukbb	0.00291672	3.705e-06	3.705e-06	787.239
+3	171676807	G	A	PLD1	Likely_pathogenic	1	ukbb	0.00263847	6.708e-05	4.497e-06	39.3332
+6	80168948	C	T	BCKDHB	Likely_pathogenic	1	ukbb	0.00208614	1.47e-05	1.47e-05	141.914
+5	40955497	C	T	C7	Pathogenic/Likely_pathogenic	2	ukbb	0.00195601	1.26e-05	1.26e-05	155.239
+11	47441875	G	A	RAPSN	Pathogenic/Likely_pathogenic	2	ukbb	0.00171514	2.551e-05	2.438e-05	67.234
+11	62620579	G	A	B3GAT3	Pathogenic/Likely_pathogenic	2	ukbb	0.00167362	4.496e-05	9.898e-06	37.2246
+3	81536909	A	G	GBE1	Pathogenic/Likely_pathogenic	2	ukbb	0.00152273	3.002e-05	3.002e-05	50.7239
+3	120644405	G	A	HGD	Pathogenic	2	ukbb	0.00113097	8.944e-05	5.756e-05	12.645
+15	42730728	G	A	CDAN1	Pathogenic	2	ukbb	0.00108529	7.568e-05	3.959e-05	14.3405
+7	142750600	A	C	PRSS1	Pathogenic	2	wbbc	0.0219866	7.241e-05	0	303.64
+6	32040535	C	T	CYP21A2	Pathogenic	2	wbbc	0.00580357	0.000153	0.000153	37.9318
+10	123053097	A	G	ACADSB	Pathogenic	2	wbbc	0.00357143	0.000252	0.000252	14.1723
+3	165829794	G	A	BCHE	Pathogenic/Likely_pathogenic	2	wbbc	0.00189732	0.0001735	0.0001008	10.9356
+14	81139809	G	A	TSHR	Likely_pathogenic	2	wbbc	0.00111607	0.0001008	0.0001008	11.0721
+1	94030453	G	A	ABCA4	Pathogenic/Likely_pathogenic	2	wbbc	0.00100446	8.961e-05	5.038e-05	11.2092

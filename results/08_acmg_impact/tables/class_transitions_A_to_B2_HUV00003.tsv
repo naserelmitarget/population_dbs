@@ -1,0 +1,6 @@
+acmgClassification	pathogenic	likely pathogenic	uncertain	likely benign	benign
+pathogenic	4	0	1	0	1
+likely pathogenic	0	2	0	0	1
+uncertain	0	0	4831	189	1442
+likely benign	0	0	1	1215	723
+benign	0	0	0	0	228698

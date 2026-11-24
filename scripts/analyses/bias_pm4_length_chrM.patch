@@ -1,0 +1,20 @@
+diff --git a/src/bias_2015/pathogenic_classifiers.py b/src/bias_2015/pathogenic_classifiers.py
+index a47a3a8..0d95e9e 100644
+--- a/src/bias_2015/pathogenic_classifiers.py
++++ b/src/bias_2015/pathogenic_classifiers.py
+@@ -667,11 +667,14 @@ def get_pm4(variant, chrom_to_repeat_regions):
+     if not variant.consequence in pm4_consequences:
+         return score, pm4
+ 
++    # Indel length is needed for the strength below even when the chromosome has no repeat regions
++    # (e.g. chrM); computing it only inside the repeat check raised UnboundLocalError and aborted the run.
++    length = get_variant_indel_length(variant.refAllele, variant.altAllele)
++
+     # Check if the variant is in a repeat region
+     if chrom_to_repeat_regions.get(variant.chromosome):
+         repeat_region_list = chrom_to_repeat_regions[variant.chromosome]
+         pos = int(variant.position)
+-        length = get_variant_indel_length(variant.refAllele, variant.altAllele)
+         for repeat_region in repeat_region_list:
+             start, stop, _ = repeat_region
+             if start <= pos <= stop or start <= (pos + length - 1) <= stop:

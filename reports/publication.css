@@ -1,0 +1,27 @@
+/* Publication report: one reading column, serif headings, light and dark themes */
+:root { --bg: #fbfbf9; --fg: #1d2326; --muted: #5b6569; --rule: #d9ddda; --accent: #1f5f73; --soft: #e8f0f2;
+        --body: "Source Serif 4", Georgia, "Times New Roman", serif; --sans: "Source Sans 3", "Segoe UI", Helvetica, Arial, sans-serif; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #14191b; --fg: #e2e7e6; --muted: #9aa6a8; --rule: #2d373a; --accent: #7cc0d3; --soft: #1c2a2e; color-scheme: dark; } }
+:root[data-theme="dark"] { --bg: #14191b; --fg: #e2e7e6; --muted: #9aa6a8; --rule: #2d373a; --accent: #7cc0d3; --soft: #1c2a2e; color-scheme: dark; }
+html { background: var(--bg); }
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 17px; line-height: 1.6;
+       max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.2rem 5rem; }
+header#title-block-header { border-bottom: 1px solid var(--rule); margin-bottom: 1.5rem; padding-bottom: 1rem; }
+h1.title { font-size: 1.9rem; line-height: 1.2; margin: 0 0 .4rem; text-wrap: balance; }
+p.subtitle { font-family: var(--sans); color: var(--muted); font-size: 1.05rem; margin: 0 0 .3rem; }
+p.date { font-family: var(--sans); color: var(--muted); font-size: .9rem; margin: 0; }
+h2 { font-size: 1.35rem; margin: 2.2rem 0 .6rem; color: var(--accent); text-wrap: balance; }
+h3 { font-size: 1.1rem; margin: 1.6rem 0 .5rem; }
+a { color: var(--accent); }
+nav#TOC { font-family: var(--sans); font-size: .9rem; background: var(--soft); border-radius: 6px; padding: .6rem 1rem; margin-bottom: 1.5rem; }
+nav#TOC ul { padding-left: 1.1rem; margin: .2rem 0; }
+table { border-collapse: collapse; width: 100%; font-family: var(--sans); font-size: .88rem; margin: 1rem 0 1.4rem; display: block; overflow-x: auto; }
+th, td { border-bottom: 1px solid var(--rule); padding: .4rem .6rem; vertical-align: top; text-align: left; }
+th { background: var(--soft); font-weight: 600; }
+td:not(:first-child) { font-variant-numeric: tabular-nums; }
+figure { margin: 1.2rem 0 1.8rem; }
+img { max-width: 100%; height: auto; background: #fff; border: 1px solid var(--rule); border-radius: 4px; }
+figcaption { font-family: var(--sans); font-size: .85rem; color: var(--muted); margin-top: .4rem; }
+code { font-size: .88em; }
+strong { font-weight: 600; }
+.repo-link { border-bottom: 1px dotted var(--muted); }

@@ -1,0 +1,25 @@
+	P(carrier of >= 1 AR condition)	genes with carrier frequency > 1%	genes > 2%
+sg10k_npm	0.9299	36	8
+gme	0.9238	30	11
+gonl	0.8643	29	7
+gnomAD NFE	0.8634	27	9
+gnomAD ASJ	0.8459	42	17
+gnomAD AMR	0.8261	11	5
+gnomAD MID	0.8085	25	10
+gnomAD AFR	0.8078	15	7
+topmed	0.8005	20	8
+gnomAD EAS	0.7966	23	7
+kova	0.7900	18	7
+gnomAD FIN	0.7881	32	11
+gnomAD SAS	0.7814	10	4
+allofus	0.7701	15	5
+hostseq	0.7651	15	4
+mcps	0.7482	14	5
+swegen	0.7477	16	3
+wbbc	0.7248	17	4
+hgdp1kg	0.6972	10	3
+tommo	0.6468	24	3
+1000g2015aug	0.6156	6	3
+finngen	0.5824	23	5
+saudi	0.5453	9	4
+ukbb	0.4677	18	4

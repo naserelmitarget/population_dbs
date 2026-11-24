@@ -1,0 +1,14 @@
+<title>$pagetitle$</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+/*STYLES*/
+</style>
+$if(title)$<header id="title-block-header">
+<h1 class="title">$title$</h1>
+$if(subtitle)$<p class="subtitle">$subtitle$</p>$endif$
+$if(date)$<p class="date">$date$</p>$endif$
+</header>$endif$
+$if(toc)$<nav id="TOC">
+$table-of-contents$
+</nav>$endif$
+$body$

@@ -1,0 +1,21 @@
+chr	start	end	ref	alt	clinvar_id	clnsig_group	clnsig	review_stars	gene	consequence	condition	max_af	datasets_af_ge_5pct	gnomad_af	gnomad_popmax	popmax	gnomad	max_af_class	support
+7	117528702	117528702	G	A	4538380	VUS	Uncertain_significance	1	CFTR	intron_variant	not_provided	0.806931	topmed:0.0673298;alfa:0.076;colorsdb:0.168185;ga4k:0.20648;gregor:0.130245;svatalog:0.806931	0.0003	0.0004	0.0004	rare (<5%)	>10%	6
+X	149488187	149488187	G	A	4755772	VUS	Uncertain_significance	1	IDS	intron_variant	not_provided	0.0841584	sfari_wgs:0.0602366;topmed:0.0647817;alfa:0.0539;colorsdb:0.0841584;ga4k:0.0779;gregor:0.0502204	0.0234	0.0367	0.0367	rare (<5%)	5-10%	6
+22	36821536	36821536	T	G	1049824	VUS	Uncertain_significance	1	PVALB	.	not_provided	0.671338	sfari_wgs:0.525364;topmed:0.307285;colorsdb:0.671338;ga4k:0.61262	0.0002	0.0006	0.0006	rare (<5%)	>10%	4
+12	117361876	117361876	C	T	1050354	VUS	Uncertain_significance	1	NOS1	.	not_provided	0.20298	topmed:0.195425;alfa:0.1893;colorsdb:0.13665;ga4k:0.20298	6.031e-05	0.0002	0.0002	rare (<5%)	>10%	4
+7	117528429	117528429	T	C	4538383	VUS	Uncertain_significance	1	CFTR	intron_variant	not_provided	0.737624	colorsdb:0.168185;ga4k:0.20496;svatalog:0.737624	5.998e-05	9.868e-05	9.868e-05	rare (<5%)	>10%	3
+3	196084409	196084414	AGAAAG	-	1048972	VUS	Uncertain_significance	1	TFRC	.	not_provided	0.31176	topmed:0.136886;colorsdb:0.10021;ga4k:0.31176	.	0	0.0	rare (<5%)	>10%	3
+17	61680484	61680484	T	C	891998	VUS	Uncertain_significance	1	BRIP1	3_prime_UTR_variant	Fanconi_anemia_complementation_group_J	0.180077	topmed:0.180077;alfa:0.1401;gonl:0.056	0.0002	0.0008	0.0008	rare (<5%)	>10%	3
+16	31334673	31334675	TTT	-	1049398	VUS	Uncertain_significance	1	ITGAM	.	not_provided	0.16582	allofus:0.16582;sfari_wgs:0.103945;gregor:0.0562753	0.0124	0.0236	0.0236	rare (<5%)	>10%	3
+22	36821535	36821535	G	T	1050164	VUS	Uncertain_significance	1	PVALB	.	not_provided	0.139453	topmed:0.107973;colorsdb:0.139453;ga4k:0.09236	4.851e-05	0.0002	0.0002	rare (<5%)	>10%	3
+6	29948263	29948263	G	A	1049967	VUS	Uncertain_significance	1	HLA-A	.	not_provided	0.551382	sfari_wgs:0.37418;topmed:0.551382	0.0001	0.003	0.003	rare (<5%)	>10%	2
+16	56663955	56663955	-	G	1049885	VUS	Uncertain_significance	1	MT1F	.	not_provided	0.42963	colorsdb:0.417309;ga4k:0.42963	.	.		absent/QC-fail	>10%	2
+16	56663951	56663951	-	TAAG	1048884	VUS	Uncertain_significance	1	MT1F	.	not_provided	0.42884	colorsdb:0.417309;ga4k:0.42884	.	.		absent/QC-fail	>10%	2
+10	102976611	102976611	-	TTTTTT	4876907	VUS	Uncertain_significance	1	CNNM2	intron_variant	not_provided	0.263011	gregor:0.263011;hostseq:0.0625365	0.0315	0.0493	0.0493	rare (<5%)	>10%	2
+5	70074624	70074624	C	T	1027370	VUS	Uncertain_significance	1	SMN2	intron_variant	Werdnig-Hoffmann_disease	0.222772	ga4k:0.05056;svatalog:0.222772	0.003	0.0048	0.0048	rare (<5%)	>10%	2
+17	82751576	82751576	-	CCCCCGC	1049447	VUS	Uncertain_significance	1	TBCD	.	not_provided	0.15	topmed:0.053496;ga4k:0.15	.	.		absent/QC-fail	>10%	2
+16	31334578	31334578	-	T	1049553	VUS	Uncertain_significance	1	ITGAM	.	not_provided	0.13736	allofus:0.115575;topmed:0.13736	0.0018	0.0102	0.0102	rare (<5%)	>10%	2
+22	36799979	36799979	C	T	1048825	VUS	Uncertain_significance	1	PVALB	.	not_provided	0.1129	topmed:0.10896;alfa:0.1129	0.0007	0.0042	0.0042	rare (<5%)	>10%	2
+21	45988351	45988351	G	T	5034851	VUS	Uncertain_significance	1	COL6A1	intron_variant	Inborn_genetic_diseases	0.07489	colorsdb:0.0746321;ga4k:0.07489	.	.		absent/QC-fail	5-10%	2
+9	100301141	100301141	A	T	915033	VUS	Uncertain_significance	1	INVS	non-coding_transcript_variant	Infantile_nephronophthisis	0.0641621	topmed:0.0641621;alfa:0.0598	0.0092	0.0417	0.0417	rare (<5%)	5-10%	2
+5	148994697	148994697	A	T	906542	VUS	Uncertain_significance	1	SH3TC2	3_prime_UTR_variant	Susceptibility_to_mononeuropathy_of_the_median_nerve,_mild|Charcot-Marie-Tooth_disease_type_4C	0.0597	topmed:0.0579593;alfa:0.0597	4.146e-05	0.0002	0.0002	rare (<5%)	5-10%	2

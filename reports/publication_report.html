@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Population frequency resources beyond gnomAD: what they add, where they fail, and what it means for clinical variant interpretation</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+  </style>
+  <link rel="stylesheet" href="publication.css" />
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Population frequency resources beyond gnomAD: what they add, where they fail, and what it means for clinical variant interpretation</h1>
+<p class="subtitle">A harmonised comparison of 27 human allele-frequency datasets with gnomAD v4.1</p>
+<p class="date">November 2026</p>
+</header>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#abstract">Abstract</a></li>
+<li><a href="#why-we-did-this-study">1. Why we did this study</a></li>
+<li><a href="#how-we-did-it">2. How we did it</a></li>
+<li><a href="#what-we-found">3. What we found</a></li>
+<li><a href="#what-this-means-for-our-clinical-genetics-pipelines">4. What this means for our clinical genetics pipelines</a></li>
+<li><a href="#limitations">5. Limitations</a></li>
+<li><a href="#conclusions">6. Conclusions</a></li>
+<li><a href="#data-and-code-availability">Data and code availability</a></li>
+<li><a href="#supplementary-material">Supplementary material</a></li>
+</ul>
+</nav>
+<h2 id="abstract">Abstract</h2>
+<p><strong>Background.</strong> Allele frequency is the first filter in clinical variant interpretation: ACMG/AMP criteria BA1, BS1 and PM2 all rest on it, and almost every pipeline takes it from gnomAD. gnomAD under-represents many populations, including Middle Eastern and Iranian patients, and dozens of national and cohort frequency resources now exist. Whether they should be added, and which ones, has not been tested systematically.</p>
+<p><strong>Methods.</strong> We harmonised 27 frequency datasets (2.06 billion GRCh38 variants) into one notation, applied uniform quality rules, and compared each with gnomAD v4.1, separately for exonic regions (gnomAD exome calling intervals; gnomAD exomes as reference) and non-exonic regions (gnomAD genomes). We measured variants absent from gnomAD, how gnomAD classifies each dataset’s polymorphisms and rare variants, population structure, population-enriched pathogenic variants, recessive carrier frequencies, genes with untrustworthy frequencies, and the effect on ACMG classification of three real genomes.</p>
+<p><strong>Results.</strong> gnomAD v4.1 already contains more than 99.5% of the common (AF ≥ 1%) coding SNVs of almost every dataset. The Middle East is the exception: 7.5% of GME’s common coding SNVs and 26% of its common coding indels are absent from gnomAD. Outside exons gnomAD’s 76,215 genomes miss 5–11% of the common variants of several genome cohorts. Filtering on gnomAD’s overall AF misclassifies 6.7–11.7% of East Asian and Mexican polymorphisms as rare; its population maximum reduces this to 0.1–1.9%. Frequencies resting on a single dataset are mostly errors: 127 of 140 apparently common pathogenic ClinVar variants had no second source. Adding population frequencies to ACMG classification resolved 23.6% (two-dataset rule) to 39.7% (any dataset) of VUS in three genomes, with no variant moving towards pathogenic. We found and corrected seven classes of errors in widely used public frequency resources.</p>
+<p><strong>Conclusions.</strong> For coding variants gnomAD v4.1 is nearly sufficient if filtering uses its population maximum; Middle Eastern patients need GME (and, ideally, an Iranian resource); genome analyses need additional genome cohorts. External frequencies should be used only when two independent datasets agree, and frequency evidence in 57 duplicated or hypervariable genes should not be applied automatically.</p>
+<h2 id="why-we-did-this-study">1. Why we did this study</h2>
+<p>Clinical laboratories classify thousands of variants per patient. The first and most powerful filter is population frequency: a variant too common in healthy people cannot cause a rare, penetrant disease (ACMG BA1, BS1), and a variant absent from controls gains moderate evidence for pathogenicity (PM2). These rules are only as good as the reference.</p>
+<p>gnomAD v4.1 (730,947 exomes, 76,215 genomes) is the default reference, but its participants are mostly of European ancestry, and Middle Eastern individuals are a small group (3,031 exomes and genomes in its MID group, as reported by Koch et al. 2026). For patients from under-represented populations two errors follow: a variant common in their population but rare in gnomAD keeps PM2 and stays on the candidate list (a false lead or a false pathogenic call), and a benign variant cannot be ruled out, so it remains a VUS.</p>
+<p>Many other frequency resources now exist: national biobanks and genome projects (Japan, Korea, China, Singapore, Mexico, Finland, Sweden, the Netherlands, the UK, Saudi Arabia, the Greater Middle East), large US programmes (TOPMed, All of Us), aggregators (ALFA, Kaviar) and long-read cohorts. Our own pipelines (ANNOVAR and VEP annotation, ACMG classification with BIAS-2015) can read any of them. We needed evidence to decide:</p>
+<ol type="1">
+<li>whether any resource adds information that gnomAD lacks, for coding and for non-coding variants;</li>
+<li>which gnomAD frequency to filter on;</li>
+<li>how reliable the other resources are;</li>
+<li>how much the choice changes clinical classifications.</li>
+</ol>
+<h2 id="how-we-did-it">2. How we did it</h2>
+<p><strong>Data.</strong> 27 datasets (table in Supplementary Methods): the ANNOVAR hg38 tables of gnomAD v4.1 (reference), gnomAD v2, ExAC, Kaviar, 1000 Genomes, GME and All of Us; UCSC’s combined varFreqs bigBed (TOPMed, ToMMo, KOVA, MCPS, FinnGen, SweGen, Saudi, SPARK, SFARI WGS); and 13 UCSC cohort VCFs (ALFA, CoLoRSdb, GA4K, GoNL, GREGoR, HGDP+1kG, HostSeq, SG10K, SVatalog, UK Biobank, WBBC, SCHEMA, SGDP). Cohort sizes range from 101 to 530,000 people; technologies include imputed arrays, exomes, short-read and long-read genomes.</p>
+<p><strong>Harmonisation and quality.</strong> Every allele was written in one notation (trimmed, left-anchored, multi-allelic sites split). Alleles with zero count or failing their source’s filters were dropped, and frequencies based on fewer than 100 alleles were ignored. gnomAD AF = 0 (seen only in QC-failed genotypes) was treated as missing, and missing gnomAD exome group frequencies were taken from gnomAD genomes. Unreliable sources were excluded after checking (GenomeAsia frequencies; ALFA indels, whose positions are shifted by one base).</p>
+<p><strong>Regions and reference.</strong> Exonic = inside gnomAD v4 exome calling intervals (170 Mb), compared with gnomAD exomes (genomes where the exome has no AF); non-exonic = everything else, compared with gnomAD genomes only. Each comparison used three gnomAD views: overall AF, population maximum across eight groups, and the dataset’s matching group.</p>
+<p><strong>Analyses.</strong> (1) share of each dataset absent from gnomAD, all and common variants; (2) gnomAD class of each dataset’s polymorphisms (&gt; 10%) and rare variants (&lt; 5%); (3) population PCA and marker SNVs; (4) ClinVar variants common in a population but rare in gnomAD, with the number of independent datasets supporting the frequency; (5) gene-level variant burden against gnomAD, validated against GIAB difficult regions; (6) ClinVar pathogenic variants enriched ≥ 10× in a population (founder candidates) and recessive carrier frequencies; (7) ACMG classification of three whole genomes with BIAS-2015, using gnomAD alone (A), adding the highest population AF (B1), or adding only a frequency on which two datasets agree (B2).</p>
+<p><strong>Reproducibility.</strong> One driver script regenerates every table and figure from a 21 GB archive of derived data (verified to reproduce all tables exactly) or from scratch; software versions, input checksums and reference values are recorded (Supplementary Methods, Reproducibility protocol).</p>
+<h2 id="what-we-found">3. What we found</h2>
+<h3 id="gnomad-covers-common-coding-variation-except-for-the-middle-east">3.1 gnomAD covers common coding variation, except for the Middle East</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Common exonic SNVs absent from gnomAD</th>
+<th style="text-align: right;">Common exonic indels absent</th>
+<th style="text-align: right;">Common non-exonic SNVs absent</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>GME (Middle East)</strong></td>
+<td style="text-align: right;"><strong>7.46%</strong></td>
+<td style="text-align: right;"><strong>26.4%</strong></td>
+<td style="text-align: right;">exome only</td>
+</tr>
+<tr class="even">
+<td>ToMMo (Japan)</td>
+<td style="text-align: right;">0.31%</td>
+<td style="text-align: right;">0.24%</td>
+<td style="text-align: right;">7.18%</td>
+</tr>
+<tr class="odd">
+<td>TOPMed</td>
+<td style="text-align: right;">0.38%</td>
+<td style="text-align: right;">0.86%</td>
+<td style="text-align: right;">7.65%</td>
+</tr>
+<tr class="even">
+<td>SG10K (Singapore)</td>
+<td style="text-align: right;">0.12%</td>
+<td style="text-align: right;">0.48%</td>
+<td style="text-align: right;">5.12%</td>
+</tr>
+<tr class="odd">
+<td>SweGen (Sweden)</td>
+<td style="text-align: right;">0.02%</td>
+<td style="text-align: right;">0.05%</td>
+<td style="text-align: right;">6.21%</td>
+</tr>
+<tr class="even">
+<td>GoNL (Netherlands)</td>
+<td style="text-align: right;">0.63%</td>
+<td style="text-align: right;">0.09%</td>
+<td style="text-align: right;">5.12%</td>
+</tr>
+<tr class="odd">
+<td>Saudi Arabia</td>
+<td style="text-align: right;">0.26%</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">0.34%</td>
+</tr>
+<tr class="even">
+<td>UK Biobank</td>
+<td style="text-align: right;">0.13%</td>
+<td style="text-align: right;">2.31%</td>
+<td style="text-align: right;">0.20%</td>
+</tr>
+<tr class="odd">
+<td>FinnGen</td>
+<td style="text-align: right;">0.00%</td>
+<td style="text-align: right;">0.00%</td>
+<td style="text-align: right;">0.07%</td>
+</tr>
+</tbody>
+</table>
+<p>Most of what other datasets add beyond gnomAD is rare variation. For common coding variants only GME adds substantially. Outside exons gnomAD’s genome set is much smaller, and several genome cohorts add 5–8% of their common variants (long-read cohorts up to 11%, mostly in regions short reads cannot call).</p>
+<figure>
+<img src="figs/exonic_step1_snv.png" alt="" /><figcaption>Share of each dataset’s exonic SNVs absent from gnomAD v4.1, all and common variants</figcaption>
+</figure>
+<h3 id="which-gnomad-frequency-to-filter-on-matters-more-than-which-extra-database-to-add">3.2 Which gnomAD frequency to filter on matters more than which extra database to add</h3>
+<p>Of each country’s polymorphisms (&gt; 10%), gnomAD calls rare (&lt; 5%): 6.7–11.7% with overall AF (East Asian and Mexican cohorts), 0.1–1.9% with the population maximum, and 2.6–5.7% against the matching gnomAD group. GME is again the exception: 8.2% of its polymorphisms are rare in every gnomAD group, including the Middle Eastern one. In the opposite direction, rare variants of a country are rarely common in its own gnomAD group (0.02–0.8%), but 5.6–12.2% of European and Saudi rare variants are common in some other group (mostly African), so a local database alone is not enough either.</p>
+<figure>
+<img src="figs/exonic_step2_poly_popmax.png" alt="" /><figcaption>Country polymorphisms classified by gnomAD population maximum</figcaption>
+</figure>
+<h3 id="population-structure-is-reproduced-and-markers-point-to-the-middle-east">3.3 Population structure is reproduced, and markers point to the Middle East</h3>
+<p>A PCA on allele frequencies places every country cohort on its matching gnomAD group; Saudi Arabia lies near but apart from gnomAD’s Middle Eastern group, and South Asia lies between the Middle East/Europe and East Asia, as reported independently by the Pakistan Genome Resource. We selected 1,000 candidate SNVs that separate the Middle East from every other group, for ancestry inference once validated on genotypes.</p>
+<figure>
+<img src="figs/exonic_pca.png" alt="" /><figcaption>Population PCA on allele frequencies and mean absolute AF differences</figcaption>
+</figure>
+<h3 id="single-dataset-frequencies-are-usually-wrong">3.4 Single-dataset frequencies are usually wrong</h3>
+<p>140 ClinVar pathogenic/likely pathogenic variants are ≥ 5% in at least one dataset but rare in gnomAD. 127 of them rest on one dataset, and on inspection these are data errors (for example a pathogenic MYH7 variant at 74% in ALFA, CFTR F508del at 77% in SVatalog, a BRCA2 deletion at 47% in GME). Only 12 are supported by two or more datasets, mostly in duplicated genes; GJB2 V37I (7.6–9.8% in Singapore and China, ≤ 4.2% in gnomAD) is the clear real example.</p>
+<h3 id="founder-variants-and-carrier-frequencies-concentrate-in-the-middle-east">3.5 Founder variants and carrier frequencies concentrate in the Middle East</h3>
+<p>Of 1,621 pathogenic variants enriched ≥ 10× in a population, 32 pass all quality filters; GME takes part in 17, including candidate Arab founder alleles in ATP6V1B1, ASPA, GSR and ABCC6. Carrier frequencies for 1,447 recessive genes reproduce known values (CFTR 4.4% in Europeans, HEXA 3.5% in Ashkenazi, HBB 13.7% in Africans, GJB2 9–18% in East Asians) and show PAH at 4.3% in GME.</p>
+<figure>
+<img src="figs/carrier_top_genes.png" alt="" /><figcaption>Carrier frequency of the most common recessive conditions across populations</figcaption>
+</figure>
+<h3 id="genes-whose-frequencies-cannot-be-trusted-are-duplicated-genes">3.6 Genes whose frequencies cannot be trusted are duplicated genes</h3>
+<p>Gene-level burden against gnomAD mainly identifies technical problems. 57 genes are consistently out of line across datasets (olfactory receptor, ZNF, PRAMEF, MUC, HLA, KIR and TAS2R families and others). They lie in GIAB segmental duplications far more than other genes (median 48% of their exonic sequence vs 0%, p = 3 × 10⁻²⁴).</p>
+<figure>
+<img src="figs/unreliable_giab.png" alt="" /><figcaption>Flagged genes against GIAB difficult regions</figcaption>
+</figure>
+<h3 id="population-frequencies-resolve-vus-without-creating-pathogenic-calls">3.7 Population frequencies resolve VUS without creating pathogenic calls</h3>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Genome</th>
+<th style="text-align: right;">VUS (gnomAD only)</th>
+<th style="text-align: right;">Resolved, any dataset (B1)</th>
+<th style="text-align: right;">Resolved, two datasets agree (B2)</th>
+<th style="text-align: right;">P/LP downgraded (B2)</th>
+<th style="text-align: right;">Towards pathogenic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HUV00001</td>
+<td style="text-align: right;">5,191</td>
+<td style="text-align: right;">37.0%</td>
+<td style="text-align: right;">21.0%</td>
+<td style="text-align: right;">1 of 11</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td>HUV00002</td>
+<td style="text-align: right;">5,863</td>
+<td style="text-align: right;">39.5%</td>
+<td style="text-align: right;">24.2%</td>
+<td style="text-align: right;">1 of 8</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td>HUV00003</td>
+<td style="text-align: right;">6,462</td>
+<td style="text-align: right;">42.1%</td>
+<td style="text-align: right;">25.2%</td>
+<td style="text-align: right;">3 of 9</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td><strong>All three</strong></td>
+<td style="text-align: right;"><strong>17,516</strong></td>
+<td style="text-align: right;"><strong>39.7%</strong></td>
+<td style="text-align: right;"><strong>23.6%</strong></td>
+<td style="text-align: right;"><strong>5 of 28</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+</tr>
+</tbody>
+</table>
+<p>The five downgrades under the two-dataset rule were a deletion that gnomAD’s own lookup had missed (PEX5, a correction), two variants in duplicated genes (TUBB8, GOLGA8R) and one variant already flagged as too common by gnomAD.</p>
+<figure>
+<img src="figs/acmg_vus_per_sample.png" alt="" /><figcaption>VUS resolved per genome</figcaption>
+</figure>
+<h3 id="public-resources-need-quality-control-before-clinical-use">3.8 Public resources need quality control before clinical use</h3>
+<p>We found and corrected: shifted indel positions in UCSC’s ALFA file; unreliable GenomeAsia frequencies; a column order in UCSC’s combined bigBed that differs from its own schema; impossible frequencies from tiny allele numbers (SPARK, ToMMo); gnomAD AF = 0 rows meaning “QC-failed”; missing group frequencies in gnomAD exomes; and encoded indel alleles in ANNOVAR’s hg38 1000 Genomes tables. Each would have changed our conclusions.</p>
+<h3 id="agreement-with-the-pakistan-genome-resource">3.9 Agreement with the Pakistan Genome Resource</h3>
+<p>The Pakistan Genome Resource (173,303 participants; Koch et al., <em>Nature</em> 2026) reports 25% of synonymous and 49% of loss-of-function variants absent from gnomAD. Our large under-represented cohorts show the same gradient and size (pLoF:synonymous ratio 1.9–2.2 vs 1.96), and the same population structure.</p>
+<h2 id="what-this-means-for-our-clinical-genetics-pipelines">4. What this means for our clinical genetics pipelines</h2>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Area</th>
+<th>Current practice</th>
+<th>Recommendation</th>
+<th>Evidence</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>gnomAD frequency used for BA1/BS1/PM2</td>
+<td>overall AF, or gnomAD’s grpmax</td>
+<td><strong>Population maximum over all eight gnomAD groups</strong>, including MID and FIN (gnomAD’s grpmax omits them); exome AF in exons, genome AF where the exome has none; AF = 0 treated as missing</td>
+<td>3.2</td>
+</tr>
+<tr class="even">
+<td>Middle Eastern and Iranian patients</td>
+<td>gnomAD only</td>
+<td><strong>Add GME</strong> as a frequency source; plan an Iranian resource (Iranome or in-house exomes)</td>
+<td>3.1, 3.2, 3.5</td>
+</tr>
+<tr class="odd">
+<td>Genome sequencing, non-coding variants</td>
+<td>gnomAD genomes</td>
+<td><strong>Add TOPMed and population genome cohorts</strong> (ToMMo, SG10K, SweGen, GoNL), e.g. through the harmonised union file with its <code>is_in</code> column</td>
+<td>3.1</td>
+</tr>
+<tr class="even">
+<td>Using non-gnomAD frequencies</td>
+<td>not used, or any single source</td>
+<td><strong>Apply BA1/BS1 from external datasets only when two independent datasets agree</strong> (B2); otherwise flag for review</td>
+<td>3.4, 3.7</td>
+</tr>
+<tr class="odd">
+<td>Duplicated and hypervariable genes</td>
+<td>frequency rules applied automatically</td>
+<td><strong>Do not apply BA1/BS1/PM2 automatically in the 57 flagged genes</strong> (BED file provided); require manual review</td>
+<td>3.6</td>
+</tr>
+<tr class="even">
+<td>Known common pathogenic alleles</td>
+<td>—</td>
+<td>Keep a reviewed list of high-frequency P/LP variants (e.g. GJB2 V37I, founder alleles) so they are not discarded by BA1</td>
+<td>3.4, 3.5</td>
+</tr>
+<tr class="odd">
+<td>Carrier screening</td>
+<td>generic gene lists</td>
+<td>Use population-specific carrier frequencies to prioritise genes for Middle Eastern couples (e.g. PAH, GJB2, HBB)</td>
+<td>3.5</td>
+</tr>
+<tr class="even">
+<td>Frequency annotation QC</td>
+<td>—</td>
+<td>Check that gnomAD matches indels correctly (a missed match turned a common PEX5 deletion pathogenic); validate any new frequency source against gnomAD before use</td>
+<td>3.7, 3.8</td>
+</tr>
+<tr class="odd">
+<td>Automation</td>
+<td>—</td>
+<td>The BIAS-2015 wrapper (population AF with the two-dataset rule) and the union file are ready to integrate; expect ≈ 24% fewer VUS per genome</td>
+<td>3.7</td>
+</tr>
+</tbody>
+</table>
+<h2 id="limitations">5. Limitations</h2>
+<p>The study uses summary frequencies, not genotypes, so it cannot address homozygosity or individual burden. Datasets differ in technology and quality control, and some came through third-party conversions. Small cohorts (Saudi ≈ 300, GoNL 498) give noisy frequencies. No Iranian dataset was available, and South Asia is represented only by gnomAD and part of SG10K. ClinVar favours well-studied populations, so founder and carrier estimates elsewhere are lower bounds. The ACMG test covers three genomes; a patient cohort is needed to estimate the clinical yield precisely.</p>
+<h2 id="conclusions">6. Conclusions</h2>
+<p>For coding variants, gnomAD v4.1 is nearly sufficient if filtering uses its population maximum rather than the overall frequency. Middle Eastern patients are the clear exception and need GME now and an Iranian resource next. Genome analyses benefit from additional genome cohorts. External frequencies are useful only with safeguards: two independent datasets must agree, frequency evidence in duplicated genes needs review, and every new source must be checked. With these rules, a quarter of VUS can be resolved without introducing pathogenic misclassifications.</p>
+<h2 id="data-and-code-availability">Data and code availability</h2>
+<p>Scripts, result tables and figures, and the full report are in this repository (<code>scripts/</code>, <code>results/</code>, <code>reports/</code>). Inputs are public resources (Supplementary Methods); no individual-level data are shared. Every result can be regenerated with <code>bash scripts/run_all.sh all-kept</code> from the derived-data archive, or <code>all-raw</code> from the public sources.</p>
+<h2 id="supplementary-material">Supplementary material</h2>
+<ul>
+<li>Full report: <a href="population_frequency_report.md">population_frequency_report.md</a> (HTML: <a href="population_frequency_report.html">population_frequency_report.html</a>)</li>
+<li>Supplementary Methods: <a href="sections/01_materials_and_methods.md">sections/01_materials_and_methods.md</a></li>
+<li>All results: <a href="sections/02_results.md">sections/02_results.md</a>; additional analyses: <a href="sections/07_additional_analyses.md">sections/07_additional_analyses.md</a></li>
+<li>Data-quality audit: <a href="sections/03_data_quality_audit.md">sections/03_data_quality_audit.md</a></li>
+<li>Comparison with the Pakistan Genome Resource: <a href="sections/08_comparison_pakistan_genome_resource.md">sections/08_comparison_pakistan_genome_resource.md</a></li>
+<li>Reproducibility protocol: <a href="sections/09_reproducibility.md">sections/09_reproducibility.md</a></li>
+</ul>
+</body>
+</html>

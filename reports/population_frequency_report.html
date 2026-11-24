@@ -1,0 +1,4771 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Population frequency report</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="publication.css" />
+</head>
+<body>
+<nav id="TOC" role="doc-toc">
+<ul>
+<li><a href="#beyond-gnomad-population-allele-frequency-resources-compared-with-gnomad-v4.1">Beyond gnomAD: population allele-frequency resources compared with gnomAD v4.1</a>
+<ul>
+<li><a href="#key-findings">Key findings</a></li>
+<li><a href="#materials-and-methods">Materials and methods</a></li>
+<li><a href="#results">Results</a></li>
+<li><a href="#data-quality-audit">Data-quality audit</a></li>
+<li><a href="#additional-analyses">Additional analyses</a></li>
+<li><a href="#comparison-with-the-pakistan-genome-resource">Comparison with the Pakistan Genome Resource</a></li>
+<li><a href="#limitations-and-publication">Limitations and publication</a></li>
+<li><a href="#further-analyses">Further analyses</a></li>
+<li><a href="#data-manifest">Data manifest</a></li>
+<li><a href="#reproducibility-protocol">Reproducibility protocol</a></li>
+</ul></li>
+</ul>
+</nav>
+<h1 id="beyond-gnomad-population-allele-frequency-resources-compared-with-gnomad-v4.1">Beyond gnomAD: population allele-frequency resources compared with gnomAD v4.1</h1>
+<p>Full study report. Sections are also available separately in <a href="sections/">sections/</a>.</p>
+<h2 id="key-findings">Key findings</h2>
+<ol type="1">
+<li><strong>For coding variants, gnomAD v4.1 is nearly sufficient.</strong> Its 730,947 exomes contain more than 99.5% of the common (AF ≥ 1%) exonic SNVs of almost every other dataset. Country cohorts from Japan, Korea, China, Singapore, Mexico, Finland, Sweden, the UK and Saudi Arabia add very little for frequency filtering of coding variants.</li>
+<li><strong>The Middle East is the exception.</strong> GME is the only dataset adding substantial coding information: 7.5% of its common exonic SNVs and 26% of its common exonic indels are absent from gnomAD, and 8.2% of its polymorphisms (&gt; 10%) are rare (&lt; 5%) in every gnomAD group, including gnomAD’s Middle Eastern group.</li>
+<li><strong>Outside coding regions gnomAD is clearly incomplete.</strong> With 76,215 genomes, gnomAD lacks 5–8% of the common non-exonic SNVs of TOPMed, ToMMo, SweGen, GoNL and SG10K, and 5.6–11% of those of the long-read cohorts.</li>
+<li><strong>Filter on gnomAD’s population maximum, never its overall AF.</strong> With overall AF, 6.7–11.7% of East Asian and Mexican polymorphisms look rare; with the population maximum, 0.1–1.9%. Against the matching gnomAD group, 2.6–5.7% of each country’s polymorphisms are rare there.</li>
+<li><strong>The opposite direction is small against the matching group.</strong> Only 0.02–0.8% of a country’s rare exonic SNVs are polymorphic in its own gnomAD group. Against any group, European and Saudi cohorts reach 5.6–12.2%, mostly variants common in African populations. A local database used alone would call these variants rare.</li>
+<li><strong>Single-dataset frequencies are not trustworthy for clinical use.</strong> 140 ClinVar pathogenic/likely pathogenic variants look common somewhere but rare in gnomAD; 127 rest on one dataset’s faulty frequency, and only 12 are supported by two or more datasets (GJB2 V37I is the clear real case).</li>
+<li><strong>Gene-level burden is mainly a quality-control signal.</strong> Genes deviating from gnomAD are mostly duplicated or hypervariable families (olfactory receptors, ZNF, PRAMEF, MUC, HLA, KIR, TAS2R); candidate population signals are few (ASPM, CEP295, XIRP2, ADAMTS9, TEX44 in East Asian cohorts).</li>
+<li><strong>Public frequency resources contain serious errors</strong>, documented in the <a href="sections/03_data_quality_audit.md">data-quality audit</a>.</li>
+<li><strong>Population frequencies resolve VUS.</strong> In three genomes (709,742 exonic variants), adding population datasets to gnomAD in BIAS-2015 moved 23.6% (two datasets must agree) to 39.7% (any dataset) of VUS to likely benign or benign, consistently per genome; no variant moved towards pathogenic. The five P/LP downgrades under the two-dataset rule are a missed gnomAD match (PEX5), duplicated genes (TUBB8, GOLGA8R) and a variant already flagged BS1 by gnomAD.</li>
+<li><strong>Population-specific clinical variation concentrates in the Middle East.</strong> GME takes part in 17 of 32 high-confidence founder pathogenic variants; carrier-frequency estimates reproduce known values (CFTR in Europeans 4.4%, HEXA in Ashkenazi 3.5%, HBB in Africans 13.7%, GJB2 in East Asians 9–18%, PAH in GME 4.3%).</li>
+<li><strong>Unreliable-frequency genes are real mapping problems.</strong> The 57 flagged genes have a median 48% of their exonic sequence in GIAB segmental duplications, against 0% for other genes (p = 3 × 10⁻²⁴).</li>
+<li><strong>Consistent with the Pakistan Genome Resource</strong> (Nature 2026): the same synonymous &lt; missense &lt; pLoF gradient of variants absent from gnomAD, similar size for large under-represented cohorts, and the same population structure.</li>
+</ol>
+<h2 id="materials-and-methods">Materials and methods</h2>
+<h3 id="questions">1. Questions</h3>
+<ol type="1">
+<li><strong>Added value beyond gnomAD.</strong> For each dataset, what share of its SNVs and indels is absent from gnomAD v4.1, for all variants and for common variants (AF ≥ 1%)?</li>
+<li><strong>Classification by gnomAD.</strong> How does gnomAD classify a dataset’s polymorphisms (AF &gt; 10%) and rare variants (AF &lt; 5%): rare (&lt; 5%), low-frequency (5–10%), polymorphic (&gt; 10%), absent or QC-failed?</li>
+<li><strong>Markers and structure.</strong> Which SNVs are common in a country dataset but rare or absent in every gnomAD group, and do population frequencies reproduce known population structure?</li>
+<li><strong>Clinical relevance.</strong> Which ClinVar variants are common in some population but rare in gnomAD, and would therefore be handled wrongly by gnomAD-based ACMG frequency criteria (BA1, BS1, PM2)?</li>
+<li><strong>Gene level.</strong> Which genes carry more or fewer variants than expected, compared with gnomAD across populations and with other genes within a dataset, and is a deviation specific to one dataset or population?</li>
+</ol>
+<p>Every question was answered separately for exonic and non-exonic regions, and for SNVs and indels.</p>
+<h3 id="data">2. Data</h3>
+<h4 id="population-datasets">2.1 Population datasets</h4>
+<p>People per dataset are the largest allele number in the file divided by two where the file gives allele numbers, otherwise the size stated by the source publication (marked <em>pub.</em>). Technology is as described by each source. All data were downloaded between 19 and 22 November 2026.</p>
+<table>
+<colgroup>
+<col style="width: 18%" />
+<col style="width: 18%" />
+<col style="width: 25%" />
+<col style="width: 18%" />
+<col style="width: 18%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Population</th>
+<th style="text-align: right;">People</th>
+<th>Technology</th>
+<th>Source file</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>gnomAD v4.1 exomes (reference)</td>
+<td>Global</td>
+<td style="text-align: right;">730,947 pub.</td>
+<td>Short-read exome</td>
+<td>ANNOVAR <code>hg38_gnomad41_exome</code></td>
+</tr>
+<tr class="even">
+<td>gnomAD v4.1 genomes (reference)</td>
+<td>Global</td>
+<td style="text-align: right;">76,215 pub.</td>
+<td>Short-read genome</td>
+<td>ANNOVAR <code>hg38_gnomad41_genome</code></td>
+</tr>
+<tr class="odd">
+<td>gnomAD v2 exomes</td>
+<td>Global</td>
+<td style="text-align: right;">123,136 pub.</td>
+<td>Short-read exome, lifted from hg19</td>
+<td>ANNOVAR <code>hg38_gnomad_exome</code></td>
+</tr>
+<tr class="even">
+<td>gnomAD v2 genomes</td>
+<td>Global</td>
+<td style="text-align: right;">15,496 pub.</td>
+<td>Short-read genome, lifted</td>
+<td>ANNOVAR <code>hg38_gnomad_genome</code></td>
+</tr>
+<tr class="odd">
+<td>ExAC 0.3</td>
+<td>Global</td>
+<td style="text-align: right;">60,706 pub.</td>
+<td>Short-read exome, lifted</td>
+<td>ANNOVAR <code>hg38_exac03</code></td>
+</tr>
+<tr class="even">
+<td>Kaviar 2015-09-23</td>
+<td>35 aggregated projects</td>
+<td style="text-align: right;">~77,300</td>
+<td>Mixed, lifted from hg19</td>
+<td>ANNOVAR <code>hg38_kaviar_20150923</code></td>
+</tr>
+<tr class="odd">
+<td>1000 Genomes phase 3</td>
+<td>26 populations</td>
+<td style="text-align: right;">2,504 pub.</td>
+<td>Low-coverage genome + exome</td>
+<td>ANNOVAR <code>hg38_ALL.sites.2015_08</code></td>
+</tr>
+<tr class="even">
+<td>All of Us</td>
+<td>USA, diverse</td>
+<td style="text-align: right;">not in file</td>
+<td>Short-read genome</td>
+<td>ANNOVAR <code>hg38_allofus</code></td>
+</tr>
+<tr class="odd">
+<td>GME Variome</td>
+<td>Middle East and North Africa</td>
+<td style="text-align: right;">~2,500 pub.</td>
+<td>Short-read exome</td>
+<td>ANNOVAR <code>hg38_gme</code></td>
+</tr>
+<tr class="even">
+<td>TOPMed Freeze 10</td>
+<td>USA, diverse</td>
+<td style="text-align: right;">~150,900</td>
+<td>Deep short-read genome</td>
+<td>UCSC <code>varFreqsAll.bb</code> (<code>top</code>)</td>
+</tr>
+<tr class="odd">
+<td>ToMMo 61KJPN</td>
+<td>Japan</td>
+<td style="text-align: right;">~61,500</td>
+<td>Short-read genome</td>
+<td>UCSC <code>varFreqsAll.bb</code> (<code>tom</code>)</td>
+</tr>
+<tr class="even">
+<td>KOVA v7</td>
+<td>Korea</td>
+<td style="text-align: right;">~5,300</td>
+<td>Short-read sequencing</td>
+<td>UCSC <code>varFreqsAll.bb</code> (<code>kov</code>)</td>
+</tr>
+<tr class="odd">
+<td>MCPS</td>
+<td>Mexico City</td>
+<td style="text-align: right;">~138,200</td>
+<td>Exome sequencing</td>
+<td>UCSC <code>varFreqsAll.bb</code> (<code>mcp</code>)</td>
+</tr>
+<tr class="even">
+<td>FinnGen R12</td>
+<td>Finland</td>
+<td style="text-align: right;">~530,300</td>
+<td>Genotyping array + imputation</td>
+<td>UCSC <code>varFreqsAll.bb</code> (<code>fin</code>)</td>
+</tr>
+<tr class="odd">
+<td>SweGen</td>
+<td>Sweden</td>
+<td style="text-align: right;">1,000</td>
+<td>Short-read genome</td>
+<td>UCSC <code>varFreqsAll.bb</code> (<code>swe</code>)</td>
+</tr>
+<tr class="even">
+<td>Saudi</td>
+<td>Saudi Arabia</td>
+<td style="text-align: right;">~300</td>
+<td>Short-read sequencing</td>
+<td>UCSC <code>varFreqsAll.bb</code> (<code>sau</code>)</td>
+</tr>
+<tr class="odd">
+<td>SPARK iWES v3</td>
+<td>USA, autism families</td>
+<td style="text-align: right;">~142,400</td>
+<td>Exome</td>
+<td>UCSC <code>varFreqsAll.bb</code> (<code>spk</code>)</td>
+</tr>
+<tr class="even">
+<td>SFARI WGS pilot</td>
+<td>USA, autism families</td>
+<td style="text-align: right;">12,519</td>
+<td>Short-read genome</td>
+<td>UCSC <code>varFreqsAll.bb</code> (<code>wgs</code>)</td>
+</tr>
+<tr class="odd">
+<td>ALFA (SNVs only)</td>
+<td>dbGaP aggregate</td>
+<td style="text-align: right;">not in file</td>
+<td>Mixed</td>
+<td>UCSC <code>alfa/ALFA.vcf.gz</code></td>
+</tr>
+<tr class="even">
+<td>CoLoRSdb</td>
+<td>Long-read reference</td>
+<td style="text-align: right;">1,427</td>
+<td>PacBio HiFi</td>
+<td>UCSC <code>colorsDb/colorsDbSnv.vcf.gz</code></td>
+</tr>
+<tr class="odd">
+<td>GA4K</td>
+<td>USA, rare disease</td>
+<td style="text-align: right;">~550</td>
+<td>PacBio HiFi</td>
+<td>UCSC <code>ga4k/ga4kSnv.vcf.gz</code></td>
+</tr>
+<tr class="even">
+<td>GoNL</td>
+<td>Netherlands</td>
+<td style="text-align: right;">498</td>
+<td>Short-read genome</td>
+<td>UCSC <code>gonl/gonl.vcf.gz</code></td>
+</tr>
+<tr class="odd">
+<td>GREGoR</td>
+<td>USA, rare disease</td>
+<td style="text-align: right;">~3,300</td>
+<td>Short-read genome/exome</td>
+<td>UCSC <code>gregor/gregor.vcf.gz</code></td>
+</tr>
+<tr class="even">
+<td>HGDP + 1000 Genomes</td>
+<td>Worldwide</td>
+<td style="text-align: right;">~3,400</td>
+<td>High-coverage genome</td>
+<td>UCSC <code>hgdp1kFreq/hgdp1k.freq.vcf.gz</code></td>
+</tr>
+<tr class="odd">
+<td>HostSeq</td>
+<td>Canada</td>
+<td style="text-align: right;">~9,200</td>
+<td>Short-read genome</td>
+<td>UCSC <code>hostseq/hostseq.vcf.gz</code></td>
+</tr>
+<tr class="even">
+<td>SG10K Health r5.3.2</td>
+<td>Singapore</td>
+<td style="text-align: right;">~9,700</td>
+<td>Short-read genome</td>
+<td>UCSC <code>npm/SG10K_Health_r5.3.2.sites.vcf.bgz</code></td>
+</tr>
+<tr class="odd">
+<td>SVatalog</td>
+<td>Reference panel</td>
+<td style="text-align: right;">101</td>
+<td>Linked-read genome</td>
+<td>UCSC <code>svatalog/svatalog.vcf.gz</code></td>
+</tr>
+<tr class="even">
+<td>UK Biobank</td>
+<td>UK</td>
+<td style="text-align: right;">361,194</td>
+<td>Genotyping array + imputation</td>
+<td>UCSC <code>ukbb/ukbb.vcf.gz</code></td>
+</tr>
+<tr class="odd">
+<td>WBBC</td>
+<td>China</td>
+<td style="text-align: right;">4,480</td>
+<td>Short-read genome</td>
+<td>UCSC <code>wbbc/wbbc.vcf.gz</code></td>
+</tr>
+</tbody>
+</table>
+<p>Download locations:</p>
+<ul>
+<li>ANNOVAR tables: <code>annotate_variation.pl -buildver hg38 -downdb -webfrom annovar &lt;name&gt;</code> from <code>http://www.openbioinformatics.org/annovar/download/</code>.</li>
+<li>UCSC: <code>https://hgdownload.soe.ucsc.edu/gbdb/hg38/varFreqs/</code> (downloaded over http because the server’s CA bundle rejected the TLS certificate). <code>varFreqsAll.bb</code>: 30,276,835,043 bytes, last modified 2026-01-20, 1,259,969,871 records.</li>
+</ul>
+<h4 id="datasets-left-out-of-the-frequency-analyses">2.2 Datasets left out of the frequency analyses</h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th>Reason</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GenomeAsia 100K (UCSC <code>.bb</code>)</td>
+<td>About 25% of its variants at AF 10–90% are absent from both TOPMed and gnomAD; frequencies judged unreliable</td>
+</tr>
+<tr class="even">
+<td>ALFA indels</td>
+<td>Indel positions in the UCSC file are one base too far right; half remain unmatched after correction</td>
+</tr>
+<tr class="odd">
+<td>IndiGen</td>
+<td>No allele frequency in the file</td>
+</tr>
+<tr class="even">
+<td>SGDP</td>
+<td>Allele number 2 per site</td>
+</tr>
+<tr class="odd">
+<td>SCHEMA</td>
+<td>Case/control counts per study only</td>
+</tr>
+<tr class="even">
+<td>UCSC All of Us and ABraOM</td>
+<td>All of Us taken from ANNOVAR instead</td>
+</tr>
+<tr class="odd">
+<td>Pan-UK Biobank</td>
+<td>GRCh37 only</td>
+</tr>
+</tbody>
+</table>
+<p>GenomeAsia, ALFA indels (position-corrected), IndiGen, SGDP and SCHEMA are present in the union table (presence only).</p>
+<h4 id="reference-resources">2.3 Reference resources</h4>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Resource</th>
+<th>Version</th>
+<th>Use</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>gnomAD v4 exome calling intervals</td>
+<td><code>ukb.pad50.broad.pad50.union.intervals</code> (UK Biobank ∪ Broad targets, ±50 bp; 393,320 intervals, 170.4 Mb) from <code>gs://gcp-public-data--gnomad/resources/grch38/intervals/</code></td>
+<td>Exonic / non-exonic split</td>
+</tr>
+<tr class="even">
+<td>ClinVar</td>
+<td><code>clinvar_20261115.vcf.gz</code> (GRCh38, MD5 verified) from <code>https://ftp.ncbi.nlm.nih.gov/pub/clinvar/vcf_GRCh38/</code></td>
+<td>Step 4</td>
+</tr>
+<tr class="odd">
+<td>Ensembl VEP</td>
+<td>116.3, merged (Ensembl + RefSeq) cache 116, GRCh38</td>
+<td>Gene and consequence</td>
+</tr>
+<tr class="even">
+<td>VEP annotation of every possible exonic SNV</td>
+<td>Existing run on the CADD v1.7 exon SNV set (exons ±50 bp)</td>
+<td>Gene and consequence for 106.8 M SNVs</td>
+</tr>
+<tr class="odd">
+<td>hg38 reference</td>
+<td><code>Homo_sapiens_assembly38.fasta</code> / UCSC <code>hg38.fa</code></td>
+<td>VEP; left-alignment checks</td>
+</tr>
+<tr class="even">
+<td>VEP 116 RefSeq cache (<code>NASER_FILES/Naser_VEP/vep_cache</code>)</td>
+<td>gnomAD v4.1 exome and genome AFs per group</td>
+<td>Additional analyses (gnomAD group AFs for ClinVar P/LP; ACMG annotation)</td>
+</tr>
+<tr class="odd">
+<td>ClinGen gene–disease validity</td>
+<td>Release in the BIAS-2015 data (2026-10-15)</td>
+<td>Autosomal recessive genes for carrier frequencies</td>
+</tr>
+<tr class="even">
+<td>GIAB genome stratifications v3.5, GRCh38</td>
+<td><code>GRCh38_segdups.bed.gz</code>, <code>GRCh38_lowmappabilityall.bed.gz</code></td>
+<td>Validation of unreliable genes</td>
+</tr>
+<tr class="odd">
+<td>BIAS-2015</td>
+<td>Local installation with its hg38 data (2026-10-15), REVEL, AlphaMissense</td>
+<td>ACMG impact</td>
+</tr>
+</tbody>
+</table>
+<h3 id="processing">3. Processing</h3>
+<h4 id="preparing-the-inputs">3.1 Preparing the inputs</h4>
+<ul>
+<li><code>varFreqsAll.bb</code> was converted to a bgzipped, tabix-indexed table with UCSC <code>bigBedToBed</code> (one job per chromosome). The row count matched the file’s own count. The bigBed’s column order differs from its schema (values are grouped per cohort: AC, AF, then that cohort’s population AC/AF); the header was rebuilt from the data and verified on 20 million rows (<code>fix_bb_header.sh</code>).</li>
+<li>Of the 13 cohorts in the bigBed, All of Us and ABraOM were ignored (All of Us comes from ANNOVAR). The other 11 cohorts were read from its <code>sources</code> column in one pass.</li>
+<li>Only the 13 UCSC cohorts not contained in the bigBed were downloaded as VCFs.</li>
+</ul>
+<h4 id="harmonisation">3.2 Harmonisation</h4>
+<ul>
+<li>Notation: every allele in ANNOVAR form. <code>chr</code> prefix removed, <code>MT</code> → <code>M</code>, shared leading then shared trailing bases trimmed, empty allele written <code>-</code>, insertions anchored on the preceding base (Start = End = that base).</li>
+<li>Multi-allelic VCF records split; symbolic and <code>*</code> alleles dropped; alleles with characters other than A, C, G, T, N dropped (counted in <code>results/01_union/extraction_stats.tsv</code>).</li>
+<li>Only chromosomes 1–22, X, Y and M kept.</li>
+<li>The hg38 1000 Genomes tables write indel alternate alleles as <code>&lt;ref length&gt;&lt;alt&gt;</code> (<code>0C</code>, <code>1AC</code>, <code>21</code>); these were decoded.</li>
+<li>ALFA indels: position − 1 (see the <a href="sections/03_data_quality_audit.md">data-quality audit</a>); in the frequency analyses only ALFA SNVs were used.</li>
+<li>Inputs were taken as left-aligned. A check with <code>bcftools norm -f hg38</code> on chromosome 22 realigned fewer than 50 records per source.</li>
+</ul>
+<h4 id="quality-rules">3.3 Quality rules</h4>
+<ul>
+<li>Alleles with AC = 0 dropped; VCF records with FILTER other than <code>PASS</code> or <code>.</code> dropped.</li>
+<li>A dataset’s AF was set to missing when its allele number was below 100 (AN from the file, Kaviar’s AN column, or AC/AF).</li>
+<li>gnomAD AF = 0 (carriers only among genotypes failing gnomAD QC) treated as “no AF”.</li>
+<li>gnomAD exome group AFs missing for 12–26% of common sites (groups not assessed in part of the exome data) taken from gnomAD genomes.</li>
+</ul>
+<h4 id="union">3.4 Union</h4>
+<p>All 33 inputs were merged per chromosome (sorted keys, bitmask of datasets) into <code>hg38_freq_union.txt</code> (<code>#Chr Start End Ref Alt is_in how_many</code>), sorted 1–22, X, Y, M, with an ANNOVAR <code>.idx</code> index.</p>
+<h4 id="regions-and-gnomad-reference">3.5 Regions and gnomAD reference</h4>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Region</th>
+<th>Definition</th>
+<th>gnomAD reference AF</th>
+<th>Datasets</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Exonic</td>
+<td>Start inside the gnomAD v4 exome calling intervals</td>
+<td>Exome AF; genome AF where the exome table has no AF</td>
+<td>All</td>
+</tr>
+<tr class="even">
+<td>Non-exonic</td>
+<td>Everything else</td>
+<td>Genome AF only (exome-table calls ignored)</td>
+<td>All except exome-only sets (SPARK WES, GME, ExAC, gnomAD v2 exomes)</td>
+</tr>
+</tbody>
+</table>
+<p>Three gnomAD views:</p>
+<ul>
+<li><strong>overall</strong>: the gnomAD AF.</li>
+<li><strong>popmax</strong>: the highest of overall AF and the AFs of AFR, AMR, ASJ, EAS, FIN, MID, NFE, SAS. Computed here because gnomAD’s own <code>grpmax</code> excludes MID and FIN.</li>
+<li><strong>matched</strong>: the AF of the dataset’s own gnomAD group: EAS for ToMMo, KOVA, WBBC, SG10K; AMR for MCPS; FIN for FinnGen; NFE for SweGen, GoNL, UK Biobank; MID for Saudi and GME.</li>
+</ul>
+<h4 id="classes">3.6 Classes</h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Variable</th>
+<th>Classes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Dataset AF</td>
+<td>&lt; 1%, 1–5%, 5–10% (low), &gt; 10% (polymorphism), no AF</td>
+</tr>
+<tr class="even">
+<td>gnomAD</td>
+<td>absent, QC fail (row without usable AF), rare (&lt; 5%), low (5–10%), polymorphic (&gt; 10%)</td>
+</tr>
+<tr class="odd">
+<td>Variant type</td>
+<td>SNV; indel (one allele <code>-</code>); MNV (other)</td>
+</tr>
+</tbody>
+</table>
+<p>Rare = &lt; 5% in the dataset; polymorphism = &gt; 10%. In gnomAD, rare = &lt; 5% in exome and genome; polymorphic = &gt; 10% in exome or genome (one reference AF per region, section 3.5).</p>
+<h3 id="analyses">4. Analyses</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Step</th>
+<th>Analysis</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1</td>
+<td>Unique to the dataset</td>
+<td>Share of the dataset’s variants absent from gnomAD, all and AF ≥ 1%</td>
+</tr>
+<tr class="even">
+<td>2</td>
+<td>Polymorphisms and rare variants</td>
+<td>Cross-tabulation of dataset class × gnomAD class, for each gnomAD view, in both directions</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td>Markers</td>
+<td>SNVs &gt; 10% in a country dataset with gnomAD popmax &lt; 5% or absent</td>
+</tr>
+<tr class="even">
+<td>3</td>
+<td>Structure</td>
+<td>PCA (SVD of the centred population × SNV AF matrix) and mean absolute AF difference; SNVs with gnomAD genome AF, AF ≥ 1% in some country set, thinned to one per 100 kb; country datasets with AF for at least 20% of these SNVs, plus the eight gnomAD genome groups</td>
+</tr>
+<tr class="odd">
+<td>4</td>
+<td>ClinVar</td>
+<td>ClinVar alleles (normalised as in 3.2) with AF ≥ 5% in at least one dataset; grouped as P/LP, VUS, conflicting, B/LB, other; review stars from CLNREVSTAT; support = number of independent datasets with AF ≥ 5% (gnomAD v2 and ExAC counted with gnomAD)</td>
+</tr>
+<tr class="even">
+<td>5</td>
+<td>Gene level</td>
+<td>See below</td>
+</tr>
+<tr class="odd">
+<td>6–10</td>
+<td>Additional analyses</td>
+<td>Founder variants, carrier frequencies, unreliable genes and regions, ancestry markers, ACMG impact: methods in <a href="sections/07_additional_analyses.md">Additional analyses</a></td>
+</tr>
+</tbody>
+</table>
+<h4 id="gene-level-exonic-protein-coding-genes">4.1 Gene level (exonic, protein-coding genes)</h4>
+<ul>
+<li><strong>Annotation.</strong> 195,874,106 exonic variants. 106,845,209 SNVs took gene and consequence from the existing VEP annotation of every possible exonic SNV; the other 89,022,055 (indels, MNVs and SNVs outside that set) were run through VEP 116.3 in its default input format. One consequence per allele (<code>--pick_allele</code>, order MANE Select, MANE Plus Clinical, canonical, APPRIS, TSL, biotype, CCDS, rank, length).</li>
+<li><strong>Classes.</strong> Protein-altering = missense, stop gained/lost, start lost, frameshift, in-frame insertion/deletion, splice acceptor/donor, protein-altering; synonymous as a technical control. Each for all variants and for AF ≥ 1%.</li>
+<li><strong>Across populations.</strong> For gene <em>g</em> in dataset <em>d</em>: expected = N<sub>d</sub> × (n<sub>gnomAD</sub>(g) + 0.5) / (N<sub>gnomAD</sub> + 0.5 × genes). Gene length and dataset size cancel. Two-sided exact binomial test, tested when observed or expected ≥ 5; Benjamini–Hochberg FDR per dataset, class and AF class. A gene is high or low at FDR &lt; 5% and |log<sub>2</sub>(observed/expected)| ≥ 1.</li>
+<li><strong>Within a dataset.</strong> Variants per kb of the gene’s exonic footprint (positions VEP assigns to the gene in exons ±50 bp, ≥ 300 bp); robust z-score of log<sub>10</sub> density (median, 1.4826 × MAD); outlier at |z| ≥ 3.</li>
+<li><strong>Uniqueness.</strong> For each flagged gene: number of datasets and population groups (East Asia, Europe, Middle East, Latin America, multi-population) in which it is flagged.</li>
+</ul>
+<h3 id="checks-performed">5. Checks performed</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Check</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Union and study row counts against source counts</td>
+<td>Match (e.g. bigBed 1,259,969,871 rows)</td>
+</tr>
+<tr class="even">
+<td>Indel placement per source: REF against hg38 at POS and POS−1; overlap with gnomAD when shifted ±1</td>
+<td>Only ALFA misplaced</td>
+</tr>
+<tr class="odd">
+<td>Normalisation with <code>bcftools norm -f hg38</code> (chr22)</td>
+<td>&lt; 50 realignments per source</td>
+</tr>
+<tr class="even">
+<td>Chromosome slices read from ANNOVAR <code>.idx</code> against full-file counts</td>
+<td>Match after taking the minimum/maximum byte offsets</td>
+</tr>
+<tr class="odd">
+<td>Cross-dataset consistency of rare-allele frequencies</td>
+<td>Revealed tiny-AN records (SPARK, ToMMo)</td>
+</tr>
+<tr class="even">
+<td>ClinVar flags against independent datasets</td>
+<td>127 of 140 P/LP flags rest on one dataset</td>
+</tr>
+<tr class="odd">
+<td>Gene step: every variant annotated once</td>
+<td>106,845,209 + 89,022,055 = 195,874,106</td>
+</tr>
+</tbody>
+</table>
+<h3 id="software-and-compute">6. Software and compute</h3>
+<table>
+<thead>
+<tr class="header">
+<th>Software</th>
+<th>Version</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>GNU awk</td>
+<td>5.1.1</td>
+</tr>
+<tr class="even">
+<td>GNU coreutils (sort)</td>
+<td>9.0</td>
+</tr>
+<tr class="odd">
+<td>bcftools / tabix (htslib)</td>
+<td>1.19</td>
+</tr>
+<tr class="even">
+<td>UCSC bigBedToBed, bigBedInfo (bioconda)</td>
+<td>482</td>
+</tr>
+<tr class="odd">
+<td>aria2</td>
+<td>1.37.0</td>
+</tr>
+<tr class="even">
+<td>Ensembl VEP (Docker)</td>
+<td>116.3 (Ensembl API 116)</td>
+</tr>
+<tr class="odd">
+<td>Python</td>
+<td>3.10.22</td>
+</tr>
+<tr class="even">
+<td>pandas / NumPy / SciPy / matplotlib</td>
+<td>2.2.2 / 1.26.4 / 1.14.1 / 3.10.9</td>
+</tr>
+</tbody>
+</table>
+<p>Server: 192-core ARM (Kunpeng), 1.5 TB RAM. Extraction runs as 511 jobs (120 in parallel). A full study run takes about 1.7 hours; the gene step about 3 hours, of which VEP takes 2 hours on 120 cores.</p>
+<h2 id="results">Results</h2>
+<p>All numbers below are generated from the tables in <a href="../results"><code>results/</code></a> by <code>scripts/make_results_md.py</code>. Definitions of every class and view are in <a href="sections/01_materials_and_methods.md">Materials and methods</a>.</p>
+<h3 id="the-union-of-all-datasets">1. The union of all datasets</h3>
+<p>The union table holds <strong>2,055,347,367</strong> distinct variants (hg38). 51.9% are in one dataset only, 38.5% in 2–5 datasets and 9.6% in 6 or more. The highest number of datasets sharing one variant is 32.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Variants in union</th>
+<th style="text-align: right;">Only in this dataset</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>allofus</td>
+<td style="text-align: right;">1,116,475,817</td>
+<td style="text-align: right;">404,818,904</td>
+</tr>
+<tr class="even">
+<td>topmed</td>
+<td style="text-align: right;">868,581,653</td>
+<td style="text-align: right;">148,058,026</td>
+</tr>
+<tr class="odd">
+<td>gnomad41_genome</td>
+<td style="text-align: right;">759,336,310</td>
+<td style="text-align: right;">95,320,044</td>
+</tr>
+<tr class="even">
+<td>gnomad_genome</td>
+<td style="text-align: right;">260,417,615</td>
+<td style="text-align: right;">4,546,206</td>
+</tr>
+<tr class="odd">
+<td>tommo</td>
+<td style="text-align: right;">257,948,687</td>
+<td style="text-align: right;">124,804,524</td>
+</tr>
+<tr class="even">
+<td>hostseq</td>
+<td style="text-align: right;">213,382,086</td>
+<td style="text-align: right;">22,454,486</td>
+</tr>
+<tr class="odd">
+<td>kaviar_20150923</td>
+<td style="text-align: right;">209,955,474</td>
+<td style="text-align: right;">34,648,226</td>
+</tr>
+<tr class="even">
+<td>hgdp1kg</td>
+<td style="text-align: right;">188,568,310</td>
+<td style="text-align: right;">2,758,263</td>
+</tr>
+<tr class="odd">
+<td>gnomad41_exome</td>
+<td style="text-align: right;">183,717,260</td>
+<td style="text-align: right;">109,794,024</td>
+</tr>
+<tr class="even">
+<td>sg10k_npm</td>
+<td style="text-align: right;">179,418,880</td>
+<td style="text-align: right;">40,134,644</td>
+</tr>
+<tr class="odd">
+<td>sfari_wgs</td>
+<td style="text-align: right;">167,036,436</td>
+<td style="text-align: right;">13,758,308</td>
+</tr>
+<tr class="even">
+<td>alfa</td>
+<td style="text-align: right;">163,487,204</td>
+<td style="text-align: right;">4,021,683</td>
+</tr>
+<tr class="odd">
+<td>mcps</td>
+<td style="text-align: right;">140,367,157</td>
+<td style="text-align: right;">17,587,794</td>
+</tr>
+<tr class="even">
+<td>gregor</td>
+<td style="text-align: right;">115,608,418</td>
+<td style="text-align: right;">9,139,429</td>
+</tr>
+<tr class="odd">
+<td>1000g2015aug</td>
+<td style="text-align: right;">84,917,695</td>
+<td style="text-align: right;">92,767</td>
+</tr>
+<tr class="even">
+<td>wbbc</td>
+<td style="text-align: right;">78,594,274</td>
+<td style="text-align: right;">16,891,298</td>
+</tr>
+<tr class="odd">
+<td>colorsdb</td>
+<td style="text-align: right;">50,103,023</td>
+<td style="text-align: right;">2,134,169</td>
+</tr>
+<tr class="even">
+<td>sgdp</td>
+<td style="text-align: right;">45,314,671</td>
+<td style="text-align: right;">1,925,062</td>
+</tr>
+<tr class="odd">
+<td>kova</td>
+<td style="text-align: right;">43,302,651</td>
+<td style="text-align: right;">6,348,421</td>
+</tr>
+<tr class="even">
+<td>ga4k</td>
+<td style="text-align: right;">36,246,689</td>
+<td style="text-align: right;">547,724</td>
+</tr>
+<tr class="odd">
+<td>swegen</td>
+<td style="text-align: right;">35,081,565</td>
+<td style="text-align: right;">1,953,889</td>
+</tr>
+<tr class="even">
+<td>gonl</td>
+<td style="text-align: right;">34,803,723</td>
+<td style="text-align: right;">1,296,366</td>
+</tr>
+<tr class="odd">
+<td>saudi</td>
+<td style="text-align: right;">25,488,981</td>
+<td style="text-align: right;">1,403,252</td>
+</tr>
+<tr class="even">
+<td>finngen</td>
+<td style="text-align: right;">20,005,939</td>
+<td style="text-align: right;">1,199</td>
+</tr>
+<tr class="odd">
+<td>gnomad_exome</td>
+<td style="text-align: right;">16,997,118</td>
+<td style="text-align: right;">367,560</td>
+</tr>
+<tr class="even">
+<td>ukbb</td>
+<td style="text-align: right;">13,723,704</td>
+<td style="text-align: right;">3,854</td>
+</tr>
+<tr class="odd">
+<td>spark_wes</td>
+<td style="text-align: right;">12,887,332</td>
+<td style="text-align: right;">1,313,671</td>
+</tr>
+<tr class="even">
+<td>exac03</td>
+<td style="text-align: right;">10,187,785</td>
+<td style="text-align: right;">9,018</td>
+</tr>
+<tr class="odd">
+<td>schema</td>
+<td style="text-align: right;">8,863,409</td>
+<td style="text-align: right;">201,558</td>
+</tr>
+<tr class="even">
+<td>svatalog</td>
+<td style="text-align: right;">8,518,326</td>
+<td style="text-align: right;">59,563</td>
+</tr>
+<tr class="odd">
+<td>genomeasia</td>
+<td style="text-align: right;">3,383,515</td>
+<td style="text-align: right;">78,535</td>
+</tr>
+<tr class="even">
+<td>gme</td>
+<td style="text-align: right;">687,665</td>
+<td style="text-align: right;">77,935</td>
+</tr>
+</tbody>
+</table>
+<h3 id="what-each-dataset-adds-beyond-gnomad-v4.1-step-1">2. What each dataset adds beyond gnomAD v4.1 (step 1)</h3>
+<p>Share of each dataset’s variants that are absent from gnomAD v4.1, for all variants and for variants with AF ≥ 1% in the dataset. Exonic: gnomAD exomes + genomes. Non-exonic: gnomAD genomes only.</p>
+<h4 id="exonic-regions-snvs">Exonic regions, SNVs</h4>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Variants</th>
+<th style="text-align: right;">% not in gnomAD</th>
+<th style="text-align: right;">Variants AF ≥ 1%</th>
+<th style="text-align: right;">AF ≥ 1% not in gnomAD</th>
+<th style="text-align: right;">% AF ≥ 1% not in gnomAD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>gme</td>
+<td style="text-align: right;">677,157</td>
+<td style="text-align: right;">15.26%</td>
+<td style="text-align: right;">98,647</td>
+<td style="text-align: right;">7,363</td>
+<td style="text-align: right;">7.46%</td>
+</tr>
+<tr class="even">
+<td>gnomad_exome_v2</td>
+<td style="text-align: right;">15,818,509</td>
+<td style="text-align: right;">5.64%</td>
+<td style="text-align: right;">157,639</td>
+<td style="text-align: right;">3,375</td>
+<td style="text-align: right;">2.14%</td>
+</tr>
+<tr class="odd">
+<td>gnomad_genome_v2</td>
+<td style="text-align: right;">13,279,787</td>
+<td style="text-align: right;">2.98%</td>
+<td style="text-align: right;">694,471</td>
+<td style="text-align: right;">14,705</td>
+<td style="text-align: right;">2.12%</td>
+</tr>
+<tr class="even">
+<td>exac03</td>
+<td style="text-align: right;">9,497,904</td>
+<td style="text-align: right;">4.90%</td>
+<td style="text-align: right;">167,903</td>
+<td style="text-align: right;">3,499</td>
+<td style="text-align: right;">2.08%</td>
+</tr>
+<tr class="odd">
+<td>colorsdb</td>
+<td style="text-align: right;">1,936,829</td>
+<td style="text-align: right;">1.99%</td>
+<td style="text-align: right;">593,588</td>
+<td style="text-align: right;">11,748</td>
+<td style="text-align: right;">1.98%</td>
+</tr>
+<tr class="even">
+<td>alfa</td>
+<td style="text-align: right;">10,058,751</td>
+<td style="text-align: right;">6.66%</td>
+<td style="text-align: right;">660,045</td>
+<td style="text-align: right;">12,384</td>
+<td style="text-align: right;">1.88%</td>
+</tr>
+<tr class="odd">
+<td>ga4k</td>
+<td style="text-align: right;">1,388,133</td>
+<td style="text-align: right;">2.19%</td>
+<td style="text-align: right;">590,308</td>
+<td style="text-align: right;">9,666</td>
+<td style="text-align: right;">1.64%</td>
+</tr>
+<tr class="even">
+<td>svatalog</td>
+<td style="text-align: right;">380,907</td>
+<td style="text-align: right;">1.42%</td>
+<td style="text-align: right;">380,907</td>
+<td style="text-align: right;">5,424</td>
+<td style="text-align: right;">1.42%</td>
+</tr>
+<tr class="odd">
+<td>kaviar</td>
+<td style="text-align: right;">17,269,090</td>
+<td style="text-align: right;">10.05%</td>
+<td style="text-align: right;">489,818</td>
+<td style="text-align: right;">5,587</td>
+<td style="text-align: right;">1.14%</td>
+</tr>
+<tr class="even">
+<td>1000g2015aug</td>
+<td style="text-align: right;">4,970,014</td>
+<td style="text-align: right;">1.32%</td>
+<td style="text-align: right;">632,378</td>
+<td style="text-align: right;">6,863</td>
+<td style="text-align: right;">1.09%</td>
+</tr>
+<tr class="odd">
+<td>gonl</td>
+<td style="text-align: right;">1,347,556</td>
+<td style="text-align: right;">6.07%</td>
+<td style="text-align: right;">504,811</td>
+<td style="text-align: right;">3,193</td>
+<td style="text-align: right;">0.63%</td>
+</tr>
+<tr class="even">
+<td>gregor</td>
+<td style="text-align: right;">4,789,146</td>
+<td style="text-align: right;">7.76%</td>
+<td style="text-align: right;">528,283</td>
+<td style="text-align: right;">3,203</td>
+<td style="text-align: right;">0.61%</td>
+</tr>
+<tr class="odd">
+<td>topmed</td>
+<td style="text-align: right;">45,585,138</td>
+<td style="text-align: right;">21.09%</td>
+<td style="text-align: right;">776,783</td>
+<td style="text-align: right;">2,917</td>
+<td style="text-align: right;">0.38%</td>
+</tr>
+<tr class="even">
+<td>tommo</td>
+<td style="text-align: right;">11,924,498</td>
+<td style="text-align: right;">38.08%</td>
+<td style="text-align: right;">384,477</td>
+<td style="text-align: right;">1,193</td>
+<td style="text-align: right;">0.31%</td>
+</tr>
+<tr class="odd">
+<td>allofus</td>
+<td style="text-align: right;">58,612,458</td>
+<td style="text-align: right;">32.28%</td>
+<td style="text-align: right;">623,931</td>
+<td style="text-align: right;">1,944</td>
+<td style="text-align: right;">0.31%</td>
+</tr>
+<tr class="even">
+<td>saudi</td>
+<td style="text-align: right;">1,434,235</td>
+<td style="text-align: right;">6.94%</td>
+<td style="text-align: right;">486,971</td>
+<td style="text-align: right;">1,264</td>
+<td style="text-align: right;">0.26%</td>
+</tr>
+<tr class="odd">
+<td>ukbb</td>
+<td style="text-align: right;">782,434</td>
+<td style="text-align: right;">0.18%</td>
+<td style="text-align: right;">420,635</td>
+<td style="text-align: right;">559</td>
+<td style="text-align: right;">0.13%</td>
+</tr>
+<tr class="even">
+<td>sg10k_npm</td>
+<td style="text-align: right;">8,943,444</td>
+<td style="text-align: right;">23.10%</td>
+<td style="text-align: right;">459,843</td>
+<td style="text-align: right;">534</td>
+<td style="text-align: right;">0.12%</td>
+</tr>
+<tr class="odd">
+<td>sfari_wgs</td>
+<td style="text-align: right;">8,391,650</td>
+<td style="text-align: right;">10.53%</td>
+<td style="text-align: right;">511,162</td>
+<td style="text-align: right;">440</td>
+<td style="text-align: right;">0.09%</td>
+</tr>
+<tr class="even">
+<td>hostseq</td>
+<td style="text-align: right;">9,219,938</td>
+<td style="text-align: right;">12.63%</td>
+<td style="text-align: right;">501,215</td>
+<td style="text-align: right;">218</td>
+<td style="text-align: right;">0.04%</td>
+</tr>
+<tr class="odd">
+<td>spark_wes</td>
+<td style="text-align: right;">11,948,040</td>
+<td style="text-align: right;">16.28%</td>
+<td style="text-align: right;">149,569</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">0.03%</td>
+</tr>
+<tr class="even">
+<td>swegen</td>
+<td style="text-align: right;">1,670,659</td>
+<td style="text-align: right;">5.36%</td>
+<td style="text-align: right;">510,566</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">0.02%</td>
+</tr>
+<tr class="odd">
+<td>kova</td>
+<td style="text-align: right;">2,916,020</td>
+<td style="text-align: right;">19.09%</td>
+<td style="text-align: right;">358,150</td>
+<td style="text-align: right;">78</td>
+<td style="text-align: right;">0.02%</td>
+</tr>
+<tr class="even">
+<td>mcps</td>
+<td style="text-align: right;">11,972,559</td>
+<td style="text-align: right;">23.01%</td>
+<td style="text-align: right;">406,055</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">0.02%</td>
+</tr>
+<tr class="odd">
+<td>hgdp1kg</td>
+<td style="text-align: right;">7,365,030</td>
+<td style="text-align: right;">1.37%</td>
+<td style="text-align: right;">634,696</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="even">
+<td>wbbc</td>
+<td style="text-align: right;">4,438,310</td>
+<td style="text-align: right;">25.13%</td>
+<td style="text-align: right;">356,222</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="odd">
+<td>finngen</td>
+<td style="text-align: right;">992,843</td>
+<td style="text-align: right;">0.07%</td>
+<td style="text-align: right;">434,510</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="exonic-regions-indels">Exonic regions, INDELs</h4>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Variants</th>
+<th style="text-align: right;">% not in gnomAD</th>
+<th style="text-align: right;">Variants AF ≥ 1%</th>
+<th style="text-align: right;">AF ≥ 1% not in gnomAD</th>
+<th style="text-align: right;">% AF ≥ 1% not in gnomAD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>gme</td>
+<td style="text-align: right;">10,508</td>
+<td style="text-align: right;">25.10%</td>
+<td style="text-align: right;">2,467</td>
+<td style="text-align: right;">652</td>
+<td style="text-align: right;">26.43%</td>
+</tr>
+<tr class="even">
+<td>kaviar</td>
+<td style="text-align: right;">1,874,701</td>
+<td style="text-align: right;">31.82%</td>
+<td style="text-align: right;">97,966</td>
+<td style="text-align: right;">5,770</td>
+<td style="text-align: right;">5.89%</td>
+</tr>
+<tr class="odd">
+<td>allofus</td>
+<td style="text-align: right;">6,382,028</td>
+<td style="text-align: right;">44.30%</td>
+<td style="text-align: right;">176,607</td>
+<td style="text-align: right;">7,288</td>
+<td style="text-align: right;">4.13%</td>
+</tr>
+<tr class="even">
+<td>colorsdb</td>
+<td style="text-align: right;">413,269</td>
+<td style="text-align: right;">5.90%</td>
+<td style="text-align: right;">151,202</td>
+<td style="text-align: right;">5,177</td>
+<td style="text-align: right;">3.42%</td>
+</tr>
+<tr class="odd">
+<td>ga4k</td>
+<td style="text-align: right;">329,799</td>
+<td style="text-align: right;">5.81%</td>
+<td style="text-align: right;">164,755</td>
+<td style="text-align: right;">5,494</td>
+<td style="text-align: right;">3.33%</td>
+</tr>
+<tr class="even">
+<td>svatalog</td>
+<td style="text-align: right;">44,279</td>
+<td style="text-align: right;">3.27%</td>
+<td style="text-align: right;">44,279</td>
+<td style="text-align: right;">1,448</td>
+<td style="text-align: right;">3.27%</td>
+</tr>
+<tr class="odd">
+<td>1000g2015aug</td>
+<td style="text-align: right;">176,805</td>
+<td style="text-align: right;">2.97%</td>
+<td style="text-align: right;">72,478</td>
+<td style="text-align: right;">2,088</td>
+<td style="text-align: right;">2.88%</td>
+</tr>
+<tr class="even">
+<td>exac03</td>
+<td style="text-align: right;">686,320</td>
+<td style="text-align: right;">11.20%</td>
+<td style="text-align: right;">31,863</td>
+<td style="text-align: right;">750</td>
+<td style="text-align: right;">2.35%</td>
+</tr>
+<tr class="odd">
+<td>ukbb</td>
+<td style="text-align: right;">58,581</td>
+<td style="text-align: right;">2.10%</td>
+<td style="text-align: right;">45,840</td>
+<td style="text-align: right;">1,058</td>
+<td style="text-align: right;">2.31%</td>
+</tr>
+<tr class="even">
+<td>gnomad_exome_v2</td>
+<td style="text-align: right;">1,171,218</td>
+<td style="text-align: right;">10.63%</td>
+<td style="text-align: right;">28,516</td>
+<td style="text-align: right;">541</td>
+<td style="text-align: right;">1.90%</td>
+</tr>
+<tr class="odd">
+<td>gnomad_genome_v2</td>
+<td style="text-align: right;">1,615,159</td>
+<td style="text-align: right;">4.78%</td>
+<td style="text-align: right;">155,068</td>
+<td style="text-align: right;">2,664</td>
+<td style="text-align: right;">1.72%</td>
+</tr>
+<tr class="even">
+<td>topmed</td>
+<td style="text-align: right;">4,313,850</td>
+<td style="text-align: right;">27.38%</td>
+<td style="text-align: right;">164,285</td>
+<td style="text-align: right;">1,411</td>
+<td style="text-align: right;">0.86%</td>
+</tr>
+<tr class="odd">
+<td>sfari_wgs</td>
+<td style="text-align: right;">825,642</td>
+<td style="text-align: right;">14.53%</td>
+<td style="text-align: right;">61,031</td>
+<td style="text-align: right;">444</td>
+<td style="text-align: right;">0.73%</td>
+</tr>
+<tr class="even">
+<td>spark_wes</td>
+<td style="text-align: right;">730,650</td>
+<td style="text-align: right;">25.80%</td>
+<td style="text-align: right;">11,304</td>
+<td style="text-align: right;">79</td>
+<td style="text-align: right;">0.70%</td>
+</tr>
+<tr class="odd">
+<td>sg10k_npm</td>
+<td style="text-align: right;">733,783</td>
+<td style="text-align: right;">33.54%</td>
+<td style="text-align: right;">42,326</td>
+<td style="text-align: right;">205</td>
+<td style="text-align: right;">0.48%</td>
+</tr>
+<tr class="even">
+<td>mcps</td>
+<td style="text-align: right;">864,826</td>
+<td style="text-align: right;">32.12%</td>
+<td style="text-align: right;">43,467</td>
+<td style="text-align: right;">179</td>
+<td style="text-align: right;">0.41%</td>
+</tr>
+<tr class="odd">
+<td>tommo</td>
+<td style="text-align: right;">900,485</td>
+<td style="text-align: right;">58.67%</td>
+<td style="text-align: right;">25,349</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">0.24%</td>
+</tr>
+<tr class="even">
+<td>gregor</td>
+<td style="text-align: right;">793,497</td>
+<td style="text-align: right;">8.89%</td>
+<td style="text-align: right;">169,703</td>
+<td style="text-align: right;">411</td>
+<td style="text-align: right;">0.24%</td>
+</tr>
+<tr class="odd">
+<td>gonl</td>
+<td style="text-align: right;">287,151</td>
+<td style="text-align: right;">2.76%</td>
+<td style="text-align: right;">126,354</td>
+<td style="text-align: right;">117</td>
+<td style="text-align: right;">0.09%</td>
+</tr>
+<tr class="even">
+<td>swegen</td>
+<td style="text-align: right;">168,975</td>
+<td style="text-align: right;">6.87%</td>
+<td style="text-align: right;">51,125</td>
+<td style="text-align: right;">28</td>
+<td style="text-align: right;">0.05%</td>
+</tr>
+<tr class="odd">
+<td>kova</td>
+<td style="text-align: right;">212,214</td>
+<td style="text-align: right;">30.40%</td>
+<td style="text-align: right;">25,969</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">0.05%</td>
+</tr>
+<tr class="even">
+<td>hostseq</td>
+<td style="text-align: right;">1,185,353</td>
+<td style="text-align: right;">13.59%</td>
+<td style="text-align: right;">134,130</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">0.03%</td>
+</tr>
+<tr class="odd">
+<td>wbbc</td>
+<td style="text-align: right;">327,560</td>
+<td style="text-align: right;">30.88%</td>
+<td style="text-align: right;">23,791</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="even">
+<td>hgdp1kg</td>
+<td style="text-align: right;">971,211</td>
+<td style="text-align: right;">1.37%</td>
+<td style="text-align: right;">155,612</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="odd">
+<td>finngen</td>
+<td style="text-align: right;">94,149</td>
+<td style="text-align: right;">0.02%</td>
+<td style="text-align: right;">46,280</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="../results/02_frequency_vs_gnomad/exonic/figures/step1_snv_unique_vs_gnomad.png" alt="" /><figcaption>Exonic regions: SNVs</figcaption>
+</figure>
+<figure>
+<img src="../results/02_frequency_vs_gnomad/exonic/figures/step1_indel_unique_vs_gnomad.png" alt="" /><figcaption>Exonic regions: indels</figcaption>
+</figure>
+<h4 id="non-exonic-regions-snvs">Non-exonic regions, SNVs</h4>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Variants</th>
+<th style="text-align: right;">% not in gnomAD</th>
+<th style="text-align: right;">Variants AF ≥ 1%</th>
+<th style="text-align: right;">AF ≥ 1% not in gnomAD</th>
+<th style="text-align: right;">% AF ≥ 1% not in gnomAD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>colorsdb</td>
+<td style="text-align: right;">36,899,589</td>
+<td style="text-align: right;">10.06%</td>
+<td style="text-align: right;">12,361,062</td>
+<td style="text-align: right;">1,359,440</td>
+<td style="text-align: right;">11.00%</td>
+</tr>
+<tr class="even">
+<td>topmed</td>
+<td style="text-align: right;">742,117,766</td>
+<td style="text-align: right;">40.48%</td>
+<td style="text-align: right;">16,021,874</td>
+<td style="text-align: right;">1,226,186</td>
+<td style="text-align: right;">7.65%</td>
+</tr>
+<tr class="odd">
+<td>tommo</td>
+<td style="text-align: right;">196,076,062</td>
+<td style="text-align: right;">64.84%</td>
+<td style="text-align: right;">7,564,035</td>
+<td style="text-align: right;">542,809</td>
+<td style="text-align: right;">7.18%</td>
+</tr>
+<tr class="even">
+<td>swegen</td>
+<td style="text-align: right;">29,996,166</td>
+<td style="text-align: right;">17.46%</td>
+<td style="text-align: right;">10,086,068</td>
+<td style="text-align: right;">626,454</td>
+<td style="text-align: right;">6.21%</td>
+</tr>
+<tr class="odd">
+<td>alfa</td>
+<td style="text-align: right;">136,086,372</td>
+<td style="text-align: right;">14.48%</td>
+<td style="text-align: right;">12,964,190</td>
+<td style="text-align: right;">777,811</td>
+<td style="text-align: right;">6.00%</td>
+</tr>
+<tr class="even">
+<td>ga4k</td>
+<td style="text-align: right;">26,058,276</td>
+<td style="text-align: right;">6.76%</td>
+<td style="text-align: right;">11,617,533</td>
+<td style="text-align: right;">645,590</td>
+<td style="text-align: right;">5.56%</td>
+</tr>
+<tr class="odd">
+<td>sg10k_npm</td>
+<td style="text-align: right;">149,387,922</td>
+<td style="text-align: right;">45.29%</td>
+<td style="text-align: right;">9,487,423</td>
+<td style="text-align: right;">486,046</td>
+<td style="text-align: right;">5.12%</td>
+</tr>
+<tr class="even">
+<td>gonl</td>
+<td style="text-align: right;">24,726,537</td>
+<td style="text-align: right;">14.21%</td>
+<td style="text-align: right;">10,102,223</td>
+<td style="text-align: right;">517,618</td>
+<td style="text-align: right;">5.12%</td>
+</tr>
+<tr class="odd">
+<td>sfari_wgs</td>
+<td style="text-align: right;">141,794,374</td>
+<td style="text-align: right;">24.57%</td>
+<td style="text-align: right;">10,199,534</td>
+<td style="text-align: right;">486,383</td>
+<td style="text-align: right;">4.77%</td>
+</tr>
+<tr class="even">
+<td>svatalog</td>
+<td style="text-align: right;">7,130,203</td>
+<td style="text-align: right;">1.61%</td>
+<td style="text-align: right;">7,130,203</td>
+<td style="text-align: right;">115,072</td>
+<td style="text-align: right;">1.61%</td>
+</tr>
+<tr class="odd">
+<td>kova</td>
+<td style="text-align: right;">37,498,359</td>
+<td style="text-align: right;">35.95%</td>
+<td style="text-align: right;">6,595,513</td>
+<td style="text-align: right;">99,389</td>
+<td style="text-align: right;">1.51%</td>
+</tr>
+<tr class="even">
+<td>gnomad_genome_v2</td>
+<td style="text-align: right;">213,863,282</td>
+<td style="text-align: right;">5.09%</td>
+<td style="text-align: right;">13,127,098</td>
+<td style="text-align: right;">193,831</td>
+<td style="text-align: right;">1.48%</td>
+</tr>
+<tr class="odd">
+<td>kaviar</td>
+<td style="text-align: right;">156,482,085</td>
+<td style="text-align: right;">22.33%</td>
+<td style="text-align: right;">9,875,584</td>
+<td style="text-align: right;">107,304</td>
+<td style="text-align: right;">1.09%</td>
+</tr>
+<tr class="even">
+<td>1000g2015aug</td>
+<td style="text-align: right;">76,455,109</td>
+<td style="text-align: right;">2.04%</td>
+<td style="text-align: right;">12,132,466</td>
+<td style="text-align: right;">99,113</td>
+<td style="text-align: right;">0.82%</td>
+</tr>
+<tr class="odd">
+<td>allofus</td>
+<td style="text-align: right;">935,654,106</td>
+<td style="text-align: right;">58.23%</td>
+<td style="text-align: right;">12,310,970</td>
+<td style="text-align: right;">92,806</td>
+<td style="text-align: right;">0.75%</td>
+</tr>
+<tr class="even">
+<td>saudi</td>
+<td style="text-align: right;">24,054,746</td>
+<td style="text-align: right;">11.34%</td>
+<td style="text-align: right;">8,976,432</td>
+<td style="text-align: right;">30,749</td>
+<td style="text-align: right;">0.34%</td>
+</tr>
+<tr class="odd">
+<td>gregor</td>
+<td style="text-align: right;">80,225,986</td>
+<td style="text-align: right;">15.34%</td>
+<td style="text-align: right;">10,226,966</td>
+<td style="text-align: right;">25,434</td>
+<td style="text-align: right;">0.25%</td>
+</tr>
+<tr class="even">
+<td>ukbb</td>
+<td style="text-align: right;">11,687,951</td>
+<td style="text-align: right;">0.26%</td>
+<td style="text-align: right;">8,184,777</td>
+<td style="text-align: right;">16,408</td>
+<td style="text-align: right;">0.20%</td>
+</tr>
+<tr class="odd">
+<td>wbbc</td>
+<td style="text-align: right;">68,189,102</td>
+<td style="text-align: right;">43.42%</td>
+<td style="text-align: right;">6,668,188</td>
+<td style="text-align: right;">8,569</td>
+<td style="text-align: right;">0.13%</td>
+</tr>
+<tr class="even">
+<td>mcps</td>
+<td style="text-align: right;">116,028,585</td>
+<td style="text-align: right;">35.01%</td>
+<td style="text-align: right;">7,962,226</td>
+<td style="text-align: right;">9,465</td>
+<td style="text-align: right;">0.12%</td>
+</tr>
+<tr class="odd">
+<td>finngen</td>
+<td style="text-align: right;">17,094,529</td>
+<td style="text-align: right;">0.43%</td>
+<td style="text-align: right;">8,329,131</td>
+<td style="text-align: right;">5,692</td>
+<td style="text-align: right;">0.07%</td>
+</tr>
+<tr class="even">
+<td>hostseq</td>
+<td style="text-align: right;">146,280,728</td>
+<td style="text-align: right;">25.49%</td>
+<td style="text-align: right;">9,775,222</td>
+<td style="text-align: right;">1,394</td>
+<td style="text-align: right;">0.01%</td>
+</tr>
+<tr class="odd">
+<td>hgdp1kg</td>
+<td style="text-align: right;">122,222,115</td>
+<td style="text-align: right;">2.53%</td>
+<td style="text-align: right;">12,372,584</td>
+<td style="text-align: right;">106</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="non-exonic-regions-indels">Non-exonic regions, INDELs</h4>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Variants</th>
+<th style="text-align: right;">% not in gnomAD</th>
+<th style="text-align: right;">Variants AF ≥ 1%</th>
+<th style="text-align: right;">AF ≥ 1% not in gnomAD</th>
+<th style="text-align: right;">% AF ≥ 1% not in gnomAD</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>kaviar</td>
+<td style="text-align: right;">29,276,373</td>
+<td style="text-align: right;">48.00%</td>
+<td style="text-align: right;">2,233,523</td>
+<td style="text-align: right;">187,526</td>
+<td style="text-align: right;">8.40%</td>
+</tr>
+<tr class="even">
+<td>allofus</td>
+<td style="text-align: right;">115,827,225</td>
+<td style="text-align: right;">56.12%</td>
+<td style="text-align: right;">4,958,303</td>
+<td style="text-align: right;">364,272</td>
+<td style="text-align: right;">7.35%</td>
+</tr>
+<tr class="odd">
+<td>colorsdb</td>
+<td style="text-align: right;">10,853,016</td>
+<td style="text-align: right;">9.72%</td>
+<td style="text-align: right;">4,143,799</td>
+<td style="text-align: right;">233,708</td>
+<td style="text-align: right;">5.64%</td>
+</tr>
+<tr class="even">
+<td>ga4k</td>
+<td style="text-align: right;">8,470,481</td>
+<td style="text-align: right;">7.36%</td>
+<td style="text-align: right;">4,388,251</td>
+<td style="text-align: right;">210,991</td>
+<td style="text-align: right;">4.81%</td>
+</tr>
+<tr class="odd">
+<td>svatalog</td>
+<td style="text-align: right;">962,937</td>
+<td style="text-align: right;">3.71%</td>
+<td style="text-align: right;">962,937</td>
+<td style="text-align: right;">35,723</td>
+<td style="text-align: right;">3.71%</td>
+</tr>
+<tr class="even">
+<td>tommo</td>
+<td style="text-align: right;">15,842,994</td>
+<td style="text-align: right;">72.11%</td>
+<td style="text-align: right;">515,461</td>
+<td style="text-align: right;">14,221</td>
+<td style="text-align: right;">2.76%</td>
+</tr>
+<tr class="odd">
+<td>sg10k_npm</td>
+<td style="text-align: right;">11,550,951</td>
+<td style="text-align: right;">46.15%</td>
+<td style="text-align: right;">805,749</td>
+<td style="text-align: right;">20,453</td>
+<td style="text-align: right;">2.54%</td>
+</tr>
+<tr class="even">
+<td>1000g2015aug</td>
+<td style="text-align: right;">3,314,343</td>
+<td style="text-align: right;">3.37%</td>
+<td style="text-align: right;">1,539,756</td>
+<td style="text-align: right;">37,266</td>
+<td style="text-align: right;">2.42%</td>
+</tr>
+<tr class="odd">
+<td>ukbb</td>
+<td style="text-align: right;">1,194,738</td>
+<td style="text-align: right;">2.27%</td>
+<td style="text-align: right;">1,018,043</td>
+<td style="text-align: right;">24,022</td>
+<td style="text-align: right;">2.36%</td>
+</tr>
+<tr class="even">
+<td>topmed</td>
+<td style="text-align: right;">76,564,899</td>
+<td style="text-align: right;">35.14%</td>
+<td style="text-align: right;">4,410,155</td>
+<td style="text-align: right;">102,991</td>
+<td style="text-align: right;">2.34%</td>
+</tr>
+<tr class="odd">
+<td>sfari_wgs</td>
+<td style="text-align: right;">15,892,695</td>
+<td style="text-align: right;">20.13%</td>
+<td style="text-align: right;">1,456,874</td>
+<td style="text-align: right;">33,365</td>
+<td style="text-align: right;">2.29%</td>
+</tr>
+<tr class="even">
+<td>swegen</td>
+<td style="text-align: right;">3,191,048</td>
+<td style="text-align: right;">11.52%</td>
+<td style="text-align: right;">1,058,851</td>
+<td style="text-align: right;">19,578</td>
+<td style="text-align: right;">1.85%</td>
+</tr>
+<tr class="odd">
+<td>gnomad_genome_v2</td>
+<td style="text-align: right;">31,659,387</td>
+<td style="text-align: right;">5.64%</td>
+<td style="text-align: right;">3,978,968</td>
+<td style="text-align: right;">40,786</td>
+<td style="text-align: right;">1.03%</td>
+</tr>
+<tr class="even">
+<td>mcps</td>
+<td style="text-align: right;">10,075,091</td>
+<td style="text-align: right;">31.70%</td>
+<td style="text-align: right;">929,497</td>
+<td style="text-align: right;">6,996</td>
+<td style="text-align: right;">0.75%</td>
+</tr>
+<tr class="odd">
+<td>gonl</td>
+<td style="text-align: right;">7,227,701</td>
+<td style="text-align: right;">4.08%</td>
+<td style="text-align: right;">3,296,853</td>
+<td style="text-align: right;">19,176</td>
+<td style="text-align: right;">0.58%</td>
+</tr>
+<tr class="even">
+<td>kova</td>
+<td style="text-align: right;">2,676,058</td>
+<td style="text-align: right;">38.81%</td>
+<td style="text-align: right;">461,856</td>
+<td style="text-align: right;">2,544</td>
+<td style="text-align: right;">0.55%</td>
+</tr>
+<tr class="odd">
+<td>gregor</td>
+<td style="text-align: right;">19,267,808</td>
+<td style="text-align: right;">10.29%</td>
+<td style="text-align: right;">4,936,718</td>
+<td style="text-align: right;">21,172</td>
+<td style="text-align: right;">0.43%</td>
+</tr>
+<tr class="even">
+<td>wbbc</td>
+<td style="text-align: right;">5,639,302</td>
+<td style="text-align: right;">36.37%</td>
+<td style="text-align: right;">443,324</td>
+<td style="text-align: right;">698</td>
+<td style="text-align: right;">0.16%</td>
+</tr>
+<tr class="odd">
+<td>hostseq</td>
+<td style="text-align: right;">24,463,140</td>
+<td style="text-align: right;">15.76%</td>
+<td style="text-align: right;">3,685,637</td>
+<td style="text-align: right;">1,816</td>
+<td style="text-align: right;">0.05%</td>
+</tr>
+<tr class="even">
+<td>finngen</td>
+<td style="text-align: right;">1,788,917</td>
+<td style="text-align: right;">0.11%</td>
+<td style="text-align: right;">952,086</td>
+<td style="text-align: right;">209</td>
+<td style="text-align: right;">0.02%</td>
+</tr>
+<tr class="odd">
+<td>hgdp1kg</td>
+<td style="text-align: right;">20,972,276</td>
+<td style="text-align: right;">1.49%</td>
+<td style="text-align: right;">4,183,712</td>
+<td style="text-align: right;">90</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="../results/02_frequency_vs_gnomad/non_exonic/figures/step1_snv_unique_vs_gnomad.png" alt="" /><figcaption>Non-exonic regions: SNVs</figcaption>
+</figure>
+<figure>
+<img src="../results/02_frequency_vs_gnomad/non_exonic/figures/step1_indel_unique_vs_gnomad.png" alt="" /><figcaption>Non-exonic regions: indels</figcaption>
+</figure>
+<h3 id="how-gnomad-classifies-each-datasets-polymorphisms-step-2">3. How gnomAD classifies each dataset’s polymorphisms (step 2)</h3>
+<p>Of each dataset’s polymorphisms (AF &gt; 10%), the share that gnomAD calls rare (&lt; 5%), and the share absent or QC-failed, under the three gnomAD views: overall AF, the population maximum (popmax) and the dataset’s matching gnomAD group.</p>
+<h4 id="exonic">Exonic</h4>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Type</th>
+<th style="text-align: right;">Polymorphisms</th>
+<th style="text-align: right;">Rare in gnomAD (overall)</th>
+<th style="text-align: right;">Rare (popmax)</th>
+<th style="text-align: right;">Rare (matched group)</th>
+<th style="text-align: right;">Absent / QC fail (popmax)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FinnGen (Finland)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">236,547</td>
+<td style="text-align: right;">0.80%</td>
+<td style="text-align: right;">0.06%</td>
+<td style="text-align: right;">4.05%</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="even">
+<td>GME (Middle East)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">36,497</td>
+<td style="text-align: right;">10.14%</td>
+<td style="text-align: right;">8.16%</td>
+<td style="text-align: right;">9.38%</td>
+<td style="text-align: right;">3.29%</td>
+</tr>
+<tr class="odd">
+<td>GoNL (Netherlands)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">266,382</td>
+<td style="text-align: right;">2.54%</td>
+<td style="text-align: right;">1.66%</td>
+<td style="text-align: right;">3.89%</td>
+<td style="text-align: right;">0.06%</td>
+</tr>
+<tr class="even">
+<td>KOVA (Korea)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">203,390</td>
+<td style="text-align: right;">9.18%</td>
+<td style="text-align: right;">0.20%</td>
+<td style="text-align: right;">3.32%</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="odd">
+<td>MCPS (Mexico)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">241,011</td>
+<td style="text-align: right;">6.74%</td>
+<td style="text-align: right;">0.35%</td>
+<td style="text-align: right;">2.97%</td>
+<td style="text-align: right;">0.01%</td>
+</tr>
+<tr class="even">
+<td>SG10K (Singapore)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">261,835</td>
+<td style="text-align: right;">7.63%</td>
+<td style="text-align: right;">0.35%</td>
+<td style="text-align: right;">4.52%</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="odd">
+<td>Saudi Arabia</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">235,199</td>
+<td style="text-align: right;">3.23%</td>
+<td style="text-align: right;">0.19%</td>
+<td style="text-align: right;">4.01%</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="even">
+<td>SweGen (Sweden)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">278,846</td>
+<td style="text-align: right;">3.03%</td>
+<td style="text-align: right;">1.65%</td>
+<td style="text-align: right;">4.37%</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="odd">
+<td>ToMMo (Japan)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">218,927</td>
+<td style="text-align: right;">11.65%</td>
+<td style="text-align: right;">1.91%</td>
+<td style="text-align: right;">5.72%</td>
+<td style="text-align: right;">0.30%</td>
+</tr>
+<tr class="even">
+<td>UK Biobank</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">240,045</td>
+<td style="text-align: right;">1.25%</td>
+<td style="text-align: right;">0.62%</td>
+<td style="text-align: right;">2.62%</td>
+<td style="text-align: right;">0.13%</td>
+</tr>
+<tr class="odd">
+<td>WBBC (China)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">215,414</td>
+<td style="text-align: right;">8.22%</td>
+<td style="text-align: right;">0.13%</td>
+<td style="text-align: right;">3.12%</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="even">
+<td>allofus</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">277,765</td>
+<td style="text-align: right;">4.54%</td>
+<td style="text-align: right;">2.36%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.28%</td>
+</tr>
+<tr class="odd">
+<td>topmed</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">329,952</td>
+<td style="text-align: right;">9.85%</td>
+<td style="text-align: right;">5.84%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.60%</td>
+</tr>
+<tr class="even">
+<td>FinnGen (Finland)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">24,224</td>
+<td style="text-align: right;">1.95%</td>
+<td style="text-align: right;">0.24%</td>
+<td style="text-align: right;">5.07%</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="odd">
+<td>GME (Middle East)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">810</td>
+<td style="text-align: right;">35.43%</td>
+<td style="text-align: right;">35.68%</td>
+<td style="text-align: right;">38.15%</td>
+<td style="text-align: right;">21.61%</td>
+</tr>
+<tr class="even">
+<td>GoNL (Netherlands)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">44,011</td>
+<td style="text-align: right;">3.88%</td>
+<td style="text-align: right;">1.55%</td>
+<td style="text-align: right;">5.94%</td>
+<td style="text-align: right;">0.01%</td>
+</tr>
+<tr class="odd">
+<td>KOVA (Korea)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">14,423</td>
+<td style="text-align: right;">10.19%</td>
+<td style="text-align: right;">0.28%</td>
+<td style="text-align: right;">3.96%</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="even">
+<td>MCPS (Mexico)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">25,694</td>
+<td style="text-align: right;">7.83%</td>
+<td style="text-align: right;">1.60%</td>
+<td style="text-align: right;">4.85%</td>
+<td style="text-align: right;">0.31%</td>
+</tr>
+<tr class="odd">
+<td>SG10K (Singapore)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">22,328</td>
+<td style="text-align: right;">9.71%</td>
+<td style="text-align: right;">1.09%</td>
+<td style="text-align: right;">6.40%</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="even">
+<td>SweGen (Sweden)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">26,935</td>
+<td style="text-align: right;">3.75%</td>
+<td style="text-align: right;">1.56%</td>
+<td style="text-align: right;">5.84%</td>
+<td style="text-align: right;">0.01%</td>
+</tr>
+<tr class="odd">
+<td>ToMMo (Japan)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">13,877</td>
+<td style="text-align: right;">12.70%</td>
+<td style="text-align: right;">1.68%</td>
+<td style="text-align: right;">5.72%</td>
+<td style="text-align: right;">0.30%</td>
+</tr>
+<tr class="even">
+<td>UK Biobank</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">30,090</td>
+<td style="text-align: right;">4.10%</td>
+<td style="text-align: right;">2.55%</td>
+<td style="text-align: right;">6.65%</td>
+<td style="text-align: right;">2.55%</td>
+</tr>
+<tr class="odd">
+<td>WBBC (China)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">9,311</td>
+<td style="text-align: right;">11.78%</td>
+<td style="text-align: right;">0.21%</td>
+<td style="text-align: right;">3.79%</td>
+<td style="text-align: right;">0.00%</td>
+</tr>
+<tr class="even">
+<td>allofus</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">70,486</td>
+<td style="text-align: right;">15.04%</td>
+<td style="text-align: right;">9.48%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">2.31%</td>
+</tr>
+<tr class="odd">
+<td>topmed</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">63,310</td>
+<td style="text-align: right;">9.58%</td>
+<td style="text-align: right;">3.74%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.64%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="non-exonic">Non-exonic</h4>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Type</th>
+<th style="text-align: right;">Polymorphisms</th>
+<th style="text-align: right;">Rare in gnomAD (overall)</th>
+<th style="text-align: right;">Rare (popmax)</th>
+<th style="text-align: right;">Rare (matched group)</th>
+<th style="text-align: right;">Absent / QC fail (popmax)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FinnGen (Finland)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">4,760,832</td>
+<td style="text-align: right;">0.28%</td>
+<td style="text-align: right;">0.00%</td>
+<td style="text-align: right;">0.00%</td>
+<td style="text-align: right;">0.04%</td>
+</tr>
+<tr class="even">
+<td>GoNL (Netherlands)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">5,466,674</td>
+<td style="text-align: right;">1.38%</td>
+<td style="text-align: right;">1.15%</td>
+<td style="text-align: right;">1.49%</td>
+<td style="text-align: right;">2.09%</td>
+</tr>
+<tr class="odd">
+<td>KOVA (Korea)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">3,910,694</td>
+<td style="text-align: right;">6.33%</td>
+<td style="text-align: right;">0.02%</td>
+<td style="text-align: right;">0.03%</td>
+<td style="text-align: right;">0.21%</td>
+</tr>
+<tr class="even">
+<td>MCPS (Mexico)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">4,884,843</td>
+<td style="text-align: right;">4.62%</td>
+<td style="text-align: right;">0.43%</td>
+<td style="text-align: right;">0.73%</td>
+<td style="text-align: right;">0.08%</td>
+</tr>
+<tr class="odd">
+<td>SG10K (Singapore)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">5,383,800</td>
+<td style="text-align: right;">4.88%</td>
+<td style="text-align: right;">0.08%</td>
+<td style="text-align: right;">0.57%</td>
+<td style="text-align: right;">1.36%</td>
+</tr>
+<tr class="even">
+<td>Saudi Arabia</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">4,609,585</td>
+<td style="text-align: right;">1.30%</td>
+<td style="text-align: right;">0.07%</td>
+<td style="text-align: right;">0.36%</td>
+<td style="text-align: right;">0.05%</td>
+</tr>
+<tr class="odd">
+<td>SweGen (Sweden)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">5,571,186</td>
+<td style="text-align: right;">0.96%</td>
+<td style="text-align: right;">0.60%</td>
+<td style="text-align: right;">1.03%</td>
+<td style="text-align: right;">3.41%</td>
+</tr>
+<tr class="even">
+<td>ToMMo (Japan)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">4,403,575</td>
+<td style="text-align: right;">7.25%</td>
+<td style="text-align: right;">0.97%</td>
+<td style="text-align: right;">1.32%</td>
+<td style="text-align: right;">4.30%</td>
+</tr>
+<tr class="odd">
+<td>UK Biobank</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">4,866,454</td>
+<td style="text-align: right;">0.57%</td>
+<td style="text-align: right;">0.48%</td>
+<td style="text-align: right;">0.65%</td>
+<td style="text-align: right;">0.19%</td>
+</tr>
+<tr class="even">
+<td>WBBC (China)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">4,198,467</td>
+<td style="text-align: right;">5.93%</td>
+<td style="text-align: right;">0.00%</td>
+<td style="text-align: right;">0.00%</td>
+<td style="text-align: right;">0.06%</td>
+</tr>
+<tr class="odd">
+<td>allofus</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">5,690,166</td>
+<td style="text-align: right;">1.98%</td>
+<td style="text-align: right;">1.65%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.66%</td>
+</tr>
+<tr class="even">
+<td>topmed</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">6,871,557</td>
+<td style="text-align: right;">5.70%</td>
+<td style="text-align: right;">5.20%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">5.85%</td>
+</tr>
+<tr class="odd">
+<td>FinnGen (Finland)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">513,986</td>
+<td style="text-align: right;">0.29%</td>
+<td style="text-align: right;">0.00%</td>
+<td style="text-align: right;">0.01%</td>
+<td style="text-align: right;">0.02%</td>
+</tr>
+<tr class="even">
+<td>GoNL (Netherlands)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">1,109,054</td>
+<td style="text-align: right;">2.78%</td>
+<td style="text-align: right;">2.00%</td>
+<td style="text-align: right;">3.04%</td>
+<td style="text-align: right;">0.39%</td>
+</tr>
+<tr class="odd">
+<td>KOVA (Korea)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">272,038</td>
+<td style="text-align: right;">6.38%</td>
+<td style="text-align: right;">0.02%</td>
+<td style="text-align: right;">0.03%</td>
+<td style="text-align: right;">0.10%</td>
+</tr>
+<tr class="even">
+<td>MCPS (Mexico)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">555,743</td>
+<td style="text-align: right;">5.86%</td>
+<td style="text-align: right;">1.72%</td>
+<td style="text-align: right;">2.32%</td>
+<td style="text-align: right;">0.59%</td>
+</tr>
+<tr class="odd">
+<td>SG10K (Singapore)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">431,034</td>
+<td style="text-align: right;">5.62%</td>
+<td style="text-align: right;">0.33%</td>
+<td style="text-align: right;">1.11%</td>
+<td style="text-align: right;">0.62%</td>
+</tr>
+<tr class="even">
+<td>SweGen (Sweden)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">572,462</td>
+<td style="text-align: right;">1.04%</td>
+<td style="text-align: right;">0.63%</td>
+<td style="text-align: right;">1.04%</td>
+<td style="text-align: right;">1.21%</td>
+</tr>
+<tr class="odd">
+<td>ToMMo (Japan)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">290,094</td>
+<td style="text-align: right;">7.82%</td>
+<td style="text-align: right;">0.93%</td>
+<td style="text-align: right;">1.33%</td>
+<td style="text-align: right;">1.95%</td>
+</tr>
+<tr class="even">
+<td>UK Biobank</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">702,507</td>
+<td style="text-align: right;">2.77%</td>
+<td style="text-align: right;">2.18%</td>
+<td style="text-align: right;">3.26%</td>
+<td style="text-align: right;">2.33%</td>
+</tr>
+<tr class="odd">
+<td>WBBC (China)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">167,469</td>
+<td style="text-align: right;">8.84%</td>
+<td style="text-align: right;">0.04%</td>
+<td style="text-align: right;">0.06%</td>
+<td style="text-align: right;">0.06%</td>
+</tr>
+<tr class="even">
+<td>allofus</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">1,946,962</td>
+<td style="text-align: right;">9.13%</td>
+<td style="text-align: right;">8.32%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">5.45%</td>
+</tr>
+<tr class="odd">
+<td>topmed</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">1,652,173</td>
+<td style="text-align: right;">3.86%</td>
+<td style="text-align: right;">2.93%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">1.89%</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="../results/02_frequency_vs_gnomad/exonic/figures/step2_poly_matched.png" alt="" /><figcaption>Exonic polymorphisms by matched gnomAD group</figcaption>
+</figure>
+<figure>
+<img src="../results/02_frequency_vs_gnomad/exonic/figures/step2_poly_popmax.png" alt="" /><figcaption>Exonic polymorphisms by gnomAD popmax</figcaption>
+</figure>
+<h3 id="the-opposite-direction-rare-in-the-dataset-polymorphic-in-gnomad-step-2">4. The opposite direction: rare in the dataset, polymorphic in gnomAD (step 2)</h3>
+<p>Of each dataset’s rare variants (AF &lt; 5%), the share that gnomAD calls polymorphic (&gt; 10%).</p>
+<h4 id="exonic-1">Exonic</h4>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Type</th>
+<th style="text-align: right;">Rare variants</th>
+<th style="text-align: right;">Polymorphic in gnomAD (overall)</th>
+<th style="text-align: right;">Polymorphic (matched group)</th>
+<th style="text-align: right;">Polymorphic (popmax)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FinnGen (Finland)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">699,924</td>
+<td style="text-align: right;">0.61%</td>
+<td style="text-align: right;">0.35%</td>
+<td style="text-align: right;">8.54%</td>
+</tr>
+<tr class="even">
+<td>GME (Middle East)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">628,724</td>
+<td style="text-align: right;">0.07%</td>
+<td style="text-align: right;">0.05%</td>
+<td style="text-align: right;">1.70%</td>
+</tr>
+<tr class="odd">
+<td>GoNL (Netherlands)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">1,013,056</td>
+<td style="text-align: right;">1.02%</td>
+<td style="text-align: right;">0.78%</td>
+<td style="text-align: right;">7.74%</td>
+</tr>
+<tr class="even">
+<td>KOVA (Korea)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">2,669,448</td>
+<td style="text-align: right;">1.09%</td>
+<td style="text-align: right;">0.12%</td>
+<td style="text-align: right;">2.49%</td>
+</tr>
+<tr class="odd">
+<td>MCPS (Mexico)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">11,682,203</td>
+<td style="text-align: right;">0.12%</td>
+<td style="text-align: right;">0.02%</td>
+<td style="text-align: right;">0.99%</td>
+</tr>
+<tr class="even">
+<td>SG10K (Singapore)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">8,624,430</td>
+<td style="text-align: right;">0.31%</td>
+<td style="text-align: right;">0.05%</td>
+<td style="text-align: right;">1.28%</td>
+</tr>
+<tr class="odd">
+<td>Saudi Arabia</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">1,140,784</td>
+<td style="text-align: right;">0.56%</td>
+<td style="text-align: right;">0.19%</td>
+<td style="text-align: right;">7.07%</td>
+</tr>
+<tr class="even">
+<td>SweGen (Sweden)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">1,325,162</td>
+<td style="text-align: right;">0.52%</td>
+<td style="text-align: right;">0.40%</td>
+<td style="text-align: right;">5.60%</td>
+</tr>
+<tr class="odd">
+<td>ToMMo (Japan)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">11,654,969</td>
+<td style="text-align: right;">0.27%</td>
+<td style="text-align: right;">0.02%</td>
+<td style="text-align: right;">0.85%</td>
+</tr>
+<tr class="even">
+<td>UK Biobank</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">486,965</td>
+<td style="text-align: right;">0.75%</td>
+<td style="text-align: right;">0.43%</td>
+<td style="text-align: right;">12.19%</td>
+</tr>
+<tr class="odd">
+<td>WBBC (China)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">4,180,345</td>
+<td style="text-align: right;">0.72%</td>
+<td style="text-align: right;">0.04%</td>
+<td style="text-align: right;">1.85%</td>
+</tr>
+<tr class="even">
+<td>allofus</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">58,259,259</td>
+<td style="text-align: right;">0.01%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.14%</td>
+</tr>
+<tr class="odd">
+<td>topmed</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">45,155,519</td>
+<td style="text-align: right;">0.02%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.17%</td>
+</tr>
+<tr class="even">
+<td>FinnGen (Finland)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">63,475</td>
+<td style="text-align: right;">2.47%</td>
+<td style="text-align: right;">1.31%</td>
+<td style="text-align: right;">13.29%</td>
+</tr>
+<tr class="odd">
+<td>GME (Middle East)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">9,304</td>
+<td style="text-align: right;">0.15%</td>
+<td style="text-align: right;">0.11%</td>
+<td style="text-align: right;">1.26%</td>
+</tr>
+<tr class="even">
+<td>GoNL (Netherlands)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">223,527</td>
+<td style="text-align: right;">8.27%</td>
+<td style="text-align: right;">7.97%</td>
+<td style="text-align: right;">19.18%</td>
+</tr>
+<tr class="odd">
+<td>KOVA (Korea)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">194,511</td>
+<td style="text-align: right;">1.12%</td>
+<td style="text-align: right;">0.12%</td>
+<td style="text-align: right;">2.60%</td>
+</tr>
+<tr class="even">
+<td>MCPS (Mexico)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">833,808</td>
+<td style="text-align: right;">0.31%</td>
+<td style="text-align: right;">0.13%</td>
+<td style="text-align: right;">1.62%</td>
+</tr>
+<tr class="odd">
+<td>SG10K (Singapore)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">705,511</td>
+<td style="text-align: right;">0.32%</td>
+<td style="text-align: right;">0.06%</td>
+<td style="text-align: right;">1.36%</td>
+</tr>
+<tr class="even">
+<td>SweGen (Sweden)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">135,249</td>
+<td style="text-align: right;">1.65%</td>
+<td style="text-align: right;">1.44%</td>
+<td style="text-align: right;">7.29%</td>
+</tr>
+<tr class="odd">
+<td>ToMMo (Japan)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">882,999</td>
+<td style="text-align: right;">0.27%</td>
+<td style="text-align: right;">0.04%</td>
+<td style="text-align: right;">0.84%</td>
+</tr>
+<tr class="even">
+<td>UK Biobank</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">22,817</td>
+<td style="text-align: right;">1.98%</td>
+<td style="text-align: right;">0.95%</td>
+<td style="text-align: right;">21.31%</td>
+</tr>
+<tr class="odd">
+<td>WBBC (China)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">314,757</td>
+<td style="text-align: right;">1.72%</td>
+<td style="text-align: right;">0.62%</td>
+<td style="text-align: right;">4.11%</td>
+</tr>
+<tr class="even">
+<td>allofus</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">6,286,179</td>
+<td style="text-align: right;">0.21%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.56%</td>
+</tr>
+<tr class="odd">
+<td>topmed</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">4,225,529</td>
+<td style="text-align: right;">0.36%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.91%</td>
+</tr>
+</tbody>
+</table>
+<h4 id="non-exonic-1">Non-exonic</h4>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Type</th>
+<th style="text-align: right;">Rare variants</th>
+<th style="text-align: right;">Polymorphic in gnomAD (overall)</th>
+<th style="text-align: right;">Polymorphic (matched group)</th>
+<th style="text-align: right;">Polymorphic (popmax)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>FinnGen (Finland)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">11,270,584</td>
+<td style="text-align: right;">1.36%</td>
+<td style="text-align: right;">0.03%</td>
+<td style="text-align: right;">9.19%</td>
+</tr>
+<tr class="even">
+<td>GoNL (Netherlands)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">17,829,661</td>
+<td style="text-align: right;">1.55%</td>
+<td style="text-align: right;">0.61%</td>
+<td style="text-align: right;">7.61%</td>
+</tr>
+<tr class="odd">
+<td>KOVA (Korea)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">32,789,173</td>
+<td style="text-align: right;">1.63%</td>
+<td style="text-align: right;">0.05%</td>
+<td style="text-align: right;">3.18%</td>
+</tr>
+<tr class="even">
+<td>MCPS (Mexico)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">110,202,031</td>
+<td style="text-align: right;">0.29%</td>
+<td style="text-align: right;">0.04%</td>
+<td style="text-align: right;">1.83%</td>
+</tr>
+<tr class="odd">
+<td>SG10K (Singapore)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">142,668,755</td>
+<td style="text-align: right;">0.37%</td>
+<td style="text-align: right;">0.02%</td>
+<td style="text-align: right;">1.32%</td>
+</tr>
+<tr class="even">
+<td>Saudi Arabia</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">18,374,223</td>
+<td style="text-align: right;">0.43%</td>
+<td style="text-align: right;">0.10%</td>
+<td style="text-align: right;">7.21%</td>
+</tr>
+<tr class="odd">
+<td>SweGen (Sweden)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">23,087,723</td>
+<td style="text-align: right;">0.82%</td>
+<td style="text-align: right;">0.19%</td>
+<td style="text-align: right;">5.41%</td>
+</tr>
+<tr class="even">
+<td>ToMMo (Japan)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">190,072,136</td>
+<td style="text-align: right;">0.32%</td>
+<td style="text-align: right;">0.01%</td>
+<td style="text-align: right;">0.88%</td>
+</tr>
+<tr class="odd">
+<td>UK Biobank</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">5,764,033</td>
+<td style="text-align: right;">2.49%</td>
+<td style="text-align: right;">0.06%</td>
+<td style="text-align: right;">16.06%</td>
+</tr>
+<tr class="even">
+<td>WBBC (China)</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">63,213,030</td>
+<td style="text-align: right;">0.94%</td>
+<td style="text-align: right;">0.01%</td>
+<td style="text-align: right;">2.10%</td>
+</tr>
+<tr class="odd">
+<td>allofus</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">928,497,626</td>
+<td style="text-align: right;">0.00%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.13%</td>
+</tr>
+<tr class="even">
+<td>topmed</td>
+<td style="text-align: right;">SNV</td>
+<td style="text-align: right;">733,171,965</td>
+<td style="text-align: right;">0.01%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.15%</td>
+</tr>
+<tr class="odd">
+<td>FinnGen (Finland)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">1,141,854</td>
+<td style="text-align: right;">1.70%</td>
+<td style="text-align: right;">0.07%</td>
+<td style="text-align: right;">12.86%</td>
+</tr>
+<tr class="even">
+<td>GoNL (Netherlands)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">5,599,120</td>
+<td style="text-align: right;">5.61%</td>
+<td style="text-align: right;">4.71%</td>
+<td style="text-align: right;">14.70%</td>
+</tr>
+<tr class="odd">
+<td>KOVA (Korea)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">2,346,094</td>
+<td style="text-align: right;">1.68%</td>
+<td style="text-align: right;">0.06%</td>
+<td style="text-align: right;">3.33%</td>
+</tr>
+<tr class="even">
+<td>MCPS (Mexico)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">9,408,659</td>
+<td style="text-align: right;">0.47%</td>
+<td style="text-align: right;">0.11%</td>
+<td style="text-align: right;">2.62%</td>
+</tr>
+<tr class="odd">
+<td>SG10K (Singapore)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">11,004,729</td>
+<td style="text-align: right;">0.39%</td>
+<td style="text-align: right;">0.02%</td>
+<td style="text-align: right;">1.42%</td>
+</tr>
+<tr class="even">
+<td>SweGen (Sweden)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">2,474,476</td>
+<td style="text-align: right;">0.95%</td>
+<td style="text-align: right;">0.25%</td>
+<td style="text-align: right;">6.49%</td>
+</tr>
+<tr class="odd">
+<td>ToMMo (Japan)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">15,457,587</td>
+<td style="text-align: right;">0.33%</td>
+<td style="text-align: right;">0.03%</td>
+<td style="text-align: right;">0.91%</td>
+</tr>
+<tr class="even">
+<td>UK Biobank</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">372,907</td>
+<td style="text-align: right;">4.55%</td>
+<td style="text-align: right;">0.31%</td>
+<td style="text-align: right;">26.25%</td>
+</tr>
+<tr class="odd">
+<td>WBBC (China)</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">5,404,978</td>
+<td style="text-align: right;">1.38%</td>
+<td style="text-align: right;">0.05%</td>
+<td style="text-align: right;">3.45%</td>
+</tr>
+<tr class="even">
+<td>allofus</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">113,146,837</td>
+<td style="text-align: right;">0.00%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.31%</td>
+</tr>
+<tr class="odd">
+<td>topmed</td>
+<td style="text-align: right;">INDEL</td>
+<td style="text-align: right;">74,215,970</td>
+<td style="text-align: right;">0.12%</td>
+<td style="text-align: right;"></td>
+<td style="text-align: right;">0.67%</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="../results/02_frequency_vs_gnomad/exonic/figures/step2_rare_matched.png" alt="" /><figcaption>Exonic rare variants by matched gnomAD group</figcaption>
+</figure>
+<figure>
+<img src="../results/02_frequency_vs_gnomad/exonic/figures/step2_rare_popmax.png" alt="" /><figcaption>Exonic rare variants by gnomAD popmax</figcaption>
+</figure>
+<h3 id="population-markers-and-structure-step-3">5. Population markers and structure (step 3)</h3>
+<p>Exonic SNVs with AF &gt; 10% in the dataset and gnomAD popmax &lt; 5% or absent, per country dataset:</p>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+<col style="width: 26%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Marker SNVs</th>
+<th style="text-align: right;">Absent / QC fail in gnomAD</th>
+<th style="text-align: right;">Rare (&lt; 5%) in every gnomAD group</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ToMMo (Japan)</td>
+<td style="text-align: right;">4,820</td>
+<td style="text-align: right;">648</td>
+<td style="text-align: right;">4,172</td>
+</tr>
+<tr class="even">
+<td>SweGen (Sweden)</td>
+<td style="text-align: right;">4,624</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">4,606</td>
+</tr>
+<tr class="odd">
+<td>GoNL (Netherlands)</td>
+<td style="text-align: right;">4,591</td>
+<td style="text-align: right;">168</td>
+<td style="text-align: right;">4,423</td>
+</tr>
+<tr class="even">
+<td>GME (Middle East)</td>
+<td style="text-align: right;">4,179</td>
+<td style="text-align: right;">1,202</td>
+<td style="text-align: right;">2,977</td>
+</tr>
+<tr class="odd">
+<td>UK Biobank</td>
+<td style="text-align: right;">1,807</td>
+<td style="text-align: right;">312</td>
+<td style="text-align: right;">1,495</td>
+</tr>
+<tr class="even">
+<td>SG10K (Singapore)</td>
+<td style="text-align: right;">919</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">908</td>
+</tr>
+<tr class="odd">
+<td>MCPS (Mexico)</td>
+<td style="text-align: right;">896</td>
+<td style="text-align: right;">42</td>
+<td style="text-align: right;">854</td>
+</tr>
+<tr class="even">
+<td>Saudi Arabia</td>
+<td style="text-align: right;">449</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">448</td>
+</tr>
+<tr class="odd">
+<td>KOVA (Korea)</td>
+<td style="text-align: right;">401</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">401</td>
+</tr>
+<tr class="even">
+<td>WBBC (China)</td>
+<td style="text-align: right;">271</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">271</td>
+</tr>
+<tr class="odd">
+<td>FinnGen (Finland)</td>
+<td style="text-align: right;">131</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">131</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="../results/02_frequency_vs_gnomad/exonic/figures/step3_country_marker_snvs.png" alt="" /><figcaption>Marker SNVs</figcaption>
+</figure>
+<p>Population PCA on allele frequencies (exonic SNVs with gnomAD genome AF, AF ≥ 1% somewhere, one per 100 kb) and the mean absolute AF difference between populations:</p>
+<figure>
+<img src="../results/02_frequency_vs_gnomad/exonic/figures/step3_pca.png" alt="" /><figcaption>PCA</figcaption>
+</figure>
+<h3 id="clinvar-step-4">6. ClinVar (step 4)</h3>
+<p>ClinVar (2026-11-15) variants with AF ≥ 5% in at least one dataset and gnomAD popmax &lt; 5% or absent, by the number of independent datasets supporting the high frequency (gnomAD v2 and ExAC counted with gnomAD).</p>
+<h4 id="exonic-2">Exonic</h4>
+<table>
+<colgroup>
+<col style="width: 11%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+<col style="width: 14%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>ClinVar group</th>
+<th style="text-align: right;">0 dataset(s)</th>
+<th style="text-align: right;">1 dataset(s)</th>
+<th style="text-align: right;">2 dataset(s)</th>
+<th style="text-align: right;">3 dataset(s)</th>
+<th style="text-align: right;">4+ dataset(s)</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conflicting</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">682</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">764</td>
+</tr>
+<tr class="even">
+<td>P/LP</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">127</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">140</td>
+</tr>
+<tr class="odd">
+<td>VUS</td>
+<td style="text-align: right;">41</td>
+<td style="text-align: right;">1,261</td>
+<td style="text-align: right;">129</td>
+<td style="text-align: right;">37</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">1,504</td>
+</tr>
+</tbody>
+</table>
+<h4 id="non-exonic-2">Non-exonic</h4>
+<table>
+<thead>
+<tr class="header">
+<th>ClinVar group</th>
+<th style="text-align: right;">1 dataset(s)</th>
+<th style="text-align: right;">2 dataset(s)</th>
+<th style="text-align: right;">3 dataset(s)</th>
+<th style="text-align: right;">4+ dataset(s)</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conflicting</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="even">
+<td>P/LP</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">1</td>
+</tr>
+<tr class="odd">
+<td>VUS</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">39</td>
+</tr>
+</tbody>
+</table>
+<p>Exonic pathogenic / likely pathogenic variants supported by two or more datasets:</p>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 7%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+<col style="width: 10%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Chr</th>
+<th style="text-align: right;">Start</th>
+<th style="text-align: right;">Ref</th>
+<th style="text-align: right;">Alt</th>
+<th style="text-align: right;">Gene</th>
+<th style="text-align: right;">ClinVar</th>
+<th style="text-align: right;">Stars</th>
+<th style="text-align: right;">Max AF</th>
+<th style="text-align: right;">gnomAD popmax</th>
+<th style="text-align: right;">Datasets (AF)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>19</td>
+<td style="text-align: right;">1037767</td>
+<td style="text-align: right;">G</td>
+<td style="text-align: right;">A</td>
+<td style="text-align: right;">CNN2</td>
+<td style="text-align: right;">Pathogenic</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.492488</td>
+<td style="text-align: right;">0.0004</td>
+<td style="text-align: right;">gnomad_genome_v2:0.2552;tommo:0.134746;swegen:0.275;topmed:0.492488;alfa:0.2039</td>
+</tr>
+<tr class="even">
+<td>19</td>
+<td style="text-align: right;">1037757</td>
+<td style="text-align: right;">G</td>
+<td style="text-align: right;">A</td>
+<td style="text-align: right;">CNN2</td>
+<td style="text-align: right;">Pathogenic</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.491832</td>
+<td style="text-align: right;">0.0008</td>
+<td style="text-align: right;">gnomad_genome_v2:0.2514;tommo:0.135418;swegen:0.2575;topmed:0.491832;alfa:0.3563</td>
+</tr>
+<tr class="odd">
+<td>10</td>
+<td style="text-align: right;">48066</td>
+<td style="text-align: right;">C</td>
+<td style="text-align: right;">A</td>
+<td style="text-align: right;">TUBB8</td>
+<td style="text-align: right;">Likely_pathogenic</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.3585</td>
+<td style="text-align: right;">0.0013</td>
+<td style="text-align: right;">gnomad_genome_v2:0.0591;swegen:0.3585;topmed:0.051899;alfa:0.0991</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td style="text-align: right;">142750600</td>
+<td style="text-align: right;">A</td>
+<td style="text-align: right;">T</td>
+<td style="text-align: right;">PRSS1</td>
+<td style="text-align: right;">Pathogenic</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.4751</td>
+<td style="text-align: right;">2.382e-05</td>
+<td style="text-align: right;">gnomad_exome_v2:0.2927;gnomad_genome_v2:0.2676;exac03:0.4751;gme:0.450058;alfa:0.1841</td>
+</tr>
+<tr class="odd">
+<td>5</td>
+<td style="text-align: right;">126577145</td>
+<td style="text-align: right;">T</td>
+<td style="text-align: right;">C</td>
+<td style="text-align: right;">ALDH7A1</td>
+<td style="text-align: right;">Pathogenic</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.282934</td>
+<td style="text-align: right;">2.987e-05</td>
+<td style="text-align: right;">mcps:0.282934;alfa:0.1414</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td style="text-align: right;">142750600</td>
+<td style="text-align: right;">A</td>
+<td style="text-align: right;">C</td>
+<td style="text-align: right;">PRSS1</td>
+<td style="text-align: right;">Pathogenic</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.255</td>
+<td style="text-align: right;">7.241e-05</td>
+<td style="text-align: right;">swegen:0.0725;gonl:0.255</td>
+</tr>
+<tr class="odd">
+<td>14</td>
+<td style="text-align: right;">77027444</td>
+<td style="text-align: right;">G</td>
+<td style="text-align: right;">A</td>
+<td style="text-align: right;">IRF2BPL</td>
+<td style="text-align: right;">Likely_pathogenic</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">0.1644</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">topmed:0.0824194;alfa:0.1644</td>
+</tr>
+<tr class="even">
+<td>8</td>
+<td style="text-align: right;">100705591</td>
+<td style="text-align: right;">A</td>
+<td style="text-align: right;">G</td>
+<td style="text-align: right;">PABPC1</td>
+<td style="text-align: right;">Pathogenic</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.135585</td>
+<td style="text-align: right;">0.0067</td>
+<td style="text-align: right;">gme:0.135585;gonl:0.053</td>
+</tr>
+<tr class="odd">
+<td>14</td>
+<td style="text-align: right;">77027450</td>
+<td style="text-align: right;">G</td>
+<td style="text-align: right;">A</td>
+<td style="text-align: right;">IRF2BPL</td>
+<td style="text-align: right;">Likely_pathogenic</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.132</td>
+<td style="text-align: right;">4.944e-05</td>
+<td style="text-align: right;">topmed:0.0657195;alfa:0.132</td>
+</tr>
+<tr class="even">
+<td>7</td>
+<td style="text-align: right;">152248171</td>
+<td style="text-align: right;">G</td>
+<td style="text-align: right;">A</td>
+<td style="text-align: right;">KMT2C</td>
+<td style="text-align: right;">Pathogenic</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.125926</td>
+<td style="text-align: right;">.</td>
+<td style="text-align: right;">gme:0.125926;alfa:0.0898</td>
+</tr>
+<tr class="odd">
+<td>3</td>
+<td style="text-align: right;">186079931</td>
+<td style="text-align: right;">T</td>
+<td style="text-align: right;">G</td>
+<td style="text-align: right;">ETV5</td>
+<td style="text-align: right;">Pathogenic</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">0.121628</td>
+<td style="text-align: right;">0.0341</td>
+<td style="text-align: right;">topmed:0.121628;alfa:0.0602</td>
+</tr>
+<tr class="even">
+<td>13</td>
+<td style="text-align: right;">20189473</td>
+<td style="text-align: right;">C</td>
+<td style="text-align: right;">T</td>
+<td style="text-align: right;">GJB2</td>
+<td style="text-align: right;">Pathogenic</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">0.0977679</td>
+<td style="text-align: right;">0.0415</td>
+<td style="text-align: right;">sg10k_npm:0.075807;wbbc:0.0977679</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="../results/02_frequency_vs_gnomad/exonic/figures/step4_clinvar_flagged_by_support.png" alt="" /><figcaption>ClinVar support</figcaption>
+</figure>
+<h3 id="gene-level-step-5-exonic-protein-coding-genes">7. Gene level (step 5, exonic, protein-coding genes)</h3>
+<p>Genes significantly above (high) or below (low) the gnomAD expectation (FDR &lt; 5%, ≥ 2-fold, ≥ 5 variants); PA = protein-altering, syn = synonymous (technical control), common = AF ≥ 1%.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">PA common high</th>
+<th style="text-align: right;">PA common low</th>
+<th style="text-align: right;">syn common high</th>
+<th style="text-align: right;">PA all high</th>
+<th style="text-align: right;">PA all low</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>gme</td>
+<td style="text-align: right;">385</td>
+<td style="text-align: right;">178</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">391</td>
+<td style="text-align: right;">930</td>
+</tr>
+<tr class="even">
+<td>colorsdb</td>
+<td style="text-align: right;">121</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">74</td>
+<td style="text-align: right;">1081</td>
+<td style="text-align: right;">1038</td>
+</tr>
+<tr class="odd">
+<td>ga4k</td>
+<td style="text-align: right;">101</td>
+<td style="text-align: right;">15</td>
+<td style="text-align: right;">55</td>
+<td style="text-align: right;">863</td>
+<td style="text-align: right;">361</td>
+</tr>
+<tr class="even">
+<td>alfa</td>
+<td style="text-align: right;">87</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">50</td>
+<td style="text-align: right;">1229</td>
+</tr>
+<tr class="odd">
+<td>topmed</td>
+<td style="text-align: right;">84</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">14</td>
+<td style="text-align: right;">380</td>
+</tr>
+<tr class="even">
+<td>allofus</td>
+<td style="text-align: right;">75</td>
+<td style="text-align: right;">115</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">831</td>
+</tr>
+<tr class="odd">
+<td>kaviar</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">47</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">161</td>
+<td style="text-align: right;">1412</td>
+</tr>
+<tr class="even">
+<td>gnomad_genome_v2</td>
+<td style="text-align: right;">51</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">108</td>
+<td style="text-align: right;">904</td>
+</tr>
+<tr class="odd">
+<td>swegen</td>
+<td style="text-align: right;">44</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">430</td>
+<td style="text-align: right;">179</td>
+</tr>
+<tr class="even">
+<td>1000g2015aug</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">85</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">435</td>
+<td style="text-align: right;">1644</td>
+</tr>
+<tr class="odd">
+<td>exac03</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">61</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">40</td>
+<td style="text-align: right;">1760</td>
+</tr>
+<tr class="even">
+<td>saudi</td>
+<td style="text-align: right;">35</td>
+<td style="text-align: right;">163</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">548</td>
+<td style="text-align: right;">406</td>
+</tr>
+<tr class="odd">
+<td>tommo</td>
+<td style="text-align: right;">34</td>
+<td style="text-align: right;">19</td>
+<td style="text-align: right;">21</td>
+<td style="text-align: right;">53</td>
+<td style="text-align: right;">253</td>
+</tr>
+<tr class="even">
+<td>gnomad_exome_v2</td>
+<td style="text-align: right;">33</td>
+<td style="text-align: right;">46</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">39</td>
+<td style="text-align: right;">954</td>
+</tr>
+<tr class="odd">
+<td>hgdp1kg</td>
+<td style="text-align: right;">27</td>
+<td style="text-align: right;">52</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">267</td>
+<td style="text-align: right;">1413</td>
+</tr>
+<tr class="even">
+<td>svatalog</td>
+<td style="text-align: right;">23</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">358</td>
+<td style="text-align: right;">5</td>
+</tr>
+<tr class="odd">
+<td>gonl</td>
+<td style="text-align: right;">20</td>
+<td style="text-align: right;">25</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">419</td>
+<td style="text-align: right;">266</td>
+</tr>
+<tr class="even">
+<td>gregor</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">18</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">388</td>
+<td style="text-align: right;">1096</td>
+</tr>
+<tr class="odd">
+<td>sg10k_npm</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">24</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">107</td>
+<td style="text-align: right;">1027</td>
+</tr>
+<tr class="even">
+<td>wbbc</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">64</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">236</td>
+<td style="text-align: right;">1849</td>
+</tr>
+<tr class="odd">
+<td>kova</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">31</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">227</td>
+<td style="text-align: right;">817</td>
+</tr>
+<tr class="even">
+<td>hostseq</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">43</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">92</td>
+<td style="text-align: right;">1466</td>
+</tr>
+<tr class="odd">
+<td>sfari_wgs</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">125</td>
+<td style="text-align: right;">901</td>
+</tr>
+<tr class="even">
+<td>spark_wes</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">36</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">929</td>
+</tr>
+<tr class="odd">
+<td>finngen</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">100</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">256</td>
+<td style="text-align: right;">71</td>
+</tr>
+<tr class="even">
+<td>mcps</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">88</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">10</td>
+<td style="text-align: right;">1101</td>
+</tr>
+<tr class="odd">
+<td>ukbb</td>
+<td style="text-align: right;">1</td>
+<td style="text-align: right;">96</td>
+<td style="text-align: right;">0</td>
+<td style="text-align: right;">751</td>
+<td style="text-align: right;">470</td>
+</tr>
+</tbody>
+</table>
+<p>Uniqueness of genes high for common protein-altering variants:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Pattern</th>
+<th style="text-align: right;">Genes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>unique to one dataset</td>
+<td style="text-align: right;">485</td>
+</tr>
+<tr class="even">
+<td>one population group</td>
+<td style="text-align: right;">129</td>
+</tr>
+<tr class="odd">
+<td>several groups</td>
+<td style="text-align: right;">119</td>
+</tr>
+</tbody>
+</table>
+<p>Genes high in the most datasets:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Gene</th>
+<th style="text-align: right;">Datasets</th>
+<th style="text-align: right;">Population groups</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ZNF473</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">Middle East,multi-population / other</td>
+</tr>
+<tr class="even">
+<td>OR6K6</td>
+<td style="text-align: right;">17</td>
+<td style="text-align: right;">Middle East,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>VCX3A</td>
+<td style="text-align: right;">13</td>
+<td style="text-align: right;">East Asia,Middle East,multi-population / other</td>
+</tr>
+<tr class="even">
+<td>LYST</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">Middle East,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>OR4N5</td>
+<td style="text-align: right;">12</td>
+<td style="text-align: right;">East Asia,Middle East,multi-population / other</td>
+</tr>
+<tr class="even">
+<td>VRK3</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">Middle East,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>ZNF729</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">Europe,multi-population / other</td>
+</tr>
+<tr class="even">
+<td>PRAMEF14</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">East Asia,Europe,Middle East,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>MUC8</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">multi-population / other</td>
+</tr>
+<tr class="even">
+<td>FAM8A1</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">East Asia,Europe,Middle East,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>CEACAM3</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">multi-population / other</td>
+</tr>
+<tr class="even">
+<td>RHD</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">Middle East,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>HLA-C</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">multi-population / other</td>
+</tr>
+<tr class="even">
+<td>MUC21</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">East Asia,Middle East,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>OR5H14</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">multi-population / other</td>
+</tr>
+<tr class="even">
+<td>TAS2R46</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">East Asia,Europe,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>NBPF1</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">Europe,Middle East,multi-population / other</td>
+</tr>
+<tr class="even">
+<td>NACA</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">East Asia,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>TCHH</td>
+<td style="text-align: right;">7</td>
+<td style="text-align: right;">East Asia,multi-population / other</td>
+</tr>
+<tr class="even">
+<td>OR4C3</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">Middle East,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>SPATA31A7</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">East Asia,Middle East,multi-population / other</td>
+</tr>
+<tr class="even">
+<td>OR4M2</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">Middle East,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>TAS2R30</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">East Asia,Europe,multi-population / other</td>
+</tr>
+<tr class="even">
+<td>DNAH10</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">Middle East,multi-population / other</td>
+</tr>
+<tr class="odd">
+<td>ZNF257</td>
+<td style="text-align: right;">6</td>
+<td style="text-align: right;">East Asia,Europe,multi-population / other</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="../results/03_gene_level/figures/A_significant_genes_per_dataset_protein_altering_common.png" alt="" /><figcaption>Genes deviating from gnomAD per dataset</figcaption>
+</figure>
+<figure>
+<img src="../results/03_gene_level/figures/A_heatmap_top_genes_protein_altering_common.png" alt="" /><figcaption>Top genes heatmap</figcaption>
+</figure>
+<figure>
+<img src="../results/03_gene_level/figures/B_heatmap_high_density_genes_protein_altering.png" alt="" /><figcaption>Within-dataset density</figcaption>
+</figure>
+<h2 id="data-quality-audit">Data-quality audit</h2>
+<p>Problems found in public frequency resources and in intermediate processing during this study. Each would have changed the conclusions if left uncorrected.</p>
+<h3 id="errors-in-public-resources">Errors in public resources</h3>
+<table>
+<colgroup>
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+<col style="width: 25%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>Problem</th>
+<th>Evidence</th>
+<th>Handling</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>UCSC ALFA VCF</td>
+<td>Indel positions one base too far right</td>
+<td>On chr22, REF matches hg38 at POS−1 for 100% of indels and at POS for 5%; 99% of ALFA indels were absent from gnomAD before correction; shifting −1 raised the match to 79% (deletions) and 57% (insertions)</td>
+<td>Indels shifted −1 in the union; left out of the frequency analyses (SNVs kept)</td>
+</tr>
+<tr class="even">
+<td>UCSC GenomeAsia (<code>varFreqsAll.bb</code>)</td>
+<td>Unreliable frequencies</td>
+<td>REF matches hg38, but ~25% of variants at AF 10–90% are absent from both TOPMed and gnomAD</td>
+<td>Excluded from the frequency analyses</td>
+</tr>
+<tr class="odd">
+<td>UCSC SPARK, ToMMo (<code>varFreqsAll.bb</code>)</td>
+<td>Records with tiny allele numbers</td>
+<td>e.g. AC = 3 with AF = 1; AC = 1 with AF = 0.5 (AN = 2). These made 960 rare pathogenic variants look common (SPARK) and pushed ToMMo’s share of common SNVs absent from gnomAD to 14% (all regions, before the rule; 0.3% exonic and 7.2% non-exonic after it)</td>
+<td>AF ignored when AN (or AC/AF) &lt; 100</td>
+</tr>
+<tr class="even">
+<td>UCSC <code>varFreqsAll.bb</code></td>
+<td>Column order differs from its own schema</td>
+<td>Rows with a single source cohort fill another cohort’s columns (e.g. SPARK values under <code>indAC</code>)</td>
+<td>Header rebuilt from the data, verified on 20 M rows</td>
+</tr>
+<tr class="odd">
+<td>UCSC <code>varFreqsAll.bb</code></td>
+<td>IndiGen listed in the schema but never a source</td>
+<td>Its columns are always empty</td>
+<td>Not used</td>
+</tr>
+<tr class="even">
+<td>gnomAD v4.1 (ANNOVAR tables)</td>
+<td>Rows with AF = 0</td>
+<td>Variant seen only in QC-failed genotypes; 60–90% of “common locally, rare in gnomAD” calls were these rows</td>
+<td>Treated as no AF; genome AF used in exonic regions</td>
+</tr>
+<tr class="odd">
+<td>gnomAD v4.1 exomes (ANNOVAR table)</td>
+<td>Missing group AFs</td>
+<td>12–26% of common sites have no AF for a given group (not assessed in part of the exome data)</td>
+<td>Group AF taken from gnomAD genomes</td>
+</tr>
+<tr class="even">
+<td>ANNOVAR hg38 1000 Genomes</td>
+<td>Encoded indel alleles</td>
+<td><code>0C</code>, <code>1AC</code>, <code>21</code> = <code>&lt;ref length&gt;&lt;alt&gt;</code>; plain SNVs have no prefix</td>
+<td>Decoded</td>
+</tr>
+<tr class="odd">
+<td>GME (ANNOVAR)</td>
+<td>Indels</td>
+<td>21.6% of GME indel polymorphisms absent from gnomAD, 35.7% rare in every group; several implausible pathogenic indels at ~50% (BRCA2, ASPM)</td>
+<td>Reported with a caveat</td>
+</tr>
+<tr class="even">
+<td>Single-dataset clinical frequencies</td>
+<td>Implausible AFs for known pathogenic variants</td>
+<td>ALFA MYH7 74%, SVatalog CFTR F508del 77%, GME BRCA2 deletion 47%, UK Biobank ABCC6 deletion 99.99%</td>
+<td>ClinVar flags require ≥ 2 independent datasets</td>
+</tr>
+</tbody>
+</table>
+<h3 id="errors-in-the-analysis-itself-found-and-fixed">Errors in the analysis itself, found and fixed</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Problem</th>
+<th>Effect before the fix</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ANNOVAR <code>.idx</code> bins are not listed in file order</td>
+<td>Chromosome slices read half of gnomAD, All of Us and Kaviar; common SNVs looked 26% “absent from gnomAD” in every dataset</td>
+<td>Slice from the smallest start to the largest end offset; verified against full-file counts</td>
+</tr>
+<tr class="even">
+<td>Insertions written with <code>-</code> were shifted one base in an early overlap script</td>
+<td><code>-</code> and anchored forms of the same insertion counted twice</td>
+<td>Anchor rule fixed before the union was built</td>
+</tr>
+<tr class="odd">
+<td>Allele de-duplication by position only before VEP</td>
+<td>~34 M variants left unannotated</td>
+<td>De-duplication on the whole allele; a check reports unannotated variants</td>
+</tr>
+<tr class="even">
+<td>A file glob picked up the list of SNVs missing from the VEP lookup twice</td>
+<td>Those SNVs counted twice per gene</td>
+<td>Distinct file names per intermediate list</td>
+</tr>
+</tbody>
+</table>
+<h2 id="additional-analyses">Additional analyses</h2>
+<p>Five analyses built on the study’s harmonised outputs. None of them needs the raw frequency files: they read the kept archive (<code>data/archive/</code>: the exonic variant table with every dataset’s AF, gene-level tables, PCA matrices) and public reference data. Nothing under <code>/home/HUVYA</code> is used. Each analysis writes to its own folder (<code>results/&lt;NN_analysis&gt;/{tables,figures}</code>), and its scripts are in <a href="../scripts/analyses"><code>scripts/analyses/</code></a>.</p>
+<p>Datasets used as “population datasets” in sections 2–5: all frequency-study datasets except disease cohorts (SPARK, SFARI WGS, GREGoR, GA4K) and earlier gnomAD releases (gnomAD v2, ExAC), which are not independent of gnomAD.</p>
+<h3 id="shared-input-clinvar-plp-alleles-with-population-frequencies">1. Shared input: ClinVar P/LP alleles with population frequencies</h3>
+<p><code>prep_clinvar_plp.sh</code></p>
+<ul>
+<li>ClinVar 2026-11-15: 367,692 records with CLNSIG starting “Pathogenic” or “Likely_pathogenic”; 367,679 normalised alleles.</li>
+<li>AF in every population dataset: join with the exonic variant table (155,323 P/LP alleles are exonic and seen in at least one dataset).</li>
+<li>gnomAD v4.1 per genetic-ancestry group (AFR, AMR, ASJ, EAS, FIN, MID, NFE, SAS), exome and genome: VEP 116 with the <code>Naser_VEP</code> RefSeq cache (<code>--af_gnomade --af_gnomadg</code>); group AF = exome, or genome where the exome has none; popmax = highest group AF.</li>
+</ul>
+<h3 id="founder-and-population-enriched-pathogenic-variants">2. Founder and population-enriched pathogenic variants</h3>
+<p><code>founder_and_carrier.py</code> → <code>results/04_founder_variants/</code></p>
+<p><strong>Question.</strong> Which ClinVar P/LP variants are much more frequent in a population than anywhere in gnomAD?</p>
+<p><strong>Method.</strong> A variant is <em>enriched</em> in a dataset when its AF there is ≥ 0.1% and ≥ 10 times gnomAD popmax (or it is absent from gnomAD). It is <em>high confidence</em> when it is enriched in at least two datasets, has at least one ClinVar review star, does not lie in an unreliable gene or a GIAB difficult region (section 4), and its AF is at most 5% (higher is implausible for a penetrant disease allele).</p>
+<p><strong>Results.</strong></p>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th style="text-align: right;">Variants</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>P/LP variants enriched in at least one dataset</td>
+<td style="text-align: right;">1,621</td>
+</tr>
+<tr class="even">
+<td>Enriched in two or more datasets</td>
+<td style="text-align: right;">61</td>
+</tr>
+<tr class="odd">
+<td>High confidence</td>
+<td style="text-align: right;">32</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>Per dataset, GME (451) and GoNL (445) have the most enriched variants, followed by ALFA (258) and Saudi (170).</li>
+<li>Among the 32 high-confidence variants, GME takes part in 17, the most of any dataset; Saudi in 5.</li>
+<li>High-confidence pairs between GME and Saudi (ATP6V1B1, ASPA, GSR, ABCC6) are candidate Arab founder alleles; others include OTOF, TMC1, SLC7A7 and KCNQ1 (GME with GoNL), SACS and SYCP3 (GME with Kaviar) and BCKDHA (GoNL with KOVA).</li>
+<li>Most replicated “enriched” variants that did not reach high confidence are technical: genes with close paralogs or pseudogenes (PRSS1, CNN2, TUBB8, CYP21A2, PI4KA) or implausible frequencies (ASPA at 17%, ALDH7A1 at 28%).</li>
+</ul>
+<p>Tables: <code>founder_candidates_all.tsv</code>, <code>founder_candidates_replicated_1star.tsv</code>, <code>founder_candidates_high_confidence.tsv</code>, <code>founder_variant_dataset_pairs.tsv</code> (with the matched gnomAD group AF), <code>founder_summary_per_dataset.tsv</code>.</p>
+<figure>
+<img src="../results/04_founder_variants/figures/founder_variants_per_dataset.png" alt="" /><figcaption>Founder variants per dataset</figcaption>
+</figure>
+<h3 id="carrier-frequencies-for-autosomal-recessive-disorders">3. Carrier frequencies for autosomal recessive disorders</h3>
+<p><code>founder_and_carrier.py</code> → <code>results/05_carrier_frequency/</code></p>
+<p><strong>Question.</strong> How common are carriers of known pathogenic alleles for recessive disorders in each population?</p>
+<p><strong>Method.</strong></p>
+<ul>
+<li>Genes: ClinGen gene–disease validity, mode of inheritance AR, classification Definitive, Strong or Moderate (1,500 genes; 1,447 with qualifying variants).</li>
+<li>Variants: ClinVar P/LP with ≥ 1 star, coding or canonical-splice consequence (nonsense, frameshift, missense, splice donor/acceptor, in-frame, start/stop lost), not low-penetrance or risk alleles. Intronic repeat alleles such as CFTR poly-T/TG were excluded because they are classed P/LP with variable penetrance and inflated carrier rates three-fold.</li>
+<li>Quality: aggregate, tiny or long-read reference sets left out (ALFA, Kaviar, SVatalog, CoLoRSdb); the 56 unreliable genes left out; a dataset AF ≥ 1% kept only if another source also has the allele ≥ 1% (33 AFs dropped).</li>
+<li>Per gene: pathogenic allele frequency q = sum of AFs; carrier frequency 2q(1−q); expected affected per 100,000 births q² × 10⁵ (random mating; consanguinity raises this).</li>
+</ul>
+<p><strong>Validation against known carrier rates.</strong></p>
+<table>
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 30%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Gene</th>
+<th>Population</th>
+<th style="text-align: right;">This study</th>
+<th>Known</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>CFTR</td>
+<td>gnomAD NFE (European)</td>
+<td style="text-align: right;">4.4%</td>
+<td>about 1 in 25 (4%)</td>
+</tr>
+<tr class="even">
+<td>HEXA</td>
+<td>gnomAD ASJ (Ashkenazi)</td>
+<td style="text-align: right;">3.5%</td>
+<td>about 1 in 30 (3.3%)</td>
+</tr>
+<tr class="odd">
+<td>HBB</td>
+<td>gnomAD AFR</td>
+<td style="text-align: right;">13.7%</td>
+<td>sickle-cell trait 8–25% across African populations</td>
+</tr>
+<tr class="even">
+<td>GJB2</td>
+<td>gnomAD EAS / SG10K / WBBC</td>
+<td style="text-align: right;">8.9% / 15.4% / 18.3%</td>
+<td>V37I is common in East and Southeast Asia</td>
+</tr>
+<tr class="odd">
+<td>PAH</td>
+<td>GME / gnomAD MID</td>
+<td style="text-align: right;">4.3% / 2.8%</td>
+<td>phenylketonuria is frequent in the Middle East</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Results.</strong> The estimated share of people carrying a known pathogenic allele in at least one AR gene ranges from 47% (UK Biobank, imputed array data that miss rare variants) to 93% (SG10K) and 92% (GME). This share grows with cohort size and sequencing depth, so it compares technologies as much as populations; per-gene values are the more reliable output.</p>
+<p>Tables: <code>carrier_frequency_per_gene.tsv</code>, <code>pathogenic_allele_frequency_per_gene.tsv</code>, <code>expected_affected_per_100k_births.tsv</code>, <code>carrier_summary_per_population.tsv</code>, <code>top15_genes_per_population.tsv</code>.</p>
+<figure>
+<img src="../results/05_carrier_frequency/figures/carrier_frequency_top_genes.png" alt="" /><figcaption>Carrier frequency, top genes</figcaption>
+</figure>
+<figure>
+<img src="../results/05_carrier_frequency/figures/carrier_cumulative_per_population.png" alt="" /><figcaption>Cumulative carrier probability</figcaption>
+</figure>
+<h3 id="genes-and-variants-whose-population-frequencies-should-not-be-trusted">4. Genes and variants whose population frequencies should not be trusted</h3>
+<p><code>unreliable_regions.sh</code>, <code>unreliable_regions.py</code> → <code>results/06_unreliable_regions/</code></p>
+<p><strong>Method.</strong> Gene rules (exonic, protein-coding):</p>
+<ul>
+<li>R1: high for common protein-altering variants vs gnomAD in ≥ 5 datasets across ≥ 2 population groups;</li>
+<li>R2: high for common synonymous variants vs gnomAD in ≥ 5 datasets (a technical signal);</li>
+<li>R3: within-dataset protein-altering density outlier in at least half of the datasets.</li>
+</ul>
+<p>Validation: share of each gene’s exonic footprint inside GIAB v3.5 GRCh38 segmental duplications (166.9 Mb) and low-mappability regions (248.9 Mb), flagged genes against all other protein-coding genes (one-sided Mann–Whitney U). Variant list: ClinVar P/LP, VUS and conflicting variants whose ≥ 5% frequency comes from one dataset only.</p>
+<p><strong>Results.</strong></p>
+<ul>
+<li>57 unreliable genes (11 meeting at least two rules), for example OR6K6, FAM8A1, MUC21, AQP7, PDE4DIP, ZNF257, ZNF473, VCX3A, LYST.</li>
+<li>GIAB validation:</li>
+</ul>
+<table>
+<colgroup>
+<col style="width: 13%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 17%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>GIAB region</th>
+<th style="text-align: right;">Flagged genes: median share inside</th>
+<th style="text-align: right;">Flagged genes &gt; 50% inside</th>
+<th style="text-align: right;">Other genes: median</th>
+<th style="text-align: right;">Other genes &gt; 50% inside</th>
+<th style="text-align: right;">p</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Segmental duplications</td>
+<td style="text-align: right;">48%</td>
+<td style="text-align: right;">49%</td>
+<td style="text-align: right;">0%</td>
+<td style="text-align: right;">7%</td>
+<td style="text-align: right;">3.4 × 10⁻²⁴</td>
+</tr>
+<tr class="even">
+<td>Low mappability</td>
+<td style="text-align: right;">7% (mean 28%)</td>
+<td style="text-align: right;">28%</td>
+<td style="text-align: right;">0% (mean 6%)</td>
+<td style="text-align: right;">4%</td>
+<td style="text-align: right;">1.1 × 10⁻¹⁹</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>2,151 ClinVar variants have a ≥ 5% frequency that rests on one dataset only; SVatalog (1,212), ALFA (181) and GME (156) contribute the most.</li>
+</ul>
+<p>Outputs: <code>unreliable_genes.tsv</code>, <code>unreliable_genes.hg38.bed</code> (for annotation pipelines), <code>giab_enrichment.tsv</code>, <code>unreliable_variants_clinvar_single_dataset.tsv</code>, <code>unreliable_variants_by_dataset.tsv</code>.</p>
+<figure>
+<img src="../results/06_unreliable_regions/figures/giab_overlap_flagged_vs_other.png" alt="" /><figcaption>GIAB overlap</figcaption>
+</figure>
+<h3 id="candidate-ancestry-informative-markers-for-the-middle-east">5. Candidate ancestry-informative markers for the Middle East</h3>
+<p><code>ancestry_markers.py</code> → <code>results/07_ancestry_markers/</code></p>
+<p><strong>Method.</strong> SNVs from the study’s PCA matrices (exonic and non-exonic) with gnomAD genome AFs. Middle East = mean of Saudi, gnomAD MID and (in exons) GME, requiring at least two of these sources to agree within 0.1; autosomes only. Two scores: Rosenberg’s informativeness for assignment (In) across Middle East, AFR, AMR, EAS, NFE and SAS; and ME_gap = the smallest |AF(Middle East) − AF(other group)|, large only when the Middle East differs from every group. Each list thinned to one SNV per 500 kb; top 1,000 kept.</p>
+<p><strong>Results.</strong> 571,795 exonic and 9,904,927 non-exonic SNVs scored. The Middle East-distinct panel has a median gap of 0.18; its closest other group is most often NFE (411 SNVs), then AMR (234), AFR (165), SAS (144) and EAS (46), consistent with the Middle East’s position between Europe and South Asia. The panel is a selection only: it has not been tested on individual genotypes.</p>
+<p>Tables: <code>panel_middle_east_distinct_top1000.tsv</code>, <code>panel_continental_top1000_informativeness.tsv</code>, <code>panel_summary.tsv</code>.</p>
+<figure>
+<img src="../results/07_ancestry_markers/figures/middle_east_top30_markers.png" alt="" /><figcaption>Top Middle East markers</figcaption>
+</figure>
+<h3 id="acmg-reclassification-in-real-genomes">6. ACMG reclassification in real genomes</h3>
+<p><code>acmg_impact.sh</code>, <code>bias_with_population_af.py</code>, <code>acmg_compare.py</code> → <code>results/08_acmg_impact/</code></p>
+<p><strong>Question.</strong> How many ACMG classifications change when population datasets are added to gnomAD?</p>
+<p>Stage <code>acmg</code> (optional; <code>bash scripts/run_all.sh acmg</code>). Samples are set in <code>ACMG_SAMPLES</code> in <code>scripts/config.sh</code>.</p>
+<p><strong>Method.</strong></p>
+<ul>
+<li>Samples: three whole genomes, HUV00001 (copy in <code>NASER_FILES/Naser_VEP/results</code>), HUV00002 and HUV00003 (copied read-only from the HUVYA WGS output to <code>extra_analyses/acmg_impact/inputs/</code>). Each is split into one ALT per record, left-aligned (<code>bcftools norm -m -any -f hg38</code>), and limited to PASS variants inside the gnomAD v4 exome calling intervals: 233,481, 239,153 and 237,108 variants (709,742 in total).</li>
+<li>Annotation: VEP 116 (<code>Naser_VEP</code> RefSeq cache, <code>--everything</code>, REVEL, AlphaMissense, ClinVar from the BIAS data release).</li>
+<li>Classifier: BIAS-2015, unmodified. A wrapper (<code>bias_with_population_af.py</code>) wraps BIAS’s variant builder and raises the gnomAD <code>allAf</code> and <code>popmax</code> it uses for BA1, BS1, PM2 and expert-panel rules to the population-dataset AF when higher.</li>
+<li>Scenarios: <strong>A</strong> gnomAD only (BIAS as shipped); <strong>B1</strong> highest AF in any population dataset; <strong>B2</strong> second-highest AF among independent datasets (at least two datasets agree). Population AFs were found for 382,171 of the 383,557 distinct variant alleles of the three genomes (one lookup pass for all samples).</li>
+</ul>
+<p><strong>Results</strong> (<code>summary.tsv</code>; per-sample transition tables <code>class_transitions_A_to_B*_&lt;sample&gt;.tsv</code>).</p>
+<table>
+<colgroup>
+<col style="width: 9%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+<col style="width: 12%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Genome</th>
+<th style="text-align: right;">Variants</th>
+<th style="text-align: right;">VUS in A</th>
+<th style="text-align: right;">VUS → LB/B, B1</th>
+<th style="text-align: right;">VUS → LB/B, B2</th>
+<th style="text-align: right;">P/LP in A</th>
+<th style="text-align: right;">P/LP downgraded, B1 / B2</th>
+<th style="text-align: right;">Towards pathogenic</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>HUV00001</td>
+<td style="text-align: right;">233,481</td>
+<td style="text-align: right;">5,191</td>
+<td style="text-align: right;">1,919 (37.0%)</td>
+<td style="text-align: right;">1,089 (21.0%)</td>
+<td style="text-align: right;">11</td>
+<td style="text-align: right;">2 / 1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td>HUV00002</td>
+<td style="text-align: right;">239,153</td>
+<td style="text-align: right;">5,863</td>
+<td style="text-align: right;">2,315 (39.5%)</td>
+<td style="text-align: right;">1,418 (24.2%)</td>
+<td style="text-align: right;">8</td>
+<td style="text-align: right;">3 / 1</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="odd">
+<td>HUV00003</td>
+<td style="text-align: right;">237,108</td>
+<td style="text-align: right;">6,462</td>
+<td style="text-align: right;">2,720 (42.1%)</td>
+<td style="text-align: right;">1,631 (25.2%)</td>
+<td style="text-align: right;">9</td>
+<td style="text-align: right;">5 / 3</td>
+<td style="text-align: right;">0</td>
+</tr>
+<tr class="even">
+<td><strong>All three</strong></td>
+<td style="text-align: right;"><strong>709,742</strong></td>
+<td style="text-align: right;"><strong>17,516</strong></td>
+<td style="text-align: right;"><strong>6,954 (39.7%)</strong></td>
+<td style="text-align: right;"><strong>4,138 (23.6%)</strong></td>
+<td style="text-align: right;"><strong>28</strong></td>
+<td style="text-align: right;"><strong>10 / 5</strong></td>
+<td style="text-align: right;"><strong>0</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Across the three genomes, B1 / B2 gained BA1 for 9,237 / 5,542 variants and BS1 for 2,044 / 1,417, and removed PM2 from 3,105 / 1,865.</p>
+<p>The five P/LP downgrades under B2 are explainable:</p>
+<ul>
+<li>PEX5 45-bp deletion (HUV00001 and HUV00003): a correction. It is 25% in gnomAD itself and common in eight datasets, but BIAS’s own gnomAD lookup missed it and applied PM2 in scenario A.</li>
+<li>TUBB8 (HUV00003) and GOLGA8R (HUV00003): genes with close copies elsewhere in the genome, where population frequencies are unreliable; TUBB8 is in the unreliable-gene list (section 4).</li>
+<li>MMP8 (HUV00002): already had BS1 (too common for the disease) from gnomAD alone in scenario A.</li>
+</ul>
+<p>B1-only downgrades rest on a single dataset (for example GSK3A, Saudi 0.5%) and are prevented by the two-dataset rule.</p>
+<p><strong>Interpretation.</strong> Adding population frequencies mainly resolves VUS: about a quarter (two datasets must agree) to two fifths (any dataset) of each genome’s VUS become benign or likely benign, consistently across the three genomes, and no variant moves towards pathogenic. B2 is the safer rule for clinical use; P/LP downgrades still need review, especially in duplicated genes.</p>
+<figure>
+<img src="../results/08_acmg_impact/figures/vus_resolved_per_sample.png" alt="" /><figcaption>VUS resolved per genome</figcaption>
+</figure>
+<figure>
+<img src="../results/08_acmg_impact/figures/class_counts_by_scenario.png" alt="" /><figcaption>ACMG class counts</figcaption>
+</figure>
+<h3 id="limitations-of-these-analyses">Limitations of these analyses</h3>
+<ul>
+<li>Exonic variants only (the kept table); deep-intronic pathogenic alleles are not counted.</li>
+<li>ClinVar is biased towards well-studied, mostly European populations; carrier and founder estimates for other populations are lower bounds.</li>
+<li>Carrier frequencies assume Hardy–Weinberg proportions; consanguinity increases the expected number of affected births.</li>
+<li>The ACMG comparison uses three genomes; a larger patient cohort is needed to generalise the numbers.</li>
+<li>The ancestry panel is untested on genotypes.</li>
+</ul>
+<h2 id="comparison-with-the-pakistan-genome-resource">Comparison with the Pakistan Genome Resource</h2>
+<p>Koch C, Khalid S, Khan MZ, <em>et al.</em> Analysis of 173,303 exomes and genomes in the Pakistan Genome Resource. <em>Nature</em> 656, 670–679 (2026). https://doi.org/10.1038/s41586-026-10667-5</p>
+<h3 id="the-study-in-brief">The study in brief</h3>
+<ul>
+<li>173,303 participants from 23 cities in Pakistan: 166,625 exomes and 6,678 genomes; high autozygosity (30.6% report first-cousin parents; mean F<sub>ROH</sub> 0.034).</li>
+<li>6,625,995 coding variants; 1,974,277 (30%) absent from all of gnomAD v4.1 and 3,113,192 (47%) absent from gnomAD’s non-South-Asian groups. Absence rises from synonymous (25%) to missense (30%) to pLoF (49%) variants (their Table 1).</li>
+<li>Homozygous loss-of-function variants in 6,476 genes, 2,298 of them not seen homozygous in gnomAD; depletion of homozygous LoF in essential, autosomal dominant and recessive disease genes.</li>
+<li>Pakistani populations are genetically closer to European and Middle Eastern groups than to East Asian or African groups.</li>
+</ul>
+<h3 id="where-the-findings-agree">Where the findings agree</h3>
+<h4 id="under-represented-populations-add-many-variants-absent-from-gnomad-mostly-rare">1. Under-represented populations add many variants absent from gnomAD, mostly rare</h4>
+<p>Share of coding variants absent from gnomAD v4.1, by consequence (PGR: paper Table 1, all of gnomAD, MAC ≥ 1; this study: exonic variants of protein-coding genes per dataset; <code>results/09_pgr_comparison/</code>).</p>
+<table>
+<thead>
+<tr class="header">
+<th>Dataset</th>
+<th style="text-align: right;">Synonymous</th>
+<th style="text-align: right;">Missense</th>
+<th style="text-align: right;">In-frame</th>
+<th style="text-align: right;">pLoF</th>
+<th style="text-align: right;">pLoF / synonymous</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>PGR (Pakistan)</strong></td>
+<td style="text-align: right;"><strong>24.9%</strong></td>
+<td style="text-align: right;"><strong>30.3%</strong></td>
+<td style="text-align: right;"><strong>35.5%</strong></td>
+<td style="text-align: right;"><strong>48.7%</strong></td>
+<td style="text-align: right;"><strong>1.96</strong></td>
+</tr>
+<tr class="even">
+<td>ToMMo (Japan)</td>
+<td style="text-align: right;">26.2%</td>
+<td style="text-align: right;">34.0%</td>
+<td style="text-align: right;">45.8%</td>
+<td style="text-align: right;">55.3%</td>
+<td style="text-align: right;">2.11</td>
+</tr>
+<tr class="odd">
+<td>All of Us</td>
+<td style="text-align: right;">20.6%</td>
+<td style="text-align: right;">25.1%</td>
+<td style="text-align: right;">32.1%</td>
+<td style="text-align: right;">39.7%</td>
+<td style="text-align: right;">1.93</td>
+</tr>
+<tr class="even">
+<td>MCPS (Mexico)</td>
+<td style="text-align: right;">19.6%</td>
+<td style="text-align: right;">25.2%</td>
+<td style="text-align: right;">29.9%</td>
+<td style="text-align: right;">44.0%</td>
+<td style="text-align: right;">2.24</td>
+</tr>
+<tr class="odd">
+<td>WBBC (China)</td>
+<td style="text-align: right;">18.5%</td>
+<td style="text-align: right;">21.3%</td>
+<td style="text-align: right;">22.6%</td>
+<td style="text-align: right;">37.2%</td>
+<td style="text-align: right;">2.01</td>
+</tr>
+<tr class="even">
+<td>KOVA (Korea)</td>
+<td style="text-align: right;">14.6%</td>
+<td style="text-align: right;">18.9%</td>
+<td style="text-align: right;">25.7%</td>
+<td style="text-align: right;">36.8%</td>
+<td style="text-align: right;">2.52</td>
+</tr>
+<tr class="odd">
+<td>SG10K (Singapore)</td>
+<td style="text-align: right;">12.9%</td>
+<td style="text-align: right;">16.8%</td>
+<td style="text-align: right;">19.2%</td>
+<td style="text-align: right;">31.1%</td>
+<td style="text-align: right;">2.41</td>
+</tr>
+<tr class="even">
+<td>TOPMed</td>
+<td style="text-align: right;">12.8%</td>
+<td style="text-align: right;">15.7%</td>
+<td style="text-align: right;">19.0%</td>
+<td style="text-align: right;">25.5%</td>
+<td style="text-align: right;">1.99</td>
+</tr>
+<tr class="odd">
+<td>GME (Middle East)</td>
+<td style="text-align: right;">10.8%</td>
+<td style="text-align: right;">17.5%</td>
+<td style="text-align: right;">9.4%</td>
+<td style="text-align: right;">33.9%</td>
+<td style="text-align: right;">3.13</td>
+</tr>
+<tr class="even">
+<td>Saudi</td>
+<td style="text-align: right;">3.6%</td>
+<td style="text-align: right;">8.0%</td>
+<td style="text-align: right;">—</td>
+<td style="text-align: right;">15.4%</td>
+<td style="text-align: right;">4.30</td>
+</tr>
+<tr class="odd">
+<td>SweGen (Sweden)</td>
+<td style="text-align: right;">2.0%</td>
+<td style="text-align: right;">3.5%</td>
+<td style="text-align: right;">4.6%</td>
+<td style="text-align: right;">9.4%</td>
+<td style="text-align: right;">4.64</td>
+</tr>
+<tr class="even">
+<td>GoNL (Netherlands)</td>
+<td style="text-align: right;">3.2%</td>
+<td style="text-align: right;">6.0%</td>
+<td style="text-align: right;">4.5%</td>
+<td style="text-align: right;">15.0%</td>
+<td style="text-align: right;">4.74</td>
+</tr>
+</tbody>
+</table>
+<figure>
+<img src="../results/09_pgr_comparison/figures/pgr_vs_datasets_absent_by_consequence.png" alt="" /><figcaption>Absent from gnomAD by consequence</figcaption>
+</figure>
+<ul>
+<li><strong>Same gradient everywhere.</strong> In every dataset, as in PGR, the share absent from gnomAD rises from synonymous to missense to pLoF: damaging alleles are rarer (purifying selection) and so less often already catalogued.</li>
+<li><strong>Same magnitude for large cohorts of under-represented populations.</strong> PGR’s 25% synonymous / 49% pLoF sits with ToMMo, MCPS, All of Us and WBBC (19–26% / 37–55%), with pLoF:synonymous ratios of 1.9–2.2 (PGR 1.96).</li>
+<li>European cohorts (SweGen, GoNL), well covered by gnomAD, add far less (2–3% synonymous). Small cohorts have higher ratios (Saudi, SweGen, GoNL ≥ 4) because the few variants they contribute beyond gnomAD are mostly rare damaging ones.</li>
+</ul>
+<h4 id="population-structure">2. Population structure</h4>
+<p>The paper places Pakistani populations closer to European and Middle Eastern groups than to East Asian or African groups. Our mean absolute AF differences (exonic SNVs) agree for gnomAD’s South Asian group:</p>
+<table>
+<thead>
+<tr class="header">
+<th>From gnomAD SAS to</th>
+<th style="text-align: right;">Mean |ΔAF|</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>gnomAD AMR</td>
+<td style="text-align: right;">0.060</td>
+</tr>
+<tr class="even">
+<td>gnomAD MID, gnomAD NFE</td>
+<td style="text-align: right;">0.067</td>
+</tr>
+<tr class="odd">
+<td>Saudi</td>
+<td style="text-align: right;">0.069</td>
+</tr>
+<tr class="even">
+<td>East Asian cohorts (ToMMo, KOVA, WBBC, gnomAD EAS)</td>
+<td style="text-align: right;">0.101–0.105</td>
+</tr>
+<tr class="odd">
+<td>gnomAD AFR</td>
+<td style="text-align: right;">0.122</td>
+</tr>
+</tbody>
+</table>
+<p>Our Middle East marker panel points the same way: its closest other group is most often NFE, then AMR, AFR and SAS, with EAS least often.</p>
+<h4 id="consanguineous-populations-are-where-population-specific-clinical-variation-concentrates">3. Consanguineous populations are where population-specific clinical variation concentrates</h4>
+<p>The paper’s homozygous loss-of-function discovery rests on high autozygosity. In our data, the consanguineous Middle Eastern datasets carry the strongest population-specific clinical signal: GME is the only dataset adding substantial common coding variation beyond gnomAD (7.5% of common exonic SNVs), it takes part in 17 of the 32 high-confidence founder pathogenic variants, and it has among the highest carrier burdens (for example PAH 4.3%).</p>
+<h4 id="a-national-resource-is-needed-for-clinical-interpretation">4. A national resource is needed for clinical interpretation</h4>
+<p>The paper presents PGR as a reference for clinical variant interpretation in South Asia. Our ACMG test shows why such resources matter: adding population frequencies to gnomAD moves 21–37% of one genome’s VUS to (likely) benign.</p>
+<h3 id="what-the-two-studies-cannot-compare">What the two studies cannot compare</h3>
+<ul>
+<li><strong>Rare vs common.</strong> PGR reports absence from gnomAD for all variants (46% are singletons). Our step 1 also separates common variants: for most datasets, common exonic SNVs are almost all already in gnomAD (&lt; 0.5%). PGR does not report an AF-stratified figure, so whether its common variants are equally well covered by gnomAD’s SAS group is open.</li>
+<li><strong>Genotype-level results.</strong> Homozygous LoF counts, autozygosity and recall-by-genotype need individual genotypes; our study uses summary frequencies only.</li>
+<li><strong>South Asia is our main gap.</strong> IndiGen (no frequencies) and GenomeAsia (unreliable) were excluded, so our only South Asian information is gnomAD SAS and the Indian part of SG10K. Adding PGR summary frequencies, if released, would fill it.</li>
+</ul>
+<h3 id="conclusion">Conclusion</h3>
+<p>The Pakistan Genome Resource and this multi-population study agree on the pattern (more damaging variants are less often in gnomAD), on its size for large under-represented cohorts, on population structure, and on the value of national resources for consanguineous, under-represented populations. They are complementary: PGR adds individual-level homozygosity, and this study adds the common-variant view across 27 datasets and the clinical frequency checks.</p>
+<h2 id="limitations-and-publication">Limitations and publication</h2>
+<h3 id="limitations">Limitations</h3>
+<ul>
+<li><strong>Summary data only.</strong> Allele frequencies, not genotypes: no per-person burden, linkage, relatedness or haplotype analysis.</li>
+<li><strong>Heterogeneous technologies.</strong> Imputed arrays, exomes, short- and long-read genomes, each with its own QC and calling. Some differences between datasets reflect technology rather than population (for example long-read cohorts in hard regions, imputed cohorts for indels).</li>
+<li><strong>Third-party conversions.</strong> Several datasets came through ANNOVAR liftovers from hg19 or UCSC conversions; the errors found are documented in the <a href="sections/03_data_quality_audit.md">data-quality audit</a>, and others may remain.</li>
+<li><strong>gnomAD exome and genome not combined by allele number.</strong> The ANNOVAR tables carry AF only, so a joint AF could not be computed; the exonic/non-exonic split avoids mixing them.</li>
+<li><strong>Small cohorts.</strong> Saudi (~300), GoNL (498), GA4K (~550) and SVatalog (101) give noisy frequencies.</li>
+<li><strong>Region coverage.</strong> No Iranian cohort was included; GME covers the Middle East only partly and has indel quality problems.</li>
+<li><strong>Gene level.</strong> Without a mutation-rate model the comparison is relative to gnomAD, not to an absolute expectation.</li>
+<li><strong>Additional analyses.</strong> Exonic variants only; ClinVar is biased towards well-studied populations, so founder and carrier estimates for other populations are lower bounds; carrier frequencies assume random mating; the ACMG comparison uses three genomes; the ancestry panel is untested on genotypes.</li>
+</ul>
+<h3 id="publication-assessment">Publication assessment</h3>
+<p>The study can be presented as a conference abstract now and developed into a journal paper with additions.</p>
+<p><strong>Strengths</strong></p>
+<ul>
+<li>Scale: 27 datasets, 2.06 billion variants, exonic and non-exonic analysed separately, both directions of disagreement.</li>
+<li>A practical, actionable answer for diagnostic labs: filter on the gnomAD population maximum; add GME for Middle Eastern patients; add genome cohorts outside exons.</li>
+<li>A systematic audit of errors in widely used public frequency tracks.</li>
+<li>A clinical angle (ACMG BA1/BS1/PM2) with a replication rule for frequency evidence.</li>
+</ul>
+<p><strong>Needed for a journal paper</strong></p>
+<ol type="1">
+<li>A sharper novelty: comparisons of single national databases with gnomAD exist. The strongest angles here are the Middle East gap, the error audit, and the popmax rule.</li>
+<li>An Iranian or Middle Eastern cohort (e.g. Iranome or in-house exomes) to make the Middle East result the centrepiece.</li>
+<li>Quantified clinical impact on a patient cohort. A test on three genomes is done (23.6–39.7% of VUS resolved, <a href="sections/07_additional_analyses.md#6-acmg-reclassification-in-real-genomes">Additional analyses</a>); a larger cohort is needed.</li>
+<li>Sensitivity analyses: frequency thresholds, minimum allele number, with and without imputed cohorts.</li>
+</ol>
+<p><strong>Possible venues</strong></p>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Venue type</th>
+<th>Examples</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Conference</td>
+<td>ASHG or ESHG annual meeting (abstract)</td>
+<td>Ready with current results</td>
+</tr>
+<tr class="even">
+<td>Human genetics journal</td>
+<td>European Journal of Human Genetics, Human Genetics, Human Genomics, Genetics in Medicine Open</td>
+<td>After the additions above</td>
+</tr>
+<tr class="odd">
+<td>Resource or methods journal</td>
+<td>NAR Genomics and Bioinformatics, BMC Genomics, Database</td>
+<td>If the harmonised union and quality flags are released</td>
+</tr>
+</tbody>
+</table>
+<h3 id="data-use">Data use</h3>
+<p>No input data are redistributed in this repository. Before releasing any derived per-variant file (for example the union table), check the terms of each source: gnomAD (open), UK Biobank, All of Us (data and statistics dissemination policy), FinnGen, ToMMo, TOPMed/BRAVO, SPARK/SFARI, and ANNOVAR’s database licence (free for non-commercial use).</p>
+<h2 id="further-analyses">Further analyses</h2>
+<p>Analyses that would add value for clinical and population geneticists, roughly in order of value for effort. Each can reuse the union, the harmonised per-dataset frequencies and the VEP annotation built here.</p>
+<p><strong>Done</strong> (see <a href="sections/07_additional_analyses.md">Additional analyses</a>): founder and population-enriched pathogenic variants (item 5), carrier frequencies (item 4), the “do not trust the frequency” gene and region list (item 7), candidate ancestry-informative markers (item 10, selection only), and an ACMG reclassification test on three genomes (item 2). <strong>Need the raw frequency files</strong> (AC, AN or homozygote counts were not kept): items 3 and 8, and the non-coding parts of items 6 and 9.</p>
+<h3 id="high-value">High value</h3>
+<ol type="1">
+<li><strong>Iranian / Middle Eastern focus.</strong> Add Iranome and in-house Iranian exomes. Repeat steps 1–4 with the Middle East as the target population: how many common Iranian variants are rare or absent in gnomAD, GME and Saudi, and how the three overlap.</li>
+<li><strong>ACMG reclassification impact in real patients.</strong> Annotate a set of patient exomes with gnomAD only, then with gnomAD plus the population datasets, and count variants whose BA1, BS1 or PM2 status changes, and whose final class changes. Use ClinGen expert-panel gene-specific thresholds where they exist, and the maximum credible population AF (from disease prevalence, penetrance and genetic heterogeneity) for BS1.</li>
+<li><strong>Filtering allele frequency with confidence intervals.</strong> Most datasets give AC and AN. A 95% Poisson/binomial upper bound (“FAF95”) per dataset and population would make small cohorts usable for BS1/BA1 without over-trusting them, and would replace the fixed AN ≥ 100 rule.</li>
+<li><strong>Carrier frequencies for recessive disorders.</strong> Sum the frequencies of ClinVar P/LP (and high-confidence LoF) alleles per gene and population to estimate carrier rates and expected affected births, especially for populations with high consanguinity. Output: population-specific carrier-screening gene lists.</li>
+<li><strong>Founder and population-enriched pathogenic variants.</strong> ClinVar P/LP variants at least 10-fold more frequent in one population than in gnomAD’s popmax, supported by two datasets, focusing on ACMG secondary-findings genes and newborn screening genes.</li>
+</ol>
+<h3 id="medium-value">Medium value</h3>
+<ol start="6" type="1">
+<li><strong>Pharmacogenomics.</strong> Frequencies of CPIC/PharmGKB actionable alleles (CYP2C19, CYP2D6-tagging SNVs, DPYD, TPMT, NUDT15, SLCO1B1, HLA-tagging SNVs) per population, against gnomAD, to show where gnomAD-based dosing assumptions fail.</li>
+<li><strong>A curated “do not trust the frequency” resource.</strong> Combine the shared gene outliers from the gene step, the single-dataset ClinVar artefacts, and known difficult regions (segmental duplications, GIAB stratifications) into a BED and gene list for variant-interpretation pipelines; validate against GIAB truth sets.</li>
+<li><strong>Homozygote evidence.</strong> Many datasets give homozygote counts (nhomalt, AC_Hom, HomC). Healthy homozygotes for a variant in a recessive gene are evidence against pathogenicity (ACMG BS2); compare homozygote counts across populations.</li>
+<li><strong>Non-coding functional variants.</strong> Repeat the “common locally, rare in gnomAD” analysis for splice-altering (SpliceAI), UTR and promoter variants, where gnomAD’s genome set is smallest.</li>
+<li><strong>Ancestry-informative markers for the region.</strong> Select markers from step 3 to build a compact panel distinguishing Middle Eastern sub-populations, and test it on HGDP and in-house samples.</li>
+</ol>
+<h3 id="lower-priority-or-out-of-scope">Lower priority or out of scope</h3>
+<ul>
+<li>Population-specific gene constraint (observed/expected with a mutation-rate model): needs genotype-level data and coverage per dataset to be reliable.</li>
+<li>Structural variants (gnomAD-SV against long-read and national SV catalogues).</li>
+<li>Cross-build (GRCh37/GRCh38) liftover error rates, using the hg19-lifted tables (gnomAD v2, ExAC, Kaviar) as test cases.</li>
+</ul>
+<h2 id="data-manifest">Data manifest</h2>
+<p>What the study read, what it produced, and what is kept after the raw inputs are deleted.</p>
+<h3 id="raw-inputs-deletable-all-can-be-downloaded-again">Raw inputs (deletable; all can be downloaded again)</h3>
+<p>Sizes and dates as on the analysis server, 24 November 2026.</p>
+<h4 id="annovar-tables-homenaserannotationpopulation_studydatarawannovar_popfreq-233-gb">ANNOVAR tables (<code>/home/NASER/annotation/population_study/data/raw/annovar_popfreq/</code>, 233 GB)</h4>
+<table style="width:100%;">
+<colgroup>
+<col style="width: 23%" />
+<col style="width: 30%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th style="text-align: right;">Size</th>
+<th>Date</th>
+<th>Re-download</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>hg38_gnomad41_genome.txt</code> (+ <code>.idx</code>)</td>
+<td style="text-align: right;">102.5 GB</td>
+<td>2024-06-02</td>
+<td><code>annotate_variation.pl -buildver hg38 -downdb -webfrom annovar gnomad41_genome humandb/</code></td>
+</tr>
+<tr class="even">
+<td><code>hg38_allofus.txt</code> (+ <code>.idx</code>)</td>
+<td style="text-align: right;">85.5 GB</td>
+<td>2025-03-14</td>
+<td><code>… -downdb -webfrom annovar allofus</code></td>
+</tr>
+<tr class="odd">
+<td><code>hg38_gnomad41_exome.txt</code> (+ <code>.idx</code>)</td>
+<td style="text-align: right;">18.6 GB</td>
+<td>2024-05-31</td>
+<td><code>… gnomad41_exome</code></td>
+</tr>
+<tr class="even">
+<td><code>hg38_gnomad_genome.txt</code> (+ <code>.idx</code>)</td>
+<td style="text-align: right;">17.1 GB</td>
+<td>2019-12-06</td>
+<td><code>… gnomad_genome</code></td>
+</tr>
+<tr class="odd">
+<td><code>hg38_kaviar_20150923.txt</code> (+ <code>.idx</code>)</td>
+<td style="text-align: right;">12.2 GB</td>
+<td>2019-12-06</td>
+<td><code>… kaviar_20150923</code></td>
+</tr>
+<tr class="even">
+<td><code>hg38_ALL.sites.2015_08.txt</code> and AFR, AMR, EAS, EUR, SAS</td>
+<td style="text-align: right;">9.0 GB</td>
+<td>2015-08-26</td>
+<td><code>… 1000g2015aug</code></td>
+</tr>
+<tr class="odd">
+<td><code>hg38_gnomad_exome.txt</code> (+ <code>.idx</code>)</td>
+<td style="text-align: right;">1.1 GB</td>
+<td>2019-12-06</td>
+<td><code>… gnomad_exome</code></td>
+</tr>
+<tr class="even">
+<td><code>hg38_exac03.txt</code> (+ <code>.idx</code>)</td>
+<td style="text-align: right;">0.6 GB</td>
+<td>2019-12-06</td>
+<td><code>… exac03</code></td>
+</tr>
+<tr class="odd">
+<td><code>hg38_gme.txt</code> (+ <code>.idx</code>)</td>
+<td style="text-align: right;">0.07 GB</td>
+<td>2019-12-06</td>
+<td><code>… gme</code></td>
+</tr>
+</tbody>
+</table>
+<h4 id="ucsc-varfreqs-homenaserannotationpopulation_studydatarawucsc_varfreqs-122-gb">UCSC varFreqs (<code>/home/NASER/annotation/population_study/data/raw/ucsc_varfreqs/</code>, 122 GB)</h4>
+<p>Base URL: <code>http://hgdownload.soe.ucsc.edu/gbdb/hg38/varFreqs/</code> (each VCF with its <code>.tbi</code>). Script: <code>scripts/get_ucsc_missing.sh</code>.</p>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>File</th>
+<th style="text-align: right;">Size</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>varFreqsAll/varFreqsAll.bb</code></td>
+<td style="text-align: right;">30.3 GB</td>
+<td>Last modified at UCSC 2026-01-20; 1,259,969,871 records</td>
+</tr>
+<tr class="even">
+<td><code>varFreqsAll/varFreqsAll.tsv.gz</code> (+ <code>.tbi</code>)</td>
+<td style="text-align: right;">25.2 GB</td>
+<td>Derived: <code>bb_to_table.sh</code> + <code>fix_bb_header.sh</code></td>
+</tr>
+<tr class="odd">
+<td><code>gregor/gregor.vcf.gz</code></td>
+<td style="text-align: right;">20.6 GB</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>npm/SG10K_Health_r5.3.2.sites.vcf.bgz</code></td>
+<td style="text-align: right;">17.6 GB</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>hgdp1kFreq/hgdp1k.freq.vcf.gz</code></td>
+<td style="text-align: right;">15.9 GB</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>hostseq/hostseq.vcf.gz</code></td>
+<td style="text-align: right;">9.5 GB</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>alfa/ALFA.vcf.gz</code></td>
+<td style="text-align: right;">2.8 GB</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>wbbc/wbbc.vcf.gz</code></td>
+<td style="text-align: right;">2.2 GB</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>sgdpFreq/sgdp.freq.vcf.gz</code></td>
+<td style="text-align: right;">2.0 GB</td>
+<td>In the union only</td>
+</tr>
+<tr class="even">
+<td><code>gonl/gonl.vcf.gz</code></td>
+<td style="text-align: right;">1.7 GB</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>colorsDb/colorsDbSnv.vcf.gz</code></td>
+<td style="text-align: right;">0.7 GB</td>
+<td></td>
+</tr>
+<tr class="even">
+<td><code>ukbb/ukbb.vcf.gz</code></td>
+<td style="text-align: right;">0.55 GB</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>schema/SCHEMA_variant_results_withAF.vcf.gz</code></td>
+<td style="text-align: right;">0.54 GB</td>
+<td>In the union only</td>
+</tr>
+<tr class="even">
+<td><code>ga4k/ga4kSnv.vcf.gz</code></td>
+<td style="text-align: right;">0.54 GB</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><code>svatalog/svatalog.vcf.gz</code></td>
+<td style="text-align: right;">0.18 GB</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="intermediate-files-deletable">Intermediate files (deletable)</h4>
+<table>
+<colgroup>
+<col style="width: 30%" />
+<col style="width: 40%" />
+<col style="width: 30%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Location</th>
+<th style="text-align: right;">Size</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>/home/NASER/annotation/population_study/data/work/freq_union/hg38_freq_union.txt</code> (+ <code>.idx</code>)</td>
+<td style="text-align: right;">102 GB</td>
+<td>Uncompressed union; a compressed copy is kept (below)</td>
+</tr>
+<tr class="even">
+<td><code>/home/NASER/annotation/population_study/data/work/gene_burden/{split,vep,annot,work}</code></td>
+<td style="text-align: right;">~104 GB</td>
+<td>Gene-step intermediates; the annotated variant list is kept compressed (below)</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Before deleting <code>annovar_popfreq/</code>:</strong> <code>/root/naser/annotation/annovar/humandb/</code> holds symbolic links to these tables. ANNOVAR runs that use <code>gnomad41_exome</code>, <code>gnomad41_genome</code>, <code>allofus</code>, <code>kaviar_20150923</code>, <code>exac03</code>, <code>gme</code>, <code>gnomad_exome</code>, <code>gnomad_genome</code> or <code>1000g2015aug</code> from that folder will stop working.</p>
+<h3 id="kept-results">Kept results</h3>
+<h4 id="in-this-repository">In this repository</h4>
+<p><code>results/</code> (tables and figures for both regions and the gene level), <code>results/02_frequency_vs_gnomad/supplementary/</code> (per-variant exonic markers and ClinVar matches), <code>docs/</code>, <code>report/</code>, <code>scripts/</code>.</p>
+<h4 id="on-the-server-homenaserannotationpopulation_studydataarchive">On the server: <code>/home/NASER/annotation/population_study/data/archive/</code></h4>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Path</th>
+<th>Content</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>union/hg38_freq_union.txt.gz</code> (+ <code>.tbi</code>)</td>
+<td>The union: 2,055,347,367 variants with <code>is_in</code> and <code>how_many</code> (bgzip, tabix-indexed)</td>
+</tr>
+<tr class="even">
+<td><code>union/summary_*.tsv</code>, <code>run.log</code></td>
+<td>Variants per dataset, per number of datasets, per dataset combination</td>
+</tr>
+<tr class="odd">
+<td><code>study/{exonic,non_exonic}/</code></td>
+<td><code>counts.tsv</code>, per-variant <code>markers.tsv.gz</code>, <code>clinvar_candidates.tsv.gz</code>, <code>clinvar_hits.tsv.gz</code>, <code>pca_snvs.tsv.gz</code>, all tables and figures</td>
+</tr>
+<tr class="even">
+<td><code>study/regions/</code></td>
+<td>gnomAD v4 exome calling intervals used for the split</td>
+</tr>
+<tr class="odd">
+<td><code>study/extraction_stats.tsv</code>, <code>run.log</code></td>
+<td>Rows kept and dropped per source</td>
+</tr>
+<tr class="even">
+<td><code>gene_level/exonic_variants_annotated.tsv.gz</code></td>
+<td>Every exonic variant: gnomAD AF, AF in each dataset, VEP consequence, gene, MANE</td>
+</tr>
+<tr class="odd">
+<td><code>gene_level/gene_counts.tsv.gz</code>, <code>gene_length.tsv</code></td>
+<td>Per gene × dataset counts and gene footprints</td>
+</tr>
+<tr class="even">
+<td><code>gene_level/tables/</code></td>
+<td>Including the two full per-gene tables not stored in this repository</td>
+</tr>
+<tr class="odd">
+<td><code>clinvar_20261115.vcf.gz</code> (+ <code>.tbi</code>, <code>.md5</code>)</td>
+<td>ClinVar release used</td>
+</tr>
+</tbody>
+</table>
+<h4 id="additional-analyses-homenaserannotationpopulation_studydataworkextra_analyses">Additional analyses: <code>/home/NASER/annotation/population_study/data/work/extra_analyses/</code></h4>
+<p>One folder per analysis (<code>founder_variants</code>, <code>carrier_frequency</code>, <code>unreliable_regions</code>, <code>ancestry_markers</code>, <code>acmg_impact</code>, <code>pgr_comparison</code>), each with <code>tables/</code> and <code>figures/</code>; <code>shared/</code> holds the ClinVar P/LP table with population and gnomAD group AFs; <code>acmg_impact/&lt;sample&gt;/</code> holds each genome’s VEP JSON and three BIAS outputs, and <code>acmg_impact/inputs/</code> the copies of the HUV00002 and HUV00003 genome VCFs (copied read-only from the HUVYA WGS output). Keep <code>extra_analyses/acmg_impact/inputs/</code> if you want to rerun the ACMG stage.</p>
+<p>With these files every table and figure can be regenerated without the raw inputs (<code>freq_study_report.py</code>, <code>gene_burden_report.py</code>, <code>make_results_md.py</code>). Re-running harmonisation, extraction or the union needs the raw inputs again.</p>
+<h2 id="reproducibility-protocol">Reproducibility protocol</h2>
+<p>How to regenerate every result in this repository, either from the kept archive (no raw files needed) or from scratch (re-downloading the raw frequency files). Everything runs through one driver:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true"></a><span class="fu">bash</span> scripts/run_all.sh <span class="op">&lt;</span>stage<span class="op">&gt;</span> [<span class="op">&lt;</span>stage<span class="op">&gt;</span> ...]</span></code></pre></div>
+<p>Paths and settings are in <a href="../scripts/config.sh"><code>scripts/config.sh</code></a>; each stage logs to <code>$DATA/logs/&lt;stage&gt;.log</code>.</p>
+<h3 id="two-ways-to-regenerate">1. Two ways to regenerate</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Route</th>
+<th>Needs</th>
+<th>Stages</th>
+<th>Time (192-core server)</th>
+<th>Regenerates</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>From the kept archive</strong></td>
+<td><code>$KEEP</code> (≈ 21 GB), the reference resources in section 3</td>
+<td><code>all-kept</code> = <code>extra reports</code> (+ <code>acmg</code>)</td>
+<td>≈ 3 h (+ 20 min)</td>
+<td>All tables, figures and documents; all additional analyses</td>
+</tr>
+<tr class="even">
+<td><strong>From scratch</strong></td>
+<td>Internet access, ≈ 600 GB free disk, section 3</td>
+<td><code>all-raw</code> = <code>download prepare union study clinvar gene keep extra reports</code></td>
+<td>≈ 12 h (downloads excluded)</td>
+<td>Everything, including the union, the harmonised per-dataset frequencies and the kept archive</td>
+</tr>
+</tbody>
+</table>
+<p>The kept archive (<code>/home/NASER/annotation/population_study/data/archive/</code>) is what remains after the raw frequency files are deleted. Its content and checksums are listed in <a href="sections/06_data_manifest.md">Data manifest</a> and <code>results/00_provenance/kept_archive.md5</code>.</p>
+<h3 id="software">2. Software</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Software</th>
+<th>Version used</th>
+<th>Where</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>bash, GNU awk, GNU coreutils (sort)</td>
+<td>bash 5, gawk 5.1.1, coreutils 9.0</td>
+<td>system</td>
+</tr>
+<tr class="even">
+<td>bcftools, tabix, bgzip (htslib)</td>
+<td>1.19</td>
+<td>system (<code>/usr/local/bin</code>)</td>
+</tr>
+<tr class="odd">
+<td>bedtools</td>
+<td>2.x</td>
+<td>system</td>
+</tr>
+<tr class="even">
+<td>UCSC bigBedToBed, bigBedInfo; aria2</td>
+<td>482; 1.37.0</td>
+<td>conda env <code>ucsc</code> (bioconda, conda-forge)</td>
+</tr>
+<tr class="odd">
+<td>Python with pandas, NumPy, SciPy, matplotlib</td>
+<td>3.10.22; 2.2.2, 1.26.4, 1.14.1, 3.10.9</td>
+<td>conda env <code>ahm-env</code> (<code>$PY</code>)</td>
+</tr>
+<tr class="even">
+<td>Ensembl VEP</td>
+<td>116.3 (API 116), Docker image <code>huvya/vep:116</code>, <code>sha256:b8901bb319b3…</code></td>
+<td>Docker</td>
+</tr>
+<tr class="odd">
+<td>ANNOVAR <code>annotate_variation.pl</code></td>
+<td>2025-03-02</td>
+<td><code>$ANNOVAR</code> (needed only for <code>download</code>)</td>
+</tr>
+<tr class="even">
+<td>BIAS-2015</td>
+<td>git commit <code>290b99a</code>, plus <code>scripts/analyses/bias_pm4_length_chrM.patch</code></td>
+<td><code>$BIAS</code> (read-only)</td>
+</tr>
+</tbody>
+</table>
+<p>To rebuild the conda environments elsewhere:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true"></a><span class="ex">conda</span> create -n ucsc -c conda-forge -c bioconda ucsc-bigbedtobed=482 ucsc-bigbedinfo=482 aria2</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true"></a><span class="ex">conda</span> create -n popfreq -c conda-forge python=3.10 pandas=2.2 numpy=1.26 scipy=1.14 matplotlib=3.10</span></code></pre></div>
+<h3 id="reference-resources-not-deleted-with-the-raw-files">3. Reference resources (not deleted with the raw files)</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Resource</th>
+<th>Path (config variable)</th>
+<th>Used by</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>VEP 116 RefSeq cache with gnomAD v4.1 AFs</td>
+<td><code>/home/NASER_FILES/Naser_VEP/vep_cache</code> (<code>VEP_CACHE</code>)</td>
+<td>gene step (indels), ClinVar P/LP group AFs, ACMG</td>
+</tr>
+<tr class="even">
+<td>VEP annotation of every possible exonic SNV (CADD v1.7 exon set)</td>
+<td><code>$VEP_ROOT/results/CADD_exons_merged_64cpu/…vep.tsv.gz</code> (<code>CADD_VEP_TSV</code>)</td>
+<td>gene step (SNV lookup)</td>
+</tr>
+<tr class="odd">
+<td>hg38 FASTA</td>
+<td><code>/home/NASER_FILES/annovar/hg38/reference/hg38.fa</code> (<code>FA</code>)</td>
+<td>VEP</td>
+</tr>
+<tr class="even">
+<td>BIAS-2015 data (hg38, 2026-10-15), REVEL, AlphaMissense, ClinVar 2026-10-11</td>
+<td><code>/home/NASER/annotation/acmg</code> (<code>ACMG</code>)</td>
+<td>ACMG, ClinGen AR genes</td>
+</tr>
+<tr class="odd">
+<td>BIAS-2015 code</td>
+<td><code>/root/naser/annotation/acmg/BIAS-2015</code> (<code>BIAS</code>)</td>
+<td>ACMG</td>
+</tr>
+<tr class="even">
+<td>Patient genome</td>
+<td><code>$VEP_ROOT/results/HUV00001_refseq_32cpu/HUV00001.norm.vcf.gz</code> (<code>VCF</code>)</td>
+<td>ACMG</td>
+</tr>
+<tr class="odd">
+<td>GIAB v3.5 GRCh38 stratifications</td>
+<td>downloaded by the <code>extra</code> stage</td>
+<td>unreliable regions</td>
+</tr>
+</tbody>
+</table>
+<p>Nothing under <code>/home/HUVYA</code> is used. The published gene step used the HUVYA merged VEP cache (read-only); the default is now the <code>Naser_VEP</code> RefSeq cache, which can pick a different transcript for a small share of variants.</p>
+<h3 id="raw-inputs-the-download-stage">4. Raw inputs (the <code>download</code> stage)</h3>
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Source</th>
+<th>What</th>
+<th>Exact identity</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ANNOVAR</td>
+<td><code>gnomad41_exome</code>, <code>gnomad41_genome</code>, <code>gnomad_exome</code>, <code>gnomad_genome</code>, <code>kaviar_20150923</code>, <code>exac03</code>, <code>1000g2015aug</code>, <code>gme</code>, <code>allofus</code> (hg38)</td>
+<td>file sizes and dates in <a href="sections/06_data_manifest.md">Data manifest</a>; MD5 in <code>results/00_provenance/raw_inputs.md5</code></td>
+</tr>
+<tr class="even">
+<td>UCSC varFreqs</td>
+<td><code>varFreqsAll.bb</code> (30,276,835,043 bytes, modified 2026-01-20) and 13 cohort VCFs</td>
+<td><code>http://hgdownload.soe.ucsc.edu/gbdb/hg38/varFreqs/</code>; MD5 in <code>results/00_provenance/raw_inputs.md5</code></td>
+</tr>
+<tr class="odd">
+<td>gnomAD</td>
+<td>v4 exome calling intervals <code>ukb.pad50.broad.pad50.union.intervals</code></td>
+<td><code>GNOMAD_INTERVALS_URL</code> in <code>config.sh</code></td>
+</tr>
+<tr class="even">
+<td>ClinVar</td>
+<td><code>clinvar_20261115.vcf.gz</code> (GRCh38)</td>
+<td>NCBI archive URL in <code>config.sh</code>; MD5 checked on download</td>
+</tr>
+</tbody>
+</table>
+<p>Public resources change: UCSC and ANNOVAR replace files in place. After <code>download</code>, the driver compares every file with <code>raw_inputs.md5</code> and reports whether the inputs are identical to the published run. If they differ, the results can differ too; keep the kept archive as the reference.</p>
+<h3 id="stages">5. Stages</h3>
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Stage</th>
+<th>Script(s)</th>
+<th>Output</th>
+<th>Time</th>
+<th>Check</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>download</code></td>
+<td>ANNOVAR <code>-downdb</code>, <code>get_ucsc_missing.sh</code>, <code>curl</code></td>
+<td><code>$ANNOVAR_TABLES</code>, <code>$UCSC_DIR</code>, <code>$CLINVAR</code>, <code>$INTERVALS</code></td>
+<td>hours (network)</td>
+<td>log says “raw inputs identical to the published run”</td>
+</tr>
+<tr class="even">
+<td><code>prepare</code></td>
+<td><code>bb_to_table.sh</code>, <code>fix_bb_header.sh</code></td>
+<td><code>varFreqsAll.tsv.gz</code> (+ <code>.tbi</code>)</td>
+<td>≈ 1.5 h</td>
+<td>1,259,969,871 rows = <code>bigBedInfo</code> itemCount</td>
+</tr>
+<tr class="odd">
+<td><code>union</code></td>
+<td><code>freq_union.sh</code></td>
+<td><code>hg38_freq_union.txt</code> (+ <code>.idx</code>, summaries)</td>
+<td>≈ 5 h</td>
+<td>2,055,347,367 variants</td>
+</tr>
+<tr class="even">
+<td><code>study</code></td>
+<td><code>freq_study.sh</code></td>
+<td><code>exonic/</code>, <code>non_exonic/</code> counts and per-variant files</td>
+<td>≈ 1.7 h</td>
+<td>293,015,270 exonic and 3,917,707,046 non-exonic dataset alleles classified</td>
+</tr>
+<tr class="odd">
+<td><code>clinvar</code></td>
+<td><code>freq_clinvar.sh</code>, <code>freq_study_report.py</code></td>
+<td>ClinVar matches, tables, figures</td>
+<td>≈ 20 min</td>
+<td>—</td>
+</tr>
+<tr class="even">
+<td><code>gene</code></td>
+<td><code>freq_study.sh</code> (<code>DUMP=1</code>), <code>snv_annot.sh</code>, <code>gene_burden.sh</code>, <code>gene_burden_report.py</code></td>
+<td>per-gene counts, gene tables and figures</td>
+<td>≈ 3.5 h</td>
+<td>106,845,209 SNVs by lookup + 89,022,055 by VEP = 195,874,106; no “without VEP annotation” warning</td>
+</tr>
+<tr class="odd">
+<td><code>keep</code></td>
+<td><code>make_keep.sh</code></td>
+<td><code>$KEEP</code> + <code>provenance/*.md5</code></td>
+<td>≈ 1 h</td>
+<td><code>KEEP_DONE</code> in the log</td>
+</tr>
+<tr class="even">
+<td><code>extra</code></td>
+<td><code>extra/*</code> (except ACMG)</td>
+<td><code>$EXTRA_DIR/&lt;analysis&gt;/{tables,figures}</code></td>
+<td>≈ 70 min</td>
+<td>numbers in section 6</td>
+</tr>
+<tr class="odd">
+<td><code>acmg</code> (optional)</td>
+<td><code>extra/acmg_impact.sh</code>, <code>extra/acmg_compare.py</code></td>
+<td><code>$EXTRA_DIR/acmg_impact</code></td>
+<td>≈ 20 min for 3 genomes</td>
+<td>numbers in section 6</td>
+</tr>
+<tr class="even">
+<td><code>reports</code></td>
+<td><code>freq_study_report.py</code>, <code>gene_burden_report.py</code> on <code>$KEEP</code>; copy; <code>make_results_md.py</code>; <code>build_report_md.sh</code></td>
+<td><code>results/</code>, <code>reports/sections/02_results.md</code>, <code>reports/population_frequency_report.md</code></td>
+<td>≈ 1 h 50 min (the gene-level binomial tests take most of it)</td>
+<td><code>git diff --stat results/</code> shows no numeric change</td>
+</tr>
+</tbody>
+</table>
+<h3 id="reference-values-to-check-a-re-run-against">6. Reference values to check a re-run against</h3>
+<table>
+<colgroup>
+<col style="width: 42%" />
+<col style="width: 57%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Quantity</th>
+<th style="text-align: right;">Value</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Union variants</td>
+<td style="text-align: right;">2,055,347,367</td>
+</tr>
+<tr class="even">
+<td>ToMMo common exonic SNVs absent from gnomAD (AF ≥ 1%)</td>
+<td style="text-align: right;">0.31%</td>
+</tr>
+<tr class="odd">
+<td>GME common exonic SNVs absent from gnomAD</td>
+<td style="text-align: right;">7.46% (7,363)</td>
+</tr>
+<tr class="even">
+<td>TOPMed common non-exonic SNVs absent from gnomAD</td>
+<td style="text-align: right;">7.65%</td>
+</tr>
+<tr class="odd">
+<td>Exonic ClinVar P/LP flags: total / supported by ≥ 2 datasets</td>
+<td style="text-align: right;">140 / 12</td>
+</tr>
+<tr class="even">
+<td>Founder P/LP variants: enriched / replicated / high confidence</td>
+<td style="text-align: right;">1,621 / 61 / 32</td>
+</tr>
+<tr class="odd">
+<td>Carrier frequency CFTR in gnomAD NFE</td>
+<td style="text-align: right;">4.4%</td>
+</tr>
+<tr class="even">
+<td>Unreliable genes / with ≥ 2 rules</td>
+<td style="text-align: right;">57 / 11</td>
+</tr>
+<tr class="odd">
+<td>ACMG (three genomes): VUS resolved, B1 / B2</td>
+<td style="text-align: right;">6,954 / 4,138 of 17,516 (39.7% / 23.6%)</td>
+</tr>
+<tr class="even">
+<td>PGR comparison: pLoF / synonymous ratio, All of Us</td>
+<td style="text-align: right;">1.93</td>
+</tr>
+</tbody>
+</table>
+<h3 id="pitfalls-already-handled-do-not-undo">7. Pitfalls already handled (do not undo)</h3>
+<table>
+<colgroup>
+<col style="width: 50%" />
+<col style="width: 50%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Pitfall</th>
+<th>Where handled</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>ANNOVAR <code>.idx</code> bins are not in file order: slice from the smallest to the largest byte offset</td>
+<td><code>freq_study.sh</code> (<code>chunk</code>)</td>
+</tr>
+<tr class="even">
+<td>hg38 1000 Genomes indel alleles are encoded <code>&lt;ref length&gt;&lt;alt&gt;</code></td>
+<td><code>freq_union.sh</code>, <code>freq_study.sh</code></td>
+</tr>
+<tr class="odd">
+<td>UCSC ALFA indel positions are one base too far right</td>
+<td>union: shift −1; study: ALFA SNVs only</td>
+</tr>
+<tr class="even">
+<td><code>varFreqsAll.bb</code> column order differs from its schema</td>
+<td><code>fix_bb_header.sh</code></td>
+</tr>
+<tr class="odd">
+<td>GenomeAsia frequencies unreliable</td>
+<td>excluded in <code>freq_study.sh</code></td>
+</tr>
+<tr class="even">
+<td>Tiny allele numbers (AC = 3, AF = 1) in SPARK, ToMMo</td>
+<td><code>MINAN=100</code></td>
+</tr>
+<tr class="odd">
+<td>gnomAD AF = 0 means QC-failed carriers only</td>
+<td>treated as no AF</td>
+</tr>
+<tr class="even">
+<td>gnomAD exome group AFs missing at 12–26% of common sites</td>
+<td>genome fallback per group</td>
+</tr>
+<tr class="odd">
+<td>VEP RefSeq cache is BAM-edited: needs <code>--fasta</code></td>
+<td><code>config.sh</code> <code>FA</code></td>
+</tr>
+<tr class="even">
+<td>VEP gnomAD field names are <code>gnomADe_&lt;GROUP&gt;_AF</code></td>
+<td><code>prep_clinvar_plp.sh</code></td>
+</tr>
+<tr class="odd">
+<td>De-duplicate VEP input on the whole allele, not on position</td>
+<td><code>gene_burden.sh</code></td>
+</tr>
+<tr class="even">
+<td>Single-dataset frequencies are mostly errors</td>
+<td>replication rules in ClinVar, founder and carrier analyses</td>
+</tr>
+<tr class="odd">
+<td>CFTR poly-T/TG intronic alleles inflate carrier rates</td>
+<td>coding P/LP only in carrier analysis</td>
+</tr>
+</tbody>
+</table>
+<h3 id="verification-done-24-november-2026">8. Verification done (24 November 2026)</h3>
+<p><code>bash scripts/run_all.sh all-kept</code> was run from the kept archive on a clean copy of the repository. Every result table under <code>results/</code> (study, gene level and additional analyses) was regenerated byte-for-byte identical; only PDF files differ, through their embedded creation timestamps. The ACMG stage was then run separately on three genomes.</p>
+<h3 id="before-deleting-the-raw-files">9. Before deleting the raw files</h3>
+<ol type="1">
+<li>Check <code>$KEEP/provenance/raw_inputs.md5</code> and <code>kept_archive.md5</code> exist and are non-empty (they are copied to <code>results/</code>).</li>
+<li>Run <code>bash scripts/run_all.sh all-kept</code> once and confirm that <code>git diff --stat results/</code> shows no numeric change.</li>
+<li>Remember that <code>/root/naser/annotation/annovar/humandb/</code> holds symbolic links into <code>$ANNOVAR_TABLES</code>.</li>
+</ol>
+</body>
+</html>

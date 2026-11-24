@@ -1,0 +1,10 @@
+clnsig_group	max_af_class	5-10%	>10%	absent/QC-fail	rare (<5%)
+B/LB	5-10%	2135	3546	10	694
+B/LB	>10%	3096	42686	52	1799
+Conflicting	>10%	1	17	0	5
+Other	5-10%	385	402	10	280
+Other	>10%	490	4959	33	617
+P/LP	5-10%	1	0	0	0
+P/LP	>10%	0	2	0	1
+VUS	5-10%	3	0	1	8
+VUS	>10%	2	73	4	26
